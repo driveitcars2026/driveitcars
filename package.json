@@ -1,0 +1,38 @@
+{
+  "name": "next-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "gsc:audit": "node scripts/gsc-cron.mjs",
+    "gsc:gemini": "node scripts/gsc-gemini-optimizer.mjs",
+    "gsc:telegram": "node scripts/notify-telegram.mjs",
+    "gbp:daily": "node scripts/gbp-daily-engine.mjs",
+    "blog:publish": "node scripts/publish-weekly-blog.mjs",
+    "rank:local": "node scripts/track-local-rankings.mjs",
+    "seo:daily": "node scripts/gsc-cron.mjs && node scripts/gsc-gemini-optimizer.mjs && node scripts/track-local-rankings.mjs"
+  },
+  "dependencies": {
+    "@google/genai": "^3.3.0",
+    "@neondatabase/serverless": "^1.2.1",
+    "@portabletext/react": "^8.0.1",
+    "@sanity/image-url": "^2.1.1",
+    "dotenv": "^18.0.10",
+    "googleapis": "^190.0.0",
+    "next": "16.3.8",
+    "next-sanity": "^13.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "sanity": "^6.17.0",
+    "styled-components": "^6.5.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.8",
+    "tailwindcss": "^4"
+  }
+}

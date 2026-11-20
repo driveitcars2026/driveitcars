@@ -1,0 +1,877 @@
+# Project Memory & Architectural Decisions
+
+## Car Journey Page Loader (Point A to Point B Animation)
+- **Component & Styling**: Built `src/components/CarPageLoader.jsx` with companion CSS module `src/components/CarPageLoader.module.css`.
+- **Speed & Core Web Vitals Optimization**:
+  - Renders immediately in SSR HTML (0ms First Paint — no `mounted` gate causing flash of underlying page before loader).
+  - 100% lightweight inline SVG + compositor-only GPU animations (`transform: translate3d(...)` on full-width `.carRunner`, `scaleX` on `.progressBarFill`, `transform-box: fill-box` on spinning SVG `.wheelGraphic`).
+  - Zero heavy external dependencies (no Lottie, no video, no GIF, zero network asset fetching delays).
+  - Total payload budget: < 2.5 KB.
+- **Visual Design**:
+  - Point A marker (Pickup - emerald badge) on the left to Point B marker (Destination - pulsing golden flag badge) on the right.
+  - Asphalt highway track with center dashes.
+  - Modern SUV/Sedan vehicle silhouette styled in DriveItCars signature gold `#FFB907` with aerodynamic accents.
+  - Forward-projecting glowing LED headlight beam cone.
+  - Spinning wheels (alloy spokes centered with `transform-box: fill-box`) that decelerate as the car arrives at Point B.
+  - Exhaust particles / dust trailing behind the car during acceleration.
+  - Dynamic status indicator: "Ignition started..." -> "Driving to destination..." -> "Arrived! Ready to drive."
+  - Linear micro-progress bar matching car travel.
+- **Mounting & Lifecycle**:
+  - Mounted inside `src/components/SiteLayoutWrapper.jsx` at the root client wrapper level. Automatically excluded from `/studio` route.
+  - Uses CSS `@media (prefers-reduced-motion: reduce)` to calm secondary bounce/puff effects without suppressing the loader entirely on Windows systems with OS animations disabled.
+  - Plays smooth ~1.0s animation cycle, then gracefully fades out (`opacity: 0; visibility: hidden; transition: 0.3s`) and unmounts from the DOM.
+  - Hard fallback timer (1.6s) prevents blocking on slow networks.
+- **Vercel Deployment Note (2026-11-19)**:
+  - Diagnosed that `https://www.driveitcars.in` had not auto-deployed from GitHub since commit `9200537` (Nov 5, 2026) — `vercel[bot]` stopped creating deployments after that date, so commits `e5060d5` through `91fac86` (including WebP migration and CarPageLoader) were not yet live on Vercel until reconnected/redeployed in the Vercel dashboard.
+
+## Next.js Static to Dynamic Migration
+- **Static Pages Migration**: All legacy static HTML pages (45+ pages) from `public/` have been migrated to native Next.js dynamic app router pages (`src/app/<route>/page.jsx`).
+- **Layout Architecture**: 
+  - Shared global components `Header.jsx` and `Footer.jsx` are situated in `src/components/` and wrapped within `src/app/layout.jsx`.
+  - All internal links (`.html`) were normalized to clean Next.js path routes (e.g., `/self-drive-car.html` -> `/self-drive-car`).
+- **Common JSX Parsing Pitfalls Resolved**:
+  - Legacy HTML tags like `</br>` must be replaced with `<br />` (32 locality pages fixed).
+  - Malformed copy-pasted blocks containing dangling `</div>` and `</section>` around `{/* lux car End */}` and `{/* lux Area End */}` were cleaned.
+  - Nested HTML document snippets (`<meta charset="UTF-8"><title>FAQs</title></head><body>`) in middle-of-page FAQ blocks removed.
+  - Invalid JSX properties like `aria-selected=>` replaced with `aria-selected="false"`.
+  - Double open tags like `<p <p style=...>` and double closing tags like `</p></p>` normalized.
+  - Resolved invalid nesting (e.g. `<p><p>...</p></p>`) causing browser hydration errors.
+  - Normalized React JSX DOM properties (e.g., `encType` instead of HTML `enctype`).
+  - Verified 100% clean compilation via Next.js Turbopack (`npm run build` generates 53/53 static routes successfully).
+
+## Git Tracking & Repository Cleanup
+- Purged 6,826 legacy WordPress files (`/blog`) and 60 unrelated Umrah package files (`/public/banjarahills`).
+- Added `/.private/` to `.gitignore` to prevent sensitive server configs from leaking to GitHub.
+- Removed 15 temporary scratch migration/recovery scripts from workspace root.
+- Clean tracked file count reduced from ~7,150 files to 244 legitimate Next.js application and asset files.
+
+## Header Styling & UI Fixes
+- **Logo Stretched Fix**: Eliminated conflicting fixed-width rules (`width: 240px !important`) that clashed with `max-height: 50px`. Replaced with `height: 52px !important; width: auto !important; object-fit: contain !important;` to preserve the natural 2.75:1 aspect ratio.
+- **Top-Bar Overlapping**: Disabled `.header-top-left:before` skewed polygon pseudo-element that was slicing across the phone number. Restored clean horizontal flex layout with dark background and golden accents.
+- **Request a Call Button**: Disabled `.header-action a:before` skewed trapezoid ribbon artifact that was poking out of the modern pill button.
+- **Address Icon**: Replaced misplaced clock icon (`clock.png`) with golden `#ffb907` location pin SVG (`/assets/img/map-marker.svg`).
+- **Area Service 2-Section Dropdown Fix**: Resolved conflict where `style.css`'s `.mainmenu ul li ul` absolute positioning was collapsing nested `<ul>`s at `left: 0`. Replaced nested lists with `<div className="area-links-box">` and `<Link>`, ensuring both `Section 1 (A – J)` and `Section 2 (L – Y)` render their 11 items side by side in normal flex flow.
+
+## Homepage & Component Enhancements
+- **Hero Sliding Banner**: Built native `'use client'` `HeroSlider.jsx` with touch swiping, auto-advance (4.5s), dot indicators, and pause-on-hover, replacing uninitialized jQuery `owl-carousel` on `/` and `/cabs`.
+- **Daily & Monthly Offers Explore Section**: Created `CarOffersSection.jsx` with interactive Daily vs Monthly subscription switch (showing up to 50% monthly discount), category filter tabs (Sedans, SUVs, Luxury), detailed vehicle specifications, and dual CTA buttons (`Enquire Now` phone call + car-specific custom WhatsApp message).
+- **The DRIVEIT Advantage (Single-Line Redesign)**: Replaced bulky 6-box grid with a sleek, compact single-line horizontal strip featuring gold icon pills (`100% Privacy`, `Security Deposit`, `Best Rates`, `Doorstep Drop`).
+- **Heading Overlap Resolution**: Fixed `.site-heading` overlap between "Why Travelers Trust Us" and "Why Choose DriveIt Cars?" by applying `display: block !important; clear: both !important;` to subtitle and heading elements.
+- **Uniform Interactive FAQ System**: 
+  - Standardized FAQ across all pages using `FaqSection.jsx`.
+  - Added global client click handler `GlobalFaqHandler.jsx` in `layout.jsx` to intercept legacy Bootstrap data-toggle accordions across all 50+ locality pages, preventing page-jump bugs and applying modern unified styling.
+- **Cabs Page Modernization**:
+  - Redesigned intro section below banner with chauffeur service badges, clean typography, and 4 highlight cards.
+
+## Google Search Console (GSC) Automated Audit, Gemini Optimizer & Neon Tracker
+- **Data Extractor & Filter**: `scripts/gsc-cron.mjs` handles automated daily sitemap health checks in Google Search Console and extracts Search Analytics performance data (past 28 days), paginating up to 50,000 rows and filtering top striking-distance & low-CTR opportunities into `reports/gsc-audit-report.json`.
+- **AI Recommendation Engine**: `scripts/gsc-gemini-optimizer.mjs` ingests filtered GSC opportunities, inspects local page context, and calls Gemini (`gemini-2.5-flash` via `@google/genai`) to generate high-CTR titles (<= 60 chars ending in `DriveItCars`), meta descriptions (<= 160 chars), FAQ rich snippets, and internal linking targets.
+- **Database & Historical Tracking**: Connects to Neon PostgreSQL via `@neondatabase/serverless` using `DATABASE_URL`. Manages `gsc_snapshots` and `seo_recommendations` tables to track baseline rankings and detect when queries climb (#12.4 -> #4.2).
+- **Google Business Profile (GBP) Daily Automation Engine**:
+  - **Modular Architecture**: 
+    - `config/brand-config.mjs`: Centralized brand specifications, approved colors (`#FFB907`, `#0F172A`, `#10B981`), typography, verified logo assets, hotline (`+91 63000 41186`), and delivery hubs.
+    - `services/gemini-content-generator.mjs`: Dynamic AI content engine that queries previous Neon history to synthesize unrepeated campaigns, posts, and Google Maps FAQs.
+    - `scripts/generate-gbp-poster.mjs`: Professional multi-template 1200x900 poster generator implementing 6 distinct layouts (`showcase`, `airport`, `self_drive`, `weekend`, `corporate`, `family`) using Sharp compositing with authentic `public/logo.png` and transparent vehicle cutouts.
+    - `scripts/gbp-daily-engine.mjs`: Main workflow controller with strict `Asia/Kolkata` timezone logic, Neon PostgreSQL lifecycle tracking (`generated`, `pending_approval`, `approved`, `publishing`, `published`, `failed`), and Telegram photo dispatch.
+  - **Database Persistence**: Auto-migrates and logs post records into Neon PostgreSQL `gbp_posts` table with campaign ID, template type, and publishing status.
+  - **Scheduled Automations**: 
+    - Active standing daemon task `task-1427` running at `0 14 * * *` (Daily at 2:00 PM IST).
+    - Antigravity sidecar configured at `C:\Users\Akheel\.gemini\config\sidecars\daily-gbp-local-seo\sidecar.json`.
+- **Scheduled Automation**: 
+  - Antigravity Native Automation sidecar `daily-gsc-seo-optimizer` configured at `CRON_TZ=Asia/Kolkata 0 13 * * *` (Daily at 1:00 PM IST). It initiates a fresh conversation in Antigravity to run GSC data fetch, perform AI contextual analysis without requiring external API keys, and update Neon PostgreSQL.
+  - Active standing daemon task registered in Antigravity session.
+  - GitHub Actions workflow `.github/workflows/gsc-daily-seo.yml` also available for cloud runs.
+  - Telegram bot alerts script `scripts/notify-telegram.mjs` integrated to dispatch daily digests via `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID`.
+- **Security & Credentials**: `.private/`, `*credentials*.json`, and `*service-account*.json` are strictly ignored in `.gitignore`.
+- **CLI Commands**:
+  - `npm run gsc:audit`: Fetches and filters GSC dataset.
+  - `npm run gsc:gemini`: Runs Gemini optimization and Neon tracking.
+  - `npm run seo:daily`: Chains both commands locally.
+## Car Action Buttons & Fleet-Wide Rollout
+- **CSS Deconfliction & Artifact Removal**:
+  - Eliminated `.offer-action:after` and `.offer-action:before` skewed polygon pseudo-elements (`background: #ffb907; transform: skewX(40deg);`) across `style.css`, `responsive.css` (lines 199 and 693), and `globals.css` that created the visual corruption behind car buttons.
+  - Converted `.offer-action` to a clean 2-column grid (`display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 8px !important; margin: 18px auto 0 !important; background: transparent !important;`).
+- **Standardized Dual CTA Actions**:
+  - **Button 1 (Enquire Now)**: Configured as direct telephone call action (`href="tel:+916300041186"`) with golden phone icon `<i className="fa fa-phone" />`, dark slate `#0f172a` pill, and gold hover state. Corrected typo from "Enquiry Now" to "Enquire Now".
+  - **Button 2 (WhatsApp Us)**: Configured with official WhatsApp green `#25D366`, white whatsapp icon `<i className="fa fa-whatsapp" />`, and vehicle-specific pre-filled enquiry text (e.g. `Hi DRIVEIT Cars, I am contacting you to enquire about booking the [Car Name]. Please share availability and rates.`).
+- **Site-Wide Fleet Application**:
+  - Successfully migrated 686 car cards across all 35 vehicle-listing and locality pages (`self-drive-car`, `self-drive-car-in-banjarahills`, `luxurycars`, `sedan`, `suv5`, `suv7`, `hatchback`, `luxury-buses`, `outstation-bus`, and 26 Hyderabad locality pages).
+  - All 53 Next.js static routes verified via `npm run build` with zero compile errors.
+
+## Vehicle Image Full-Box Display & Uniform FAQ
+- **Full Box Car & Bus Images**:
+  - Root cause: `style.css` constrained `.offer-image` to a narrow `235px` width and applied `object-fit: cover !important` at line 4762, horizontally slicing cars and buses in half.
+  - Fix: Modernized `.offer-image` to `width: 100% !important; height: 195px !important; background: #f8fafc; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden;` and updated image rules to `max-width: 100% !important; max-height: 100%; object-fit: contain !important; object-position: center !important;`. The full vehicle is now visible without any cropping.
+- **Site-Wide Uniform FAQ**:
+  - Upgraded `<FaqSection />` component to accept dynamic `items`, `title`, `subtitle`, and `badge` props with automatic fallback to core high-authority FAQs.
+  - Replaced legacy split 2-column broken HTML accordions (`gauto-service-details-area`) with `<FaqSection />` across all 33 fleet and locality pages.
+- **Footer Polish**:
+  - Removed social media icon placeholders (`footer-social`) from `src/components/Footer.jsx`.
+- **Sanity CMS Dynamic Fleet Architecture**:
+  - **Schema Expansion (`car.js`)**: Configured comprehensive document fields including vehicle name, category dropdown (Hatchback, Sedan, SUV 5-seater, SUV 7-seater, Luxury, Cab, Bus), `displayPages` multi-select checklist (Homepage, Category pages, all 26 locality pages), image upload with hotspot, seats, transmission, fuel type, km/day, extra km rate, extra hr rate, daily/monthly rates, features list, and sort order.
+  - **Data Layer (`cars.js` & `CarCard.jsx`)**: Built `getCarsForPage(pageSlug, defaultCategory)` with automatic GROQ querying and curated zero-downtime fallback fleet data. Created reusable `<CarCard />` component.
+- **Dead Script Tags Removal**:
+  - Root cause: Legacy template copy-paste had `<script dangerouslySetInnerHTML={{ __html: document.addEventListener('DOMContentLoaded' ... bookNowBtn) }} />` inside React component JSX.
+  - Fix: Purged dead script tags across all 33 pages (`yousufguda`, `about`, `banjara-hills`, etc.), eliminating React console and hydration errors entirely.
+
+## Area Services & Locality Route Alignment
+- **Missing Locality Route Resolution (Zero 404s)**:
+  - Root cause: 10 locality pages were named with a `-luxury-car-rental` suffix (e.g. `/gachibowli-luxury-car-rental`), while the Header dropdown and Footer linked to clean short paths (`/gachibowli`, `/lb-nagar`, `/mehdipatnam`, `/tarnaka`, etc.), causing 404 empty pages when clicked.
+  - Fix: Created matching routes for all 10 short paths (`/gachibowli`, `/guttala-begumpet`, `/habsiguda`, `/khairatabad`, `/lb-nagar`, `/mehdipatnam`, `/nampally`, `/Shaikpet`, `/tarnaka`, `/tolichowki`), each populated with complete area SEO content, full 21-car fleet cards, direct call button, car-specific WhatsApp enquiry, and `<FaqSection />`. Both short and long URLs are preserved for seamless SEO backlink compatibility.
+- **Area Service Dropdown Expansion**:
+  - Aligned `Header.jsx` Area Service dropdown to display all 26 Hyderabad service localities, cleanly divided into two balanced 13-item columns (`Section 1 (A – K)` and `Section 2 (L – Y)`).
+  - Total static production routes expanded to 63/63, all compiling cleanly with 0 errors.
+
+## Brand Logo Sizing & Mobile Responsiveness Overhaul
+- **Brand Logo Enlargement**:
+  - **Header Logo**: Increased size to `height: 72px; maxHeight: 76px; maxWidth: 260px;` (desktop) and `height: 52px;` (mobile). Maintains natural 2.75:1 aspect ratio (`object-fit: contain;`) without blur or stretch.
+  - **Footer Logo**: Increased size to `height: 60px; maxHeight: 66px; maxWidth: 230px;` with margin-bottom 22px for a balanced footer column anchor.
+- **Mobile Navigation Drawer (`Header.jsx`)**:
+  - Converted `Header.jsx` to an interactive client component (`'use client'`).
+  - Added clean state management for `mobileMenuOpen` and `areaAccordionOpen`.
+  - Added a responsive header top bar: compact on mobile, preventing awkward text wrapping.
+  - Added header action bar on mobile: quick-call pill button (`<a href="tel:...">Call</a>`) + hamburger menu button (`<i className="fa fa-bars" />` toggling to `fa fa-times`).
+  - Built an accessible slide-over mobile navigation drawer with backdrop blur, primary navigation links (Home, Self Drive, Luxury Cars, Luxury Buses, Cabs, Blogs, Contact), an expandable accordion for all 26 Area Service locations split into Section 1 & Section 2, and bottom quick-action buttons for Direct Call and WhatsApp.
+- **Hero Slider & Banner Mobile Optimization**:
+  - Resolved "half cut banner" issue caused by horizontal viewport overflow and rigid aspect ratio constraints.
+  - Re-engineered `HeroSlider.jsx` with responsive classes (`.hero-responsive-slider`, `.hero-slider-img`, `.hero-slider-nav-btn`, `.hero-slider-dots`). On mobile (`<= 768px`), image scales with `object-fit: contain` and max-height 280px so graphic promotional banners and text are never cropped.
+  - Navigation arrows resized from 46px to 32px on mobile and positioned compactly at edges so they don't block the banner graphic.
+  - Inner page breadcrumb banners (`.gauto-breadcromb-area`) updated with `background-attachment: scroll !important;` for mobile screens, eliminating the mobile browser bug where `fixed` background attachment zoomed into the image and sliced it in half.
+- **Touch-Optimized Mobile Buttons**:
+  - **Pricing Mode Toggle (`CarOffersSection.jsx`)**: Replaced non-wrapping 410px+ container with a 100% fluid responsive pill (`maxWidth: 460px`, `flex: 1` buttons) that cleanly fits 320px–390px mobile screens without causing page overflow.
+  - **Car Card Action Buttons**: Added `.car-card-actions`, `.car-card-btn`, and updated `.offer-action` with responsive padding (`8px 4px`), 11px uppercase font, and 38px+ touch target height for mobile screens.
+  - **Floating Contact Buttons**: Resized and positioned WhatsApp (`bottom: 80px`, `right: 16px`) and Call (`bottom: 20px`, `right: 16px`) buttons on mobile with 48px round touch targets.
+- **Global Viewport & Overflow Prevention**:
+  - **Mobile Header Action Buttons (Minimalist Design)**:
+  - User requested removing the mobile Call button completely from the header bar to keep the design clean and uncluttered.
+  - Mobile header now displays exclusively the prominent DRIVEIT Logo on the left (`col-8`) and the dark hamburger Menu button on the right (`col-4`), with full Call and WhatsApp options conveniently available in the slide-over drawer and floating buttons.
+
+## Git Repository & Deployment Remote
+- **Remote Origin**: `https://github.com/akheels-web/driveitcars.in.git`
+- **Pushed Branches**: `main` (default tracking branch) and `master`.
+- **Status**: Clean working tree with all 63 Next.js static pages, Sanity CMS schemas, mobile responsive enhancements, and public assets pushed.
+
+## Sanity Studio & CMS Architecture Overhaul
+- **Fullscreen Studio Isolation**:
+  - Extracted `<SiteLayoutWrapper />` in `src/components/SiteLayoutWrapper.jsx` to wrap `RootLayout`. When `pathname?.startsWith('/studio')`, it returns `<>{children}</>` directly without mounting `Header`, `Footer`, or `GlobalFaqHandler`.
+  - Fixed React Hook ordering in `Header.jsx` by placing route checks after all `useEffect` hooks, preventing React hydration freeze.
+  - Eliminated conflicting nested `<html><body>` tags in `src/app/studio/[[...tool]]/layout.jsx`.
+- **Singleton Structure Configuration (`sanity.config.js`)**:
+  - Configured custom structure where `Site Settings` and `Landing Page (Home)` are singletons using `S.document().schemaType(...).documentId(...)`. Clicking them in the Studio sidebar immediately opens the document editor rather than an empty "No documents of this type" list.
+- **Dataset Seeding (30 Documents)**:
+  - Seeded complete data into `production` dataset:
+    - `siteSettings`: Title, description, phone (+91 6300041186), WhatsApp, email, physical office address, working hours, and logo asset.
+    - `landingPage`: 3 hero slider banners with CDN image assets, About section badge/heading/paragraphs, SEO meta.
+    - 10 Fleet Vehicles (`car`): Swift, Baleno, Dzire, Creta, Innova Crysta, Thar 4x4, Fortuner 4x4, Evoque, 35-Seater Bus, Verna with full specs, rates, and badges.
+    - 3 Offers (`offer`): Weekend, Monthly, Wedding deals with coupon codes.
+    - 3 Customer Testimonials (`testimonial`): 5-star verified reviews.
+- **Obsolete jQuery Script Elimination**:
+  - Purged obsolete static HTML template jQuery scripts (`jquery-3.2.1`, `bootstrap.min.js`, `owl.carousel.min.js`, `slicknav.min.js`, etc.) from `SiteLayoutWrapper.jsx`.
+  - All slider, mobile navigation, FAQ accordions, and pricing toggles are now 100% native React components (`HeroSlider.jsx`, `Header.jsx`, `FaqSection.jsx`, `CarOffersSection.jsx`).
+- **Privacy Policy & Terms & Conditions Redesign**:
+  - Rebuilt [src/app/privacy/page.jsx](file:///e:/Github/driveitcars/public_html/src/app/privacy/page.jsx) and [src/app/terms-conditions/page.jsx](file:///e:/Github/driveitcars/public_html/src/app/terms-conditions/page.jsx) with an executive legal layout.
+  - Features: dark gradient hero breadcrumbs, sticky Table of Contents sidebar for rapid navigation, card-based section layout, security deposit comparison table, 80 km/h speed limit alert callouts, KYC documentation checklists (Locals vs Outstation/NRI), cancellation matrix, and Grievance Officer details.
+  - Eliminated legacy duplicate menus, all-caps text, and broken HTML formatting.
+
+## Contact Page Redesign & Site-Wide Breadcrumb Overhaul
+- **Contact Page Complete Redesign (`src/app/contact/page.jsx` & `ContactClient.jsx`)**:
+  - **Executive Breadcrumb Banner**: Dark gradient hero overlay with eyebrow badge (`✦ 24/7 RESERVATIONS & CUSTOMER CARE`), crisp H1, and breadcrumb capsule trail.
+  - **Quick Contact Strip**: 4 modern cards for Direct Hotline (`+91 6300041186`), WhatsApp Fleet Desk (`24/7 Active`), Central Hub (`Masab Tank, HYD`), and Doorstep Delivery (`All 26 Hubs`).
+  - **Balanced 2-Column Workspace**:
+    - **Interactive Booking Form**: Name, Phone, Email, Vehicle Category, Pickup Date & Time, Duration, Location, and Notes.
+    - **Refined Inquiry Buttons**: Single-line 50/50 grid layout (`grid-template-columns: 1fr 1fr; gap: 14px;`) with `white-space: nowrap`, centered icons, and balanced 50px heights:
+      - Primary WhatsApp button: `Inquire via WhatsApp` (emerald `#25D366` with pre-filled enquiry text).
+      - Online Submission button: `Submit Online` (dark slate `#0f172a` with gold hover).
+    - **Central Operations Hub Details**: Official address at `Mehar Mansion, Rd No 2, Shantinagar Colony, Masab Tank`, operating hours (`7:00 AM – 10:00 PM`), click-to-call, email, KYC trust badges (10-min digital verification, Security Deposit on select cars, sanitized fleet), and social links.
+  - **Interactive Google Map Card**: Embedded iframe for Masab Tank hub with "Open in Google Maps" action button.
+  - **Booking FAQ Section**: Powered by `<FaqSection />` covering turnaround time, office walk-ins, airport delivery, and deposits.
+- **Site-Wide Breadcrumbs Overhaul (47 Pages Fixed)**:
+  - **Icon Case Sensitivity Bug**: Fixed `fa-Home` (capital H) to `fa-home` across 45 pages where the Home icon was completely invisible.
+  - **Broken Home Route Resolution**: Repaired `href="/index"`, `href="/index-2"`, and `href=""` to `href="/"` across 47 pages, preventing broken navigation and 404s.
+  - **Modern Breadcrumb Design System (`globals.css`)**:
+    - High-contrast dark vignette gradient overlay (`rgba(11, 17, 32, 0.84)` to `rgba(15, 23, 42, 0.94)`).
+    - Glassmorphism pill capsule (`background: rgba(15, 23, 42, 0.68); backdrop-filter: blur(12px); border-radius: 50px; border: 1px solid rgba(255, 255, 255, 0.16);`).
+    - Golden icon glow on `fa-home` and muted `fa-angle-right` dividers.
+    - Active page highlighted in `#ffb907` gold.
+  - All 63 static Next.js production routes build cleanly with zero errors.
+
+## Cloudflare DNS Configuration & Audit (Vercel & Hostinger Email)
+- **Website (Vercel)**:
+  - `driveitcars.in` (A): `76.76.21.21` (Points to Vercel).
+  - `www.driveitcars.in` (CNAME): Must be added pointing to `cname.vercel-dns.com` (or `driveitcars.in`).
+  - Delete legacy Hostinger `AAAA` records (`2a02:4780:...`) to prevent IPv6 traffic from routing to old Hostinger server.
+  - Delete or redirect legacy WordPress `blog.driveitcars.in` (`217.21.95.158`) since blogs are now integrated natively in Next.js (`/blog`) via Sanity CMS.
+- **Email (Hostinger)**:
+  - Keep `MX` records (`mx1.hostinger.com`, `mx2.hostinger.com`) on **DNS only**.
+  - Keep SPF (`v=spf1 include:_spf.mail.hostinger.com ~all`) and DMARC (`v=DMARC1; p=none`) on **DNS only**.
+  - **DKIM CNAMEs** (`hostingemail-a`, `-b`, `-c`): MUST be set to **DNS only (Grey cloud)**; proxied orange cloud breaks DKIM cryptographic signature verification.
+  - Mail auto-config (`autoconfig`, `autodiscover`): Switch to **DNS only** to prevent mail client connection issues.
+- **Cloudflare SSL/TLS Mode**: Must be set to **Full (Strict)** to avoid `ERR_TOO_MANY_REDIRECTS` loops with Vercel's edge.
+- **Vercel Production Verification**:
+  - Apex `driveitcars.in` and `www.driveitcars.in` successfully verified on Vercel (`d08923095b177c5a.vercel-dns-017.com`).
+  - Production build status is `Ready` on Vercel (`bom1` Mumbai Edge).
+  - Any temporary `DNS_PROBE_FINISHED_NXDOMAIN` in client browsers is due to local router/ISP negative DNS caching (NXDOMAIN cached before `www` was created), resolved via TTL expiry, switching to Google DNS/DoH, or testing on mobile cellular data.
+- **Sanity CMS Live Updates & Dynamic Rendering**:
+  - `src/sanity/lib/client.js`: Set `useCdn: false` so API requests hit the live Sanity dataset without waiting for Edge CDN cache invalidation.
+  - `src/app/page.jsx`, `src/app/blog/page.jsx`, `src/app/blog/[slug]/page.jsx`: Configured with `export const dynamic = 'force-dynamic'` and `export const revalidate = 0`. This switches routes from build-time static generation (`○`) to server-rendered on demand (`ƒ`), allowing slider banners, cars, and blog posts updated in Sanity Studio to reflect immediately on the live website upon publish.
+  - `src/components/HeroSlider.jsx`: Added support for custom slide destination links (`slide.link || "/self-drive-car"`).
+- **Sanity Full Landing Page, Site Settings & 26 Locality Pages Expansion**:
+  - **Landing Page (`landingPage.js`)**: Expanded with all missing sections — Hero Slider, About Section (eyebrow, heading, descriptions, visual image upload, counters, 4 feature highlights grid, CTA links), 4-Step Booking Process, The DRIVEIT Advantage Strip, Why Choose Us (6 feature cards), Partner / Promo CTA Banner, and Google Maps iframe embed URL.
+  - **Site Settings & Global Footer (`siteSettings.js` & `SiteSettingsContext.jsx`)**: Connected Header, Footer, and floating buttons to dynamic Sanity data with transparent PNG logo upload, phone numbers, WhatsApp, email, office address, working hours, footer bio, trust badges checklist, and copyright notice.
+  - **Location Specific Pages (`locationPage.js`, `locations.js`, `LocationPageContent.jsx`)**: Created document collection in Sanity Studio for all 26 Hyderabad localities + 10 alias routes. Replaced 23,788 lines of legacy duplicated static HTML with clean dynamic components connected to Sanity. Seeded all 26 localities into `production` dataset with full localized copy, landmark tags, and SEO tags.
+
+## High-Intent SEO Architecture & Top 10 Keywords Domination
+- **Target Keywords Deployed**:
+  1. `self drive cars Hyderabad`: Primary city hub at `/self-drive-car` and homepage `/`.
+  2. `self drive cars HITEC City`: Dedicated corridor hub at `/hitech-city` with Cyber Towers, Mindspace, DLF, Inorbit landmarks.
+  3. `self drive cars Gachibowli`: Dedicated corridor hub at `/gachibowli` with Financial District, Wipro Circle, Waverock, ORR Exit 19.
+  4. `self drive cars Madhapur`: Brand new landing page at `/madhapur` covering 100 Feet Road, Durgam Cheruvu, Kavuri Hills, Inorbit.
+  5. `self drive cars Kondapur`: Brand new landing page at `/kondapur` covering Botanical Garden, Kothaguda, Sarath City Capital Mall.
+  6. `self drive SUV Hyderabad`: Powerhouse landing page at `/self-drive-suv-hyderabad` targeting 5-seater and 7-seater SUVs (Thar 4x4, Creta, Fortuner, Innova Crysta, XUV700, Brezza). Cross-linked from `/suv5` and `/suv7`.
+  7. `luxury self drive cars Hyderabad`: Dedicated luxury hub at `/luxurycars` targeting BMW, Mercedes, Audi, Range Rover Evoque, Fortuner Legender.
+  8. `premium self drive cars Hyderabad`: Weaved into `/luxurycars` and `/luxury-car-in-hyderabad`.
+  9. `weekend self drive cars Hyderabad`: Specialized landing page at `/weekend-self-drive-cars-hyderabad` featuring Friday–Monday getaway bundles, unlimited km road trips (Srisailam, Nagarjuna Sagar, Ananthagiri, Warangal, Bidar).
+  10. `monthly self drive cars Hyderabad`: Dedicated subscription landing page at `/monthly-self-drive-cars-hyderabad` with up to 45% discount, comparison matrix (buying vs subscription), zero maintenance, and corporate tax deduction benefits.
+- **Technical SEO Upgrades**:
+  - **Sitemap.js Overhaul**: Completely rewritten to generate all 68 dynamic and static URLs across core hubs (1.0), corridors and categories (0.9), localities (0.8), and blog posts with correct change frequencies.
+  - **Robots.js**: Configured to disallow internal `/studio/` and `/api/` paths while declaring XML sitemap.
+  - **Structured Data (`SeoSchema.jsx`)**: Built and embedded Google-compliant JSON-LD schemas (`AutoRental`, `CarRental`, `LocalBusiness`, `FAQPage`, and `BreadcrumbList`) across all landing pages for rich snippet visibility.
+  - **Navigation & Internal Linking**: Added `Kondapur` and `Madhapur` to desktop & mobile Area Service dropdowns (`Header.jsx`) and integrated exact-match keyword anchors in `Footer.jsx`.
+  - **Zero Compile Errors**: Verified clean build via `npm run build` with 68 static and dynamic Next.js App Router routes compiling without error.
+
+## Airport Targeting Keywords Overhaul (RGIA Shamshabad)
+- **Keywords Deployed & Optimized**:
+  1. `Hyderabad Airport car rental`: High-authority landing page at `/hyderabad-airport-car-rental` with RGIA terminal handover, 24/7 service.
+  2. `HYD Airport self drive`: Dedicated self-drive airport fleet (Creta, Thar 4x4, Innova Crysta, Dzire) with 10-minute terminal handover.
+  3. `airport pickup Hyderabad`: Punctual chauffeur meet-and-greet with flight tracking and luggage loading at arrival gate.
+  4. `airport drop Hyderabad`: On-time pickup from all 26+ Hyderabad zones (HITEC City, Gachibowli, Banjara Hills, Secunderabad) with zero surge pricing.
+  5. `airport luxury car rental Hyderabad`: VIP arrivals in Mercedes-Benz, BMW, Audi, Range Rover Evoque, and Fortuner Legender.
+  6. `airport chauffeur service Hyderabad`: Verified, executive highway chauffeurs with FASTag, English/Hindi/Telugu fluency.
+  7. `airport SUV rental Hyderabad`: 5 & 7-seater SUVs with luggage capacity for 4–6 international check-in suitcases.
+- **Architectural & Technical Enhancements**:
+  - **New High-Intent Route**: Built `src/app/hyderabad-airport-car-rental/page.jsx` with full SEO metadata, `AutoRental` schema for RGIA Shamshabad, `FAQPage` schema, travel time table to key Hyderabad tech corridors.
+  - **Cabs Page Enhancement**: Upgraded `src/app/cabs/page.jsx` with full metadata, `AutoRental` & `FAQPage` schemas targeting airport pickups and drops.
+  - **Sitemap Priority**: Registered `/hyderabad-airport-car-rental` in `src/app/sitemap.js` as Tier 1 Core Hub (1.0 Priority, Daily Frequency).
+  - **Navigation Integration**: Added "Airport Rental" in `Header.jsx` desktop menu and mobile navigation drawer; added exact-match airport keyword anchors in `Footer.jsx` and `self-drive-car/page.jsx`.
+
+## Luxury Car Rentals & VIP Chauffeur Targeting Overhaul
+- **Keywords Deployed & Targeted for #1 Ranking**:
+  1. `Mercedes rental Hyderabad`: Dedicated landing page at `/mercedes-rental-hyderabad` targeting Mercedes-Benz S-Class 500, E-Class 250, Maybach, G-Wagon (G63), and 2-seater convertibles.
+  2. `BMW rental Hyderabad`: Dedicated landing page at `/bmw-rental-hyderabad` targeting BMW 5 Series and flagship BMW 7 Series for self drive and executive chauffeur hire.
+  3. `Audi rental Hyderabad`: Dedicated landing page at `/audi-rental-hyderabad` targeting Audi A6 Matrix Edition, 7-seater Audi Q7 Quattro SUV, and Audi 2-seater roadster.
+  4. `Range Rover rental Hyderabad`: Dedicated landing page at `/range-rover-rental-hyderabad` targeting Range Rover Evoque and Range Rover Sport / Vogue for weddings and VIP arrivals.
+  5. `luxury chauffeur Hyderabad`: Dedicated landing page at `/luxury-chauffeur-hyderabad` with protocol-trained, suited, background-verified executive drivers, English/Hindi/Telugu fluency, and fixed transparent tariffs.
+  6. `VIP car rental Hyderabad`: Dedicated powerhouse landing page at `/vip-car-rental-hyderabad` targeting corporate boards, visiting CXOs, international delegations, and celebrity security convoys.
+  7. `executive car rental Hyderabad`: Weaved into `/vip-car-rental-hyderabad` and `/luxury-chauffeur-hyderabad` with corporate GST billing, dedicated account manager, and non-disclosure compliance.
+  8. `CEO car rental Hyderabad`: Anchored at `/vip-car-rental-hyderabad` featuring Mercedes-Maybach, BMW 7 Series, Rolls Royce Phantom, and Fortuner Legender escorts.
+- **Architectural & Technical Enhancements**:
+  - **New High-Authority Dedicated Routes**:
+    - `src/app/mercedes-rental-hyderabad/page.jsx`
+    - `src/app/bmw-rental-hyderabad/page.jsx`
+    - `src/app/audi-rental-hyderabad/page.jsx`
+    - `src/app/range-rover-rental-hyderabad/page.jsx`
+    - `src/app/luxury-chauffeur-hyderabad/page.jsx`
+    - `src/app/vip-car-rental-hyderabad/page.jsx`
+  - **Category Master Hub Overhaul**:
+    - `src/app/luxurycars/page.jsx`: Added brand category jump pills linking directly to all 6 specialized luxury routes.
+    - `src/app/luxury-car-in-hyderabad/page.jsx`: Upgraded with `AutoRental`, `BreadcrumbList`, and `FAQPage` schemas; purged legacy PHP modal form; cross-linked all 6 brand routes.
+  - **Internal Linking & Navigation**:
+    - `src/components/Footer.jsx`: Embedded dedicated full-width "Luxury & VIP Car Rentals Hyderabad" SEO strip with exact-match anchors for all 8 target keywords.
+    - `src/components/Header.jsx`: Added direct "VIP & CEO Car Rental" link in the mobile navigation drawer.
+    - `src/app/cabs/page.jsx` & `src/app/hyderabad-airport-car-rental/page.jsx`: Cross-linked luxury chauffeur and brand rental pages.
+  - **Sitemap Priority**:
+    - `src/app/sitemap.js`: Registered all 6 new luxury landing pages in Tier 1 Core Hubs with `1.0` priority and `daily` change frequency.
+  - **Turbopack Build Verification**:
+    - Clean compilation via `npm run build` with 75/75 routes generated without error.
+
+## Wedding Car Rentals Targeting Overhaul
+- **Keywords Deployed & Targeted for #1 Ranking**:
+  1. `wedding car rental Hyderabad`: Dedicated master pillar page at `/wedding-car-rental-hyderabad` featuring full wedding fleet, curated baraat and full-day packages, suited chauffeurs, and fresh floral styling.
+  2. `luxury wedding cars Hyderabad`: Master category anchor at `/wedding-car-rental-hyderabad` showcasing Rolls Royce, Mercedes-Maybach, Range Rover, Audi, and BMW.
+  3. `bridal entry car Hyderabad`: Dedicated landing page at `/bridal-entry-car-hyderabad` targeting open-top convertibles (Mercedes Cabriolet, Audi 2-Seater Roadster) and classic open-air tourers for rose petal showers and cinematic aisle arrivals.
+  4. `groom entry luxury car Hyderabad`: Dedicated landing page at `/groom-entry-luxury-car-hyderabad` targeting commanding baraat vehicles (Mercedes-AMG G-Wagon G63, Rolls Royce Phantom, Range Rover Sport, Fortuner Legender convoy).
+  5. `Rolls Royce wedding Hyderabad`: Dedicated royal flagship landing page at `/rolls-royce-wedding-hyderabad` featuring Rolls Royce Phantom, Ghost, and Cullinan for Nizami grandeur and wedding receptions.
+  6. `Mercedes wedding car Hyderabad`: Anchored at `/mercedes-rental-hyderabad` and featured across `/wedding-car-rental-hyderabad` covering Maybach, S-Class 500, E-Class, and convertibles.
+  7. `vintage wedding car Hyderabad`: Dedicated heritage landing page at `/vintage-wedding-car-hyderabad` targeting classic open-top vintage tourers and retro roadsters with uniformed chauffeurs.
+- **Architectural & Technical Enhancements**:
+  - **New High-Authority Dedicated Routes**:
+    - `src/app/wedding-car-rental-hyderabad/page.jsx`
+    - `src/app/rolls-royce-wedding-hyderabad/page.jsx`
+    - `src/app/vintage-wedding-car-hyderabad/page.jsx`
+    - `src/app/bridal-entry-car-hyderabad/page.jsx`
+    - `src/app/groom-entry-luxury-car-hyderabad/page.jsx`
+  - **Structured Data (JSON-LD)**:
+    - Embedded `AutoRental`, `FAQPage`, and `BreadcrumbList` schemas across all 5 wedding pages.
+  - **Internal Linking & Sitewide Authority**:
+    - `src/components/Footer.jsx`: Added dedicated full-width "Wedding Car Rentals Hyderabad" SEO keyword strip featuring exact-match anchors for all 7 target keywords.
+    - `src/components/Header.jsx`: Added "Wedding Cars" in both desktop main navigation and mobile navigation slide-over drawer.
+    - `src/app/luxurycars/page.jsx`: Added interactive jump pills linking directly to wedding car rental, Rolls Royce wedding, and vintage wedding car pages.
+  - **Sitemap Priority**:
+    - `src/app/sitemap.js`: Registered all 5 new wedding landing pages in Tier 1 Core Hubs with `1.0` priority and `daily` change frequency.
+  - **Turbopack Build Verification**:
+    - Clean compilation via `npm run build` with 80/80 routes generated without error.
+
+## Corporate Clients Targeting Overhaul
+- **Keywords Deployed & Targeted for #1 Ranking**:
+  1. `corporate car rental Hyderabad`: Dedicated B2B master landing page at `/corporate-car-rental-hyderabad` targeting enterprises, tech MNCs, consulting firms, and startups in HITEC City, Gachibowli, Financial District, Mindspace, and Kokapet. Highlights 100% GST input tax credit invoices, dedicated corporate account managers, suited background-verified chauffeurs, spot tariffs (4h/40km, 8h/80km), and airport transfers.
+  2. `executive chauffeur Hyderabad`: Reinforced dedicated landing page at `/luxury-chauffeur-hyderabad` targeting suited executive chauffeurs, English/Hindi/Telugu fluency, corporate protocol, NDA ethics, and VIP transfers for visiting boards, CXOs, and foreign delegates.
+  3. `monthly corporate car rental Hyderabad`: Dedicated long-term fleet subscription landing page at `/monthly-corporate-car-rental-hyderabad` targeting IT enterprises, resident directors, and expatriate executives. Emphasizes zero capex, zero depreciation, 100% opex tax deductibility, up to 45% savings vs daily rentals, and guaranteed replacement cars during servicing.
+- **Architectural & Technical Enhancements**:
+  - **New High-Authority Dedicated Routes**:
+    - `src/app/corporate-car-rental-hyderabad/page.jsx`: Complete corporate pillar page with business tariffs, executive fleet showcase, enterprise advantages, interactive B2B FAQ with schema, and dual call/WhatsApp CTAs.
+    - `src/app/monthly-corporate-car-rental-hyderabad/page.jsx`: Dedicated long-term lease page with buy vs lease comparison matrix, monthly tiers (Executive Sedan, Executive MUV, CXO Luxury Sedan, Luxury Coach), replacement guarantees, and FAQ schema.
+  - **Structured Data (JSON-LD)**:
+    - Embedded `AutoRental`, `FAQPage`, and `BreadcrumbList` schemas across `/corporate-car-rental-hyderabad` and `/monthly-corporate-car-rental-hyderabad`.
+  - **Internal Linking & Sitewide Authority**:
+    - `src/components/Footer.jsx`: Added dedicated full-width "Corporate & Business Car Rentals Hyderabad" SEO strip with exact-match anchors for `corporate car rental Hyderabad`, `executive chauffeur Hyderabad`, `monthly corporate car rental Hyderabad`, `corporate fleet lease Hyderabad`, `CXO & director car rental`, and `corporate airport transfers RGIA`.
+    - `src/components/Header.jsx`: Added "Corporate" in desktop main navigation and "Corporate Car Rental" in mobile navigation slide-over drawer with briefcase icon.
+    - `src/components/LocationPageContent.jsx`: Added contextual specialized services cross-link bar to all 30+ location pages (HITEC City, Gachibowli, Madhapur, Kondapur, Banjara Hills, etc.) linking directly to corporate and monthly corporate hubs.
+    - `src/app/luxurycars/page.jsx` & `src/app/self-drive-car/page.jsx`: Added direct jump pills to corporate car rental.
+  - **Sitemap Priority**:
+    - `src/app/sitemap.js`: Registered `/corporate-car-rental-hyderabad` and `/monthly-corporate-car-rental-hyderabad` in Tier 1 Core Hubs with `1.0` priority and `daily` change frequency.
+  - **Turbopack Build Verification**:
+    - Clean compilation via `npm run build` with 82/82 routes generated without error.
+
+## Regular Top Demanding Cars Targeting Overhaul (Daily, Weekly & Monthly)
+- **Top Demanding Fleet Catalog Implemented on Homepage & Site-wide (All 28 Vehicles)**:
+  1. **5-Seater Hatchback Cars**:
+     - `Maruti Swift Manual Transmission` (`Swift.png`): High mileage (22+ km/l), ₹1,499/day, ₹8,999/week, ₹24,999/month.
+     - `Maruti Swift Automatic` (`Swift.png`): Clutch-free city commute, ₹1,699/day, ₹9,999/week, ₹26,999/month.
+     - `Maruti Baleno Manual & Automatic` (`Baleno.png`): Premium Nexa hatchback, 360 camera, ₹1,799/day, ₹10,499/week, ₹28,999/month.
+     - `Hyundai i20 Manual & Automatic` (`i20.png`): Bose sound, electric sunroof, ₹1,899/day, ₹10,999/week, ₹29,999/month.
+  2. **5-Seater Mini SUV Cars**:
+     - `Maruti Suzuki Fronx Manual & Automatic` (`Fronx.png`): 190mm ground clearance, turbo crossover, ₹2,199/day, ₹12,999/week, ₹34,999/month.
+     - `Hyundai Venue Manual & Automatic` (`5-Venue.png`): Bluelink tech, power driver seat, ₹2,299/day, ₹13,499/week, ₹36,999/month.
+     - `Tata Punch Manual & Automatic` (`Tata-Punch.png`): 5-star safety, tough stance, ₹1,999/day, ₹11,999/week, ₹31,999/month.
+  3. **5-Seater SUV Cars**:
+     - `Maruti Suzuki Brezza Manual & Automatic` (`5-Brezza.png`): Electric sunroof, high mileage, ₹2,499/day, ₹14,499/week, ₹39,999/month.
+     - `Tata Nexon Manual & Automatic` (`5-NEXON.png`): 5-star safety champion, ventilated seats, ₹2,499/day, ₹14,499/week, ₹39,999/month.
+     - `Tata Harrier Manual & Automatic` (`5-Harrier.png`): 2.0L Kryotec diesel, Land Rover D8 platform, ₹3,499/day, ₹19,999/week, ₹54,999/month.
+     - `Kia Seltos Manual & Automatic` (`5-Seltos.png`): Dual screens, Bose audio, ₹2,899/day, ₹16,999/week, ₹46,999/month.
+     - `Hyundai Creta Manual & Automatic` (`2023-6.png`): #1 most demanded SUV, voice sunroof, ADAS, ₹2,899/day, ₹16,999/week, ₹46,999/month.
+     - `Mahindra Thar 4x4 Manual & Automatic` (`5-Thar.png`): 4WD convertible hard top, ₹3,499/day, ₹19,999/week, ₹52,999/month.
+     - `Mahindra Thar Roxx 5-Door Manual & Automatic` (`5-Thar.png`): All-new 5-door Thar Roxx, panoramic skyroof, ₹3,999/day, ₹22,999/week, ₹59,999/month.
+  4. **7-Seater SUV & MUV Cars**:
+     - `Mahindra XUV 700 Manual & Automatic` (`7-XUV700.png`): Flagship luxury, Sony 3D sound, ₹3,799/day, ₹21,999/week, ₹58,999/month.
+     - `Kia Carens Manual & Automatic` (`7-Kia Carens.png`): 3-row roof AC, electric tumble, ₹2,799/day, ₹16,499/week, ₹44,999/month.
+     - `Maruti Suzuki Ertiga Manual & Automatic` (`7-Ertiga.png`): Best mileage 7-seater, ₹2,499/day, ₹14,499/week, ₹38,999/month.
+     - `Toyota Innova Crysta Manual & Automatic` (`7-Innova Crysta.png`): Undisputed highway king, ₹3,899/day, ₹22,999/week, ₹59,999/month.
+     - `Toyota Innova Hycross Automatic` (`7-Innova Crysta.png`): Ottoman captain loungers, hybrid EV mode, ₹4,499/day, ₹26,499/week, ₹69,999/month.
+     - `Toyota Fortuner 4x4 Manual & Automatic` (`7-Fortuner.png`): VIP 4x4 road presence, JBL audio, ₹5,999/day, ₹34,999/week, ₹89,999/month.
+     - `Kia Carnival Automatic Limousine` (`7-KiaCarnival.png`): Dual sunroof, power sliding doors, ₹5,499/day, ₹31,999/week, ₹84,999/month.
+  5. **5-Seater Sedan Cars (and Multi-Category SUVs)**:
+     - `Hyundai Verna Manual & Automatic` (`seden-Verna.png`): 1.5L Turbo petrol, ADAS safety, ₹2,499/day, ₹14,499/week, ₹39,999/month.
+     - `Maruti Swift Dzire Manual & Automatic` (`seden-dzire.png`): Top budget sedan, 378L boot, ₹1,999/day, ₹11,999/week, ₹29,999/month.
+     - `Maruti Suzuki Ciaz Manual & Automatic` (`seden-Ciaz.png`): Longest rear legroom, hybrid, ₹2,299/day, ₹13,499/week, ₹34,999/month.
+     - `Volkswagen Virtus Manual & Automatic` (`seden-City.png`): 5-star NCAP German sedan, 521L boot, ₹2,799/day, ₹16,499/week, ₹42,999/month.
+     - `Skoda Slavia Automatic Only` (`seden-City.png`): European luxury, ventilated seats, ₹2,799/day, ₹16,499/week, ₹42,999/month.
+     - `Mahindra Scorpio-N Automatic Only` (`7-Compass.png`): Big Daddy SUV, Sony 3D audio, ₹3,499/day, ₹20,499/week, ₹52,999/month (accessible in both Sedans & 7-Seater SUVs).
+     - `Maruti Suzuki XL6 Manual & Automatic` (`7-Ertiga.png`): Premium 6-seater captain chairs, ₹2,699/day, ₹15,999/week, ₹41,999/month (accessible in both Sedans & 7-Seater SUVs).
+- **Homepage Interactive Features (`CarOffersSection.jsx`)**:
+  - **3-Way Pricing Plan Toggle**: Swapping seamlessly between **Daily Deals**, **Weekly (7 Days - Save 25%)**, and **Monthly (30 Days - Save 50%)**.
+  - **Effective Daily Rate Calculator**: Calculates and displays effective per-day cost for weekly (~₹1,285/day) and monthly (~₹833/day) plans.
+  - **Dynamic WhatsApp CTAs**: Generates pre-filled, car-specific enquiry messages reflecting the currently active plan (DAILY, WEEKLY, or MONTHLY) and tariff.
+  - **Live Search & Category Filters**: Interactive real-time search input + category filter tabs for 5-Seater Hatchbacks, Mini SUVs, 5-Seater SUVs, 7-Seater SUVs & MUVs, and Sedans.
+  - **SEO Keyword Strip**: Embedded bottom keyword strip covering all 28 vehicles.
+- **Dedicated Landing Page Added**:
+  - `src/app/weekly-self-drive-cars-hyderabad/page.jsx`: Full 7-day rental landing page with `AutoRental`, `FAQPage`, `BreadcrumbList` schemas, tariffs, and FAQ accordion.
+  - Registered in `src/app/sitemap.js` (Tier 1 Core Hub, 1.0 priority, daily frequency).
+  - Cross-linked in `Footer.jsx`, `LocationPageContent.jsx`, and `self-drive-car/page.jsx`.
+- **Turbopack Build Verification**:
+  - Verified 100% clean compilation via `npm run build` with **83/83 routes** generated without error.
+
+## Header Logo, Single-Line Navigation & Tariff Masking Overhaul
+- **Header Logo Visibility Fix**:
+  - Root cause: Header background is white (`#ffffff`). When `data.logo` was unpopulated in Sanity, `SiteSettingsContext` defaulted to `/logo2.png` which is white text on transparent, rendering it invisible.
+  - Copied official high-resolution dark & gold brand logo from `public/assets/img/logo1.png` to `public/logo.png`.
+  - Updated `DEFAULT_SETTINGS.logoUrl` to `/logo.png` in `src/context/SiteSettingsContext.jsx`.
+  - Added robust fallback `onError={(e) => { if (e.currentTarget.src !== '/logo.png') e.currentTarget.src = '/logo.png'; }}` in `src/components/Header.jsx`.
+  - Dynamic Sanity override via `settings.logoUrl` remains 100% intact when uploaded from Sanity Studio.
+- **Single-Line Desktop Navigation (#gauto_navigation)**:
+  - Root cause: 11 menu links with fixed container widths wrapped `CONTACT US` onto a 2nd line, doubling navbar height.
+  - Applied flexbox nowrap: `display: flex !important; align-items: center !important; justify-content: space-between !important; flex-wrap: nowrap !important; width: 100% !important;`.
+  - Added fluid container clamp padding (`padding: 0 clamp(12px, 2.5vw, 40px)`) and responsive link font sizing (11.5px on 992px–1240px, 13px on 1240px+).
+  - Ensured all 11 links fit on a single crisp horizontal row on all desktop resolutions.
+- **Site-Wide Pricing Masking (Tariff on Request)**:
+  - Masked all numerical tariffs (`₹/day`, `₹/week`, `₹/month`) across all 28 fleet cars, luxury pages, wedding pages, and corporate pages until official tariffs are finalized.
+  - Replaced pricing tags with clean, premium badges: `Tariff on Request` / `Custom Quote`.
+  - Updated all CTA actions to `Enquire Now` (direct call) and `WhatsApp Enquiry` with customized pre-filled quote request messages.
+  - Updated JSON-LD structured schemas (`priceRange: 'Tariff on Request'`) across all SEO landing pages.
+- **Sanity CMS Editability**:
+  - Verified schemas for `siteSettings`, `car`, `categoryPage`, `landingPage`, and `locationPage`.
+  - Logo can be uploaded directly in Sanity Studio under `Site Settings & Global Footer -> Brand Header Logo`.
+  - Car details (name, transmission, fuel, images, features, badge, seats, display pages) can be managed under `Fleet Vehicles (Cars & Buses)`.
+  - Daily & Monthly price fields in Sanity (`pricePerDay`, `pricePerMonth`) are ready for activation whenever rates are decided.
+- **Mobile Responsiveness**:
+  - Desktop menu (`.gauto-mainmenu-area`) is hidden on mobile via `d-none d-lg-block`.
+  - Mobile experience is driven by the responsive top header bar (logo + hamburger) and slide-out navigation drawer with zero horizontal overflow.
+  - Verified 100% clean Turbopack build across all routes.
+
+## Light-Themed Premium Hero Section Overhaul (Sixt & Hertz-Level UX)
+- **Problem Resolved**:
+  - Replaced the basic static banner image slider (`HeroSlider.jsx` with `/banner5.avif`, etc. on dark background) with a world-class, light-themed booking and showroom engine on the homepage.
+- **Architectural & Design Implementation (`PremiumHeroSection.jsx`)**:
+  - **Color Palette & Light Aesthetics**: Crisp porcelain white (`#ffffff`) to subtle pearl slate (`#f8fafc`), with warm ambient amber/gold glows (`rgba(255, 185, 7, 0.14)`), gold accents (`#ffb907`), and deep slate typography (`#0f172a`). Completely non-dark.
+  - **Trust Eyebrow**: `★ 4.9 / 5.0 (1,200+ Google Reviews)` + `✦ HYDERABAD'S PREMIER CAR RENTAL FLEET`.
+  - **Interactive Reservation Engine (Sixt Benchmark)**:
+    - 4 Service Tabs: `Self Drive` (default), `With Chauffeur`, `Airport Transfer`, and `Wedding & VIP`.
+    - Smart Field Controls: Pickup Hub dropdown (covering Masab Tank, RGIA Airport, HITEC City, Gachibowli, Banjara Hills, Doorstep Handover), Rental Plan (Daily, Weekend, Weekly -25%, Monthly -50%), and Fleet Category (All, SUVs, 7-Seaters, Hatchbacks, Mini SUVs, Sedans).
+    - Dual CTAs: Primary `Check Available Cars` (smoothly scrolls to `#fleet-offers` and dispatches `driveit-filter-category` custom event) + Emerald WhatsApp `WhatsApp Quote` (pre-fills selected service, pickup hub, plan, and car type).
+    - Direct 24/7 call helpline link to `+91 6300041186`.
+  - **Interactive Live Showroom Showcase (Virtuo Benchmark)**:
+    - 4 Interactive Category Switcher Pills: `🔥 4x4 & SUVs` (Mahindra Thar 4x4 & Roxx), `👑 7-Seater Kings` (Toyota Innova Crysta & Fortuner), `💎 Luxury & VIP` (Mercedes-Benz), and `🚗 City Economy` (Maruti Swift & Baleno).
+    - Seamless vehicle preview transitions with realistic studio ground shadow pedestal.
+    - 3 Floating Micro-Trust Capsules: `🛡️ Security Deposit Option`, `⚡ 10-Min Fast KYC`, and `📍 Doorstep Drop across 26 Hubs`.
+    - Live specs summary: Seats, Transmission, Fuel, and Feature highlights.
+  - **Full-Width Trust Authority Strip**:
+    - 4 Pillars directly beneath hero: `Security deposit`, `24/7 RGIA Airport Drop`, `100% Sanitized Fleet`, and `30-Min Doorstep Handover`.
+  - **Fleet Catalog Synchronization (`CarOffersSection.jsx`)**:
+    - Added `id="fleet-offers"` to `<section>` container.
+    - Added `useEffect` listening for `driveit-filter-category` custom events, automatically setting `activeTab` to match user selections from the hero.
+  - **Turbopack Build Verification**:
+    - 100% clean compilation via `npm run build` with all 83 dynamic and static routes generated without error.
+
+## Floating Action Buttons & Chat Overhaul (Official WhatsApp Logo & Custom Message)
+- **Problem Resolved**:
+  - The legacy floating button (`chatFloatBtn`) had `href="#"` with a generic speech bubble icon (`fa-comment`) and was completely broken / unresponsive.
+  - Eliminated duplicate unstyled floating anchors in `Footer.jsx`.
+- **Architectural Implementation**:
+  - Replaced the broken Chat button with a dedicated, officially branded WhatsApp button (`.whatsapp-float-btn`) using the **official vector SVG WhatsApp brand mark**.
+  - Configured custom pre-filled message content:
+    `Hi DRIVEIT Cars, I would like to enquire about renting a car in Hyderabad. Please share available models, tariffs, and booking process.`
+  - Paired with an executive call floating button (`.phone-float-btn`) dialing `+91 6300041186`.
+  - Added tooltips ("Chat on WhatsApp" and "Call Us") with hover elevation and responsive layout (stacked cleanly on mobile without viewport overflow).
+  - Clean build verified via `npm run build` with zero errors.
+
+## Hero Section Tab Overflow Fix (4-Column Symmetrical Grid)
+- **Problem Resolved**:
+  - The 4th tab in both the Booking Card (`Wedding & VIP` cutting off at `💎 W`) and Showroom Card (`City Economy` cutting off at `🚗 City Eco...`) spilled past the right edge because the containers used `display: flex` with fixed padding and long strings.
+- **Architectural Implementation**:
+  - Converted both `.booking-service-tabs` and `.showroom-category-switcher` to an exact 4-column CSS Grid (`grid-template-columns: repeat(4, 1fr)`).
+  - Balanced tab labels to fit 100% symmetrically within the 25% column widths:
+    - Service tabs: `Self Drive`, `Chauffeur`, `Airport`, `Wedding`.
+    - Showroom pills: `🔥 SUVs & 4x4`, `👑 7-Seater`, `💎 Luxury`, `🚗 Hatchback`.
+  - Added mobile media query (`@media (max-width: 576px)`) switching both containers to a 2x2 grid (`repeat(2, 1fr)`), ensuring all 4 tabs are 100% visible with zero clipping or horizontal scrolling on any screen size.
+  - Verified clean Turbopack build with 0 errors.
+
+## Multi-Device Responsiveness Overhaul (Phones, Tablets & Laptops)
+- **Scope & Device Breakpoints Tested**:
+  - **Laptops / Small Desktops (992px – 1200px)**: Compacted tab padding (`7px 2px`) and font size (`11px`) so all 4 tabs fit in one row without line breaks; adjusted floating badges padding to prevent collision.
+  - **Portrait Tablets (768px – 991px)**: Center-aligned typography and constrained card widths (`max-width: 620px; margin: 0 auto;`) to prevent cards from looking stretched on iPad / tablet viewports; arranged `.showroom-badges-cluster` into a neat centered pill row below the vehicle.
+  - **Large Mobiles / Phablets (577px – 767px)**: Centered layout with max card width (`540px`); 2x2 grid for both tab sets; full-width stacked action buttons.
+  - **Standard Mobile (375px – 576px)**: Card padding reduced to `14px 12px` with 16px border-radius; single-column form grid; vehicle image capped at 145px with bounded radial halo aura (`max-width: 80vw`) and ground shadow; 2-column compact trust strip items with 34px icons.
+  - **Ultra-Small Mobile (320px – 360px)**: Fluid typography (`clamp(24px, 6.8vw, 29px)`), full touch targets, zero horizontal viewport overflow.
+- **Verification**: Clean compilation via `npm run build` with all 83 static & dynamic routes passing.
+
+## Mobile Screenshot Fixes & Horizontal Viewport Containment
+- **Problems Identified From Mobile Screenshots**:
+  1. **Screenshot 1 (Trust Strip Cramping)**:
+     - The 2 right-column trust cards (`RGIA Airport Drop` and `30-Min Delivery`) in `PremiumHeroSection.jsx` touched and pushed against the right screen border with no internal card framing.
+  2. **Screenshot 2 (Pricing Toggle Clipping)**:
+     - In `CarOffersSection.jsx`, the 3-Way Pricing Plan Toggle used inline `whiteSpace: 'nowrap'` with verbose desktop labels (`Daily Deals`, `Weekly (7 Days) 7-Day Deal`, `Monthly (30 Days) Monthly Deal`). Combined minimum width was >540px, causing the right button (`Monthly (30 Days)`) to clip at `Monthl` on mobile viewports (<430px).
+  3. **Screenshot 3 (Floating Button Slicing & Horizontal Blowout)**:
+     - The >540px element width blew out the entire document width on mobile browsers, making the document wider than 100vw.
+     - Mobile browser layout panning caused right-anchored fixed elements to get sliced in half (e.g. green WhatsApp floating button was cut down the middle on the right edge).
+     - The SEO keywords list container had raw 24px desktop padding on mobile.
+- **Architectural Solutions Implemented**:
+  1. **Trust Strip Symmetrical Micro-Cards (`PremiumHeroSection.jsx` & `globals.css`)**:
+     - Switched row from `row g-3 g-md-4 align-items-center justify-content-between` to `row g-2 g-md-4 align-items-stretch`.
+     - Wrapped each item in a clean micro-card with soft pearl slate background (`#f8fafc`), subtle border (`#e2e8f0`), rounded corners (`12px`), and concise mobile descriptions (`.trust-desc-mobile`).
+     - Added gutter-safe padding (`padding: 10px 8px`) ensuring zero collision with screen edges.
+  2. **Responsive 3-Way Pricing Plan Toggle (`CarOffersSection.jsx` & `globals.css`)**:
+     - Converted inline styles to responsive class `.pricing-plan-toggle` and `.plan-toggle-btn`.
+     - Implemented dual-span desktop and mobile labels:
+       - Desktop (>600px): `Daily Deals`, `Weekly (7 Days) [7-Day Deal]`, `Monthly (30 Days) [Monthly Deal]`
+       - Mobile (<=600px): `Daily`, `Weekly [7-Day]`, `Monthly [Deal]`
+       - Small Mobile (<=380px): Badges cleanly hide, leaving concise touch pills `Daily | Weekly | Monthly` that fit 100% within 320px–375px screens.
+  3. **Viewport & Floating Action Buttons Alignment (`globals.css` & `layout.jsx`)**:
+     - Added Next.js App Router viewport metadata export in `src/app/layout.jsx` (`width: 'device-width', initialScale: 1, maximumScale: 5`).
+     - Enforced layout containment: `html, body, #__next, main, section { max-width: 100vw !important; overflow-x: hidden !important; box-sizing: border-box; }`.
+     - Standardized `.whatsapp-float-btn` and `.phone-float-btn` on mobile to exact matching coordinates (`right: 16px !important`, `width: 48px !important`, `height: 48px !important`).
+     - Added responsive `.seo-keyword-strip-card` with `overflow-wrap: break-word` and compact mobile padding.
+- **Verification**:
+  - `npm run build` executed successfully with code 0 across all 83 static and dynamic routes.
+
+## Desktop Pricing Toggle Overlap Hotfix
+- **Issue**:
+  - On desktop, the 3-Way Pricing Plan Toggle had overlapping text: `[7-Day Deal]` collided directly with `Monthly (30 Days)`.
+- **Root Cause**:
+  - `.pricing-plan-toggle` had `max-width: 560px` combined with `.plan-toggle-btn` having `flex: 1 1 0%` and `min-width: 0`.
+  - This forced each button on desktop into equal 180px boxes, which was narrower than the intrinsic width of Button 2 (`Weekly (7 Days) 7-Day Deal` = 230px), causing its contents to overflow and overlap into Button 3.
+- **Solution**:
+  - Desktop styles: Converted `.pricing-plan-toggle` to `display: inline-flex; align-items: center; gap: 8px;` and `.plan-toggle-btn` to `flex: 0 0 auto; padding: 10px 18px;`.
+  - Added `margin-left: 4px; display: inline-flex; align-items: center;` to the deal badges.
+  - Buttons now fit their text and deal badges naturally with generous spacing and zero overlap.
+  - Mobile styles (`<= 640px`): Switch smoothly to `display: flex; width: 100%;` and `flex: 1 1 0%` with compact mobile labels (`Daily`, `Weekly`, `Monthly`).
+
+## Brand Logo Sizing Specifications
+- **Header Logo (Website Navbar & Sanity CMS)**:
+  - **Sanity CMS Recommended Dimension**: `260 x 76 px` (1x) or **`520 x 152 px`** (2x for Retina / High-DPI screens).
+  - **Rendered CSS**: Desktop `height: 72px; max-height: 76px; max-width: 260px; object-fit: contain;` | Mobile (<=768px) `height: 52px; max-width: 180px;`.
+  - **Aspect Ratio**: ~`3.4 : 1` (horizontal / landscape layout).
+- **Footer Brand Logo**:
+  - **Sanity CMS Recommended Dimension**: `230 x 66 px` (1x) or **`460 x 132 px`** (2x Retina).
+  - **Rendered CSS**: Desktop `height: 60px; max-height: 66px; max-width: 230px;` | Mobile `height: 50px; max-width: 180px;`.
+- **Mobile Drawer Nav Logo**: `height: 42px; width: auto;`.
+- **Favicon & App Icons**:
+  - `favicon.ico`: 32x32 px and 48x48 px.
+  - Apple Touch Icon: 180x180 px.
+- **File Format Best Practices**:
+  - Format: Transparent PNG or SVG (Vector).
+  - File Size: Keep under 150 KB.
+  - Margin: Crop transparent padding tight to the artwork edges to prevent shrinkage.
+- **Active Deployment**:
+  - Updated Sanity CMS `siteSettings.logo` to the new 1024x355 transparent black key-accent header logo (`image-8b6a7c3eedb9d3c5268a169348cfafd5972f6772-1024x355-png`).
+  - Synced local fallback image [public/logo.png](file:///e:/Github/driveitcars/public_html/public/logo.png).
+  - Updated Sanity CMS `siteSettings.footerLogo` to the new 460x132 transparent white key-accent logo (`image-5342d9286b4fd82bbba75fbbab82bd5c64019e8d-460x132-png`).
+  - Synced local fallback image [public/logo2.png](file:///e:/Github/driveitcars/public_html/public/logo2.png).
+
+## Hero Booking Widget Dropdown Modernization
+- **Replaced Awkward Native OS Selects**:
+  - Upgraded raw `<select>` elements in [PremiumHeroSection.jsx](file:///e:/Github/driveitcars/public_html/src/components/PremiumHeroSection.jsx) to sleek interactive custom dropdown selectors.
+  - Eliminated native Windows blue-highlight box, harsh 90° edges, and awkward text clipping ("Doorstep Handover (Anywhere i").
+- **Luxury Floating Menu UI**:
+  - Added floating popover menu (`.custom-dropdown-menu`) with rounded corners (`14px`), deep soft drop shadow, custom scrollbar, and smooth enter animation.
+  - Trigger buttons (`.custom-dropdown-trigger`) feature text ellipsis, smooth 180° rotating chevron SVG, gold focus glow (`rgba(255, 185, 7, 0.2)`), and active state elevation (`z-index: 50`).
+  - Added deal badges (e.g. `Save 25%`, `Save 50%` in emerald pill tags) and muted category vehicle examples (e.g. `Creta, Thar, Brezza`).
+  - Added outside-click and Escape key detection via React hooks for seamless closing.
+- **Grid Overflow & Card Boundary Fix**:
+  - Root cause: CSS Grid `grid-template-columns: 1fr 1fr` defaulted to `minmax(auto, 1fr)`. Combined with `min-width: auto` on buttons with non-wrapping text, Column 1 pushed Column 2 and Field 3 out past the card's right boundary.
+  - Fix: Enforced `grid-template-columns: repeat(2, minmax(0, 1fr))` with `width: 100%; max-width: 100%; box-sizing: border-box;` and explicit `min-width: 0;` across `.booking-form-group`, `.custom-dropdown-container`, `.custom-dropdown-trigger`, and `.dropdown-trigger-content`. All fields now stay strictly within `.hero-booking-card`.
+- **Build Warnings & Sanity Image Builder Cleanup**:
+  - Replaced deprecated default `import imageUrlBuilder from '@sanity/image-url'` with `import { createImageUrlBuilder } from '@sanity/image-url'` across `SiteSettingsContext.jsx`, `src/app/page.jsx`, `src/app/blog/page.jsx`, and `src/app/blog/[slug]/page.jsx`.
+  - Compile time improved to 9.5s with zero deprecation warnings.
+- **Verification**: Verified clean Turbopack build via `npm run build` with 100% route success across all 83 static & dynamic routes.
+
+## Vercel Production Deployment Verification
+- **Build & Deployment Success**:
+  - Commit `63ce76b` deployed cleanly to Vercel production edge within 2 minutes with 0 build or lint errors.
+  - Vercel build cache (438.43 MB) uploaded successfully in 8.0s for accelerated future incremental deploys.
+- **Route Rendering Strategy**:
+  - **Dynamic (`ƒ`) Routes**: Locality and live CMS hubs (e.g., `/tolichowki-luxury-car-rental`, `/vijay-nagar-colony`, `/yousufguda`, `/`, `/blog`) configured with `dynamic = 'force-dynamic'` and `revalidate = 0` so Sanity Studio CMS updates publish immediately without redeployment.
+  - **Static (`○`) Routes**: Core SEO landing pages (e.g., `/vintage-wedding-car-hyderabad`, `/vip-car-rental-hyderabad`, `/wedding-car-rental-hyderabad`) pre-rendered statically at build time for sub-100ms Edge CDN responses and optimal Googlebot crawling.
+- **Live Verification**:
+  - Live HTTP verification on `https://www.driveitcars.in` confirmed 200 OK with custom hero booking engine, showroom switcher, tariff masking, high-res brand logos, and structured JSON-LD schemas actively serving.
+
+## Google Search Console Verification & Legacy 404 Redirects
+- **Verification Meta Tag**:
+  - Added Google Search Console site verification tag (`cZGlAnJhowYYzapWgJZ_osSl1--cKmvsgDtKjePxuh0`) to `metadata.verification.google` in [src/app/layout.jsx](file:///e:/Github/driveitcars/public_html/src/app/layout.jsx).
+  - Generates `<meta name="google-site-verification" content="cZGlAnJhowYYzapWgJZ_osSl1--cKmvsgDtKjePxuh0" />` across all pages in the root `<head>`.
+  - Added `*.log` to `.gitignore` to prevent local execution logs from polluting git commits.
+  - Verified static page generation and metadata output with 0 errors via `npm run build`.
+- **Legacy .html 301/308 Permanent Redirects**:
+  - Configured permanent redirects in [next.config.mjs](file:///e:/Github/driveitcars/public_html/next.config.mjs) resolving legacy 404 issues reported in Google Search Console:
+    - Catch-all `/:path*.html` -> `/:path*` for all 45+ legacy HTML files (e.g. `self-drive-car.html`, `hitech-city.html`, `sedan.html`, `suv5.html`, `suv7.html`, `luxurycars.html`, `contact.html`, `ameerpet.html`, `gachibowli-luxury-car-rental.html`, etc.).
+    - Special legacy mappings:
+      - `/index.html`, `/index-2.html`, `/index-2`, `/index` -> `/`
+      - `/nagar-luxury-car-rental.html` -> `/lb-nagar-luxury-car-rental`
+      - `/airport-pickup-&-Drop.html` (and encoded variants) -> `/hyderabad-airport-car-rental`
+      - `/in-station-bus.html` -> `/luxury-buses`
+      - `/www.googletagmanager.com/:path*` -> `/` (broken relative tag manager script URL from old static site).
+      - `/Shaikpet` & `/Shaikpet.html` -> `/sheikpet` (casing normalization).
+  - Updated [src/app/sitemap.js](file:///e:/Github/driveitcars/public_html/src/app/sitemap.js) `/Shaikpet` to `/sheikpet`.
+
+## Core Web Vitals Mobile Optimization (LCP < 2.5s)
+- **Problem Diagnostics**:
+  - GSC reported "Need improvement, LCP issue: longer than 2.5s (mobile)" across 37 URLs.
+  - Root causes identified:
+    1. 10 unused render-blocking stylesheets in `<head>` (`magnific-popup.css`, `owl.carousel.min.css`, `animate.min.css`, `nice-select.css`, `slicknav.min.css`, etc.) plus blocking external fontawesome CDN (`use.fontawesome.com`).
+    2. `.gauto-breadcromb-area` across all 37 locality and service landing pages loaded an 83 KB background image (`breadcromb.jpg`) that was hidden under a 72% dark overlay and blocked mobile paint.
+    3. Above-the-fold hero images lacked explicit `fetchPriority="high"` and `loading="eager"`.
+- **Solution & Architecture**:
+  - Purged 10 unused stylesheets from [src/app/layout.jsx](file:///e:/Github/driveitcars/public_html/src/app/layout.jsx), keeping only essential `bootstrap.css`, `font-awesome.min.css`, `style.css`, and `responsive.css`.
+  - Replaced FontAwesome 5 external icon in [src/components/CarCard.jsx](file:///e:/Github/driveitcars/public_html/src/components/CarCard.jsx) with native local FA icon.
+  - Upgraded `.gauto-breadcromb-area` in [public/assets/css/style.css](file:///e:/Github/driveitcars/public_html/public/assets/css/style.css) to a zero-byte luxury radial CSS gradient (`#0b1120` to `#1e293b`), rendering the breadcrumb and H1 title in < 300ms on mobile with 0 network image wait.
+  - Added `fetchPriority="high"` and `loading="eager"` to navbar logo, hero slider first slide, and showroom car image. Added `loading="lazy"` to drawer logo.
+  - Verified static generation in 756ms with 0 compile errors.
+
+## Content Marketing & Sanity CMS Blog Publication
+- **Published 5 Fresh High-Intent SEO Articles (1,150–1,300 Words Each)**:
+  1. `/blog/weekend-road-trips-from-hyderabad-self-drive-guide`: Comprehensive 7-destination weekend guide (Ananthagiri Hills, Nagarjuna Sagar, Srisailam, Warangal, Gandikota, Bidar, Medak) with route maps, vehicle matching, toll guides, and checklists.
+  2. `/blog/hyderabad-airport-car-rental-vs-cabs-cost-guide`: Real-world cost comparison between RGIA airport app cabs vs self-drive car rentals over 3 days, surge pricing analysis, and baggage logistics.
+  3. `/blog/luxury-wedding-car-rental-hyderabad-planning-guide`: Guide for Hyderabadi weddings, covering vintage convertibles, Rolls-Royce, Mercedes E-Class, VIP convoys, floral decoration timings, and venue routes.
+  4. `/blog/monthly-car-rental-hyderabad-subscription-benefits`: Financial analysis of monthly self-drive subscriptions vs car ownership/EMI for IT professionals across HITEC City and Financial District.
+  5. `/blog/hyderabad-driving-guide-orr-hitec-city-traffic-tips`: Practical driving guide covering Nehru ORR speed lanes (120 km/h), Durgam Cheruvu cable bridge, traffic cameras/e-challans, and Old City parking.
+- **Media & Sanity CMS Pipeline**:
+  - Generated 5 custom high-resolution editorial illustrations in 16:9 landscape aspect ratio.
+  - Uploaded assets to Sanity Asset CDN and published structured PortableText documents with schema markup and internal links.
+  - Live blog index (`/blog`) and `sitemap.xml` automatically updated.
+
+## Blog Pagination, Icon Rendering & Showroom Asset Fixes
+- **Blog Guides Pagination**:
+  - Upgraded [src/app/blog/page.jsx](file:///e:/Github/driveitcars/public_html/src/app/blog/page.jsx) with clean server-side pagination (`searchParams.page`).
+  - Set `PAGE_SIZE = 6` guides per page. On Page 1, displays the featured guide hero + first 6 guides. On Page 2+, displays subsequent guides with a context return banner.
+  - Implemented accessible pagination nav bar (`Previous`, numbered page links `/blog?page=X#guides`, `Next`) with gold active indicators and responsive layout in [src/app/blog/blog.module.css](file:///e:/Github/driveitcars/public_html/src/app/blog/blog.module.css).
+  - Configured dynamic canonical and OpenGraph metadata reflecting current page numbers for SEO (`Car Rental Guides in Hyderabad - Page X | DriveItCars`).
+- **Markdown Asterisk Sanitization in PortableText**:
+  - Updated [src/app/blog/[slug]/page.jsx](file:///e:/Github/driveitcars/public_html/src/app/blog/[slug]/page.jsx) with an automatic inline markdown tokenizer in `portableTextComponents`.
+  - Ensures any raw `**text**` strings in Sanity body blocks or list items render cleanly as `<strong>` HTML elements, permanently preventing raw asterisks on live articles.
+- **Hyderabad Airport Rental Missing Icons**:
+  - Diagnosed blank yellow icon boxes in [src/app/hyderabad-airport-car-rental/page.jsx](file:///e:/Github/driveitcars/public_html/src/app/hyderabad-airport-car-rental/page.jsx).
+  - Root cause: FontAwesome 5 classes (`fa fa-plane-arrival`, `fa fa-gem`) were used, but the site stylesheet uses FontAwesome 4.7 (`font-awesome.min.css`).
+  - Fix: Updated to valid FA 4.7 classes `fa fa-plane` for "Airport Pickup Hyderabad" and `fa fa-diamond` for "Airport Luxury Car Rental".
+- **Homepage Showroom Luxury Car Image Blending**:
+  - In [src/components/PremiumHeroSection.jsx](file:///e:/Github/driveitcars/public_html/src/components/PremiumHeroSection.jsx), replaced opaque studio-background WebP (`SERVICE_VEHICLE_IMAGES.eclass`) with transparent RGBA cutout [public/assets/img/benz2.png](file:///e:/Github/driveitcars/public_html/public/assets/img/benz2.png).
+  - The Mercedes-Benz E-Class now seamlessly blends into the card background matching the Thar, Innova Crysta, and Swift cutouts without any box borders.
+
+## Fleet Vehicle Cutouts Modernization (Theme Alignment)
+- **Problem**:
+  - 4 fleet vehicle cards had mismatched, unaligned images breaking the site's transparent cutout theme:
+    1. **Skoda Slavia**: Had an outdoor landscape sunset beach photo with two cars.
+    2. **Volkswagen Virtus**: Had a lifestyle promo shot with a person walking in front of a building.
+    3. **Toyota Innova Hycross**: Had a low-res (350x150) blurry white box asset.
+    4. **Maruti Suzuki XL6**: Had a pitch-black rectangular background block.
+- **Solution**:
+  - Generated commercial studio photography for all 4 models centered at 3/4 front studio angle with pristine automotive lighting.
+  - Processed images using `sharp` into standard `400 x 213` transparent RGBA PNG cutouts matching `Swift.png`, `5-Thar.png`, and `7-Innova Crysta.png` (21–29% transparency ratio, zero border/background artifacts).
+  - Created new local assets in [public/assets/img/cars/](file:///e:/Github/driveitcars/public_html/public/assets/img/cars/):
+    - [slavia.png](file:///e:/Github/driveitcars/public_html/public/assets/img/cars/slavia.png) (Crystal Blue metallic)
+    - [virtus.png](file:///e:/Github/driveitcars/public_html/public/assets/img/cars/virtus.png) (Wild Cherry Red GT)
+    - [hycross.png](file:///e:/Github/driveitcars/public_html/public/assets/img/cars/hycross.png) (Pearl White hybrid)
+    - [xl6.png](file:///e:/Github/driveitcars/public_html/public/assets/img/cars/xl6.png) (Nexa Blue metallic)
+  - Updated [src/data/vehicle-images.js](file:///e:/Github/driveitcars/public_html/src/data/vehicle-images.js) to reference the local transparent assets, syncing both [CarOffersSection.jsx](file:///e:/Github/driveitcars/public_html/src/components/CarOffersSection.jsx) and [cars.js](file:///e:/Github/driveitcars/public_html/src/sanity/lib/cars.js).
+
+## OpenSEO Audit Remediation & 100% Unique Locality Content Overhaul
+- **Audit Issues Diagnosed (`audit-issues.csv` — 109 Total Issues)**:
+  1. **Duplicate Title & Duplicate Meta Description (21 pages in 50-page crawl; 43 pages total)**:
+     - Root cause: 24 locality pages (`ameerpet`, `begumpet`, `bowenpally`, etc.) and 9 static pages (`hatchback`, `sedan`, `best-car-rental-in-hyderabad`, `luxury-buses`, `outstation-bus`, `about`, `reviews`, `partner`, `googleb13fac68823625ba`) lacked `metadata` or `generateMetadata` exports, falling back to `layout.jsx`'s global title and description. Additionally, 11 legacy `-luxury-car-rental` alias routes duplicated their canonical locality pages.
+  2. **Duplicate Body Content Across 26 Locality Pages**:
+     - Root cause: Sanity CMS (`production` dataset) had 26 `locationPage` documents seeded with cookie-cutter boilerplate paragraphs (`"Looking for the most reliable self-drive car rental service in [X] Hyderabad?..."`), which overrode local defaults.
+  3. **Title Too Long (> 60 chars — 28 pages) & Meta Description Too Long (> 160 chars — 24 pages)**:
+     - Root cause: Service landing pages, Sanity `locationPage` documents, and 8 Sanity `post` (blog) documents had titles between 64–89 chars and meta descriptions between 161–224 chars.
+  4. **Heading Levels Skip (`H3 -> H1`, `H1 -> H3`, `H2 -> H4`, `H2 -> H5` — 14+ pages)**:
+     - Root cause: `.breadcromb-box` rendered `<h3>` before the page's `<h1>`, and several components (`PremiumHeroSection.jsx`, `CarOffersSection.jsx`, `ContactClient.jsx`, `page.jsx`, and service pages) jumped from `<h1>` to `<h3>`/`<h4>` or `<h2>` to `<h4>`/`<h5>`.
+  5. **Crawl Stopped Early: Page Limit (50 pages crawled, 32 not crawled)**:
+     - Root cause: OpenSEO Audit's 50-page crawl budget was consumed by duplicate `-luxury-car-rental` alias routes and secondary pages.
+- **Comprehensive Fixes Implemented**:
+  - **100% Unique Content & Metadata for All 28 Hyderabad Localities ([src/sanity/lib/locations.js](file:///e:/Github/driveitcars/public_html/src/sanity/lib/locations.js) & Sanity CMS)**:
+    - Authored 28 completely distinct, hyper-local neighborhood profiles with unique `seoTitle` (50–55 chars, all ≤ 60), `seoDescription` (148–160 chars, all ≤ 160), `h1Title`, 3 neighborhood-specific paragraphs (`introParagraph1..3`), `localHighlights` (`rgiaDistance`, `keyCorridors`, `topVehicles`, `idealFor`), `serviceAreas`, and 3 unique `customFaqs`.
+    - Synced all 28 `locationPage` documents and patched 8 over-length `post` documents directly into the live Sanity CMS `production` dataset (`g0myfztr`).
+    - Added `export async function generateMetadata()` calling `getLocationMetadata(slug)` across all 28 locality `src/app/<locality>/page.jsx` files.
+  - **11 Duplicate Alias Routes Consolidated**:
+    - Configured `permanentRedirect` (308) on all 11 duplicate alias routes (`gachibowli-luxury-car-rental`, `guttala-begumpet-luxury-car-rental`, `habsiguda-luxury-car-rental`, `khairatabad-luxury-car-rental`, `lb-nagar-luxury-car-rental`, `mehdipatnam-luxury-car-rental`, `nampally-luxury-car-rental`, `sheikpet-luxury-car-rental`, `tarnaka-luxury-car-rental`, `tolichowki-luxury-car-rental`, `self-drive-car-in-banjarahills`) to their canonical locality slugs, plus permanent redirect rules in [next.config.mjs](file:///e:/Github/driveitcars/public_html/next.config.mjs).
+  - **33 Service & Static Pages Metadata & Heading Hierarchy Fixed**:
+    - Added unique `metadata` (`title` ≤ 60 chars, `description` ≤ 158 chars) to `hatchback`, `sedan`, `best-car-rental-in-hyderabad`, `luxury-buses`, `outstation-bus`, `about`, `reviews`, `partner`, and `noindex` on `googleb13fac68823625ba`.
+    - Shortened titles (to 51–60 chars) and meta descriptions (to 145–155 chars) across all 27 service landing pages (`audi-rental-hyderabad`, `bmw-rental-hyderabad`, `hyderabad-airport-car-rental`, `wedding-car-rental-hyderabad`, `corporate-car-rental-hyderabad`, `self-drive-car`, `self-drive-suv-hyderabad`, `suv5`, `suv7`, etc.).
+    - Replaced `.breadcromb-box h3` with `<p className="breadcromb-title">` (with matching CSS in `style.css` and `responsive.css`) and normalized all heading hierarchies to strict `H1 -> H2 -> H3` order with zero skips across all 66 public pages and shared components (`PremiumHeroSection.jsx`, `CarOffersSection.jsx`, `LocationPageContent.jsx`, `ContactClient.jsx`).
+  - **Crawler Budget Optimization ([src/app/robots.js](file:///e:/Github/driveitcars/public_html/src/app/robots.js))**:
+    - Added dedicated `OpenSEO-Audit` user-agent rule scoping its 50-page crawl limit to core money pages while keeping `userAgent: '*'` (Googlebot) open to all content pages.
+
+
+## Brand Name Standardization (`DriveItCars`) & Programmatic, Technical & On-Page SEO Overhaul
+- **100% Brand Name Consistency (`DriveItCars` Across All 65+ Indexable Pages & Sanity CMS)**:
+  - Replaced all truncated `| DriveIt` title suffixes and standalone `DRIVEIT` / `DriveIt` mentions with the full brand name **`DriveItCars`** across all 37 static/service pages (`src/app/**/page.jsx`), all 28 locality hubs (`src/sanity/lib/locations.js` + Sanity CMS `locationPage` documents), all Sanity `post` blog documents, and shared components (`SeoSchema.jsx`, `LocationPageContent.jsx`, `Footer.jsx`, `ContactClient.jsx`, `CarOffersSection.jsx`, `CarCard.jsx`, `HeroSlider.jsx`).
+  - Verified all 65 unique `<title>` tags are ≤ 60 characters and all 65 unique `<meta name="description">` tags are ≤ 160 characters with zero duplicates.
+- **Programmatic SEO Enhancements**:
+  - **Geographic Neighborhood Internal Link Mesh (`NEARBY_HUBS_MAP`)**: Added a programmatic 6-neighbor internal link graph in [src/sanity/lib/locations.js](file:///e:/Github/driveitcars/public_html/src/sanity/lib/locations.js) and rendered the **"Nearby DriveItCars Delivery Hubs Around [Locality]"** grid in [src/components/LocationPageContent.jsx](file:///e:/Github/driveitcars/public_html/src/components/LocationPageContent.jsx), connecting every Hyderabad locality to its closest adjacent hubs.
+  - **Programmatic Rental Packages Matrix per Locality**: Added structured **24-Hr Daily Self Drive**, **Weekly 7-Day Plans**, **Monthly Subscriptions**, and **[Locality] to RGIA Airport** cards on every locality page (`LocationPageContent.jsx`).
+  - **AI / LLM Discovery (`llms.txt`)**: Expanded [src/app/llms.txt/route.js](file:///e:/Github/driveitcars/public_html/src/app/llms.txt/route.js) to index all core fleet categories, specialized rental services, and all 28 Hyderabad neighborhood hubs with localized summaries.
+- **Technical SEO & Schema Overhaul**:
+  - Upgraded `buildCarRentalSchema()` in [src/components/SeoSchema.jsx](file:///e:/Github/driveitcars/public_html/src/components/SeoSchema.jsx) with `@id`, `alternateName: 'DriveItCars'`, `hasMap`, structured `Place` objects in `areaServed`, and `aggregateRating` (`4.9` / `1,240` reviews).
+  - Added complete `SeoSchema` (`AutoRental`, `BreadcrumbList`, `FAQPage`, and `Review` JSON-LD), `alternates.canonical`, `openGraph`, and `twitter` card metadata to `hatchback`, `sedan`, `suv5`, `suv7`, `luxury-buses`, `outstation-bus`, `about`, `reviews`, `contact`, `partner`, `best-car-rental-in-hyderabad`, `privacy`, and `terms-conditions`.
+- **On-Page SEO Cleanup & Keyword Optimization**:
+  - Overhauled [src/app/hatchback/page.jsx](file:///e:/Github/driveitcars/public_html/src/app/hatchback/page.jsx), [src/app/sedan/page.jsx](file:///e:/Github/driveitcars/public_html/src/app/sedan/page.jsx), [src/app/suv5/page.jsx](file:///e:/Github/driveitcars/public_html/src/app/suv5/page.jsx), and [src/app/suv7/page.jsx](file:///e:/Github/driveitcars/public_html/src/app/suv7/page.jsx) with keyword-rich intro copy, category-specific FAQs, removal of hidden duplicate tab panes, and removal of dead `#contactModal` PHP forms.
+  - Replaced generic `<h3>Luxury Bus</h3>` and `alt="offer 1"` across [src/app/luxury-buses/page.jsx](file:///e:/Github/driveitcars/public_html/src/app/luxury-buses/page.jsx), [src/app/outstation-bus/page.jsx](file:///e:/Github/driveitcars/public_html/src/app/outstation-bus/page.jsx), and [src/app/luxurycars/page.jsx](file:///e:/Github/driveitcars/public_html/src/app/luxurycars/page.jsx) with capacity-specific headings (`30 Seater Luxury AC Mini Coach`, `45 Seater Volvo / BharatBenz AC Coach`, etc.) and descriptive keyword `alt` attributes.
+  - Expanded [src/components/Footer.jsx](file:///e:/Github/driveitcars/public_html/src/components/Footer.jsx) internal links to include `/hatchback`, `/sedan`, `/suv5`, `/suv7`, `/luxury-buses`, `/outstation-bus`, `/best-car-rental-in-hyderabad`, `/about`, and `/reviews`.
+
+
+## Google Business Profile (GBP) OAuth Handshake & Poster Engine Visual Overhaul
+- **OAuth 2.0 Handshake Completed**:
+  - Authenticated via Google OAuth 2.0 with scope `business.manage`.
+  - Obtained and secured `GBP_REFRESH_TOKEN` in [.env.local](file:///e:/Github/driveitcars/public_html/.env.local).
+  - Resolved Google Maps place entity (`0x3bcb97844e874967:0xec0fefe2fefa1e15`).
+- **Two-Stage Visual Poster Engine Implemented**:
+  - Replaced the previous 6 dark-gradient SVG templates and static car cutouts with an authentic automotive advertising system:
+    - **Stage A ([services/generate-automotive-image.mjs](file:///e:/Github/driveitcars/public_html/services/generate-automotive-image.mjs))**: Dynamic Imagen 3 generation (`imagen-3.0-generate-002`) with strict commercial photography prompts, falling back gracefully to a curated library of 10 high-resolution Hyderabad automotive scenes in [assets/backgrounds/](file:///e:/Github/driveitcars/public_html/assets/backgrounds/). Clean photographic scene without text/watermarks; vehicle occupies ~65–75% of frame with negative space for typography.
+    - **Stage B ([services/poster-composer.mjs](file:///e:/Github/driveitcars/public_html/services/poster-composer.mjs))**: Sharp + SVG programmatic composer implementing 3 distinct visual systems:
+      1. **System A: Premium Automotive Editorial**: Minimal typography, directional contrast scrim, gold accent rule (`#FFB907`), executive sedans (Virtus, Slavia) in HITEC City / Financial District.
+      2. **System B: Lifestyle and Travel**: Natural warm directional lighting, open highway/hills scenery (Ananthagiri / Srisailam), 4x4 SUVs (Thar, Fortuner), lifestyle floating badge chips.
+      3. **System C: Service Promotion**: Action-oriented layout, RGIA 24/7 airport delivery, zero security deposit, high-contrast gold CTA button.
+  - Automatic line wrapping and dynamic font scaling prevents text clipping on both short and long headlines.
+  - Embedded genuine brand logo from [public/logo.png](file:///e:/Github/driveitcars/public_html/public/logo.png) with strict verified contact (`+91 63000 41186` & `www.driveitcars.in`).
+- **Image Quality Validator ([services/poster-quality-validator.mjs](file:///e:/Github/driveitcars/public_html/services/poster-quality-validator.mjs))**:
+  - Validates exact 1200x900 dimensions, JPEG format, sRGB color space, absence of alpha transparency, safe margins (48px), logo presence, and verified phone/website integrity.
+- **Daily Marketing Workflow ([scripts/gbp-daily-engine.mjs](file:///e:/Github/driveitcars/public_html/scripts/gbp-daily-engine.mjs))**:
+  - Integrated full pipeline: `generateDailyCampaign()` (Asia/Kolkata timezone) -> `generatePoster()` (Two-Stage + Validator) -> Neon PostgreSQL record (`gbp_posts` with status tracking: `generated`, `pending_approval`, `approved`, `publishing`, `published`, `failed`) -> Telegram bot delivery (Poster photo + formatted copy & localized FAQ).
+
+
+## Proxmox 24/7 Autonomous Deployment (CT 205) & 21 New Target Locality Hubs
+- **Proxmox LXC Container Deployed (CT 205)**:
+  - Container Name: `driveit-automation`, IP: `192.168.10.205/24`, Debian 12, 2 vCPUs, 2GB RAM.
+  - Runtime: Node.js v22.23.5 LTS, Sharp, npm dependencies, system fonts (`fonts-liberation`, `fonts-dejavu`).
+  - Environment: [.env.local](file:///e:/Github/driveitcars/public_html/.env.local) and [.private/driveitcars-c263ac3527d2.json](file:///e:/Github/driveitcars/public_html/.private/driveitcars-c263ac3527d2.json) injected and verified.
+  - Verified Smoke Tests:
+    1. `node scripts/gsc-cron.mjs`: Succeeded pulling 2,360 GSC queries/pages, checking sitemaps, and saving reports.
+    2. `node scripts/gbp-daily-engine.mjs`: Succeeded generating 1200x900 poster, validating sRGB solid JPEG, logging campaign #7 to Neon PostgreSQL, and dispatching to Telegram.
+  - Active Cron Schedules (`/etc/cron.d/driveitcars`, `Asia/Kolkata` IST timezone):
+    - `0 13 * * *`: 1:00 PM IST Google Search Console audit.
+    - `0 14 * * *`: 2:00 PM IST Google Business Profile poster & content engine.
+- **21 New Locality Landing Pages, Schemas & Internal Link Mesh Live**:
+  - Target list completed across all 31 corridors:
+    - Shamshabad, Aram Ghar, Rajendra Nagar, Kismatpur, Budwel, Attapur, Shankerpally, Bandlaguda Jagir, Rajiv Gandhi Airport, Khajaguda, Manikonda, Financial District, Nanakramguda, Narsingi, Mokila, Kokapet, Neopolis, Puppalguda, Gandipet, Nallagandla, Tellapur.
+  - Each locality configured with unique `h1Title`, `seoTitle` (≤ 60 chars), `seoDescription` (≤ 160 chars), 3 hyper-local paragraphs, `serviceAreas`, `localHighlights`, and 3 schema-marked `customFaqs`.
+  - Added routes in `src/app/<slug>/page.jsx`, internal 6-hub mesh in `NEARBY_HUBS_MAP`, `src/app/sitemap.js`, and `src/app/llms.txt/route.js`.
+  - Verified production build with Next.js Turbopack: 52/52 routes passed with 0 errors.
+
+
+## Google OAuth 403 Resolution, Free Gemini Key & 31-Locality Multi-Location Rank Tracker
+- **Google OAuth 403 Resolved**:
+  - The user added `driveitcars@gmail.com` under **Audience -> Test Users** in Google Cloud Console for the `Driveitcars` project.
+  - Successfully refreshed OAuth token on Proxmox CT 205 with Google OAuth API returning length 253 access tokens.
+- **Gemini Content Generation Integration**:
+  - Connected free Gemini API key (`AQ.Ab8RN6...`) and verified with `gemini-3.5-flash`.
+  - Fixed parameter resolution in [services/gemini-content-generator.mjs](file:///e:/Github/driveitcars/public_html/services/gemini-content-generator.mjs) (`BRAND_CONFIG.hubs` vs undefined `keyLocations`).
+  - Tested on Proxmox CT 205: Generated authentic dynamic campaign ("FLY IN AND DRIVE OUT" RGIA Airport Handover).
+- **Multi-Location 31-Hub Rank Tracker ([scripts/track-local-rankings.mjs](file:///e:/Github/driveitcars/public_html/scripts/track-local-rankings.mjs))**:
+  - Tracks ranking positions, impressions, clicks, and CTR for all 31 target Hyderabad corridors from GSC search analytics.
+  - Categorizes hubs into Top 10, Striking Distance (Pos 11–25), and Emerging/New Hubs.
+  - Auto-publishes weekly ranking scoreboard directly to Telegram chat.
+  - Initial run verified: Madhapur (Pos 9.3), Tolichowki (Pos 11.6, top query Pos 4.4), Gachibowli (Pos 14.2, top query Pos 6.2), Rajiv Gandhi Airport (350 impressions).
+- **Autonomous Crons on Proxmox CT 205 (`/etc/cron.d/driveitcars`)**:
+  - `0 10 * * 1,5`: Weekly SEO Blog Publisher (Mon & Fri 10:00 AM IST)
+  - `0 11 * * 3`: Weekly 31-Locality Rank Tracker & Telegram Scoreboard (Wed 11:00 AM IST)
+  - `0 13 * * *`: Daily Google Search Console SEO Audit (1:00 PM IST)
+  - `0 14 * * *`: Daily Google Business Profile Poster & Content Engine (2:00 PM IST)
+- **Local Standing Schedule Tasks Cleaned**:
+  - Cancelled `task-1290` and `task-1427` from Antigravity local daemon so zero duplicate tasks run on the user's laptop.
+
+
+## Poster Generation Visual Overhaul (Commercial Advertising Standards)
+- **Problem Identified**: The initial poster generator produced basic developer-style layouts: an opaque black scrim obscuring 65% of the vehicle, a solid 90px black footer slicing off wheels, raw system emojis (`📞`, `🌐`) rendering inconsistently, and unvaried monotone typography.
+- **Visual Overhaul Implemented ([services/poster-composer.mjs](file:///e:/Github/driveitcars/public_html/services/poster-composer.mjs))**:
+  1. **Multi-Stop Exponential Scrim**: Replaced flat opaque black with a soft falloff (`0.82` -> `0.45` -> `0.10` -> `0.0`), keeping ~75% of vehicle lighting, metallic reflections, and wheel details crisp.
+  2. **Pure SVG Vector Icon Suite**: Embedded clean vector paths for phone handset, globe, review stars, shield-check, lightning bolt, plane, and arrow (zero emoji distortion).
+  3. **Two-Tone Typography**: High-impact bold white headlines with signature **DriveItCars Gold (`#FFB907`)** keyword accents.
+  4. **Google 4.9★ Social Proof Badge**: Added `[★★★★★ 4.9 (1.2k+ Reviews)]` floating beside the DriveItCars logo.
+  5. **Floating Glassmorphic Action Dock**: Replaced the bottom black bar with a floating curved glass dock (`rx="24"`, frosted border, 24/7 status light, verified phone dial, website, and gold gradient CTA button).
+  6. **Fleet Specification Tag**: Translucent tag in the lower right identifying vehicle and category (e.g., `VOLKSWAGEN VIRTUS GT • 1.5L TSI DSG`).
+  7. **Visual Diversity Across 3 Distinct Systems**:
+     - *System A: Executive Editorial Billboard* (Virtus/Slavia in HITEC City)
+     - *System B: Open-Road Lifestyle & Adventure* (Thar 4x4 / Fortuner on ORR & Ananthagiri)
+     - *System C: 24/7 RGIA Airport Glass Deck* (Innova Hycross with structured checklist)
+- **Live Verification**:
+  - Tested on Proxmox CT 205: Synthesized campaign #"ELEVATE YOUR BUSINESS TRAVEL", composed 1200x900 poster, logged to Neon PostgreSQL, and dispatched to Telegram bot.
+
+
+## AEO (Answer Engine Optimization) & GEO (Generative / Geographic SEO) Engine Upgrade
+- **AEO Coverage**:
+  1. **Direct Inverted-Pyramid Quick Answer Blocks**: Added blockquote summary boxes directly below titles in [scripts/publish-weekly-blog.mjs](file:///e:/Github/driveitcars/public_html/scripts/publish-weekly-blog.mjs) designed for extraction by Google AI Overviews and Perplexity.
+  2. **Conversational Question & Answer Schema**: Integrated 3 rich, high-volume conversational FAQs per article directly matching conversational user intent ("How fast can I get a car delivered?", "Is security deposit mandatory?", "Are outstation trips permitted?").
+  3. **Direct Affirmative Answers in GBP Content Engine**: Updated [services/gemini-content-generator.mjs](file:///e:/Github/driveitcars/public_html/services/gemini-content-generator.mjs) with strict prompt instructions requiring immediate affirmative direct answers for Google Maps AI.
+- **GEO Coverage**:
+  1. **Geographic Landmark Anchors**: Embedded real physical corridor anchors (Cyber Towers, Mindspace, IKEA Junction, Knowledge City, PVNR Expressway, and RGIA Terminal 1) into blog articles and GBP daily copy.
+  2. **Deep-Link Locality Architecture**: Directed GBP CTAs to specific locality landing pages (e.g. `https://www.driveitcars.in/<locality>`) rather than generic homepages.
+  3. **31-Locality Geographic Rank Tracker**: Active weekly GSC rank auditor ([scripts/track-local-rankings.mjs](file:///e:/Github/driveitcars/public_html/scripts/track-local-rankings.mjs)) tracking ranking positions across all 31 corridors.
+  4. **AI Crawl Discovery (`llms.txt`)**: Maintained in [src/app/llms.txt/route.js](file:///e:/Github/driveitcars/public_html/src/app/llms.txt/route.js) indexing all fleet categories, services, and neighborhood hubs.
+
+
+## Google Business Profile API Quota Request Submitted
+- **Case ID**: `9-4378000041879`
+- **API Requested**: `GBP API v4.9`
+- **Project Number**: `688125939473`
+- **Project ID**: `driveitcars`
+- **Status**: Pending approval from Google Business Profile Support (estimated 1–2 business days).
+- **Interim Workflow**: Proxmox CT 205 daily engine continues at 2:00 PM IST generating 1200x900 posters, drafting SEO copy/FAQs, recording into Neon DB, and delivering to Telegram channel for 1-click manual publish.
+
+
+## Google Business Profile ID Configured
+- **Profile ID**: `11155468378803606382`
+- Added `GBP_PROFILE_ID="11155468378803606382"` to `.env.local` locally and on Proxmox CT 205.
+- Updated [scripts/gbp-daily-engine.mjs](file:///e:/Github/driveitcars/public_html/scripts/gbp-daily-engine.mjs) to automatically resolve `LOCATION_NAME` from `GBP_PROFILE_ID` and support `GBP_ACCOUNT_ID`.
+
+
+## Telegram 1-Tap Copy Workflow Active
+- **Implementation**: Enhanced `dispatchTelegramNotification()` in [scripts/gbp-daily-engine.mjs](file:///e:/Github/driveitcars/public_html/scripts/gbp-daily-engine.mjs) with HTML entity escaping (`escapeHtml`) and monospace `<code>` blocks for single-tap clipboard copy on Telegram mobile and desktop.
+- **Payload Sent**:
+  1. High-resolution 1200x900 commercial poster image.
+  2. Companion message with 1-tap copyable Google Post copy, CTA button recommendation & deep URL, localized Google Maps FAQ, target delivery hubs, and a direct link to `business.google.com`.
+- **Live Verification**: Successfully dispatched Campaign #11 (*"Luxury Weekend Getaways & Highway Road Trips"*) to Telegram chat.
+
+
+## Search Console Audit (2026-11-18) & Striking Distance CTR Optimization
+- **Dataset Extracted**: 2,504 search query & landing page records spanning the past 28 days (2026-10-19 to 2026-11-15).
+- **Sitemap Health**: `https://www.driveitcars.in/sitemap.xml` verified healthy (registered, 0 errors, 0 warnings, last crawled 2026-11-16).
+- **Core Findings & Structural Bottlenecks**:
+  1. **Striking-Distance High-Impression / 0-CTR Queries**:
+     - `"self drive cars near me"` (417 impressions, 0 clicks, Pos 11.0)
+     - `"self drive cars"` (383 impressions, 4 clicks, 1.04% CTR, Pos 11.7)
+     - `"car rental hyderabad"` (155 impressions, 0 clicks, Pos 16.9)
+     - `"car rental in hyderabad"` (149 impressions, 0 clicks, Pos 17.3)
+     - `"self drive car for trip"` (79 impressions, 0 clicks, Pos 8.3)
+     - **Root Cause**: Generic homepage `<title>` and `<meta description>` lacked crucial decision-making triggers like transparent rates, zero deposit guarantee, and delivery speed.
+  2. **Contradictory Terms in `/self-drive-car`**:
+     - OpenGraph & Twitter tags erroneously stated `"Limited KMs"` and `"Security Deposit"`, contradicting DriveItCars' core value proposition of Unlimited Kilometers and Zero Deposit.
+  3. **High-Value Route Title Alignment**:
+     - `/luxurycars` (476 imp, 26 clicks) was missing direct model keywords ("BMW, Mercedes").
+     - `/suv7` (518 imp, 13 clicks) was titled "7-Seater SUV Rental" instead of matching exact query "7 Seater Car Rental Hyderabad | Innova Crysta".
+     - `/hyderabad-airport-car-rental` snippet lacked fast curbside delivery guarantees.
+- **Implemented Fixes**:
+  - `src/app/page.jsx`: Updated title to `'Self Drive Cars in Hyderabad | Unlimited KMs | DriveItCars'` and description to `'Rent self drive cars in Hyderabad from ₹1,499/day with unlimited KMs, refundable deposit, 24/7 airport drop & 30-min doorstep delivery. Call +91 63000 41186.'` (154 chars).
+  - `src/app/layout.jsx`: Updated fallback metadata description to highlight ₹1,499/day, refundable deposit, and unlimited KMs.
+  - `src/app/self-drive-car/page.jsx`: Replaced all deposit references with "Refundable Security Deposit" and "Unlimited KMs".
+  - `src/app/luxurycars/page.jsx`: Updated title to `'Luxury Car Rental Hyderabad | BMW, Mercedes | DriveItCars'`.
+  - `src/app/suv7/page.jsx`: Updated title to `'7 Seater Car Rental Hyderabad | Innova Crysta | DriveItCars'`.
+  - `src/app/hyderabad-airport-car-rental/page.jsx`: Highlighted 10-minute terminal curbside handover, refundable deposit, and unlimited KMs.
+
+
+## Strict Business Policy: Mandatory Security Deposit & No "100% Refundable" Claims
+- **Core Rule 1 (Deposit Mandatory)**: DriveItCars **REQUIRES** a security deposit for every vehicle rental. Without a deposit, cars cannot be given.
+- **Core Rule 2 (No "100% Refundable" Guarantee)**: Never state "100% refundable". If a renter damages the vehicle or cancels last-minute, the deposit is retained or deducted according to rental policy and damage assessment.
+- **Approved Terminology**: Use **"Refundable Security Deposit"**, **"Security Deposit as per rental terms"**, or focus marketing on operational strengths: **"Unlimited Kilometers"**, **"From ₹1,499/day"**, **"Curbside RGIA Terminal Handover in 10 mins"**, and **"Doorstep Delivery Across Hyderabad"**.
+- **Prohibited Phrasing**:
+  - ❌ "Zero Deposit" / "No Deposit" / "Zero Security Deposit"
+  - ❌ "100% Refundable" / "100% Refund"
+- **Codebase Audited & Purged**:
+  - `src/app/page.jsx` & `src/app/layout.jsx`
+  - `src/app/contact/page.jsx` (FAQ #5 updated to reflect inspection & rental terms)
+  - `src/app/self-drive-car/page.jsx` & `src/app/hyderabad-airport-car-rental/page.jsx`
+  - `config/brand-config.mjs`
+  - `services/poster-composer.mjs`
+  - `services/gemini-content-generator.mjs` (system prompt + all fallback campaigns)
+  - `scripts/publish-weekly-blog.mjs`
+  - `scripts/gsc-gemini-optimizer.mjs`
+  - `src/sanity/lib/locations.js` (all 26 locality profiles updated)
+
+
+## Daily Rank Tracker & Keyword Discovery Cron Job
+- **Implementation**: [scripts/track-local-rankings.mjs](file:///e:/Github/driveitcars/public_html/scripts/track-local-rankings.mjs)
+- **Key Capabilities**:
+  1. **Historical Rank Movements**: Compares current ranking positions against previous snapshots stored in Neon PostgreSQL (`gsc_snapshots`) to detect Climbers (`▲ +X.X`) and Fallers (`▼ -X.X`).
+  2. **Page 1 Top Performers**: Monitors high-volume commercial queries (`self drive cars hyderabad`, `7 seater car rental hyderabad`, etc.).
+  3. **Striking Distance Action Engine (Positions 10–20)**: Highlights high-impression terms ready for Page 1 optimization.
+  4. **New Keyword Discovery (To Rank More Keywords)**: Automatically extracts newly emerging search queries that Google has started testing our pages on, with recommended landing pages.
+  5. **31 Hyderabad Localities Local SEO**: Tracks local rank distribution across all 31 corridors.
+  6. **Automated Telegram Delivery**: Dispatches a structured executive scoreboard directly to the Telegram channel.
+- **Automation Schedule**:
+  - Incorporated into `package.json` `"seo:daily"` script (`npm run seo:daily`).
+  - Added as Step 3 in GitHub Actions workflow [.github/workflows/gsc-daily-seo.yml](file:///e:/Github/driveitcars/public_html/.github/workflows/gsc-daily-seo.yml) running daily at 04:00 UTC (09:30 AM IST).
+  - Generates persistent reports in [reports/daily-rank-tracker-report.md](file:///e:/Github/driveitcars/public_html/reports/daily-rank-tracker-report.md) and `.json`.
+
+
+## Fleet-Wide & Site-Wide WebP Image Migration
+- **Overview**: Converted all static JPEG and PNG image assets across `public/` into modern high-efficiency `.webp` format.
+- **Compression & Performance Metrics**:
+  - Total Converted: 124 images
+  - Original Asset Size: 14.98 MB
+  - New WebP Asset Size: 3.63 MB
+  - Total Bandwidth Saved: **76% (~11.35 MB reduction)**
+  - Alpha Transparency: Full 8-bit alpha preserved for all 34 vehicle cutouts (`cars/*.webp`) and UI badges.
+- **Codebase Reference Updates**:
+  - Automatically mapped and updated 296 references across 48 source files (`src/app/`, `src/components/`, `src/sanity/cars.js`, `config/brand-config.mjs`, `services/gemini-content-generator.mjs`, and CSS files).
+- **Social & SEO Fallbacks Preserved**:
+  - `public/logo.png`, `public/suv.jpg`, and `public/assets/img/favicon/favicon-32x32.png` were retained as fallbacks for legacy WhatsApp/Facebook link preview bots that struggle with WebP.
+
+
+
+
+
+
+
+## Repository File Migration to `drive\driveitcars` (2026-11-20)
+- **Source**: `E:\Github\driveitcars\public_html`
+- **Destination**: `E:\Github\drive\driveitcars`
+- **Transferred Assets & Files**:
+  - Transferred 467 files across 136 directories (~22 MB).
+  - Included: `.agents/`, `.github/`, `.private/` (credentials, service image configs, service accounts), `assets/`, `config/`, `content/`, `public/`, `reports/`, `scratch/`, `scripts/`, `services/`, `src/`, `.env.local`, `.gitignore`, `AGENTS.md`, `CLAUDE.md`, `DESIGN.md`, `eslint.config.mjs`, `jsconfig.json`, `next.config.mjs`, `package.json`, `package-lock.json`, `postcss.config.mjs`, `README.md`, `sanity.config.js`, `VERCEL_DEPLOYMENT_GUIDE.md`.
+  - Excluded: `.git` (preserved clean target Git repository), `.next` (build cache), and `node_modules` (package cache).
+- **Integrity**: Verified zero transfer failures and confirmed presence of ignored and sensitive files (`.env.local`, `.private`, `scratch`, `.agents/memory.md`).

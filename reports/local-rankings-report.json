@@ -1,0 +1,664 @@
+{
+  "metadata": {
+    "startDate": "2026-10-18",
+    "endDate": "2026-11-15"
+  },
+  "results": [
+    {
+      "name": "Shamshabad",
+      "slug": "shamshabad",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 1,
+      "avgPosition": 33,
+      "avgCtr": 0,
+      "matchedRowsCount": 1,
+      "topQueries": [
+        {
+          "query": "car rental shamshabad",
+          "page": "https://www.driveitcars.in/",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 33
+        }
+      ]
+    },
+    {
+      "name": "Aram Ghar",
+      "slug": "aram-ghar",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 1,
+      "avgPosition": 1,
+      "avgCtr": 0,
+      "matchedRowsCount": 1,
+      "topQueries": [
+        {
+          "query": "near aramghar",
+          "page": "https://www.driveitcars.in/",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 1
+        }
+      ]
+    },
+    {
+      "name": "Rajendra Nagar",
+      "slug": "rajendra-nagar",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 0,
+      "avgPosition": 0,
+      "avgCtr": 0,
+      "matchedRowsCount": 0,
+      "topQueries": []
+    },
+    {
+      "name": "Kismatpur",
+      "slug": "kismatpur",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 0,
+      "avgPosition": 0,
+      "avgCtr": 0,
+      "matchedRowsCount": 0,
+      "topQueries": []
+    },
+    {
+      "name": "Budwel",
+      "slug": "budwel",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 0,
+      "avgPosition": 0,
+      "avgCtr": 0,
+      "matchedRowsCount": 0,
+      "topQueries": []
+    },
+    {
+      "name": "Attapur",
+      "slug": "attapur",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 20,
+      "avgPosition": 45.9,
+      "avgCtr": 0,
+      "matchedRowsCount": 16,
+      "topQueries": [
+        {
+          "query": "xl6 car test drive attapur hyderabad",
+          "page": "https://www.driveitcars.in/",
+          "clicks": 0,
+          "impressions": 3,
+          "position": 45.7
+        },
+        {
+          "query": "jimny car test drive attapur hyderabad",
+          "page": "https://www.driveitcars.in/",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 36.5
+        },
+        {
+          "query": "swift car test drive attapur hyderabad",
+          "page": "https://www.driveitcars.in/tolichowki",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 58.5
+        },
+        {
+          "query": "celerio car test drive attapur hyderabad",
+          "page": "https://www.driveitcars.in/",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 56
+        },
+        {
+          "query": "celerio car test drive attapur hyderabad",
+          "page": "https://www.driveitcars.in/tolichowki",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 82
+        }
+      ]
+    },
+    {
+      "name": "Shankerpally",
+      "slug": "shankerpally",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 0,
+      "avgPosition": 0,
+      "avgCtr": 0,
+      "matchedRowsCount": 0,
+      "topQueries": []
+    },
+    {
+      "name": "Bandlaguda Jagir",
+      "slug": "bandlaguda-jagir",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 0,
+      "avgPosition": 0,
+      "avgCtr": 0,
+      "matchedRowsCount": 0,
+      "topQueries": []
+    },
+    {
+      "name": "Suncity",
+      "slug": "sun-city",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 2,
+      "avgPosition": 9,
+      "avgCtr": 0,
+      "matchedRowsCount": 2,
+      "topQueries": [
+        {
+          "query": "car rental sun city",
+          "page": "https://www.driveitcars.in/sun-city.html",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 8
+        },
+        {
+          "query": "sun city car rental",
+          "page": "https://www.driveitcars.in/",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 10
+        }
+      ]
+    },
+    {
+      "name": "Rajiv Gandhi Airport",
+      "slug": "rajiv-gandhi-airport",
+      "status": "emerging",
+      "totalClicks": 4,
+      "totalImpressions": 408,
+      "avgPosition": 27.4,
+      "avgCtr": 0.98,
+      "matchedRowsCount": 70,
+      "topQueries": [
+        {
+          "query": "car hire hyderabad airport",
+          "page": "https://www.driveitcars.in/",
+          "clicks": 0,
+          "impressions": 44,
+          "position": 25.6
+        },
+        {
+          "query": "hyderabad airport car rental",
+          "page": "https://www.driveitcars.in/",
+          "clicks": 0,
+          "impressions": 35,
+          "position": 26
+        },
+        {
+          "query": "hyderabad airport car rental",
+          "page": "https://www.driveitcars.in/blog/hyderabad-airport-car-rental-vs-cabs-cost-guide",
+          "clicks": 2,
+          "impressions": 28,
+          "position": 10
+        },
+        {
+          "query": "car rental hyderabad airport",
+          "page": "https://www.driveitcars.in/",
+          "clicks": 0,
+          "impressions": 28,
+          "position": 28
+        },
+        {
+          "query": "self drive car rental in hyderabad airport",
+          "page": "https://www.driveitcars.in/",
+          "clicks": 0,
+          "impressions": 20,
+          "position": 7.8
+        }
+      ]
+    },
+    {
+      "name": "Mehdipatnam",
+      "slug": "mehdipatnam",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 0,
+      "avgPosition": 0,
+      "avgCtr": 0,
+      "matchedRowsCount": 0,
+      "topQueries": []
+    },
+    {
+      "name": "Tolichowki",
+      "slug": "tolichowki",
+      "status": "striking_distance",
+      "totalClicks": 2,
+      "totalImpressions": 88,
+      "avgPosition": 12.1,
+      "avgCtr": 2.27,
+      "matchedRowsCount": 21,
+      "topQueries": [
+        {
+          "query": "driveit",
+          "page": "https://www.driveitcars.in/tolichowki",
+          "clicks": 0,
+          "impressions": 21,
+          "position": 8.6
+        },
+        {
+          "query": "self drive cars tolichowki",
+          "page": "https://www.driveitcars.in/tolichowki",
+          "clicks": 1,
+          "impressions": 18,
+          "position": 4.6
+        },
+        {
+          "query": "driveit hyderabad",
+          "page": "https://www.driveitcars.in/tolichowki",
+          "clicks": 1,
+          "impressions": 12,
+          "position": 3.6
+        },
+        {
+          "query": "luxury self drive car rental hyderabad",
+          "page": "https://www.driveitcars.in/tolichowki",
+          "clicks": 0,
+          "impressions": 9,
+          "position": 19.1
+        },
+        {
+          "query": "drive it",
+          "page": "https://www.driveitcars.in/tolichowki",
+          "clicks": 0,
+          "impressions": 5,
+          "position": 10.4
+        }
+      ]
+    },
+    {
+      "name": "Shaikpet",
+      "slug": "sheikpet",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 1,
+      "avgPosition": 5,
+      "avgCtr": 0,
+      "matchedRowsCount": 1,
+      "topQueries": [
+        {
+          "query": "driveit hyderabad",
+          "page": "https://www.driveitcars.in/sheikpet-luxury-car-rental.html",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 5
+        }
+      ]
+    },
+    {
+      "name": "Gachibowli",
+      "slug": "gachibowli",
+      "status": "striking_distance",
+      "totalClicks": 0,
+      "totalImpressions": 31,
+      "avgPosition": 13.2,
+      "avgCtr": 0,
+      "matchedRowsCount": 5,
+      "topQueries": [
+        {
+          "query": "self drive cars gachibowli",
+          "page": "https://www.driveitcars.in/gachibowli",
+          "clicks": 0,
+          "impressions": 21,
+          "position": 6
+        },
+        {
+          "query": "swift car test drive hyderabad gachibowli",
+          "page": "https://www.driveitcars.in/",
+          "clicks": 0,
+          "impressions": 4,
+          "position": 53.8
+        },
+        {
+          "query": "car rentals gachibowli",
+          "page": "https://www.driveitcars.in/gachibowli",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 12
+        },
+        {
+          "query": "rental cars gachibowli",
+          "page": "https://www.driveitcars.in/gachibowli",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 10
+        },
+        {
+          "query": "self drive cars gachibowli",
+          "page": "https://www.driveitcars.in/",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 12
+        }
+      ]
+    },
+    {
+      "name": "Khajaguda",
+      "slug": "khajaguda",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 0,
+      "avgPosition": 0,
+      "avgCtr": 0,
+      "matchedRowsCount": 0,
+      "topQueries": []
+    },
+    {
+      "name": "Manikonda",
+      "slug": "manikonda",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 0,
+      "avgPosition": 0,
+      "avgCtr": 0,
+      "matchedRowsCount": 0,
+      "topQueries": []
+    },
+    {
+      "name": "Financial District",
+      "slug": "financial-district",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 4,
+      "avgPosition": 41,
+      "avgCtr": 0,
+      "matchedRowsCount": 1,
+      "topQueries": [
+        {
+          "query": "car rental financial district",
+          "page": "https://www.driveitcars.in/",
+          "clicks": 0,
+          "impressions": 4,
+          "position": 41
+        }
+      ]
+    },
+    {
+      "name": "Nanakramguda",
+      "slug": "nanakramguda",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 3,
+      "avgPosition": 42,
+      "avgCtr": 0,
+      "matchedRowsCount": 2,
+      "topQueries": [
+        {
+          "query": "dzire car test drive nanakramguda hydrabad",
+          "page": "https://www.driveitcars.in/",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 28.5
+        },
+        {
+          "query": "dzire car test drive nanakramguda",
+          "page": "https://www.driveitcars.in/weekly-self-drive-cars-hyderabad",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 69
+        }
+      ]
+    },
+    {
+      "name": "Narsingi",
+      "slug": "narsingi",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 0,
+      "avgPosition": 0,
+      "avgCtr": 0,
+      "matchedRowsCount": 0,
+      "topQueries": []
+    },
+    {
+      "name": "Mokila",
+      "slug": "mokila",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 0,
+      "avgPosition": 0,
+      "avgCtr": 0,
+      "matchedRowsCount": 0,
+      "topQueries": []
+    },
+    {
+      "name": "Kokapet",
+      "slug": "kokapet",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 0,
+      "avgPosition": 0,
+      "avgCtr": 0,
+      "matchedRowsCount": 0,
+      "topQueries": []
+    },
+    {
+      "name": "Neopolis",
+      "slug": "neopolis",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 0,
+      "avgPosition": 0,
+      "avgCtr": 0,
+      "matchedRowsCount": 0,
+      "topQueries": []
+    },
+    {
+      "name": "Puppalguda",
+      "slug": "puppalguda",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 0,
+      "avgPosition": 0,
+      "avgCtr": 0,
+      "matchedRowsCount": 0,
+      "topQueries": []
+    },
+    {
+      "name": "Gandipet",
+      "slug": "gandipet",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 0,
+      "avgPosition": 0,
+      "avgCtr": 0,
+      "matchedRowsCount": 0,
+      "topQueries": []
+    },
+    {
+      "name": "Banjara Hills",
+      "slug": "banjara-hills",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 9,
+      "avgPosition": 25.3,
+      "avgCtr": 0,
+      "matchedRowsCount": 4,
+      "topQueries": [
+        {
+          "query": "swift car test drive banjara hills",
+          "page": "https://www.driveitcars.in/self-drive-car-in-banjarahills.html",
+          "clicks": 0,
+          "impressions": 3,
+          "position": 18.3
+        },
+        {
+          "query": "swift car test drive banjara hills hyderabad",
+          "page": "https://www.driveitcars.in/self-drive-car-in-banjarahills",
+          "clicks": 0,
+          "impressions": 3,
+          "position": 51
+        },
+        {
+          "query": "self drive cars banjara hills",
+          "page": "https://www.driveitcars.in/self-drive-car-in-banjarahills",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 4.5
+        },
+        {
+          "query": "drive in banjara hills",
+          "page": "https://www.driveitcars.in/self-drive-car-in-banjarahills.html",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 11
+        }
+      ]
+    },
+    {
+      "name": "Jubilee Hills",
+      "slug": "jubilee-hills",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 3,
+      "avgPosition": 7,
+      "avgCtr": 0,
+      "matchedRowsCount": 3,
+      "topQueries": [
+        {
+          "query": "jubilee cars",
+          "page": "https://www.driveitcars.in/jubilee-hills",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 10
+        },
+        {
+          "query": "jubilee rent a car",
+          "page": "https://www.driveitcars.in/jubilee-hills.html",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 8
+        },
+        {
+          "query": "rent a car jubilee no deposit",
+          "page": "https://www.driveitcars.in/jubilee-hills",
+          "clicks": 0,
+          "impressions": 1,
+          "position": 3
+        }
+      ]
+    },
+    {
+      "name": "Film Nagar",
+      "slug": "film-nagar",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 0,
+      "avgPosition": 0,
+      "avgCtr": 0,
+      "matchedRowsCount": 0,
+      "topQueries": []
+    },
+    {
+      "name": "Madhapur",
+      "slug": "madhapur",
+      "status": "top_10",
+      "totalClicks": 1,
+      "totalImpressions": 66,
+      "avgPosition": 9.2,
+      "avgCtr": 1.52,
+      "matchedRowsCount": 10,
+      "topQueries": [
+        {
+          "query": "car rentals madhapur",
+          "page": "https://www.driveitcars.in/madhapur",
+          "clicks": 0,
+          "impressions": 18,
+          "position": 9.6
+        },
+        {
+          "query": "self drive cars madhapur",
+          "page": "https://www.driveitcars.in/madhapur",
+          "clicks": 0,
+          "impressions": 16,
+          "position": 8.4
+        },
+        {
+          "query": "madhapur to ananthagiri hills distance",
+          "page": "https://www.driveitcars.in/blog/weekend-road-trips-from-hyderabad-self-drive-guide",
+          "clicks": 0,
+          "impressions": 9,
+          "position": 8.8
+        },
+        {
+          "query": "car rentals in madhapur hyderabad",
+          "page": "https://www.driveitcars.in/madhapur",
+          "clicks": 0,
+          "impressions": 6,
+          "position": 11.5
+        },
+        {
+          "query": "car rental madhapur",
+          "page": "https://www.driveitcars.in/madhapur",
+          "clicks": 1,
+          "impressions": 5,
+          "position": 8
+        }
+      ]
+    },
+    {
+      "name": "Kondapur",
+      "slug": "kondapur",
+      "status": "striking_distance",
+      "totalClicks": 0,
+      "totalImpressions": 12,
+      "avgPosition": 12.1,
+      "avgCtr": 0,
+      "matchedRowsCount": 3,
+      "topQueries": [
+        {
+          "query": "self drive cars kondapur",
+          "page": "https://www.driveitcars.in/",
+          "clicks": 0,
+          "impressions": 7,
+          "position": 11.1
+        },
+        {
+          "query": "self drive cars kondapur",
+          "page": "https://www.driveitcars.in/weekly-self-drive-cars-hyderabad",
+          "clicks": 0,
+          "impressions": 3,
+          "position": 11.3
+        },
+        {
+          "query": "car rentals kondapur",
+          "page": "https://www.driveitcars.in/",
+          "clicks": 0,
+          "impressions": 2,
+          "position": 16.5
+        }
+      ]
+    },
+    {
+      "name": "Nallagandla",
+      "slug": "nallagandla",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 0,
+      "avgPosition": 0,
+      "avgCtr": 0,
+      "matchedRowsCount": 0,
+      "topQueries": []
+    },
+    {
+      "name": "Tellapur",
+      "slug": "tellapur",
+      "status": "emerging",
+      "totalClicks": 0,
+      "totalImpressions": 0,
+      "avgPosition": 0,
+      "avgCtr": 0,
+      "matchedRowsCount": 0,
+      "topQueries": []
+    }
+  ]
+}

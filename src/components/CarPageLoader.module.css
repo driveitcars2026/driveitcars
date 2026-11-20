@@ -1,0 +1,381 @@
+.loaderBackdrop {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 14, 23, 0.96);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  z-index: 9999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.3s;
+  pointer-events: all;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  user-select: none;
+}
+
+.loaderBackdrop.fadeOut {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.cardContainer {
+  width: 92%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 22px;
+  background: rgba(17, 24, 39, 0.9);
+  border: 1px solid rgba(255, 185, 7, 0.32);
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.85),
+              0 0 35px 2px rgba(255, 185, 7, 0.12);
+  box-sizing: border-box;
+}
+
+.brandHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.brandLogo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  color: #ffffff;
+}
+
+.goldAccent {
+  color: #ffb907;
+}
+
+.brandSubline {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #9ca3af;
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+
+/* Journey Area: Point A to Point B */
+.journeyArea {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 2px 18px 2px;
+  box-sizing: border-box;
+}
+
+.pointWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+  width: 72px;
+  flex-shrink: 0;
+}
+
+.pointBadge {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.pointStart {
+  background: rgba(16, 185, 129, 0.16);
+  border: 1.5px solid #10b981;
+  box-shadow: 0 0 14px rgba(16, 185, 129, 0.45);
+}
+
+.pointDest {
+  background: rgba(255, 185, 7, 0.16);
+  border: 1.5px solid #ffb907;
+  box-shadow: 0 0 14px rgba(255, 185, 7, 0.45);
+  animation: destPulse 0.9s ease-in-out infinite alternate;
+}
+
+.pointLabel {
+  font-size: 10px;
+  font-weight: 600;
+  color: #f3f4f6;
+  margin-top: 8px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.pointSubtext {
+  font-size: 8.5px;
+  font-weight: 500;
+  color: #9ca3af;
+  margin-top: 2px;
+  white-space: nowrap;
+}
+
+/* Highway Road Track */
+.roadTrack {
+  flex: 1;
+  height: 30px;
+  background: #0f172a;
+  margin: 0 10px;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(75, 85, 99, 0.45);
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.9);
+  overflow: visible;
+}
+
+.roadDashes {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.3) 0px,
+    rgba(255, 255, 255, 0.3) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+  top: calc(50% - 1px);
+}
+
+/* Full-width GPU runner: translate3d(100% - carWidth) is 100% compositor-only */
+.carRunner {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  will-change: transform;
+  animation: driveAcross 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  z-index: 2;
+}
+
+.carContainer {
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 84px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+}
+
+.carBodySvg {
+  width: 84px;
+  height: 34px;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.7));
+  animation: suspensionBounce 0.22s infinite alternate ease-in-out;
+}
+
+.wheelGraphic {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: spinRims 0.25s linear 4 forwards;
+}
+
+/* Glowing Front Headlight Beam */
+.headlightCone {
+  position: absolute;
+  right: -46px;
+  top: 15px;
+  width: 54px;
+  height: 20px;
+  background: linear-gradient(90deg, rgba(255, 245, 190, 0.7) 0%, rgba(255, 185, 7, 0.2) 55%, transparent 100%);
+  clip-path: polygon(0% 32%, 100% 0%, 100% 100%, 0% 68%);
+  pointer-events: none;
+  filter: blur(1px);
+}
+
+/* Speed Particles */
+.exhaustPuff {
+  position: absolute;
+  left: -12px;
+  bottom: 3px;
+  display: flex;
+  gap: 3px;
+}
+
+.exhaustPuff span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(255, 185, 7, 0.5);
+  animation: puffDissolve 0.35s infinite ease-out;
+}
+
+.exhaustPuff span:nth-child(2) {
+  animation-delay: 0.1s;
+  width: 4px;
+  height: 4px;
+}
+
+.exhaustPuff span:nth-child(3) {
+  animation-delay: 0.2s;
+  width: 3px;
+  height: 3px;
+}
+
+/* Status & Micro-Progress Bar */
+.statusBar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.statusMessage {
+  font-size: 11.5px;
+  font-weight: 500;
+  color: #9ca3af;
+  margin: 0 0 9px 0;
+  letter-spacing: 0.4px;
+  min-height: 18px;
+}
+
+.progressBarTrack {
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progressBarFill {
+  height: 100%;
+  width: 100%;
+  transform-origin: left center;
+  transform: scaleX(0);
+  background: linear-gradient(90deg, #10b981 0%, #ffb907 70%, #ffffff 100%);
+  border-radius: 2px;
+  will-change: transform;
+  animation: loadProgress 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  box-shadow: 0 0 10px rgba(255, 185, 7, 0.7);
+}
+
+/* Pure GPU Keyframes */
+@keyframes driveAcross {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(calc(100% - 84px), 0, 0);
+  }
+}
+
+@keyframes suspensionBounce {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -1.2px, 0);
+  }
+}
+
+@keyframes spinRims {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes destPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(255, 185, 7, 0.3);
+  }
+  100% {
+    transform: scale(1.08);
+    box-shadow: 0 0 18px rgba(255, 185, 7, 0.65);
+  }
+}
+
+@keyframes puffDissolve {
+  0% {
+    transform: scale(0.4) translate3d(0, 0, 0);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.8) translate3d(-12px, -3px, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes loadProgress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 480px) {
+  .cardContainer {
+    padding: 22px 14px;
+  }
+  .pointWrapper {
+    width: 56px;
+  }
+  .pointBadge {
+    width: 32px;
+    height: 32px;
+  }
+  .pointLabel {
+    font-size: 8.5px;
+  }
+  .pointSubtext {
+    font-size: 7.5px;
+  }
+  .roadTrack {
+    margin: 0 6px;
+    height: 26px;
+  }
+  .carContainer {
+    width: 70px;
+    height: 28px;
+  }
+  .carBodySvg {
+    width: 70px;
+    height: 28px;
+  }
+  .headlightCone {
+    right: -38px;
+    width: 44px;
+    height: 16px;
+  }
+  @keyframes driveAcross {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(calc(100% - 70px), 0, 0);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carBodySvg,
+  .exhaustPuff span,
+  .pointDest {
+    animation: none;
+  }
+}
