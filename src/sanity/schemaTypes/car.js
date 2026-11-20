@@ -67,7 +67,7 @@ export const carType = defineType({
           { title: '📍 Gachibowli', value: 'gachibowli-luxury-car-rental' },
           { title: '📍 Guttala Begumpet', value: 'guttala-begumpet-luxury-car-rental' },
           { title: '📍 Habsiguda', value: 'habsiguda-luxury-car-rental' },
-          { title: '📍 Himmatnagar', value: 'himmatnagar' },
+          { title: '📍 Himayatnagar', value: 'himayatnagar' },
           { title: '📍 Hitech City', value: 'hitech-city' },
           { title: '📍 Jubilee Hills', value: 'jubilee-hills' },
           { title: '📍 Khairatabad', value: 'khairatabad-luxury-car-rental' },

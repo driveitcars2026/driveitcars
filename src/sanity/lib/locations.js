@@ -2,782 +2,782 @@ import { client } from './client';
 
 export const LOCATION_DEFAULTS = {
   'shamshabad': {
-      "name": "Shamshabad",
-      "h1Title": "Self Drive Cars in Shamshabad & Airport Zone",
-      "seoTitle": "Self Drive Cars in Shamshabad Hyderabad | DriveItCars",
-      "seoDescription": "Rent self drive cars in Shamshabad, Hyderabad. 15-min delivery near RGIA Airport, ORR Junction & Bangalore Highway. Sanitized SUVs & automatics.",
-      "introParagraph1": "Located at the gateway to South Hyderabad and Rajiv Gandhi International Airport, Shamshabad is the premier transportation hub for intercity travelers and flight passengers. DriveItCars provides sanitized self drive cars delivered directly to your airport hotel, transit accommodation, or residence in Shamshabad with refundable security deposit and no surge pricing.",
-      "introParagraph2": "Connecting directly to the Bangalore Highway (NH-44), PVNR Expressway, and Nehru Outer Ring Road (ORR) Exit 16, Shamshabad is the ideal launchpad for long-distance highway road trips toward Mahabubnagar, Kurnool, Bengaluru, or Srisailam. Choose from rugged 4x4 Mahindra Thar and Toyota Fortuner SUVs or comfortable automatics.",
-      "introParagraph3": "Our rapid airport-corridor dispatch team guarantees 15-minute car handovers with verified FASTag, clean documentation, and 24/7 roadside assistance across Shamshabad town and RGIA approach roads.",
-      "serviceAreas": [
-          "RGIA Airport Approach",
-          "Shamshabad Bus Stand",
-          "ORR Exit 16",
-          "Bangalore Highway NH-44",
-          "Novotel RGIA Corridor",
-          "GMR Aero City"
-      ],
-      "localHighlights": {
-          "airportDistance": "3 km (5 mins)",
-          "keyCorridors": "NH-44 Bangalore Hwy, Nehru ORR Exit 16 & Airport Rd",
-          "popularCars": "Toyota Innova Hycross, Maruti Brezza, Mahindra Thar 4x4 & Dzire",
-          "idealFor": "Airport Pickups, Bangalore Highway Trips & South Hyderabad Commutes"
+    "name": "Shamshabad",
+    "h1Title": "Self Drive Cars in Shamshabad & Airport Zone",
+    "seoTitle": "Self Drive Cars in Shamshabad Hyderabad | DriveItCars",
+    "seoDescription": "Rent self drive cars in Shamshabad, Hyderabad. 15-min delivery near RGIA Airport, ORR Junction & Bangalore Highway. Sanitized SUVs & automatics.",
+    "introParagraph1": "Located at the gateway to South Hyderabad and Rajiv Gandhi International Airport, Shamshabad is the premier transportation hub for intercity travelers and flight passengers. DriveItCars provides sanitized self drive cars delivered directly to your airport hotel, transit accommodation, or residence in Shamshabad with refundable security deposit and no surge pricing.",
+    "introParagraph2": "Connecting directly to the Bangalore Highway (NH-44), PVNR Expressway, and Nehru Outer Ring Road (ORR) Exit 16, Shamshabad is the ideal launchpad for long-distance highway road trips toward Mahabubnagar, Kurnool, Bengaluru, or Srisailam. Choose from rugged 4x4 Mahindra Thar and Toyota Fortuner SUVs or comfortable automatics.",
+    "introParagraph3": "Our rapid airport-corridor dispatch team guarantees 15-minute car handovers with verified FASTag, clean documentation, and 24/7 roadside assistance across Shamshabad town and RGIA approach roads.",
+    "serviceAreas": [
+      "RGIA Airport Approach",
+      "Shamshabad Bus Stand",
+      "ORR Exit 16",
+      "Bangalore Highway NH-44",
+      "Novotel RGIA Corridor",
+      "GMR Aero City"
+    ],
+    "localHighlights": {
+      "airportDistance": "3 km (5 mins)",
+      "keyCorridors": "NH-44 Bangalore Hwy, Nehru ORR Exit 16 & Airport Rd",
+      "popularCars": "Toyota Innova Hycross, Maruti Brezza, Mahindra Thar 4x4 & Dzire",
+      "idealFor": "Airport Pickups, Bangalore Highway Trips & South Hyderabad Commutes"
+    },
+    "customFaqs": [
+      {
+        "question": "How fast can I get a self drive car in Shamshabad?",
+        "answer": "We deliver cars in 15 minutes anywhere in Shamshabad town, Novotel, and surrounding airport hotels."
       },
-      "customFaqs": [
-          {
-              "question": "How fast can I get a self drive car in Shamshabad?",
-              "answer": "We deliver cars in 15 minutes anywhere in Shamshabad town, Novotel, and surrounding airport hotels."
-          },
-          {
-              "question": "Can I pick up a car in Shamshabad and drop it at RGIA Airport?",
-              "answer": "Yes! We offer flexible pickup and drop services across Shamshabad and RGIA Airport 24 hours a day."
-          },
-          {
-              "question": "How does the security deposit work for rentals in Shamshabad?",
-              "answer": "We require a refundable security deposit returned post-trip upon vehicle inspection as per rental terms."
-          }
-      ]
+      {
+        "question": "Can I pick up a car in Shamshabad and drop it at RGIA Airport?",
+        "answer": "Yes! We offer flexible pickup and drop services across Shamshabad and RGIA Airport 24 hours a day."
+      },
+      {
+        "question": "How does the security deposit work for rentals in Shamshabad?",
+        "answer": "We require a refundable security deposit returned post-trip upon vehicle inspection as per rental terms."
+      }
+    ]
   },
   'aram-ghar': {
-      "name": "Aram Ghar",
-      "h1Title": "Self Drive Cars in Aram Ghar & National Highway 44",
-      "seoTitle": "Self Drive Cars in Aram Ghar Hyderabad | DriveItCars",
-      "seoDescription": "Book self drive cars in Aram Ghar, Hyderabad. Fast delivery at NH-44 junction, PVNR Expressway start & Mailardevpally. 24/7 sanitized sedans & SUVs.",
-      "introParagraph1": "Aram Ghar marks the strategic meeting point of the PVNR Expressway, National Highway 44, and the Old City link. DriveItCars delivers pristine self drive cars across Aram Ghar, Mailardevpally, and Shivarampally with quick doorstep handover.",
-      "introParagraph2": "Whether heading to Rajiv Gandhi International Airport in 15 minutes via the elevated expressway or driving out on family weekend trips toward Shadnagar and Kurnool, our sanitized fleet of hatchbacks, executive sedans, and 7-seater MPVs gives you complete driving independence.",
-      "introParagraph3": "Every vehicle comes equipped with working FASTag, comprehensive insurance, clean cabin filters, and 24/7 roadside assistance.",
-      "serviceAreas": [
-          "Aram Ghar X Roads",
-          "PVNR Expressway Pillar 1",
-          "Mailardevpally",
-          "Shivarampally",
-          "Kattedan Industrial Area",
-          "NH-44 Bypass"
-      ],
-      "localHighlights": {
-          "airportDistance": "12 km via NH-44 (15 mins)",
-          "keyCorridors": "PVNR Expressway, NH-44 Bangalore Highway & Chandrayangutta Road",
-          "popularCars": "Maruti Ertiga, Swift AMT, Hyundai Creta & Innova Crysta",
-          "idealFor": "Airport Express Access, Highway Road Trips & Family Drives"
+    "name": "Aram Ghar",
+    "h1Title": "Self Drive Cars in Aram Ghar & National Highway 44",
+    "seoTitle": "Self Drive Cars in Aram Ghar Hyderabad | DriveItCars",
+    "seoDescription": "Book self drive cars in Aram Ghar, Hyderabad. Fast delivery at NH-44 junction, PVNR Expressway start & Mailardevpally. 24/7 sanitized sedans & SUVs.",
+    "introParagraph1": "Aram Ghar marks the strategic meeting point of the PVNR Expressway, National Highway 44, and the Old City link. DriveItCars delivers pristine self drive cars across Aram Ghar, Mailardevpally, and Shivarampally with quick doorstep handover.",
+    "introParagraph2": "Whether heading to Rajiv Gandhi International Airport in 15 minutes via the elevated expressway or driving out on family weekend trips toward Shadnagar and Kurnool, our sanitized fleet of hatchbacks, executive sedans, and 7-seater MPVs gives you complete driving independence.",
+    "introParagraph3": "Every vehicle comes equipped with working FASTag, comprehensive insurance, clean cabin filters, and 24/7 roadside assistance.",
+    "serviceAreas": [
+      "Aram Ghar X Roads",
+      "PVNR Expressway Pillar 1",
+      "Mailardevpally",
+      "Shivarampally",
+      "Kattedan Industrial Area",
+      "NH-44 Bypass"
+    ],
+    "localHighlights": {
+      "airportDistance": "12 km via NH-44 (15 mins)",
+      "keyCorridors": "PVNR Expressway, NH-44 Bangalore Highway & Chandrayangutta Road",
+      "popularCars": "Maruti Ertiga, Swift AMT, Hyundai Creta & Innova Crysta",
+      "idealFor": "Airport Express Access, Highway Road Trips & Family Drives"
+    },
+    "customFaqs": [
+      {
+        "question": "Do you deliver cars near PVNR Expressway Pillar 1 in Aram Ghar?",
+        "answer": "Yes, our dispatch team delivers right to Aram Ghar X Roads, Pillar 1, and surrounding neighborhoods."
       },
-      "customFaqs": [
-          {
-              "question": "Do you deliver cars near PVNR Expressway Pillar 1 in Aram Ghar?",
-              "answer": "Yes, our dispatch team delivers right to Aram Ghar X Roads, Pillar 1, and surrounding neighborhoods."
-          },
-          {
-              "question": "Can I rent a 7-seater car in Aram Ghar for an outstation trip?",
-              "answer": "Yes, we provide Ertiga, Carens, XUV700, and Innova Crysta with unlimited kilometers for highway travel."
-          },
-          {
-              "question": "Are automatic cars available in Aram Ghar?",
-              "answer": "Yes, we offer clutch-free automatic hatchbacks, sedans, and SUVs for smooth driving in Hyderabad traffic."
-          }
-      ]
+      {
+        "question": "Can I rent a 7-seater car in Aram Ghar for an outstation trip?",
+        "answer": "Yes, we provide Ertiga, Carens, XUV700, and Innova Crysta with unlimited kilometers for highway travel."
+      },
+      {
+        "question": "Are automatic cars available in Aram Ghar?",
+        "answer": "Yes, we offer clutch-free automatic hatchbacks, sedans, and SUVs for smooth driving in Hyderabad traffic."
+      }
+    ]
   },
   'rajendra-nagar': {
-      "name": "Rajendra Nagar",
-      "h1Title": "Self Drive Cars in Rajendra Nagar & Agri University",
-      "seoTitle": "Self Drive Cars in Rajendra Nagar HYD | DriveItCars",
-      "seoDescription": "Hire self drive cars in Rajendra Nagar, Hyderabad. Doorstep delivery near PJTSAU campus, Budwel station & ORR Exit 17. Hatchbacks, sedans & SUVs.",
-      "introParagraph1": "Home to premier educational institutions such as PJTSAU, SVPNPA, and NIRD, Rajendra Nagar is a prominent educational and residential zone in South-West Hyderabad. DriveItCars offers easy self drive car rentals delivered to university residences, gated layouts, and transit junctions.",
-      "introParagraph2": "With immediate proximity to Nehru Outer Ring Road (ORR) Exit 17 and the PVNR Expressway, driving from Rajendra Nagar to the Financial District or RGIA Airport takes under 20 minutes without city traffic hurdles.",
-      "introParagraph3": "Choose from fuel-efficient hatchbacks for daily errands, comfortable sedans for family functions, or 4x4 SUVs for outdoor weekend getaways.",
-      "serviceAreas": [
-          "PJTSAU Campus",
-          "Budwel Road",
-          "National Police Academy (SVPNPA)",
-          "Attapur Border",
-          "Dairy Farm Road",
-          "ORR Exit 17"
-      ],
-      "localHighlights": {
-          "airportDistance": "14 km via ORR (16 mins)",
-          "keyCorridors": "PVNR Expressway, Inner Ring Road & ORR Exit 17",
-          "popularCars": "Hyundai Venue, Baleno AMT, Mahindra XUV700 & Honda City",
-          "idealFor": "University Commutes, Airport Handover & South-West Travel"
+    "name": "Rajendra Nagar",
+    "h1Title": "Self Drive Cars in Rajendra Nagar & Agri University",
+    "seoTitle": "Self Drive Cars in Rajendra Nagar HYD | DriveItCars",
+    "seoDescription": "Hire self drive cars in Rajendra Nagar, Hyderabad. Doorstep delivery near PJTSAU campus, Budwel station & ORR Exit 17. Hatchbacks, sedans & SUVs.",
+    "introParagraph1": "Home to premier educational institutions such as PJTSAU, SVPNPA, and NIRD, Rajendra Nagar is a prominent educational and residential zone in South-West Hyderabad. DriveItCars offers easy self drive car rentals delivered to university residences, gated layouts, and transit junctions.",
+    "introParagraph2": "With immediate proximity to Nehru Outer Ring Road (ORR) Exit 17 and the PVNR Expressway, driving from Rajendra Nagar to the Financial District or RGIA Airport takes under 20 minutes without city traffic hurdles.",
+    "introParagraph3": "Choose from fuel-efficient hatchbacks for daily errands, comfortable sedans for family functions, or 4x4 SUVs for outdoor weekend getaways.",
+    "serviceAreas": [
+      "PJTSAU Campus",
+      "Budwel Road",
+      "National Police Academy (SVPNPA)",
+      "Attapur Border",
+      "Dairy Farm Road",
+      "ORR Exit 17"
+    ],
+    "localHighlights": {
+      "airportDistance": "14 km via ORR (16 mins)",
+      "keyCorridors": "PVNR Expressway, Inner Ring Road & ORR Exit 17",
+      "popularCars": "Hyundai Venue, Baleno AMT, Mahindra XUV700 & Honda City",
+      "idealFor": "University Commutes, Airport Handover & South-West Travel"
+    },
+    "customFaqs": [
+      {
+        "question": "How quickly can a car be delivered in Rajendra Nagar?",
+        "answer": "We deliver within 20 minutes anywhere along Dairy Farm Road, PJTSAU campus, and Budwel link road."
       },
-      "customFaqs": [
-          {
-              "question": "How quickly can a car be delivered in Rajendra Nagar?",
-              "answer": "We deliver within 20 minutes anywhere along Dairy Farm Road, PJTSAU campus, and Budwel link road."
-          },
-          {
-              "question": "Do your cars include toll FASTag for the ORR?",
-              "answer": "Yes, all DriveItCars fleet vehicles are equipped with pre-loaded, verified FASTag for seamless tollway travel."
-          },
-          {
-              "question": "Are monthly subscriptions available in Rajendra Nagar?",
-              "answer": "Yes, faculty, researchers, and residents can book affordable 30-day monthly rental plans with zero maintenance."
-          }
-      ]
+      {
+        "question": "Do your cars include toll FASTag for the ORR?",
+        "answer": "Yes, all DriveItCars fleet vehicles are equipped with pre-loaded, verified FASTag for seamless tollway travel."
+      },
+      {
+        "question": "Are monthly subscriptions available in Rajendra Nagar?",
+        "answer": "Yes, faculty, researchers, and residents can book affordable 30-day monthly rental plans with zero maintenance."
+      }
+    ]
   },
   'kismatpur': {
-      "name": "Kismatpur",
-      "h1Title": "Self Drive Cars in Kismatpur & Himayat Sagar",
-      "seoTitle": "Self Drive Cars in Kismatpur Hyderabad | DriveItCars",
-      "seoDescription": "Rent self drive cars in Kismatpur & Himayat Sagar, Hyderabad. Quick delivery across luxury gated villas, Suncity road & APPA Junction. Sanitized fleet.",
-      "introParagraph1": "Nestled between Himayat Sagar lake and Suncity, Kismatpur has emerged as one of West Hyderabad’s premier luxury villa destinations. DriveItCars provides high-end self drive cars directly to luxury gated communities, independent villas, and lakeview townships.",
-      "introParagraph2": "Residents heading to the Financial District, HITEC City, or Rajiv Gandhi International Airport enjoy seamless connectivity via TSPA (APPA) Junction and Nehru Outer Ring Road Exit 17.",
-      "introParagraph3": "Our premium fleet includes luxury sedans, commanding 4x4 SUVs, and spacious MPVs, all delivered in showroom condition with refundable deposit.",
-      "serviceAreas": [
-          "Himayat Sagar Lake Road",
-          "Kismatpur Village",
-          "Bandlaguda Jagir Border",
-          "Peerancheru",
-          "APPA Junction ORR",
-          "Prestige Tranquil Corridor"
-      ],
-      "localHighlights": {
-          "airportDistance": "18 km via ORR TSPA (18 mins)",
-          "keyCorridors": "Himayat Sagar Rd, Suncity Main Rd & ORR Exit 17/18",
-          "popularCars": "Mahindra Thar 4x4, Toyota Fortuner, Hyundai Creta & Slavia",
-          "idealFor": "Gated Community Families, Weekend Getaways & ORR Drives"
+    "name": "Kismatpur",
+    "h1Title": "Self Drive Cars in Kismatpur & Himayat Sagar",
+    "seoTitle": "Self Drive Cars in Kismatpur Hyderabad | DriveItCars",
+    "seoDescription": "Rent self drive cars in Kismatpur & Himayat Sagar, Hyderabad. Quick delivery across luxury gated villas, Suncity road & APPA Junction. Sanitized fleet.",
+    "introParagraph1": "Nestled between Himayat Sagar lake and Suncity, Kismatpur has emerged as one of West Hyderabad’s premier luxury villa destinations. DriveItCars provides high-end self drive cars directly to luxury gated communities, independent villas, and lakeview townships.",
+    "introParagraph2": "Residents heading to the Financial District, HITEC City, or Rajiv Gandhi International Airport enjoy seamless connectivity via TSPA (APPA) Junction and Nehru Outer Ring Road Exit 17.",
+    "introParagraph3": "Our premium fleet includes luxury sedans, commanding 4x4 SUVs, and spacious MPVs, all delivered in showroom condition with refundable deposit.",
+    "serviceAreas": [
+      "Himayat Sagar Lake Road",
+      "Kismatpur Village",
+      "Bandlaguda Jagir Border",
+      "Peerancheru",
+      "APPA Junction ORR",
+      "Prestige Tranquil Corridor"
+    ],
+    "localHighlights": {
+      "airportDistance": "18 km via ORR TSPA (18 mins)",
+      "keyCorridors": "Himayat Sagar Rd, Suncity Main Rd & ORR Exit 17/18",
+      "popularCars": "Mahindra Thar 4x4, Toyota Fortuner, Hyundai Creta & Slavia",
+      "idealFor": "Gated Community Families, Weekend Getaways & ORR Drives"
+    },
+    "customFaqs": [
+      {
+        "question": "Can you deliver a car inside my gated villa community in Kismatpur?",
+        "answer": "Yes, our drivers deliver directly to your doorstep in all gated communities across Kismatpur and Himayat Sagar."
       },
-      "customFaqs": [
-          {
-              "question": "Can you deliver a car inside my gated villa community in Kismatpur?",
-              "answer": "Yes, our drivers deliver directly to your doorstep in all gated communities across Kismatpur and Himayat Sagar."
-          },
-          {
-              "question": "Is the Mahindra Thar 4x4 available for rent in Kismatpur?",
-              "answer": "Yes, the Mahindra Thar 4x4 (Hard Top Automatic/Manual) is available with unlimited kilometers."
-          },
-          {
-              "question": "How do I reach the airport from Kismatpur with a rental car?",
-              "answer": "Via APPA / TSPA Junction, the Nehru ORR connects you directly to RGIA Shamshabad Airport in just 18 minutes."
-          }
-      ]
+      {
+        "question": "Is the Mahindra Thar 4x4 available for rent in Kismatpur?",
+        "answer": "Yes, the Mahindra Thar 4x4 (Hard Top Automatic/Manual) is available with unlimited kilometers."
+      },
+      {
+        "question": "How do I reach the airport from Kismatpur with a rental car?",
+        "answer": "Via APPA / TSPA Junction, the Nehru ORR connects you directly to RGIA Shamshabad Airport in just 18 minutes."
+      }
+    ]
   },
   'budwel': {
-      "name": "Budwel",
-      "h1Title": "Self Drive Cars in Budwel IT Park & High-Rise Hub",
-      "seoTitle": "Self Drive Cars in Budwel Hyderabad | DriveItCars",
-      "seoDescription": "Self drive car rental in Budwel, Hyderabad. Fast delivery near Budwel IT Hub, Railway Station, ORR Exit 17 & Rajendra Nagar. Sedans & automatic SUVs.",
-      "introParagraph1": "With massive infrastructure investments and upcoming high-tech IT parks, Budwel is rapidly transforming into West Hyderabad’s next major corporate and residential hub. DriveItCars delivers reliable self drive cars across Budwel railway station and the ORR corridor.",
-      "introParagraph2": "Whether you are an IT professional working on new campus developments or a resident needing a reliable automatic car for city commuting, our doorstep delivery service guarantees convenience without cab surge pricing.",
-      "introParagraph3": "With direct access to Nehru Outer Ring Road Exit 17, traveling to HITEC City, Gachibowli, or Rajiv Gandhi Airport takes less than 20 minutes.",
-      "serviceAreas": [
-          "Budwel IT SEZ",
-          "Budwel Railway Station",
-          "ORR Exit 17",
-          "Rajendra Nagar Road",
-          "Hydershakote Corridor",
-          "Kismatpur Link Road"
-      ],
-      "localHighlights": {
-          "airportDistance": "15 km via ORR Exit 17 (16 mins)",
-          "keyCorridors": "Nehru ORR, Budwel IT Corridor & Rajendra Nagar Express Rd",
-          "popularCars": "Volkswagen Virtus GT, Maruti Fronx, Innova Hycross & Brezza",
-          "idealFor": "Budwel IT Professionals, Airport Express Runs & Highway Travel"
+    "name": "Budwel",
+    "h1Title": "Self Drive Cars in Budwel IT Park & High-Rise Hub",
+    "seoTitle": "Self Drive Cars in Budwel Hyderabad | DriveItCars",
+    "seoDescription": "Self drive car rental in Budwel, Hyderabad. Fast delivery near Budwel IT Hub, Railway Station, ORR Exit 17 & Rajendra Nagar. Sedans & automatic SUVs.",
+    "introParagraph1": "With massive infrastructure investments and upcoming high-tech IT parks, Budwel is rapidly transforming into West Hyderabad’s next major corporate and residential hub. DriveItCars delivers reliable self drive cars across Budwel railway station and the ORR corridor.",
+    "introParagraph2": "Whether you are an IT professional working on new campus developments or a resident needing a reliable automatic car for city commuting, our doorstep delivery service guarantees convenience without cab surge pricing.",
+    "introParagraph3": "With direct access to Nehru Outer Ring Road Exit 17, traveling to HITEC City, Gachibowli, or Rajiv Gandhi Airport takes less than 20 minutes.",
+    "serviceAreas": [
+      "Budwel IT SEZ",
+      "Budwel Railway Station",
+      "ORR Exit 17",
+      "Rajendra Nagar Road",
+      "Hydershakote Corridor",
+      "Kismatpur Link Road"
+    ],
+    "localHighlights": {
+      "airportDistance": "15 km via ORR Exit 17 (16 mins)",
+      "keyCorridors": "Nehru ORR, Budwel IT Corridor & Rajendra Nagar Express Rd",
+      "popularCars": "Volkswagen Virtus GT, Maruti Fronx, Innova Hycross & Brezza",
+      "idealFor": "Budwel IT Professionals, Airport Express Runs & Highway Travel"
+    },
+    "customFaqs": [
+      {
+        "question": "Do you offer doorstep delivery in Budwel?",
+        "answer": "Yes, we provide 15–20 minute delivery across Budwel IT zone, station road, and residential townships."
       },
-      "customFaqs": [
-          {
-              "question": "Do you offer doorstep delivery in Budwel?",
-              "answer": "Yes, we provide 15–20 minute delivery across Budwel IT zone, station road, and residential townships."
-          },
-          {
-              "question": "Are automatic cars available for hire in Budwel?",
-              "answer": "Yes, our fleet includes AMT, CVT, and Torque Converter automatics from Maruti, Hyundai, Volkswagen, and Toyota."
-          },
-          {
-              "question": "Can I take a self drive car from Budwel on an outstation trip?",
-              "answer": "Yes, all DriveItCars bookings include unlimited kilometers and verified interstate FASTags."
-          }
-      ]
+      {
+        "question": "Are automatic cars available for hire in Budwel?",
+        "answer": "Yes, our fleet includes AMT, CVT, and Torque Converter automatics from Maruti, Hyundai, Volkswagen, and Toyota."
+      },
+      {
+        "question": "Can I take a self drive car from Budwel on an outstation trip?",
+        "answer": "Yes, all DriveItCars bookings include unlimited kilometers and verified interstate FASTags."
+      }
+    ]
   },
   'attapur': {
-      "name": "Attapur",
-      "h1Title": "Self Drive Cars in Attapur & PVNR Expressway Corridor",
-      "seoTitle": "Self Drive Cars in Attapur Hyderabad | DriveItCars",
-      "seoDescription": "Book self drive cars in Attapur, Hyderabad. Fast delivery along PVNR Expressway pillars 100-200, Ring Road & Hyderguda. 24/7 delivery with refundable deposit.",
-      "introParagraph1": "Stretching along the bustling PVNR Elevated Expressway, Attapur connects central Hyderabad seamlessly to the southern airport corridor. DriveItCars provides sanitized self-drive hatchbacks, sedans, and SUVs delivered directly to your doorstep.",
-      "introParagraph2": "Whether heading into Banjara Hills and Mehdipatnam for business, or taking the elevated expressway straight to Rajiv Gandhi International Airport in 20 minutes, our cars offer stress-free travel.",
-      "introParagraph3": "Our transparent rental terms include refundable security deposit, unlimited kilometers, clean interiors, and complete roadside peace of mind.",
-      "serviceAreas": [
-          "PVNR Expressway Corridor",
-          "Hyderguda Attapur",
-          "Upperpally",
-          "Rambagh",
-          "Musi River Bypass",
-          "pillar 143 Hub"
-      ],
-      "localHighlights": {
-          "airportDistance": "18 km via PVNR Expressway (20 mins)",
-          "keyCorridors": "PVNR Expressway, Inner Ring Road & Rajendra Nagar Road",
-          "popularCars": "Maruti Baleno, Hyundai Verna, Kia Seltos & Toyota Crysta",
-          "idealFor": "Direct Airport Transit, City Shopping & Family Functions"
+    "name": "Attapur",
+    "h1Title": "Self Drive Cars in Attapur & PVNR Expressway Corridor",
+    "seoTitle": "Self Drive Cars in Attapur Hyderabad | DriveItCars",
+    "seoDescription": "Book self drive cars in Attapur, Hyderabad. Fast delivery along PVNR Expressway pillars 100-200, Ring Road & Hyderguda. 24/7 delivery with refundable deposit.",
+    "introParagraph1": "Stretching along the bustling PVNR Elevated Expressway, Attapur connects central Hyderabad seamlessly to the southern airport corridor. DriveItCars provides sanitized self-drive hatchbacks, sedans, and SUVs delivered directly to your doorstep.",
+    "introParagraph2": "Whether heading into Banjara Hills and Mehdipatnam for business, or taking the elevated expressway straight to Rajiv Gandhi International Airport in 20 minutes, our cars offer stress-free travel.",
+    "introParagraph3": "Our transparent rental terms include refundable security deposit, unlimited kilometers, clean interiors, and complete roadside peace of mind.",
+    "serviceAreas": [
+      "PVNR Expressway Corridor",
+      "Hyderguda Attapur",
+      "Upperpally",
+      "Rambagh",
+      "Musi River Bypass",
+      "pillar 143 Hub"
+    ],
+    "localHighlights": {
+      "airportDistance": "18 km via PVNR Expressway (20 mins)",
+      "keyCorridors": "PVNR Expressway, Inner Ring Road & Rajendra Nagar Road",
+      "popularCars": "Maruti Baleno, Hyundai Verna, Kia Seltos & Toyota Crysta",
+      "idealFor": "Direct Airport Transit, City Shopping & Family Functions"
+    },
+    "customFaqs": [
+      {
+        "question": "Where can you deliver in Attapur?",
+        "answer": "We deliver along PVNR Expressway pillars 80 to 200, Hyderguda, Upperpally, and nearby residential societies."
       },
-      "customFaqs": [
-          {
-              "question": "Where can you deliver in Attapur?",
-              "answer": "We deliver along PVNR Expressway pillars 80 to 200, Hyderguda, Upperpally, and nearby residential societies."
-          },
-          {
-              "question": "Is it easy to reach the airport from Attapur in a rental car?",
-              "answer": "Yes! Attapur has direct ramps onto the PVNR Elevated Expressway, reaching the airport in just 20 minutes."
-          },
-          {
-              "question": "What documents are required to book in Attapur?",
-              "answer": "Just a valid Driving License and Aadhaar Card. Our instant digital verification takes under 3 minutes."
-          }
-      ]
+      {
+        "question": "Is it easy to reach the airport from Attapur in a rental car?",
+        "answer": "Yes! Attapur has direct ramps onto the PVNR Elevated Expressway, reaching the airport in just 20 minutes."
+      },
+      {
+        "question": "What documents are required to book in Attapur?",
+        "answer": "Just a valid Driving License and Aadhaar Card. Our instant digital verification takes under 3 minutes."
+      }
+    ]
   },
   'shankerpally': {
-      "name": "Shankerpally",
-      "h1Title": "Self Drive Cars in Shankerpally & West Growth Corridor",
-      "seoTitle": "Self Drive Cars in Shankerpally HYD | DriveItCars",
-      "seoDescription": "Rent self drive cars in Shankerpally, Hyderabad. Fast delivery across Mokila villa road, railway station & Pragathi Resorts. 4x4 SUVs & tourers.",
-      "introParagraph1": "Surrounded by premier resorts, agricultural green belts, and booming villa communities, Shankerpally is West Hyderabad’s favorite weekend and suburban escape. DriveItCars delivers rugged SUVs and comfortable tourers directly to your residence or resort.",
-      "introParagraph2": "Heading to Ananthagiri Hills in Vikarabad, Kotpally Reservoir, or hosting family at Pragathi Resorts? Our high-ground-clearance Mahindra Thar, Scorpio-N, and Toyota Fortuner SUVs make highway and country driving a pleasure.",
-      "introParagraph3": "With simple online booking, refundable deposit, and 24/7 roadside assistance, exploring Telangana’s western trails has never been easier.",
-      "serviceAreas": [
-          "Shankerpally Town",
-          "Mokila Road",
-          "Pragathi Resorts Junction",
-          "ICFAI University Hub",
-          "Vikarabad Highway",
-          "BDL Bhanoor Road"
-      ],
-      "localHighlights": {
-          "airportDistance": "42 km via Nehru ORR (45 mins)",
-          "keyCorridors": "Shankerpally-Mokila Rd, Vikarabad State Highway & ORR Kollur",
-          "popularCars": "Mahindra Thar 4x4, Toyota Fortuner, Scorpio-N & Ertiga",
-          "idealFor": "Resort Weekends, Ananthagiri Hills Trips & Farmhouse Drives"
+    "name": "Shankerpally",
+    "h1Title": "Self Drive Cars in Shankerpally & West Growth Corridor",
+    "seoTitle": "Self Drive Cars in Shankerpally HYD | DriveItCars",
+    "seoDescription": "Rent self drive cars in Shankerpally, Hyderabad. Fast delivery across Mokila villa road, railway station & Pragathi Resorts. 4x4 SUVs & tourers.",
+    "introParagraph1": "Surrounded by premier resorts, agricultural green belts, and booming villa communities, Shankerpally is West Hyderabad’s favorite weekend and suburban escape. DriveItCars delivers rugged SUVs and comfortable tourers directly to your residence or resort.",
+    "introParagraph2": "Heading to Ananthagiri Hills in Vikarabad, Kotpally Reservoir, or hosting family at Pragathi Resorts? Our high-ground-clearance Mahindra Thar, Scorpio-N, and Toyota Fortuner SUVs make highway and country driving a pleasure.",
+    "introParagraph3": "With simple online booking, refundable deposit, and 24/7 roadside assistance, exploring Telangana’s western trails has never been easier.",
+    "serviceAreas": [
+      "Shankerpally Town",
+      "Mokila Road",
+      "Pragathi Resorts Junction",
+      "ICFAI University Hub",
+      "Vikarabad Highway",
+      "BDL Bhanoor Road"
+    ],
+    "localHighlights": {
+      "airportDistance": "42 km via Nehru ORR (45 mins)",
+      "keyCorridors": "Shankerpally-Mokila Rd, Vikarabad State Highway & ORR Kollur",
+      "popularCars": "Mahindra Thar 4x4, Toyota Fortuner, Scorpio-N & Ertiga",
+      "idealFor": "Resort Weekends, Ananthagiri Hills Trips & Farmhouse Drives"
+    },
+    "customFaqs": [
+      {
+        "question": "Do you deliver self drive cars to resorts in Shankerpally?",
+        "answer": "Yes, we deliver directly to Pragathi Resorts, Lahari Resorts, and gated farmhouses in and around Shankerpally."
       },
-      "customFaqs": [
-          {
-              "question": "Do you deliver self drive cars to resorts in Shankerpally?",
-              "answer": "Yes, we deliver directly to Pragathi Resorts, Lahari Resorts, and gated farmhouses in and around Shankerpally."
-          },
-          {
-              "question": "Can I rent a car in Shankerpally for an Ananthagiri Hills trip?",
-              "answer": "Yes, Shankerpally connects straight onto the Vikarabad road, reaching Ananthagiri Hills in approximately 40 minutes."
-          },
-          {
-              "question": "Are 4x4 vehicles available in Shankerpally?",
-              "answer": "Yes, the Mahindra Thar 4x4 and Toyota Fortuner 4x4 are available with unlimited kilometers."
-          }
-      ]
+      {
+        "question": "Can I rent a car in Shankerpally for an Ananthagiri Hills trip?",
+        "answer": "Yes, Shankerpally connects straight onto the Vikarabad road, reaching Ananthagiri Hills in approximately 40 minutes."
+      },
+      {
+        "question": "Are 4x4 vehicles available in Shankerpally?",
+        "answer": "Yes, the Mahindra Thar 4x4 and Toyota Fortuner 4x4 are available with unlimited kilometers."
+      }
+    ]
   },
   'bandlaguda-jagir': {
-      "name": "Bandlaguda Jagir",
-      "h1Title": "Self Drive Cars in Bandlaguda Jagir & Suncity Corridor",
-      "seoTitle": "Self Drive Cars in Bandlaguda Jagir | DriveItCars",
-      "seoDescription": "Hire self drive cars in Bandlaguda Jagir, Hyderabad. Doorstep delivery near TSPA Junction, Suncity, Peerancheru & ORR Exit 18. Affordable daily rates.",
-      "introParagraph1": "Bandlaguda Jagir is one of Hyderabad’s fastest-growing residential municipalities, situated right off TSPA (APPA) Junction on the Nehru Outer Ring Road. DriveItCars provides sanitized self drive cars delivered directly to your villa or apartment.",
-      "introParagraph2": "With immediate access to ORR Exit 18, reaching Gachibowli, the Financial District, or RGIA Airport takes under 20 minutes without navigating crowded city lanes.",
-      "introParagraph3": "From fuel-efficient hatchbacks for local errands to luxury 7-seaters for family pilgrimages and weddings, every car is pre-inspected and sanitized.",
-      "serviceAreas": [
-          "Bandlaguda Jagir Municipal Hub",
-          "TSPA Junction (APPA)",
-          "Peerancheru",
-          "Suncity Main Road",
-          "Chandanagar Village",
-          "ORR Service Rd"
-      ],
-      "localHighlights": {
-          "airportDistance": "19 km via ORR Exit 18 (20 mins)",
-          "keyCorridors": "TSPA Junction, Suncity Road & Outer Ring Road Exit 18",
-          "popularCars": "Maruti Swift, Tata Punch, Hyundai Creta & XL6",
-          "idealFor": "Gated Villa Residents, Gandipet Leisure & Highway Trips"
+    "name": "Bandlaguda Jagir",
+    "h1Title": "Self Drive Cars in Bandlaguda Jagir & Suncity Corridor",
+    "seoTitle": "Self Drive Cars in Bandlaguda Jagir | DriveItCars",
+    "seoDescription": "Hire self drive cars in Bandlaguda Jagir, Hyderabad. Doorstep delivery near TSPA Junction, Suncity, Peerancheru & ORR Exit 18. Affordable daily rates.",
+    "introParagraph1": "Bandlaguda Jagir is one of Hyderabad’s fastest-growing residential municipalities, situated right off TSPA (APPA) Junction on the Nehru Outer Ring Road. DriveItCars provides sanitized self drive cars delivered directly to your villa or apartment.",
+    "introParagraph2": "With immediate access to ORR Exit 18, reaching Gachibowli, the Financial District, or RGIA Airport takes under 20 minutes without navigating crowded city lanes.",
+    "introParagraph3": "From fuel-efficient hatchbacks for local errands to luxury 7-seaters for family pilgrimages and weddings, every car is pre-inspected and sanitized.",
+    "serviceAreas": [
+      "Bandlaguda Jagir Municipal Hub",
+      "TSPA Junction (APPA)",
+      "Peerancheru",
+      "Suncity Main Road",
+      "Chandanagar Village",
+      "ORR Service Rd"
+    ],
+    "localHighlights": {
+      "airportDistance": "19 km via ORR Exit 18 (20 mins)",
+      "keyCorridors": "TSPA Junction, Suncity Road & Outer Ring Road Exit 18",
+      "popularCars": "Maruti Swift, Tata Punch, Hyundai Creta & XL6",
+      "idealFor": "Gated Villa Residents, Gandipet Leisure & Highway Trips"
+    },
+    "customFaqs": [
+      {
+        "question": "How fast can you deliver a car in Bandlaguda Jagir?",
+        "answer": "We deliver within 20 minutes across Bandlaguda Jagir, Suncity road, and near TSPA Junction."
       },
-      "customFaqs": [
-          {
-              "question": "How fast can you deliver a car in Bandlaguda Jagir?",
-              "answer": "We deliver within 20 minutes across Bandlaguda Jagir, Suncity road, and near TSPA Junction."
-          },
-          {
-              "question": "How does the security deposit work in Bandlaguda Jagir?",
-              "answer": "DriveItCars requires a refundable security deposit returned post-trip upon vehicle inspection as per rental terms."
-          },
-          {
-              "question": "Is Bandlaguda Jagir well-connected for weekend road trips?",
-              "answer": "Yes, ORR Exit 18 connects you immediately to NH-44, NH-65, and the airport expressway."
-          }
-      ]
+      {
+        "question": "How does the security deposit work in Bandlaguda Jagir?",
+        "answer": "DriveItCars requires a refundable security deposit returned post-trip upon vehicle inspection as per rental terms."
+      },
+      {
+        "question": "Is Bandlaguda Jagir well-connected for weekend road trips?",
+        "answer": "Yes, ORR Exit 18 connects you immediately to NH-44, NH-65, and the airport expressway."
+      }
+    ]
   },
   'rajiv-gandhi-airport': {
-      "name": "Rajiv Gandhi Airport",
-      "h1Title": "Self Drive Cars at Rajiv Gandhi Airport (RGIA) Hyderabad",
-      "seoTitle": "Self Drive Cars at RGIA Airport HYD | DriveItCars",
-      "seoDescription": "24/7 terminal car pickup & drop at Rajiv Gandhi International Airport (RGIA) Hyderabad. Sanitized automatic SUVs, sedans & luxury cars.",
-      "introParagraph1": "Step off your flight at Rajiv Gandhi International Airport (RGIA) Hyderabad and step straight into the driver’s seat. DriveItCars provides seamless 24/7 terminal curbside car handover and drop-off, eliminating airport taxi queues and surge pricing.",
-      "introParagraph2": "Whether visiting Hyderabad for executive meetings in the Financial District and HITEC City, attending a wedding, or embarking on a scenic road trip across Telangana, our executive sedans, luxury MPVs, and 4x4 SUVs are ready upon arrival.",
-      "introParagraph3": "All airport fleet vehicles feature verified FASTag, sanitized cabins, full comprehensive insurance, and refundable security deposit.",
-      "serviceAreas": [
-          "RGIA Terminal 1 Arrivals",
-          "Aeroplaza Curb",
-          "Novotel Airport",
-          "GMR Aerospace Park",
-          "Airport Car Park Level D",
-          "Shamshabad Tollway"
-      ],
-      "localHighlights": {
-          "airportDistance": "0 km (Direct terminal handover)",
-          "keyCorridors": "PVNR Expressway, Nehru ORR & Bangalore Highway NH-44",
-          "popularCars": "Toyota Innova Hycross Hybrid, Volkswagen Virtus GT, Fortuner & Thar",
-          "idealFor": "Flight Arrivals, Corporate Roadshows & Immediate Outstation Trips"
+    "name": "Rajiv Gandhi Airport",
+    "h1Title": "Self Drive Cars at Rajiv Gandhi Airport (RGIA) Hyderabad",
+    "seoTitle": "Self Drive Cars at RGIA Airport HYD | DriveItCars",
+    "seoDescription": "24/7 terminal car pickup & drop at Rajiv Gandhi International Airport (RGIA) Hyderabad. Sanitized automatic SUVs, sedans & luxury cars.",
+    "introParagraph1": "Step off your flight at Rajiv Gandhi International Airport (RGIA) Hyderabad and step straight into the driver’s seat. DriveItCars provides seamless 24/7 terminal curbside car handover and drop-off, eliminating airport taxi queues and surge pricing.",
+    "introParagraph2": "Whether visiting Hyderabad for executive meetings in the Financial District and HITEC City, attending a wedding, or embarking on a scenic road trip across Telangana, our executive sedans, luxury MPVs, and 4x4 SUVs are ready upon arrival.",
+    "introParagraph3": "All airport fleet vehicles feature verified FASTag, sanitized cabins, full comprehensive insurance, and refundable security deposit.",
+    "serviceAreas": [
+      "RGIA Terminal 1 Arrivals",
+      "Aeroplaza Curb",
+      "Novotel Airport",
+      "GMR Aerospace Park",
+      "Airport Car Park Level D",
+      "Shamshabad Tollway"
+    ],
+    "localHighlights": {
+      "airportDistance": "0 km (Direct terminal handover)",
+      "keyCorridors": "PVNR Expressway, Nehru ORR & Bangalore Highway NH-44",
+      "popularCars": "Toyota Innova Hycross Hybrid, Volkswagen Virtus GT, Fortuner & Thar",
+      "idealFor": "Flight Arrivals, Corporate Roadshows & Immediate Outstation Trips"
+    },
+    "customFaqs": [
+      {
+        "question": "How does airport pickup work at RGIA Hyderabad?",
+        "answer": "Our executive meets you at the airport arrivals curb with the sanitized vehicle and keys ready. Handover takes under 5 minutes."
       },
-      "customFaqs": [
-          {
-              "question": "How does airport pickup work at RGIA Hyderabad?",
-              "answer": "Our executive meets you at the airport arrivals curb with the sanitized vehicle and keys ready. Handover takes under 5 minutes."
-          },
-          {
-              "question": "Can I pick up a car late at night or early morning at RGIA?",
-              "answer": "Yes, our airport delivery team operates 24/7/365 to match your exact flight arrival schedule."
-          },
-          {
-              "question": "Can I drop the car back at the airport before departing?",
-              "answer": "Yes! Simply drive to the departure curb, hand over the keys to our team, and head straight to your boarding gate."
-          }
-      ]
+      {
+        "question": "Can I pick up a car late at night or early morning at RGIA?",
+        "answer": "Yes, our airport delivery team operates 24/7/365 to match your exact flight arrival schedule."
+      },
+      {
+        "question": "Can I drop the car back at the airport before departing?",
+        "answer": "Yes! Simply drive to the departure curb, hand over the keys to our team, and head straight to your boarding gate."
+      }
+    ]
   },
   'khajaguda': {
-      "name": "Khajaguda",
-      "h1Title": "Self Drive Cars in Khajaguda & Lanco Hills Corridor",
-      "seoTitle": "Self Drive Cars in Khajaguda Hyderabad | DriveItCars",
-      "seoDescription": "Rent self drive cars in Khajaguda & Lanco Hills, Hyderabad. Doorstep delivery near DPS, Oakridge, Bio-Diversity junction & Gachibowli circle.",
-      "introParagraph1": "Sitting at the crossroads of Gachibowli, Manikonda, and the Financial District, Khajaguda is a prime residential and educational hub in West Hyderabad. DriveItCars delivers sanitized self drive cars across Khajaguda junction and Lanco Hills link road.",
-      "introParagraph2": "Parents, tech professionals, and residents love our clutch-free automatic hatchbacks and premium SUVs for quick city commutes, school runs, and weekend expressway driving.",
-      "introParagraph3": "With prompt 15-minute delivery, refundable deposit, and clean pre-inspected vehicles, renting a car in Khajaguda is effortless.",
-      "serviceAreas": [
-          "Khajaguda Junction",
-          "Lanco Hills Link Road",
-          "Oakridge & DPS Corridor",
-          "Khajaguda Lake Heritage Hub",
-          "Manikonda Border",
-          "Raidurgam Hill"
-      ],
-      "localHighlights": {
-          "airportDistance": "27 km via ORR Exit 19 (26 mins)",
-          "keyCorridors": "Khajaguda Main Rd, Old Bombay Hwy & Biodiversity Flyover",
-          "popularCars": "Hyundai Creta, Kia Seltos, Maruti Baleno AMT & Virtus GT",
-          "idealFor": "Lanco Hills Families, IT Executives & Weekend Road Trips"
+    "name": "Khajaguda",
+    "h1Title": "Self Drive Cars in Khajaguda & Lanco Hills Corridor",
+    "seoTitle": "Self Drive Cars in Khajaguda Hyderabad | DriveItCars",
+    "seoDescription": "Rent self drive cars in Khajaguda & Lanco Hills, Hyderabad. Doorstep delivery near DPS, Oakridge, Bio-Diversity junction & Gachibowli circle.",
+    "introParagraph1": "Sitting at the crossroads of Gachibowli, Manikonda, and the Financial District, Khajaguda is a prime residential and educational hub in West Hyderabad. DriveItCars delivers sanitized self drive cars across Khajaguda junction and Lanco Hills link road.",
+    "introParagraph2": "Parents, tech professionals, and residents love our clutch-free automatic hatchbacks and premium SUVs for quick city commutes, school runs, and weekend expressway driving.",
+    "introParagraph3": "With prompt 15-minute delivery, refundable deposit, and clean pre-inspected vehicles, renting a car in Khajaguda is effortless.",
+    "serviceAreas": [
+      "Khajaguda Junction",
+      "Lanco Hills Link Road",
+      "Oakridge & DPS Corridor",
+      "Khajaguda Lake Heritage Hub",
+      "Manikonda Border",
+      "Raidurgam Hill"
+    ],
+    "localHighlights": {
+      "airportDistance": "27 km via ORR Exit 19 (26 mins)",
+      "keyCorridors": "Khajaguda Main Rd, Old Bombay Hwy & Biodiversity Flyover",
+      "popularCars": "Hyundai Creta, Kia Seltos, Maruti Baleno AMT & Virtus GT",
+      "idealFor": "Lanco Hills Families, IT Executives & Weekend Road Trips"
+    },
+    "customFaqs": [
+      {
+        "question": "How fast can I get a car delivered in Khajaguda?",
+        "answer": "We deliver within 15–20 minutes anywhere along Khajaguda main road, Oakridge school area, and Lanco Hills link."
       },
-      "customFaqs": [
-          {
-              "question": "How fast can I get a car delivered in Khajaguda?",
-              "answer": "We deliver within 15–20 minutes anywhere along Khajaguda main road, Oakridge school area, and Lanco Hills link."
-          },
-          {
-              "question": "Are automatic transmission cars available in Khajaguda?",
-              "answer": "Yes, over 70% of our Khajaguda fleet features smooth automatic transmissions for hassle-free driving."
-          },
-          {
-              "question": "Can I rent a car in Khajaguda for a weekend drive to Srisailam?",
-              "answer": "Yes, all our bookings include unlimited kilometers, so you can explore Telangana and Andhra without extra mileage fees."
-          }
-      ]
+      {
+        "question": "Are automatic transmission cars available in Khajaguda?",
+        "answer": "Yes, over 70% of our Khajaguda fleet features smooth automatic transmissions for hassle-free driving."
+      },
+      {
+        "question": "Can I rent a car in Khajaguda for a weekend drive to Srisailam?",
+        "answer": "Yes, all our bookings include unlimited kilometers, so you can explore Telangana and Andhra without extra mileage fees."
+      }
+    ]
   },
   'manikonda': {
-      "name": "Manikonda",
-      "h1Title": "Self Drive Cars in Manikonda & Puppalguda Hub",
-      "seoTitle": "Self Drive Cars in Manikonda Hyderabad | DriveItCars",
-      "seoDescription": "Book self drive cars in Manikonda, Hyderabad. Fast doorstep delivery at Lanco Hills, Puppalguda, Secret Lake & Shaikpet junction. Sanitized cars.",
-      "introParagraph1": "Surrounding the landmark Lanco Hills mega-township, Manikonda is one of Cyberabad’s most vibrant residential hubs. DriveItCars provides premium self drive cars delivered directly to your residential gate or apartment basement.",
-      "introParagraph2": "Bypass cab surge pricing and cancellations during morning rush hour along the Shaikpet flyover and Durgam Cheruvu bridge. Choose from agile automatic hatchbacks or commanding 5-seater and 7-seater SUVs.",
-      "introParagraph3": "Our transparent rental terms include refundable deposit, comprehensive insurance, clean vehicle interiors, and 24/7 roadside assistance.",
-      "serviceAreas": [
-          "Lanco Hills Mega Township",
-          "Puppalguda Main Road",
-          "Secret Lake Manikonda",
-          "OU Colony",
-          "Alkapoor Township",
-          "Shaikpet Link Road"
-      ],
-      "localHighlights": {
-          "airportDistance": "28 km via ORR Narsingi Exit (27 mins)",
-          "keyCorridors": "Lanco Hills Road, Shaikpet Flyover & Puppalguda-Khajaguda Road",
-          "popularCars": "Maruti Brezza, Tata Nexon, Hyundai Verna Turbo & Ertiga",
-          "idealFor": "Lanco Hills Residents, Tech Families & Airport Express Drives"
+    "name": "Manikonda",
+    "h1Title": "Self Drive Cars in Manikonda & Puppalguda Hub",
+    "seoTitle": "Self Drive Cars in Manikonda Hyderabad | DriveItCars",
+    "seoDescription": "Book self drive cars in Manikonda, Hyderabad. Fast doorstep delivery at Lanco Hills, Puppalguda, Secret Lake & Shaikpet junction. Sanitized cars.",
+    "introParagraph1": "Surrounding the landmark Lanco Hills mega-township, Manikonda is one of Cyberabad’s most vibrant residential hubs. DriveItCars provides premium self drive cars delivered directly to your residential gate or apartment basement.",
+    "introParagraph2": "Bypass cab surge pricing and cancellations during morning rush hour along the Shaikpet flyover and Durgam Cheruvu bridge. Choose from agile automatic hatchbacks or commanding 5-seater and 7-seater SUVs.",
+    "introParagraph3": "Our transparent rental terms include refundable deposit, comprehensive insurance, clean vehicle interiors, and 24/7 roadside assistance.",
+    "serviceAreas": [
+      "Lanco Hills Mega Township",
+      "Puppalguda Main Road",
+      "Secret Lake Manikonda",
+      "OU Colony",
+      "Alkapoor Township",
+      "Shaikpet Link Road"
+    ],
+    "localHighlights": {
+      "airportDistance": "28 km via ORR Narsingi Exit (27 mins)",
+      "keyCorridors": "Lanco Hills Road, Shaikpet Flyover & Puppalguda-Khajaguda Road",
+      "popularCars": "Maruti Brezza, Tata Nexon, Hyundai Verna Turbo & Ertiga",
+      "idealFor": "Lanco Hills Residents, Tech Families & Airport Express Drives"
+    },
+    "customFaqs": [
+      {
+        "question": "Do you deliver inside Lanco Hills towers in Manikonda?",
+        "answer": "Yes, our dispatch team delivers directly to all towers inside Lanco Hills and neighboring societies."
       },
-      "customFaqs": [
-          {
-              "question": "Do you deliver inside Lanco Hills towers in Manikonda?",
-              "answer": "Yes, our dispatch team delivers directly to all towers inside Lanco Hills and neighboring societies."
-          },
-          {
-              "question": "Can I rent a car in Manikonda for airport travel?",
-              "answer": "Yes, reaching RGIA Airport via Narsingi ORR Exit 18 takes under 25 minutes."
-          },
-          {
-              "question": "Are monthly car rentals available for Manikonda residents?",
-              "answer": "Yes! Save up to 50% with our monthly subscription plans with zero maintenance costs and free replacement."
-          }
-      ]
+      {
+        "question": "Can I rent a car in Manikonda for airport travel?",
+        "answer": "Yes, reaching RGIA Airport via Narsingi ORR Exit 18 takes under 25 minutes."
+      },
+      {
+        "question": "Are monthly car rentals available for Manikonda residents?",
+        "answer": "Yes! Save up to 50% with our monthly subscription plans with zero maintenance costs and free replacement."
+      }
+    ]
   },
   'financial-district': {
-      "name": "Financial District",
-      "h1Title": "Self Drive Cars in Financial District Hyderabad",
-      "seoTitle": "Self Drive Cars in Financial District | DriveItCars",
-      "seoDescription": "Premium self drive cars in Financial District, Hyderabad. Fast 15-min delivery at Waverock, Wipro Circle, Amazon, Microsoft & US Consulate.",
-      "introParagraph1": "The Financial District in Nanakramguda is Hyderabad’s undisputed corporate powerhouse, housing global tech titans like Microsoft, Amazon, Google, Apple, and the US Consulate. DriveItCars provides executive self drive cars delivered directly to your corporate lobby or hotel entrance.",
-      "introParagraph2": "Visiting executives, international delegates, and IT professionals rely on our fleet of pristine sedans (Skoda Slavia, Volkswagen Virtus GT) and luxury MPVs (Toyota Innova Hycross) for boardroom meetings and outstation travel.",
-      "introParagraph3": "Sitting directly on Nehru Outer Ring Road Exit 1, reaching Rajiv Gandhi Airport takes just 22 minutes via the express tollway.",
-      "serviceAreas": [
-          "Wipro Circle",
-          "Waverock SEZ",
-          "One West Campus",
-          "US Consulate Corridor",
-          "Amazon & Microsoft Towers",
-          "ISB Road",
-          "CapitaLand SEZ"
-      ],
-      "localHighlights": {
-          "airportDistance": "26 km via ORR Nanakramguda Exit 1 (24 mins)",
-          "keyCorridors": "ISB Road, Gachibowli-Nanakramguda ORR & Financial District Main Rd",
-          "popularCars": "Skoda Slavia 1.5 TSI, Volkswagen Virtus GT, Toyota Hycross & Thar",
-          "idealFor": "Corporate Commutes, Expat Executives & Luxury Outstation Trips"
+    "name": "Financial District",
+    "h1Title": "Self Drive Cars in Financial District Hyderabad",
+    "seoTitle": "Self Drive Cars in Financial District | DriveItCars",
+    "seoDescription": "Premium self drive cars in Financial District, Hyderabad. Fast 15-min delivery at Waverock, Wipro Circle, Amazon, Microsoft & US Consulate.",
+    "introParagraph1": "The Financial District in Nanakramguda is Hyderabad’s undisputed corporate powerhouse, housing global tech titans like Microsoft, Amazon, Google, Apple, and the US Consulate. DriveItCars provides executive self drive cars delivered directly to your corporate lobby or hotel entrance.",
+    "introParagraph2": "Visiting executives, international delegates, and IT professionals rely on our fleet of pristine sedans (Skoda Slavia, Volkswagen Virtus GT) and luxury MPVs (Toyota Innova Hycross) for boardroom meetings and outstation travel.",
+    "introParagraph3": "Sitting directly on Nehru Outer Ring Road Exit 1, reaching Rajiv Gandhi Airport takes just 22 minutes via the express tollway.",
+    "serviceAreas": [
+      "Wipro Circle",
+      "Waverock SEZ",
+      "One West Campus",
+      "US Consulate Corridor",
+      "Amazon & Microsoft Towers",
+      "ISB Road",
+      "CapitaLand SEZ"
+    ],
+    "localHighlights": {
+      "airportDistance": "26 km via ORR Nanakramguda Exit 1 (24 mins)",
+      "keyCorridors": "ISB Road, Gachibowli-Nanakramguda ORR & Financial District Main Rd",
+      "popularCars": "Skoda Slavia 1.5 TSI, Volkswagen Virtus GT, Toyota Hycross & Thar",
+      "idealFor": "Corporate Commutes, Expat Executives & Luxury Outstation Trips"
+    },
+    "customFaqs": [
+      {
+        "question": "How fast can you deliver to office campuses in the Financial District?",
+        "answer": "We provide guaranteed 15-minute delivery across Wipro Circle, Waverock, One West, and the US Consulate."
       },
-      "customFaqs": [
-          {
-              "question": "How fast can you deliver to office campuses in the Financial District?",
-              "answer": "We provide guaranteed 15-minute delivery across Wipro Circle, Waverock, One West, and the US Consulate."
-          },
-          {
-              "question": "Do you provide GST invoices for corporate car rentals?",
-              "answer": "Yes! We issue 100% compliant GST invoices for corporate expense claims and company billing."
-          },
-          {
-              "question": "Can I rent a luxury car like the Innova Hycross in the Financial District?",
-              "answer": "Yes, executive automatic sedans and luxury hybrid MPVs are available with refundable deposit."
-          }
-      ]
+      {
+        "question": "Do you provide GST invoices for corporate car rentals?",
+        "answer": "Yes! We issue 100% compliant GST invoices for corporate expense claims and company billing."
+      },
+      {
+        "question": "Can I rent a luxury car like the Innova Hycross in the Financial District?",
+        "answer": "Yes, executive automatic sedans and luxury hybrid MPVs are available with refundable deposit."
+      }
+    ]
   },
   'nanakramguda': {
-      "name": "Nanakramguda",
-      "h1Title": "Self Drive Cars in Nanakramguda & Waverock Corridor",
-      "seoTitle": "Self Drive Cars in Nanakramguda HYD | DriveItCars",
-      "seoDescription": "Hire self drive cars in Nanakramguda, Hyderabad. 15-min delivery near Waverock, Golf View, Hyatt Hyderabad & ORR Exit 1. Automatics & luxury sedans.",
-      "introParagraph1": "Bridging Gachibowli and the Financial District, Nanakramguda is home to premier IT parks, golf communities, and luxury business hotels. DriveItCars offers fast doorstep delivery of premium self-drive vehicles across the neighborhood.",
-      "introParagraph2": "With immediate access to Nehru Outer Ring Road Exit 1, Nanakramguda provides the fastest route to RGIA Airport and western weekend destinations like Vikarabad and Bidar.",
-      "introParagraph3": "Our vehicles are thoroughly sanitized, pre-inspected, and equipped with automatic transmissions for stress-free driving.",
-      "serviceAreas": [
-          "Waverock IT Park",
-          "Golf View Apartments",
-          "Hyatt Hyderabad Corridor",
-          "Nanakramguda Toll Plaza",
-          "Jayabheri Silicon County",
-          "Gowlidoddy"
-      ],
-      "localHighlights": {
-          "airportDistance": "25 km via Nehru ORR Exit 1 (23 mins)",
-          "keyCorridors": "Nehru ORR Exit 1, ISB Road & Financial District Boulevard",
-          "popularCars": "Volkswagen Virtus GT, Hyundai Creta, Mahindra XUV700 & Baleno",
-          "idealFor": "IT Park Engineers, US Consulate Visitors & Airport Express"
+    "name": "Nanakramguda",
+    "h1Title": "Self Drive Cars in Nanakramguda & Waverock Corridor",
+    "seoTitle": "Self Drive Cars in Nanakramguda HYD | DriveItCars",
+    "seoDescription": "Hire self drive cars in Nanakramguda, Hyderabad. 15-min delivery near Waverock, Golf View, Hyatt Hyderabad & ORR Exit 1. Automatics & luxury sedans.",
+    "introParagraph1": "Bridging Gachibowli and the Financial District, Nanakramguda is home to premier IT parks, golf communities, and luxury business hotels. DriveItCars offers fast doorstep delivery of premium self-drive vehicles across the neighborhood.",
+    "introParagraph2": "With immediate access to Nehru Outer Ring Road Exit 1, Nanakramguda provides the fastest route to RGIA Airport and western weekend destinations like Vikarabad and Bidar.",
+    "introParagraph3": "Our vehicles are thoroughly sanitized, pre-inspected, and equipped with automatic transmissions for stress-free driving.",
+    "serviceAreas": [
+      "Waverock IT Park",
+      "Golf View Apartments",
+      "Hyatt Hyderabad Corridor",
+      "Nanakramguda Toll Plaza",
+      "Jayabheri Silicon County",
+      "Gowlidoddy"
+    ],
+    "localHighlights": {
+      "airportDistance": "25 km via Nehru ORR Exit 1 (23 mins)",
+      "keyCorridors": "Nehru ORR Exit 1, ISB Road & Financial District Boulevard",
+      "popularCars": "Volkswagen Virtus GT, Hyundai Creta, Mahindra XUV700 & Baleno",
+      "idealFor": "IT Park Engineers, US Consulate Visitors & Airport Express"
+    },
+    "customFaqs": [
+      {
+        "question": "Where do you deliver in Nanakramguda?",
+        "answer": "We deliver directly to Waverock SEZ, Hyatt Hyderabad, Golf View, and nearby residential apartments."
       },
-      "customFaqs": [
-          {
-              "question": "Where do you deliver in Nanakramguda?",
-              "answer": "We deliver directly to Waverock SEZ, Hyatt Hyderabad, Golf View, and nearby residential apartments."
-          },
-          {
-              "question": "How fast can I reach the airport from Nanakramguda with your car?",
-              "answer": "Via ORR Exit 1 right outside Nanakramguda, you reach RGIA Airport in approximately 22 minutes."
-          },
-          {
-              "question": "How does the security deposit work for Nanakramguda bookings?",
-              "answer": "We require a refundable security deposit returned post-trip upon vehicle inspection as per rental terms."
-          }
-      ]
+      {
+        "question": "How fast can I reach the airport from Nanakramguda with your car?",
+        "answer": "Via ORR Exit 1 right outside Nanakramguda, you reach RGIA Airport in approximately 22 minutes."
+      },
+      {
+        "question": "How does the security deposit work for Nanakramguda bookings?",
+        "answer": "We require a refundable security deposit returned post-trip upon vehicle inspection as per rental terms."
+      }
+    ]
   },
   'narsingi': {
-      "name": "Narsingi",
-      "h1Title": "Self Drive Cars in Narsingi & ORR Exit 18 Junction",
-      "seoTitle": "Self Drive Cars in Narsingi Hyderabad | DriveItCars",
-      "seoDescription": "Self drive car rentals in Narsingi, Hyderabad. Fast delivery near ORR Exit 18, Gandipet main road, My Home Avatar & Alkapoor. Sanitized SUVs & Thar.",
-      "introParagraph1": "Narsingi is West Hyderabad’s strategic nexus, connecting Kokapet, Gandipet, and the Financial District with Nehru Outer Ring Road Exit 18. DriveItCars delivers premium self drive cars directly to high-rise townships and villa gated communities.",
-      "introParagraph2": "Residents heading to the IT corridor for daily office commutes or taking off on weekend road trips toward Nagarjuna Sagar and Srisailam enjoy immediate highway access without city congestion.",
-      "introParagraph3": "From fuel-efficient hatchbacks to commanding 4x4 Mahindra Thar and Fortuner SUVs, our fleet delivers uncompromised freedom.",
-      "serviceAreas": [
-          "ORR Exit 18 Tollway",
-          "My Home Avatar Corridor",
-          "Narsingi Main Road",
-          "Alkapoor Township",
-          "Musi Bridge Connector",
-          "Puppalguda Border"
-      ],
-      "localHighlights": {
-          "airportDistance": "22 km via ORR Exit 18 (20 mins)",
-          "keyCorridors": "Nehru ORR Exit 18, Gandipet Road & Puppalguda Main Road",
-          "popularCars": "Mahindra Thar 4x4, Toyota Fortuner, Maruti Brezza & Dzire",
-          "idealFor": "ORR Quick Highway Access, Airport Runs & Gated Society Commutes"
+    "name": "Narsingi",
+    "h1Title": "Self Drive Cars in Narsingi & ORR Exit 18 Junction",
+    "seoTitle": "Self Drive Cars in Narsingi Hyderabad | DriveItCars",
+    "seoDescription": "Self drive car rentals in Narsingi, Hyderabad. Fast delivery near ORR Exit 18, Gandipet main road, My Home Avatar & Alkapoor. Sanitized SUVs & Thar.",
+    "introParagraph1": "Narsingi is West Hyderabad’s strategic nexus, connecting Kokapet, Gandipet, and the Financial District with Nehru Outer Ring Road Exit 18. DriveItCars delivers premium self drive cars directly to high-rise townships and villa gated communities.",
+    "introParagraph2": "Residents heading to the IT corridor for daily office commutes or taking off on weekend road trips toward Nagarjuna Sagar and Srisailam enjoy immediate highway access without city congestion.",
+    "introParagraph3": "From fuel-efficient hatchbacks to commanding 4x4 Mahindra Thar and Fortuner SUVs, our fleet delivers uncompromised freedom.",
+    "serviceAreas": [
+      "ORR Exit 18 Tollway",
+      "My Home Avatar Corridor",
+      "Narsingi Main Road",
+      "Alkapoor Township",
+      "Musi Bridge Connector",
+      "Puppalguda Border"
+    ],
+    "localHighlights": {
+      "airportDistance": "22 km via ORR Exit 18 (20 mins)",
+      "keyCorridors": "Nehru ORR Exit 18, Gandipet Road & Puppalguda Main Road",
+      "popularCars": "Mahindra Thar 4x4, Toyota Fortuner, Maruti Brezza & Dzire",
+      "idealFor": "ORR Quick Highway Access, Airport Runs & Gated Society Commutes"
+    },
+    "customFaqs": [
+      {
+        "question": "Do you deliver to My Home Avatar in Narsingi?",
+        "answer": "Yes! We deliver directly to My Home Avatar, Alkapoor Township, and all gated communities across Narsingi."
       },
-      "customFaqs": [
-          {
-              "question": "Do you deliver to My Home Avatar in Narsingi?",
-              "answer": "Yes! We deliver directly to My Home Avatar, Alkapoor Township, and all gated communities across Narsingi."
-          },
-          {
-              "question": "How quickly can I reach the airport from Narsingi?",
-              "answer": "With direct access to ORR Exit 18, you reach Rajiv Gandhi International Airport in just 20 minutes."
-          },
-          {
-              "question": "Can I rent a Mahindra Thar 4x4 in Narsingi?",
-              "answer": "Yes, the Mahindra Thar 4x4 is available with unlimited kilometers and refundable deposit."
-          }
-      ]
+      {
+        "question": "How quickly can I reach the airport from Narsingi?",
+        "answer": "With direct access to ORR Exit 18, you reach Rajiv Gandhi International Airport in just 20 minutes."
+      },
+      {
+        "question": "Can I rent a Mahindra Thar 4x4 in Narsingi?",
+        "answer": "Yes, the Mahindra Thar 4x4 is available with unlimited kilometers and refundable deposit."
+      }
+    ]
   },
   'mokila': {
-      "name": "Mokila",
-      "h1Title": "Self Drive Cars in Mokila & Shankarpally Road Villas",
-      "seoTitle": "Self Drive Cars in Mokila Hyderabad | DriveItCars",
-      "seoDescription": "Rent self drive cars in Mokila, Hyderabad. Doorstep delivery across luxury villa communities, Shankarpally Road & Tangatur. 4x4 SUVs & family cars.",
-      "introParagraph1": "Renowned for its expansive luxury villa projects and tranquil green surroundings, Mokila is West Hyderabad’s premier suburban haven. DriveItCars brings sanitized self drive cars directly to your villa gate.",
-      "introParagraph2": "Whether planning a weekend drive along the Shankarpally highway, visiting resorts with family, or commuting into Neopolis and the Financial District via the Kollur ORR interchange, our cars deliver exceptional comfort.",
-      "introParagraph3": "Choose from commanding 4x4 SUVs, luxury 7-seater MPVs, and smooth automatics with refundable security deposit and 24/7 roadside assistance.",
-      "serviceAreas": [
-          "Mokila Villa Belt",
-          "Shankarpally Main Road",
-          "Tangatur Road",
-          "Subishi & Sark Projects",
-          "Pooja Crafted Homes",
-          "Kollur ORR Link"
-      ],
-      "localHighlights": {
-          "airportDistance": "36 km via ORR Kollur / TSPA (35 mins)",
-          "keyCorridors": "Shankarpally Highway, ORR Exit 2 Kollur & Chevella Connector",
-          "popularCars": "Mahindra Thar 4x4, Toyota Fortuner 4x4, Innova Crysta & Creta",
-          "idealFor": "Villa Community Families, Resort Weekends & Highway Cruising"
+    "name": "Mokila",
+    "h1Title": "Self Drive Cars in Mokila & Shankarpally Road Villas",
+    "seoTitle": "Self Drive Cars in Mokila Hyderabad | DriveItCars",
+    "seoDescription": "Rent self drive cars in Mokila, Hyderabad. Doorstep delivery across luxury villa communities, Shankarpally Road & Tangatur. 4x4 SUVs & family cars.",
+    "introParagraph1": "Renowned for its expansive luxury villa projects and tranquil green surroundings, Mokila is West Hyderabad’s premier suburban haven. DriveItCars brings sanitized self drive cars directly to your villa gate.",
+    "introParagraph2": "Whether planning a weekend drive along the Shankarpally highway, visiting resorts with family, or commuting into Neopolis and the Financial District via the Kollur ORR interchange, our cars deliver exceptional comfort.",
+    "introParagraph3": "Choose from commanding 4x4 SUVs, luxury 7-seater MPVs, and smooth automatics with refundable security deposit and 24/7 roadside assistance.",
+    "serviceAreas": [
+      "Mokila Villa Belt",
+      "Shankarpally Main Road",
+      "Tangatur Road",
+      "Subishi & Sark Projects",
+      "Pooja Crafted Homes",
+      "Kollur ORR Link"
+    ],
+    "localHighlights": {
+      "airportDistance": "36 km via ORR Kollur / TSPA (35 mins)",
+      "keyCorridors": "Shankarpally Highway, ORR Exit 2 Kollur & Chevella Connector",
+      "popularCars": "Mahindra Thar 4x4, Toyota Fortuner 4x4, Innova Crysta & Creta",
+      "idealFor": "Villa Community Families, Resort Weekends & Highway Cruising"
+    },
+    "customFaqs": [
+      {
+        "question": "Do you deliver self drive cars to gated villa communities in Mokila?",
+        "answer": "Yes, we provide doorstep delivery inside all major villa projects across Mokila and Shankarpally road."
       },
-      "customFaqs": [
-          {
-              "question": "Do you deliver self drive cars to gated villa communities in Mokila?",
-              "answer": "Yes, we provide doorstep delivery inside all major villa projects across Mokila and Shankarpally road."
-          },
-          {
-              "question": "Are 7-seater family cars available in Mokila?",
-              "answer": "Yes, Maruti Ertiga, Toyota Innova Crysta, and Toyota Innova Hycross can be booked with unlimited kilometers."
-          },
-          {
-              "question": "What is the fastest route to the airport from Mokila in a rental car?",
-              "answer": "Via the Kollur or TSPA ORR entry, the drive to RGIA Airport takes approximately 35 minutes."
-          }
-      ]
+      {
+        "question": "Are 7-seater family cars available in Mokila?",
+        "answer": "Yes, Maruti Ertiga, Toyota Innova Crysta, and Toyota Innova Hycross can be booked with unlimited kilometers."
+      },
+      {
+        "question": "What is the fastest route to the airport from Mokila in a rental car?",
+        "answer": "Via the Kollur or TSPA ORR entry, the drive to RGIA Airport takes approximately 35 minutes."
+      }
+    ]
   },
   'kokapet': {
-      "name": "Kokapet",
-      "h1Title": "Self Drive Cars in Kokapet & Golden Mile Corridor",
-      "seoTitle": "Self Drive Cars in Kokapet Hyderabad | DriveItCars",
-      "seoDescription": "Rent self drive cars in Kokapet, Hyderabad. Fast delivery across Golden Mile Road, My Home Bhooja, Neopolis SEZ & Gandipet Circle. Sanitized SUVs.",
-      "introParagraph1": "Home to the iconic Golden Mile Road and ultra-luxury high-rise residential towers, Kokapet represents the peak of modern living in Hyderabad. DriveItCars delivers premium self drive vehicles directly to your tower lobby.",
-      "introParagraph2": "With immediate proximity to the Financial District and direct access to Nehru Outer Ring Road Exit 1, commuting to corporate headquarters or taking off on outstation drives is completely seamless.",
-      "introParagraph3": "Our curated fleet features German-engineered sedans, commanding 4x4 SUVs, and luxury hybrid tourers in showroom condition.",
-      "serviceAreas": [
-          "Golden Mile Road",
-          "Kokapet Lake View",
-          "My Home Tarkshya Corridor",
-          "Garuda High-Tech Hub",
-          "Gandipet Circle",
-          "Neopolis SEZ Border"
-      ],
-      "localHighlights": {
-          "airportDistance": "24 km via ORR Exit 1 (22 mins)",
-          "keyCorridors": "Golden Mile Road, Nehru ORR Exit 1 & Gandipet Main Road",
-          "popularCars": "Toyota Fortuner, Mahindra Thar 4x4, Skoda Slavia & Hycross",
-          "idealFor": "High-Rise Luxury Residents, Weekend Getaways & Corporate Drives"
+    "name": "Kokapet",
+    "h1Title": "Self Drive Cars in Kokapet & Golden Mile Corridor",
+    "seoTitle": "Self Drive Cars in Kokapet Hyderabad | DriveItCars",
+    "seoDescription": "Rent self drive cars in Kokapet, Hyderabad. Fast delivery across Golden Mile Road, My Home Bhooja, Neopolis SEZ & Gandipet Circle. Sanitized SUVs.",
+    "introParagraph1": "Home to the iconic Golden Mile Road and ultra-luxury high-rise residential towers, Kokapet represents the peak of modern living in Hyderabad. DriveItCars delivers premium self drive vehicles directly to your tower lobby.",
+    "introParagraph2": "With immediate proximity to the Financial District and direct access to Nehru Outer Ring Road Exit 1, commuting to corporate headquarters or taking off on outstation drives is completely seamless.",
+    "introParagraph3": "Our curated fleet features German-engineered sedans, commanding 4x4 SUVs, and luxury hybrid tourers in showroom condition.",
+    "serviceAreas": [
+      "Golden Mile Road",
+      "Kokapet Lake View",
+      "My Home Tarkshya Corridor",
+      "Garuda High-Tech Hub",
+      "Gandipet Circle",
+      "Neopolis SEZ Border"
+    ],
+    "localHighlights": {
+      "airportDistance": "24 km via ORR Exit 1 (22 mins)",
+      "keyCorridors": "Golden Mile Road, Nehru ORR Exit 1 & Gandipet Main Road",
+      "popularCars": "Toyota Fortuner, Mahindra Thar 4x4, Skoda Slavia & Hycross",
+      "idealFor": "High-Rise Luxury Residents, Weekend Getaways & Corporate Drives"
+    },
+    "customFaqs": [
+      {
+        "question": "How fast can you deliver a self drive car in Kokapet Golden Mile?",
+        "answer": "We provide guaranteed 15-minute delivery across Golden Mile Road and all luxury high-rises in Kokapet."
       },
-      "customFaqs": [
-          {
-              "question": "How fast can you deliver a self drive car in Kokapet Golden Mile?",
-              "answer": "We provide guaranteed 15-minute delivery across Golden Mile Road and all luxury high-rises in Kokapet."
-          },
-          {
-              "question": "Can I rent a premium SUV like the Fortuner or Thar in Kokapet?",
-              "answer": "Yes, Toyota Fortuner 4x4, Mahindra Thar 4x4, and Innova Hycross are available with refundable deposit."
-          },
-          {
-              "question": "Is it easy to drive to the airport from Kokapet?",
-              "answer": "Yes, via ORR Exit 1 right next to Kokapet, you reach Rajiv Gandhi International Airport in just 22 minutes."
-          }
-      ]
+      {
+        "question": "Can I rent a premium SUV like the Fortuner or Thar in Kokapet?",
+        "answer": "Yes, Toyota Fortuner 4x4, Mahindra Thar 4x4, and Innova Hycross are available with refundable deposit."
+      },
+      {
+        "question": "Is it easy to drive to the airport from Kokapet?",
+        "answer": "Yes, via ORR Exit 1 right next to Kokapet, you reach Rajiv Gandhi International Airport in just 22 minutes."
+      }
+    ]
   },
   'neopolis': {
-      "name": "Neopolis",
-      "h1Title": "Self Drive Cars in Neopolis Kokapet High-Rise IT Hub",
-      "seoTitle": "Self Drive Cars in Neopolis Hyderabad | DriveItCars",
-      "seoDescription": "Premium self drive cars in Neopolis Kokapet, Hyderabad. 15-min delivery across ultra-luxury towers, Trumpet interchange & commercial SEZ. 24/7 delivery.",
-      "introParagraph1": "Designed as Hyderabad’s futuristic central business district, Neopolis Kokapet features cutting-edge commercial towers and ultra-luxury residential skyscrapers. DriveItCars provides executive self drive car rentals delivered directly to Neopolis campuses and residences.",
-      "introParagraph2": "With the dedicated Neopolis Trumpet Interchange connecting directly to the Nehru Outer Ring Road, travelers enjoy instant connectivity to Rajiv Gandhi Airport and the Financial District.",
-      "introParagraph3": "Our fleet is optimized for corporate executives and discerning residents, featuring premium automatic transmissions, luxury interiors, and 24/7 roadside assistance.",
-      "serviceAreas": [
-          "Neopolis Commercial Towers",
-          "Trumpet Interchange ORR",
-          "Prestige & Brigade Sites",
-          "Golden Mile High Street",
-          "Kokapet SEZ",
-          "Financial Hub West"
-      ],
-      "localHighlights": {
-          "airportDistance": "24 km via Trumpet Interchange (21 mins)",
-          "keyCorridors": "Neopolis Trumpet Interchange, Golden Mile Rd & Nehru ORR",
-          "popularCars": "Volkswagen Virtus GT, Toyota Innova Hycross, Fortuner & Thar",
-          "idealFor": "Ultra-Luxury Tech Executives, Airport Express & Executive Meetings"
+    "name": "Neopolis",
+    "h1Title": "Self Drive Cars in Neopolis Kokapet High-Rise IT Hub",
+    "seoTitle": "Self Drive Cars in Neopolis Hyderabad | DriveItCars",
+    "seoDescription": "Premium self drive cars in Neopolis Kokapet, Hyderabad. 15-min delivery across ultra-luxury towers, Trumpet interchange & commercial SEZ. 24/7 delivery.",
+    "introParagraph1": "Designed as Hyderabad’s futuristic central business district, Neopolis Kokapet features cutting-edge commercial towers and ultra-luxury residential skyscrapers. DriveItCars provides executive self drive car rentals delivered directly to Neopolis campuses and residences.",
+    "introParagraph2": "With the dedicated Neopolis Trumpet Interchange connecting directly to the Nehru Outer Ring Road, travelers enjoy instant connectivity to Rajiv Gandhi Airport and the Financial District.",
+    "introParagraph3": "Our fleet is optimized for corporate executives and discerning residents, featuring premium automatic transmissions, luxury interiors, and 24/7 roadside assistance.",
+    "serviceAreas": [
+      "Neopolis Commercial Towers",
+      "Trumpet Interchange ORR",
+      "Prestige & Brigade Sites",
+      "Golden Mile High Street",
+      "Kokapet SEZ",
+      "Financial Hub West"
+    ],
+    "localHighlights": {
+      "airportDistance": "24 km via Trumpet Interchange (21 mins)",
+      "keyCorridors": "Neopolis Trumpet Interchange, Golden Mile Rd & Nehru ORR",
+      "popularCars": "Volkswagen Virtus GT, Toyota Innova Hycross, Fortuner & Thar",
+      "idealFor": "Ultra-Luxury Tech Executives, Airport Express & Executive Meetings"
+    },
+    "customFaqs": [
+      {
+        "question": "Do you deliver cars directly to Neopolis commercial and residential towers?",
+        "answer": "Yes, we provide 15-minute doorstep car delivery across Neopolis Kokapet."
       },
-      "customFaqs": [
-          {
-              "question": "Do you deliver cars directly to Neopolis commercial and residential towers?",
-              "answer": "Yes, we provide 15-minute doorstep car delivery across Neopolis Kokapet."
-          },
-          {
-              "question": "What is the fastest way to RGIA Airport from Neopolis in a rental car?",
-              "answer": "The new Neopolis Trumpet Interchange connects you straight to the ORR, reaching RGIA Airport in 21 minutes."
-          },
-          {
-              "question": "Are executive sedans like Virtus and Slavia available in Neopolis?",
-              "answer": "Yes, turbocharged executive sedans are available with refundable deposit and comprehensive insurance."
-          }
-      ]
+      {
+        "question": "What is the fastest way to RGIA Airport from Neopolis in a rental car?",
+        "answer": "The new Neopolis Trumpet Interchange connects you straight to the ORR, reaching RGIA Airport in 21 minutes."
+      },
+      {
+        "question": "Are executive sedans like Virtus and Slavia available in Neopolis?",
+        "answer": "Yes, turbocharged executive sedans are available with refundable deposit and comprehensive insurance."
+      }
+    ]
   },
   'puppalguda': {
-      "name": "Puppalguda",
-      "h1Title": "Self Drive Cars in Puppalguda & Golden Mile Road",
-      "seoTitle": "Self Drive Cars in Puppalguda Hyderabad | DriveItCars",
-      "seoDescription": "Self drive car rentals in Puppalguda, Hyderabad. Quick delivery near Golden Mile road, Aparna Zenon, Manikonda & Narsingi junction. Hatchbacks & SUVs.",
-      "introParagraph1": "Strategically positioned between Manikonda, Narsingi, and the Financial District, Puppalguda has become one of Cyberabad’s most sought-after residential neighborhoods. DriveItCars provides sanitized self-drive hatchbacks, sedans, and SUVs delivered to your door.",
-      "introParagraph2": "Avoid peak-hour cab delays when commuting to Financial District corporate offices or planning weekend family road trips. Our automatic cars make city and highway driving smooth and relaxing.",
-      "introParagraph3": "Every booking features refundable deposit, unlimited kilometers, clean cabins, and transparent pricing.",
-      "serviceAreas": [
-          "Puppalguda Main Road",
-          "Aparna Zenon Corridor",
-          "Golden Mile Link",
-          "Narsingi Junction",
-          "Secret Lake Approach",
-          "Alkapoor Border"
-      ],
-      "localHighlights": {
-          "airportDistance": "25 km via ORR Exit 18 (24 mins)",
-          "keyCorridors": "Puppalguda Main Road, Narsingi Rd & Shaikpet Flyover",
-          "popularCars": "Hyundai Creta, Maruti Fronx, Kia Seltos & Baleno AMT",
-          "idealFor": "Residential High-Rise Families, City Commuting & Weekend Road Trips"
+    "name": "Puppalguda",
+    "h1Title": "Self Drive Cars in Puppalguda & Golden Mile Road",
+    "seoTitle": "Self Drive Cars in Puppalguda Hyderabad | DriveItCars",
+    "seoDescription": "Self drive car rentals in Puppalguda, Hyderabad. Quick delivery near Golden Mile road, Aparna Zenon, Manikonda & Narsingi junction. Hatchbacks & SUVs.",
+    "introParagraph1": "Strategically positioned between Manikonda, Narsingi, and the Financial District, Puppalguda has become one of Cyberabad’s most sought-after residential neighborhoods. DriveItCars provides sanitized self-drive hatchbacks, sedans, and SUVs delivered to your door.",
+    "introParagraph2": "Avoid peak-hour cab delays when commuting to Financial District corporate offices or planning weekend family road trips. Our automatic cars make city and highway driving smooth and relaxing.",
+    "introParagraph3": "Every booking features refundable deposit, unlimited kilometers, clean cabins, and transparent pricing.",
+    "serviceAreas": [
+      "Puppalguda Main Road",
+      "Aparna Zenon Corridor",
+      "Golden Mile Link",
+      "Narsingi Junction",
+      "Secret Lake Approach",
+      "Alkapoor Border"
+    ],
+    "localHighlights": {
+      "airportDistance": "25 km via ORR Exit 18 (24 mins)",
+      "keyCorridors": "Puppalguda Main Road, Narsingi Rd & Shaikpet Flyover",
+      "popularCars": "Hyundai Creta, Maruti Fronx, Kia Seltos & Baleno AMT",
+      "idealFor": "Residential High-Rise Families, City Commuting & Weekend Road Trips"
+    },
+    "customFaqs": [
+      {
+        "question": "Do you deliver to high-rise communities in Puppalguda?",
+        "answer": "Yes, we deliver directly to Aparna Zenon and all gated communities across Puppalguda."
       },
-      "customFaqs": [
-          {
-              "question": "Do you deliver to high-rise communities in Puppalguda?",
-              "answer": "Yes, we deliver directly to Aparna Zenon and all gated communities across Puppalguda."
-          },
-          {
-              "question": "Are automatic cars available in Puppalguda?",
-              "answer": "Yes, over 70% of our fleet features automatic transmissions from Maruti, Hyundai, Kia, and Volkswagen."
-          },
-          {
-              "question": "Can I take the rental car from Puppalguda to Srisailam or Goa?",
-              "answer": "Yes! All our rentals come with unlimited kilometers and pre-loaded FASTag for hassle-free interstate travel."
-          }
-      ]
+      {
+        "question": "Are automatic cars available in Puppalguda?",
+        "answer": "Yes, over 70% of our fleet features automatic transmissions from Maruti, Hyundai, Kia, and Volkswagen."
+      },
+      {
+        "question": "Can I take the rental car from Puppalguda to Srisailam or Goa?",
+        "answer": "Yes! All our rentals come with unlimited kilometers and pre-loaded FASTag for hassle-free interstate travel."
+      }
+    ]
   },
   'gandipet': {
-      "name": "Gandipet",
-      "h1Title": "Self Drive Cars in Gandipet & Osman Sagar Lake Zone",
-      "seoTitle": "Self Drive Cars in Gandipet Hyderabad | DriveItCars",
-      "seoDescription": "Rent self drive cars in Gandipet & Osman Sagar, Hyderabad. Fast delivery near CBIT, Ocean Park, luxury resorts & Kokapet lake. 4x4 Thar & SUVs.",
-      "introParagraph1": "Famous for the scenic Osman Sagar lake, lush parks, and luxury lakeside resorts, Gandipet is Hyderabad’s premier getaway and leisure corridor. DriveItCars delivers rugged 4x4 SUVs, luxury tourers, and executive sedans right to your resort or residence.",
-      "introParagraph2": "Whether attending college functions at CBIT, hosting celebrations at lakeside farmhouses, or setting off on scenic weekend drives, our well-maintained vehicles guarantee an unforgettable driving experience.",
-      "introParagraph3": "With refundable deposit, 24/7 roadside assistance, and transparent booking, your Gandipet road trips are completely worry-free.",
-      "serviceAreas": [
-          "CBIT Campus",
-          "Osman Sagar Lake Road",
-          "Ocean Park Corridor",
-          "Gandipet Park",
-          "Chaitanya Bharathi Hub",
-          "Kokapet Border"
-      ],
-      "localHighlights": {
-          "airportDistance": "23 km via Nehru ORR Exit 18 (22 mins)",
-          "keyCorridors": "Gandipet Main Road, Shankarpally Highway & ORR Exit 18",
-          "popularCars": "Mahindra Thar 4x4, Toyota Fortuner, Hyundai Creta & Virtus",
-          "idealFor": "Resort Weekends, Lake Drives, College Events & Outstation Trips"
+    "name": "Gandipet",
+    "h1Title": "Self Drive Cars in Gandipet & Osman Sagar Lake Zone",
+    "seoTitle": "Self Drive Cars in Gandipet Hyderabad | DriveItCars",
+    "seoDescription": "Rent self drive cars in Gandipet & Osman Sagar, Hyderabad. Fast delivery near CBIT, Ocean Park, luxury resorts & Kokapet lake. 4x4 Thar & SUVs.",
+    "introParagraph1": "Famous for the scenic Osman Sagar lake, lush parks, and luxury lakeside resorts, Gandipet is Hyderabad’s premier getaway and leisure corridor. DriveItCars delivers rugged 4x4 SUVs, luxury tourers, and executive sedans right to your resort or residence.",
+    "introParagraph2": "Whether attending college functions at CBIT, hosting celebrations at lakeside farmhouses, or setting off on scenic weekend drives, our well-maintained vehicles guarantee an unforgettable driving experience.",
+    "introParagraph3": "With refundable deposit, 24/7 roadside assistance, and transparent booking, your Gandipet road trips are completely worry-free.",
+    "serviceAreas": [
+      "CBIT Campus",
+      "Osman Sagar Lake Road",
+      "Ocean Park Corridor",
+      "Gandipet Park",
+      "Chaitanya Bharathi Hub",
+      "Kokapet Border"
+    ],
+    "localHighlights": {
+      "airportDistance": "23 km via Nehru ORR Exit 18 (22 mins)",
+      "keyCorridors": "Gandipet Main Road, Shankarpally Highway & ORR Exit 18",
+      "popularCars": "Mahindra Thar 4x4, Toyota Fortuner, Hyundai Creta & Virtus",
+      "idealFor": "Resort Weekends, Lake Drives, College Events & Outstation Trips"
+    },
+    "customFaqs": [
+      {
+        "question": "Can you deliver a self drive car to resorts near Gandipet Lake?",
+        "answer": "Yes, we deliver directly to Ocean Park road, CBIT gate, and lakeside farmhouses across Gandipet."
       },
-      "customFaqs": [
-          {
-              "question": "Can you deliver a self drive car to resorts near Gandipet Lake?",
-              "answer": "Yes, we deliver directly to Ocean Park road, CBIT gate, and lakeside farmhouses across Gandipet."
-          },
-          {
-              "question": "Is the Mahindra Thar 4x4 available for rent in Gandipet?",
-              "answer": "Yes! The Mahindra Thar 4x4 is one of our most popular choices for Gandipet lake drives and weekend getaways."
-          },
-          {
-              "question": "How fast can I reach RGIA Airport from Gandipet?",
-              "answer": "Via Nehru ORR Exit 18 in Narsingi, you can reach Rajiv Gandhi International Airport in about 22 minutes."
-          }
-      ]
+      {
+        "question": "Is the Mahindra Thar 4x4 available for rent in Gandipet?",
+        "answer": "Yes! The Mahindra Thar 4x4 is one of our most popular choices for Gandipet lake drives and weekend getaways."
+      },
+      {
+        "question": "How fast can I reach RGIA Airport from Gandipet?",
+        "answer": "Via Nehru ORR Exit 18 in Narsingi, you can reach Rajiv Gandhi International Airport in about 22 minutes."
+      }
+    ]
   },
   'nallagandla': {
-      "name": "Nallagandla",
-      "h1Title": "Self Drive Cars in Nallagandla & Aparna Sarovar Hub",
-      "seoTitle": "Self Drive Cars in Nallagandla Hyderabad | DriveItCars",
-      "seoDescription": "Book self drive cars in Nallagandla, Hyderabad. Doorstep delivery at Aparna Sarovar, HCU road, Citizens Hospital & Gachibowli link. Automatic fleet.",
-      "introParagraph1": "Anchored by the massive Aparna Sarovar residential township, Nallagandla is a thriving residential destination for IT professionals working in Gachibowli and the Financial District. DriveItCars delivers sanitized self drive cars directly to your apartment gate.",
-      "introParagraph2": "Avoid surge fares and crowded metro commutes with our fuel-efficient automatic hatchbacks, family sedans, and 7-seater tourers. Everything is pre-inspected, sanitized, and ready for the road.",
-      "introParagraph3": "With immediate connectivity to the Gachibowli flyover and Nehru ORR, weekend trips toward Bidar, Medak Fort, or RGIA Airport are fast and effortless.",
-      "serviceAreas": [
-          "Aparna Sarovar Grand",
-          "Citizens Hospital Corridor",
-          "Nallagandla Flyover",
-          "HCU Rear Gate",
-          "Tellapur Link Road",
-          "Gulmohar Park"
-      ],
-      "localHighlights": {
-          "airportDistance": "32 km via ORR Gachibowli Exit (32 mins)",
-          "keyCorridors": "Nallagandla Main Rd, Citizens Hospital Rd & Tellapur Flyover",
-          "popularCars": "Maruti Baleno Automatic, Hyundai Verna, Kia Carens & Thar",
-          "idealFor": "Tech Commuters, Gated Community Families & Highway Road Trips"
+    "name": "Nallagandla",
+    "h1Title": "Self Drive Cars in Nallagandla & Aparna Sarovar Hub",
+    "seoTitle": "Self Drive Cars in Nallagandla Hyderabad | DriveItCars",
+    "seoDescription": "Book self drive cars in Nallagandla, Hyderabad. Doorstep delivery at Aparna Sarovar, HCU road, Citizens Hospital & Gachibowli link. Automatic fleet.",
+    "introParagraph1": "Anchored by the massive Aparna Sarovar residential township, Nallagandla is a thriving residential destination for IT professionals working in Gachibowli and the Financial District. DriveItCars delivers sanitized self drive cars directly to your apartment gate.",
+    "introParagraph2": "Avoid surge fares and crowded metro commutes with our fuel-efficient automatic hatchbacks, family sedans, and 7-seater tourers. Everything is pre-inspected, sanitized, and ready for the road.",
+    "introParagraph3": "With immediate connectivity to the Gachibowli flyover and Nehru ORR, weekend trips toward Bidar, Medak Fort, or RGIA Airport are fast and effortless.",
+    "serviceAreas": [
+      "Aparna Sarovar Grand",
+      "Citizens Hospital Corridor",
+      "Nallagandla Flyover",
+      "HCU Rear Gate",
+      "Tellapur Link Road",
+      "Gulmohar Park"
+    ],
+    "localHighlights": {
+      "airportDistance": "32 km via ORR Gachibowli Exit (32 mins)",
+      "keyCorridors": "Nallagandla Main Rd, Citizens Hospital Rd & Tellapur Flyover",
+      "popularCars": "Maruti Baleno Automatic, Hyundai Verna, Kia Carens & Thar",
+      "idealFor": "Tech Commuters, Gated Community Families & Highway Road Trips"
+    },
+    "customFaqs": [
+      {
+        "question": "Do you deliver to Aparna Sarovar towers in Nallagandla?",
+        "answer": "Yes, our dispatch executives deliver directly to all Aparna Sarovar gates and nearby high-rises."
       },
-      "customFaqs": [
-          {
-              "question": "Do you deliver to Aparna Sarovar towers in Nallagandla?",
-              "answer": "Yes, our dispatch executives deliver directly to all Aparna Sarovar gates and nearby high-rises."
-          },
-          {
-              "question": "Are 7-seater cars available in Nallagandla for family trips?",
-              "answer": "Yes, Maruti Ertiga, Kia Carens, and Toyota Innova Crysta can be booked with unlimited kilometers."
-          },
-          {
-              "question": "How does the security deposit work in Nallagandla?",
-              "answer": "We require a refundable security deposit returned post-trip upon vehicle inspection as per rental terms."
-          }
-      ]
+      {
+        "question": "Are 7-seater cars available in Nallagandla for family trips?",
+        "answer": "Yes, Maruti Ertiga, Kia Carens, and Toyota Innova Crysta can be booked with unlimited kilometers."
+      },
+      {
+        "question": "How does the security deposit work in Nallagandla?",
+        "answer": "We require a refundable security deposit returned post-trip upon vehicle inspection as per rental terms."
+      }
+    ]
   },
   'tellapur': {
-      "name": "Tellapur",
-      "h1Title": "Self Drive Cars in Tellapur & Financial District Extn",
-      "seoTitle": "Self Drive Cars in Tellapur Hyderabad | DriveItCars",
-      "seoDescription": "Self drive car rental in Tellapur, Hyderabad. Fast delivery at My Home Ankura, Brigade Citadel, ORR Exit 2 & Gachibowli road. Sedans, SUVs & Thar.",
-      "introParagraph1": "Tellapur is West Hyderabad’s premier luxury villa and high-rise township corridor, located just minutes from the Financial District and Wipro Circle. DriveItCars delivers showroom-condition self drive cars right to your gated community or villa gate.",
-      "introParagraph2": "With immediate access to Nehru Outer Ring Road Exit 2 (Kollur / Tellapur), driving to RGIA Airport takes under 30 minutes, while weekend trips to Ananthagiri Hills and Pocharam Dam are quick and enjoyable.",
-      "introParagraph3": "Choose from 5-star safety rated sedans, automatic SUVs, and luxury 7-seaters with refundable security deposit and 24/7 roadside support.",
-      "serviceAreas": [
-          "My Home Ankura Belt",
-          "Brigade Citadel Corridor",
-          "Tellapur Techno School Hub",
-          "ORR Exit 2 Kollur",
-          "Nallagandla Border",
-          "Gopanpally Link"
-      ],
-      "localHighlights": {
-          "airportDistance": "30 km via ORR Exit 2 (28 mins)",
-          "keyCorridors": "Nehru ORR Exit 2, Tellapur-Gachibowli Rd & Nallagandla Flyover",
-          "popularCars": "Mahindra XUV700, Hyundai Creta Auto, Skoda Slavia & Innova Crysta",
-          "idealFor": "Gated Villa Communities, Tech Campus Commutes & Weekend Getaways"
+    "name": "Tellapur",
+    "h1Title": "Self Drive Cars in Tellapur & Financial District Extn",
+    "seoTitle": "Self Drive Cars in Tellapur Hyderabad | DriveItCars",
+    "seoDescription": "Self drive car rental in Tellapur, Hyderabad. Fast delivery at My Home Ankura, Brigade Citadel, ORR Exit 2 & Gachibowli road. Sedans, SUVs & Thar.",
+    "introParagraph1": "Tellapur is West Hyderabad’s premier luxury villa and high-rise township corridor, located just minutes from the Financial District and Wipro Circle. DriveItCars delivers showroom-condition self drive cars right to your gated community or villa gate.",
+    "introParagraph2": "With immediate access to Nehru Outer Ring Road Exit 2 (Kollur / Tellapur), driving to RGIA Airport takes under 30 minutes, while weekend trips to Ananthagiri Hills and Pocharam Dam are quick and enjoyable.",
+    "introParagraph3": "Choose from 5-star safety rated sedans, automatic SUVs, and luxury 7-seaters with refundable security deposit and 24/7 roadside support.",
+    "serviceAreas": [
+      "My Home Ankura Belt",
+      "Brigade Citadel Corridor",
+      "Tellapur Techno School Hub",
+      "ORR Exit 2 Kollur",
+      "Nallagandla Border",
+      "Gopanpally Link"
+    ],
+    "localHighlights": {
+      "airportDistance": "30 km via ORR Exit 2 (28 mins)",
+      "keyCorridors": "Nehru ORR Exit 2, Tellapur-Gachibowli Rd & Nallagandla Flyover",
+      "popularCars": "Mahindra XUV700, Hyundai Creta Auto, Skoda Slavia & Innova Crysta",
+      "idealFor": "Gated Villa Communities, Tech Campus Commutes & Weekend Getaways"
+    },
+    "customFaqs": [
+      {
+        "question": "Can you deliver to My Home Ankura and Brigade Citadel in Tellapur?",
+        "answer": "Yes, we provide 15–20 minute delivery directly to all gated villa and apartment projects in Tellapur."
       },
-      "customFaqs": [
-          {
-              "question": "Can you deliver to My Home Ankura and Brigade Citadel in Tellapur?",
-              "answer": "Yes, we provide 15–20 minute delivery directly to all gated villa and apartment projects in Tellapur."
-          },
-          {
-              "question": "Can I rent a car in Tellapur for a trip to Rajiv Gandhi Airport?",
-              "answer": "Yes, with direct access to ORR Exit 2, you reach RGIA Airport in approximately 28 minutes."
-          },
-          {
-              "question": "Are automatic SUVs available in Tellapur?",
-              "answer": "Yes, Hyundai Creta Auto, Kia Seltos, Mahindra XUV700, and Mahindra Thar 4x4 are available."
-          }
-      ]
+      {
+        "question": "Can I rent a car in Tellapur for a trip to Rajiv Gandhi Airport?",
+        "answer": "Yes, with direct access to ORR Exit 2, you reach RGIA Airport in approximately 28 minutes."
+      },
+      {
+        "question": "Are automatic SUVs available in Tellapur?",
+        "answer": "Yes, Hyundai Creta Auto, Kia Seltos, Mahindra XUV700, and Mahindra Thar 4x4 are available."
+      }
+    ]
   },
 
   'hitech-city': {
@@ -1572,13 +1572,13 @@ export const LOCATION_DEFAULTS = {
       },
     ],
   },
-  'himmatnagar': {
+  'himayatnagar': {
     name: 'Himayatnagar',
-    h1Title: 'Self Drive Car Rental in Himayatnagar (Himmatnagar)',
+    h1Title: 'Self Drive Car Rental in Himayatnagar (Himayatnagar)',
     seoTitle: 'Self Drive Cars in Himayatnagar Hyderabad | DriveItCars',
-    seoDescription: 'Hire self drive cars in Himayatnagar (Himmatnagar), Central Hyderabad. Prompt doorstep delivery across Liberty Circle, Narayanguda, Basheerbagh & Hyderguda.',
+    seoDescription: 'Hire self drive cars in Himayatnagar (Himayatnagar), Central Hyderabad. Prompt doorstep delivery across Liberty Circle, Narayanguda, Basheerbagh & Hyderguda.',
     introParagraph1:
-      'Known for its tree-lined retail avenues, heritage eateries, coaching institutes, and central residential apartments, Himayatnagar (Himmatnagar) sits at the cultural heart of Hyderabad. DriveItCars delivers clean, well-maintained self drive cars across Himayatnagar, Narayanguda, and Basheerbagh in 15 minutes.',
+      'Known for its tree-lined retail avenues, heritage eateries, coaching institutes, and central residential apartments, Himayatnagar (Himayatnagar) sits at the cultural heart of Hyderabad. DriveItCars delivers clean, well-maintained self drive cars across Himayatnagar, Narayanguda, and Basheerbagh in 15 minutes.',
     introParagraph2:
       'Whether you are planning a family temple visit, attending a wedding reception at Necklace Road or King Koti, or taking a weekend drive out of the city, our automatic hatchbacks, executive sedans, and 7-seater MPVs give you complete independence.',
     introParagraph3:
@@ -1715,27 +1715,27 @@ const SLUG_ALIASES = {
 };
 
 export const NEARBY_HUBS_MAP = {
-  'shamshabad': ["rajiv-gandhi-airport","aram-ghar","rajendra-nagar","budwel","kismatpur","attapur"],
-  'aram-ghar': ["rajendra-nagar","attapur","shamshabad","budwel","sun-city","mehdipatnam"],
-  'rajendra-nagar': ["budwel","aram-ghar","attapur","kismatpur","bandlaguda-jagir","shamshabad"],
-  'kismatpur': ["bandlaguda-jagir","sun-city","rajendra-nagar","budwel","narsingi","gandipet"],
-  'budwel': ["rajendra-nagar","kismatpur","bandlaguda-jagir","aram-ghar","shamshabad","attapur"],
-  'attapur': ["mehdipatnam","aram-ghar","rajendra-nagar","sun-city","langer-house","tolichowki"],
-  'shankerpally': ["mokila","tellapur","kokapet","gandipet","narsingi","financial-district"],
-  'bandlaguda-jagir': ["sun-city","kismatpur","narsingi","gandipet","langer-house","rajendra-nagar"],
-  'rajiv-gandhi-airport': ["shamshabad","aram-ghar","budwel","rajendra-nagar","gachibowli","financial-district"],
-  'khajaguda': ["manikonda","gachibowli","financial-district","nanakramguda","hitech-city","madhapur"],
-  'manikonda': ["khajaguda","puppalguda","sheikpet","tolichowki","gachibowli","narsingi"],
-  'financial-district': ["nanakramguda","gachibowli","kokapet","neopolis","narsingi","tellapur"],
-  'nanakramguda': ["financial-district","gachibowli","khajaguda","kokapet","narsingi","puppalguda"],
-  'narsingi': ["kokapet","gandipet","puppalguda","manikonda","financial-district","bandlaguda-jagir"],
-  'mokila': ["shankerpally","tellapur","kokapet","gandipet","narsingi","financial-district"],
-  'kokapet': ["neopolis","gandipet","narsingi","financial-district","puppalguda","tellapur"],
-  'neopolis': ["kokapet","financial-district","gandipet","narsingi","nanakramguda","tellapur"],
-  'puppalguda': ["manikonda","narsingi","kokapet","khajaguda","financial-district","sheikpet"],
-  'gandipet': ["kokapet","narsingi","kismatpur","bandlaguda-jagir","tellapur","mokila"],
-  'nallagandla': ["tellapur","kondapur","gachibowli","hitech-city","kukatpally","financial-district"],
-  'tellapur': ["nallagandla","financial-district","kokapet","mokila","gachibowli","shankerpally"],
+  'shamshabad': ["rajiv-gandhi-airport", "aram-ghar", "rajendra-nagar", "budwel", "kismatpur", "attapur"],
+  'aram-ghar': ["rajendra-nagar", "attapur", "shamshabad", "budwel", "sun-city", "mehdipatnam"],
+  'rajendra-nagar': ["budwel", "aram-ghar", "attapur", "kismatpur", "bandlaguda-jagir", "shamshabad"],
+  'kismatpur': ["bandlaguda-jagir", "sun-city", "rajendra-nagar", "budwel", "narsingi", "gandipet"],
+  'budwel': ["rajendra-nagar", "kismatpur", "bandlaguda-jagir", "aram-ghar", "shamshabad", "attapur"],
+  'attapur': ["mehdipatnam", "aram-ghar", "rajendra-nagar", "sun-city", "langer-house", "tolichowki"],
+  'shankerpally': ["mokila", "tellapur", "kokapet", "gandipet", "narsingi", "financial-district"],
+  'bandlaguda-jagir': ["sun-city", "kismatpur", "narsingi", "gandipet", "langer-house", "rajendra-nagar"],
+  'rajiv-gandhi-airport': ["shamshabad", "aram-ghar", "budwel", "rajendra-nagar", "gachibowli", "financial-district"],
+  'khajaguda': ["manikonda", "gachibowli", "financial-district", "nanakramguda", "hitech-city", "madhapur"],
+  'manikonda': ["khajaguda", "puppalguda", "sheikpet", "tolichowki", "gachibowli", "narsingi"],
+  'financial-district': ["nanakramguda", "gachibowli", "kokapet", "neopolis", "narsingi", "tellapur"],
+  'nanakramguda': ["financial-district", "gachibowli", "khajaguda", "kokapet", "narsingi", "puppalguda"],
+  'narsingi': ["kokapet", "gandipet", "puppalguda", "manikonda", "financial-district", "bandlaguda-jagir"],
+  'mokila': ["shankerpally", "tellapur", "kokapet", "gandipet", "narsingi", "financial-district"],
+  'kokapet': ["neopolis", "gandipet", "narsingi", "financial-district", "puppalguda", "tellapur"],
+  'neopolis': ["kokapet", "financial-district", "gandipet", "narsingi", "nanakramguda", "tellapur"],
+  'puppalguda': ["manikonda", "narsingi", "kokapet", "khajaguda", "financial-district", "sheikpet"],
+  'gandipet': ["kokapet", "narsingi", "kismatpur", "bandlaguda-jagir", "tellapur", "mokila"],
+  'nallagandla': ["tellapur", "kondapur", "gachibowli", "hitech-city", "kukatpally", "financial-district"],
+  'tellapur': ["nallagandla", "financial-district", "kokapet", "mokila", "gachibowli", "shankerpally"],
 
   'hitech-city': ['madhapur', 'gachibowli', 'kondapur', 'guttala-begumpet', 'jubilee-hills', 'kukatpally'],
   'gachibowli': ['hitech-city', 'kondapur', 'madhapur', 'sheikpet', 'tolichowki', 'mehdipatnam'],
@@ -1750,21 +1750,21 @@ export const NEARBY_HUBS_MAP = {
   'masab-tank': ['banjara-hills', 'vijay-nagar-colony', 'mehdipatnam', 'khairatabad', 'nampally', 'tolichowki'],
   'mehdipatnam': ['masab-tank', 'tolichowki', 'langer-house', 'vijay-nagar-colony', 'banjara-hills', 'sun-city'],
   'tolichowki': ['sheikpet', 'mehdipatnam', 'langer-house', 'film-nagar', 'gachibowli', 'masab-tank'],
-  'lb-nagar': ['habsiguda', 'tarnaka', 'himmatnagar', 'nampally', 'secunderabad', 'masab-tank'],
+  'lb-nagar': ['habsiguda', 'tarnaka', 'himayatnagar', 'nampally', 'secunderabad', 'masab-tank'],
   'sheikpet': ['tolichowki', 'film-nagar', 'jubilee-hills', 'gachibowli', 'mehdipatnam', 'langer-house'],
   'guttala-begumpet': ['madhapur', 'jubilee-hills', 'hitech-city', 'kondapur', 'film-nagar', 'yousufguda'],
   'film-nagar': ['jubilee-hills', 'banjara-hills', 'sheikpet', 'tolichowki', 'guttala-begumpet', 'yousufguda'],
   'yousufguda': ['jubilee-hills', 'sr-nagar', 'ameerpet', 'banjara-hills', 'guttala-begumpet', 'film-nagar'],
   'sr-nagar': ['ameerpet', 'yousufguda', 'begumpet', 'kukatpally', 'banjara-hills', 'khairatabad'],
-  'khairatabad': ['masab-tank', 'banjara-hills', 'nampally', 'himmatnagar', 'begumpet', 'ameerpet'],
-  'nampally': ['masab-tank', 'khairatabad', 'vijay-nagar-colony', 'himmatnagar', 'mehdipatnam', 'banjara-hills'],
+  'khairatabad': ['masab-tank', 'banjara-hills', 'nampally', 'himayatnagar', 'begumpet', 'ameerpet'],
+  'nampally': ['masab-tank', 'khairatabad', 'vijay-nagar-colony', 'himayatnagar', 'mehdipatnam', 'banjara-hills'],
   'vijay-nagar-colony': ['masab-tank', 'mehdipatnam', 'nampally', 'banjara-hills', 'khairatabad', 'tolichowki'],
   'langer-house': ['mehdipatnam', 'tolichowki', 'sun-city', 'sheikpet', 'masab-tank', 'gachibowli'],
   'sun-city': ['langer-house', 'tolichowki', 'mehdipatnam', 'sheikpet', 'gachibowli', 'masab-tank'],
-  'himmatnagar': ['nampally', 'khairatabad', 'masab-tank', 'secunderabad', 'banjara-hills', 'tarnaka'],
+  'himayatnagar': ['nampally', 'khairatabad', 'masab-tank', 'secunderabad', 'banjara-hills', 'tarnaka'],
   'bowenpally': ['secunderabad', 'begumpet', 'kukatpally', 'ameerpet', 'sr-nagar', 'tarnaka'],
-  'tarnaka': ['habsiguda', 'secunderabad', 'begumpet', 'bowenpally', 'lb-nagar', 'himmatnagar'],
-  'habsiguda': ['tarnaka', 'lb-nagar', 'secunderabad', 'begumpet', 'himmatnagar', 'bowenpally'],
+  'tarnaka': ['habsiguda', 'secunderabad', 'begumpet', 'bowenpally', 'lb-nagar', 'himayatnagar'],
+  'habsiguda': ['tarnaka', 'lb-nagar', 'secunderabad', 'begumpet', 'himayatnagar', 'bowenpally'],
 };
 
 function buildNearbyLocations(key) {

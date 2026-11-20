@@ -79,7 +79,7 @@ export default async function sitemap() {
     '/film-nagar',
     '/guttala-begumpet',
     '/habsiguda',
-    '/himmatnagar',
+    '/himayatnagar',
     '/khairatabad',
     '/kukatpally',
     '/langer-house',

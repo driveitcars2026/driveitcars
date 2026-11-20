@@ -5,9 +5,9 @@ export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
 export async function generateMetadata() {
-  return getLocationMetadata('himmatnagar');
+  return getLocationMetadata('himayatnagar');
 }
 
-export default function HimmatnagarPage() {
-  return <LocationPageContent slug="himmatnagar" />;
+export default function himayatnagarPage() {
+  return <LocationPageContent slug="himayatnagar" />;
 }

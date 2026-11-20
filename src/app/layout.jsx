@@ -22,6 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.webp" />
+        <link rel="preload" as="image" href="/driveit-loader.gif" fetchPriority="high" />
         <link rel="stylesheet" href="/assets/css/bootstrap.css" />
         <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
         <link rel="stylesheet" href="/assets/css/style.css" />

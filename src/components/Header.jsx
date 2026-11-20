@@ -17,20 +17,24 @@ const services = [
   { name: 'Monthly rentals', detail: 'A car for your longer stay', href: '/monthly-self-drive-cars-hyderabad' },
 ];
 const locationGroups = [
-  { name: 'A – K', places: [
-    ['Ameerpet', '/ameerpet'], ['Banjara Hills', '/banjara-hills'], ['Begumpet', '/begumpet'],
-    ['Bowenpally', '/bowenpally'], ['Film Nagar', '/film-nagar'], ['Gachibowli', '/gachibowli'],
-    ['Guttala Begumpet', '/guttala-begumpet'], ['Habsiguda', '/habsiguda'], ['Himmatnagar', '/himmatnagar'],
-    ['HITEC City', '/hitech-city'], ['Jubilee Hills', '/jubilee-hills'], ['Khairatabad', '/khairatabad'],
-    ['Kondapur', '/kondapur'], ['Kukatpally', '/kukatpally'],
-  ] },
-  { name: 'L – Y', places: [
-    ['Langer House', '/langer-house'], ['LB Nagar', '/lb-nagar'], ['Madhapur', '/madhapur'],
-    ['Masab Tank', '/masab-tank'], ['Mehdipatnam', '/mehdipatnam'], ['Nampally', '/nampally'],
-    ['Secunderabad', '/secunderabad'], ['Shaikpet', '/sheikpet'], ['SR Nagar', '/sr-nagar'],
-    ['Sun City', '/sun-city'], ['Tarnaka', '/tarnaka'], ['Tolichowki', '/tolichowki'],
-    ['Vijay Nagar Colony', '/vijay-nagar-colony'], ['Yousufguda', '/yousufguda'],
-  ] },
+  {
+    name: 'A – K', places: [
+      ['Ameerpet', '/ameerpet'], ['Banjara Hills', '/banjara-hills'], ['Begumpet', '/begumpet'],
+      ['Bowenpally', '/bowenpally'], ['Film Nagar', '/film-nagar'], ['Gachibowli', '/gachibowli'],
+      ['Guttala Begumpet', '/guttala-begumpet'], ['Habsiguda', '/habsiguda'], ['himayatnagar', '/himayatnagar'],
+      ['HITEC City', '/hitech-city'], ['Jubilee Hills', '/jubilee-hills'], ['Khairatabad', '/khairatabad'],
+      ['Kondapur', '/kondapur'], ['Kukatpally', '/kukatpally'],
+    ]
+  },
+  {
+    name: 'L – Y', places: [
+      ['Langer House', '/langer-house'], ['LB Nagar', '/lb-nagar'], ['Madhapur', '/madhapur'],
+      ['Masab Tank', '/masab-tank'], ['Mehdipatnam', '/mehdipatnam'], ['Nampally', '/nampally'],
+      ['Secunderabad', '/secunderabad'], ['Shaikpet', '/sheikpet'], ['SR Nagar', '/sr-nagar'],
+      ['Sun City', '/sun-city'], ['Tarnaka', '/tarnaka'], ['Tolichowki', '/tolichowki'],
+      ['Vijay Nagar Colony', '/vijay-nagar-colony'], ['Yousufguda', '/yousufguda'],
+    ]
+  },
 ];
 
 function Icon({ name }) {

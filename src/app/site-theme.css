@@ -130,9 +130,11 @@
 .driveit-site .site-content .offer-action a.offer-btn-2 i,
 .driveit-site .site-content a.car-card-whatsapp i { color: #17643b !important; }
 .driveit-site .site-content .offer-text h3 { letter-spacing: -.02em; }
-.driveit-site .site-content .offer-tabs > .nav-tabs { display: flex; justify-content: flex-start; margin-bottom: 28px; border: 0; }
+.driveit-site .site-content .offer-tabs > .nav-tabs { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; border: 0; }
 .driveit-site .site-content .offer-tabs > .nav-tabs .nav-item { width: auto !important; margin: 0; }
-.driveit-site .site-content .offer-tabs > .nav-tabs .nav-link { background: var(--site-paper) !important; color: var(--site-ink) !important; border: 1px solid var(--site-line) !important; border-radius: 8px; padding: 10px 20px !important; font-size: 13px; text-transform: none; }
+.driveit-site .site-content .offer-tabs > .nav-tabs .nav-link { background: var(--site-paper) !important; color: var(--site-ink) !important; border: 1px solid var(--site-line) !important; border-radius: 8px; padding: 10px 20px !important; font-size: 13px; font-weight: 600; text-transform: none; cursor: pointer; }
+.driveit-site .site-content .offer-tabs > .nav-tabs .nav-link:hover { border-color: #b6bbc1 !important; }
+.driveit-site .site-content .offer-tabs > .nav-tabs .nav-link.active { background: var(--site-ink) !important; color: var(--site-paper) !important; border-color: var(--site-ink) !important; }
 .driveit-site .site-content .offer-tabs > .nav-tabs .nav-link::before,
 .driveit-site .site-content .offer-tabs > .nav-tabs .nav-link::after { display: none !important; }
 .driveit-site .site-content .pricing-plan-toggle { background: var(--site-paper) !important; border: 1px solid var(--site-line); border-radius: 12px !important; box-shadow: none !important; }

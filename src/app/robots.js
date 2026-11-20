@@ -20,7 +20,7 @@ export default function robots() {
           '/vijay-nagar-colony',
           '/langer-house',
           '/sun-city',
-          '/himmatnagar',
+          '/himayatnagar',
           '/bowenpally',
           '/tarnaka',
           '/habsiguda',
