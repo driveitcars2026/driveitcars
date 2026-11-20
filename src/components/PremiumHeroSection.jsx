@@ -10,48 +10,48 @@ const SHOWCASE_VEHICLES = [
     id: 'suv',
     tabLabel: 'SUVs & 4x4',
     name: 'Mahindra Thar 4x4 & Roxx',
-    badge: 'Off-Road Champion • VIP Road Presence',
+    badge: '4x4 SUV • Open-Road Ready',
     image: '/assets/img/cars/5-Thar.webp',
     seats: '4-5 Seats',
     transmission: 'Auto & Manual 4WD',
     fuel: 'Diesel / Petrol',
-    feature: 'Convertible Hard Top • Security Deposit',
+    feature: 'Hard-Top 4WD • Refundable Deposit',
     categoryKey: 'suv5',
   },
   {
     id: 'suv7',
     tabLabel: '7-Seater',
     name: 'Toyota Innova Crysta & Fortuner',
-    badge: 'Undisputed Highway & Family Legend',
+    badge: '7-Seater Highway & Family Cruiser',
     image: '/assets/img/cars/7-Innova Crysta.webp',
     seats: '7-8 Seats',
     transmission: 'Automatic & Manual',
     fuel: '2.4L Diesel',
-    feature: 'Massive Boot Space (4+ Large Bags)',
+    feature: 'Spacious Luggage Capacity',
     categoryKey: 'suv7',
   },
   {
     id: 'luxury',
     tabLabel: 'Luxury',
     name: 'Mercedes-Benz E-Class',
-    badge: 'Executive CXO & Wedding Splendor',
+    badge: 'Executive & Wedding Chauffeur Sedan',
     image: '/assets/img/benz2.webp',
     seats: '5 Seater Luxury',
     transmission: 'Automatic',
     fuel: 'Diesel',
-    feature: 'Suited Chauffeur or Self-Drive',
+    feature: 'Chauffeur-Driven Service',
     categoryKey: 'all',
   },
   {
     id: 'hatchback',
     tabLabel: 'Hatchback',
     name: 'Maruti Swift & Nexa Baleno',
-    badge: 'Smart City Drive • 22+ km/l Mileage',
+    badge: 'City Commute • 22+ km/l Mileage',
     image: '/assets/img/cars/Swift.webp',
     seats: '5 Seats',
     transmission: 'AMT Auto & Manual',
     fuel: 'Petrol / High Mileage',
-    feature: 'Clutch-Free Commute • Security Deposit',
+    feature: 'City Commute • Refundable Deposit',
     categoryKey: 'hatchback',
   },
 ];
@@ -227,7 +227,7 @@ Please share vehicle availability, best tariffs, and booking confirmation.`;
             </span>
             <span className="eyebrow-divider">•</span>
             <span className="hero-authority-badge">
-              <i className="fa fa-shield" /> HYDERABAD&apos;S PREMIER CAR RENTAL FLEET
+              <i className="fa fa-shield" /> HYDERABAD SELF-DRIVE &amp; CHAUFFEUR FLEET
             </span>
           </div>
         </div>
@@ -240,11 +240,11 @@ Please share vehicle availability, best tariffs, and booking confirmation.`;
               <h1 className="hero-main-title">
                 Drive On Your Terms Across <span className="highlight-city">Hyderabad.</span>
                 <span className="hero-sub-title-accent">
-                  Premium Self Drive & Chauffeur Fleet
+                  Premium Self Drive &amp; Chauffeur Fleet
                 </span>
               </h1>
               <p className="hero-lead-text">
-                Security deposit on select fleet • Limited KMs available • 30-minute
+                Transparent daily, weekly &amp; monthly tariffs • Refundable security deposit • 30-minute
                 doorstep delivery across 26+ Hyderabad hubs &amp; RGIA Shamshabad Airport.
               </p>
 

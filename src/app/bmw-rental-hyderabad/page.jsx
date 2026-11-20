@@ -16,7 +16,7 @@ export const metadata = {
   openGraph: {
     title: 'BMW Rental Hyderabad | 5 & 7 Series Car Hire | DriveItCars',
     description:
-      'Premier BMW rental in Hyderabad. Drive BMW 5 Series & 7 Series with showroom condition, Security Deposit options, and doorstep delivery across HITEC City, Gachibowli & Banjara Hills.',
+      'Premier BMW rental in Hyderabad. Drive BMW 5 Series & 7 Series with showroom condition, refundable security deposit, and doorstep delivery across HITEC City, Gachibowli & Banjara Hills.',
     url: 'https://www.driveitcars.in/bmw-rental-hyderabad',
     siteName: 'DriveItCars Hyderabad',
     locale: 'en_IN',
@@ -136,7 +136,7 @@ export default function BmwRentalHyderabadPage() {
                     marginBottom: 8,
                   }}
                 >
-                  ✦ SHEER DRIVING PLEASURE IN HYDERABAD
+                  BMW SELF-DRIVE &amp; CHAUFFEUR FLEET
                 </span>
                 <p className="breadcromb-title">BMW Rental Hyderabad</p>
                 <ul>
@@ -159,48 +159,35 @@ export default function BmwRentalHyderabadPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="about-page-left">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.15)',
-                    color: '#d49500',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '12px',
-                  }}
-                >
-                  ✦ BMW 5 SERIES • BMW 7 SERIES • SELF DRIVE &amp; CHAUFFEUR
+                <span className="editorial-eyebrow">
+                  BMW 5 SERIES • BMW 7 SERIES • SELF DRIVE &amp; CHAUFFEUR
                 </span>
-                <h1 style={{ color: '#0f172a', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
+                <h1 style={{ color: '#191c20', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
                   BMW Rental Hyderabad — Self Drive &amp; Chauffeur-Driven Luxury Cars
                 </h1>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '16px' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '16px' }}>
                   Unleash the exhilaration of Bavarian engineering with DriveItCars's dedicated <strong>BMW rental Hyderabad</strong> fleet. Renowned worldwide as the ultimate driving machine, BMW combines razor-sharp performance, iconic kidney grilles, and state-of-the-art cabin luxury. Whether cruising down the scenic Hyderabad Outer Ring Road, making a powerful impression at tech summits in <strong>HITEC City &amp; Gachibowli Financial District</strong>, or leading a regal wedding procession in <strong>Jubilee Hills</strong>, DriveItCars provides pristine BMW vehicles tailored to your ambition.
                 </p>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '22px' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '22px' }}>
                   Available in both thrilling <strong>BMW self drive Hyderabad</strong> options and fully managed executive chauffeur services with white-glove doorstep delivery to all Hyderabad hubs and RGIA Shamshabad Airport.
                 </p>
 
                 {/* Brand Navigation Strip */}
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginBottom: '10px' }}>
-                  <Link href="/mercedes-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    ⭐ Mercedes Rental Hyderabad
+                  <Link href="/mercedes-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Mercedes Rental Hyderabad
                   </Link>
-                  <Link href="/audi-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🏎️ Audi Rental Hyderabad
+                  <Link href="/audi-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Audi Rental Hyderabad
                   </Link>
-                  <Link href="/range-rover-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🚙 Range Rover Rental
+                  <Link href="/range-rover-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Range Rover Rental
                   </Link>
-                  <Link href="/luxury-chauffeur-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🤵 Luxury Chauffeur Hyderabad
+                  <Link href="/luxury-chauffeur-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Luxury Chauffeur Hyderabad
                   </Link>
-                  <Link href="/vip-car-rental-hyderabad" style={{ background: '#ffb907', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
-                    👑 VIP &amp; CEO Car Rental
+                  <Link href="/vip-car-rental-hyderabad" style={{ background: '#ffb907', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
+                    VIP &amp; CEO Car Rental
                   </Link>
                 </div>
               </div>
@@ -210,17 +197,17 @@ export default function BmwRentalHyderabadPage() {
       </section>
 
       {/* Fleet Showcase Grid */}
-      <section className="section_70" style={{ background: '#f8fafc', paddingTop: '40px' }}>
+      <section className="section_70" style={{ background: '#f5f6f7', paddingTop: '40px' }}>
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <span style={{ color: '#d49500', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
+              <span style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                 PERFORMANCE • PRESTIGE • PRECISION
               </span>
-              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#0f172a', marginTop: '6px' }}>
+              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#191c20', marginTop: '6px' }}>
                 Our BMW Fleet in Hyderabad
               </h2>
-              <p style={{ color: '#64748b', maxWidth: '680px', margin: '8px auto 0', fontSize: '15px' }}>
+              <p style={{ color: '#60656d', maxWidth: '680px', margin: '8px auto 0', fontSize: '15px' }}>
                 Available for self-drive, executive corporate rentals, and grand wedding events with 24/7 roadside assistance.
               </p>
             </div>
@@ -235,7 +222,7 @@ export default function BmwRentalHyderabadPage() {
                     background: '#fff',
                     borderRadius: '16px',
                     overflow: 'hidden',
-                    boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
+                    border: '1px solid #e3e5e8',
                     border: '1px solid #e2e8f0',
                     height: '100%',
                     display: 'flex',
@@ -259,7 +246,7 @@ export default function BmwRentalHyderabadPage() {
                         position: 'absolute',
                         top: 12,
                         left: 12,
-                        background: '#0f172a',
+                        background: '#191c20',
                         color: '#ffb907',
                         fontSize: '11px',
                         fontWeight: 700,
@@ -278,18 +265,18 @@ export default function BmwRentalHyderabadPage() {
                   </div>
 
                   <div className="offer-text" style={{ padding: '24px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                    <h3 style={{ fontSize: '22px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>
+                    <h3 style={{ fontSize: '22px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>
                       {car.name}
                     </h3>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '14px', alignItems: 'center', background: '#f8fafc', padding: '10px 14px', borderRadius: '8px' }}>
-                      <span style={{ fontSize: '15px', fontWeight: 800, color: '#0f172a' }}>
-                        <i className="fa fa-tag" style={{ color: '#d97706', marginRight: '6px' }} />
+                    <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '14px', alignItems: 'center', background: '#f5f6f7', padding: '10px 14px', borderRadius: '8px' }}>
+                      <span style={{ fontSize: '15px', fontWeight: 800, color: '#191c20' }}>
+                        <i className="fa fa-tag" style={{ color: '#191c20', marginRight: '6px' }} />
                         {car.rateDay}
                       </span>
-                      <span style={{ fontSize: '12px', color: '#64748b', fontWeight: 600 }}>Wedding: {car.weddingRate}</span>
+                      <span style={{ fontSize: '12px', color: '#60656d', fontWeight: 600 }}>Wedding: {car.weddingRate}</span>
                     </div>
 
-                    <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 16px', fontSize: '13px', color: '#475569' }}>
+                    <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 16px', fontSize: '13px', color: '#60656d' }}>
                       <li style={{ marginBottom: 6 }}><i className="fa fa-car" style={{ color: '#ffb907', width: 20 }} /> {car.model}</li>
                       <li style={{ marginBottom: 6 }}><i className="fa fa-users" style={{ color: '#ffb907', width: 20 }} /> {car.seats}</li>
                       <li style={{ marginBottom: 6 }}><i className="fa fa-cogs" style={{ color: '#ffb907', width: 20 }} /> {car.fuel}</li>
@@ -297,7 +284,7 @@ export default function BmwRentalHyderabadPage() {
 
                     <div style={{ marginBottom: '18px', display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                       {car.features.map((feat, idx) => (
-                        <span key={idx} style={{ background: '#f1f5f9', color: '#334155', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 500 }}>
+                        <span key={idx} style={{ background: '#f5f6f7', color: '#191c20', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 500 }}>
                           ✓ {feat}
                         </span>
                       ))}
@@ -308,7 +295,7 @@ export default function BmwRentalHyderabadPage() {
                         href="tel:+916300041186"
                         className="offer-btn-1"
                         style={{
-                          background: '#0f172a',
+                          background: '#191c20',
                           color: '#fff',
                           textAlign: 'center',
                           padding: '10px 4px',
@@ -361,17 +348,17 @@ export default function BmwRentalHyderabadPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="site-heading text-center mb-4">
-                <span style={{ color: '#d49500', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase' }}>
+                <span style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline', fontSize: '13px', textTransform: 'uppercase' }}>
                   TRANSPARENT TARIFFS
                 </span>
-                <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#0f172a' }}>
+                <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#191c20' }}>
                   BMW Rental Hyderabad Rates &amp; Packages
                 </h2>
               </div>
 
               <div className="table-responsive" style={{ background: '#fff', borderRadius: '14px', border: '1px solid #e2e8f0', boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
                 <table className="table" style={{ margin: 0, fontSize: '14px' }}>
-                  <thead style={{ background: '#0f172a', color: '#ffb907' }}>
+                  <thead style={{ background: '#191c20', color: '#ffb907' }}>
                     <tr>
                       <th style={{ padding: '14px 16px' }}>BMW Model</th>
                       <th style={{ padding: '14px 16px' }}>Self Drive (24 Hrs)</th>
@@ -388,7 +375,7 @@ export default function BmwRentalHyderabadPage() {
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Custom Quote</td>
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Custom Quote</td>
                     </tr>
-                    <tr style={{ background: '#f8fafc' }}>
+                    <tr style={{ background: '#f5f6f7' }}>
                       <td style={{ padding: '14px 16px', fontWeight: 700 }}>BMW 7 Series Flagship</td>
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Tariff on Request</td>
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Tariff on Request</td>

@@ -174,42 +174,29 @@ export default async function Page() {
             {/* Left Content */}
             <div className="col-lg-6 mb-4 mb-lg-0">
               <div className="about-modern-content">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.15)',
-                    color: '#d49500',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '14px',
-                  }}
-                >
-                  <i className="fa fa-car" style={{ marginRight: 6 }} /> {landingPage?.aboutBadge || "Hyderabad's Premier Car Rental"}
+                <span className="editorial-eyebrow">
+                  {landingPage?.aboutBadge || "Hyderabad's Self-Drive Fleet"}
                 </span>
-                <h2 style={{ fontSize: '34px', fontWeight: 800, color: '#111827', lineHeight: '1.25', marginBottom: '18px' }}>
+                <h2 style={{ fontSize: '34px', fontWeight: 700, color: '#191c20', lineHeight: '1.25', marginBottom: '18px' }}>
                   {landingPage?.aboutHeading ? (
                     landingPage.aboutHeading
                   ) : (
-                    <>Experience True Freedom of the Open Road with <span style={{ color: '#ffb907' }}>DriveItCars</span></>
+                    <>Self-Drive &amp; Chauffeur Car Rentals Across Hyderabad</>
                   )}
                 </h2>
-                <p style={{ color: '#4b5563', fontSize: '15px', lineHeight: '1.7', marginBottom: '16px' }}>
-                  {landingPage?.aboutDescription1 || "DriveItCars is Hyderabad’s trusted self-drive car rental and luxury travel platform. Whether you need an affordable hatchback for daily commutes, a luxury sedan for VIP transfers, a spacious 7-seater SUV for a family weekend getaway, or luxury buses for weddings, we make booking fast, transparent, and seamless."}
+                <p style={{ color: '#60656d', fontSize: '15.5px', lineHeight: '1.75', marginBottom: '16px' }}>
+                  {landingPage?.aboutDescription1 || "DriveItCars provides well-maintained self-drive cars and chauffeur-driven luxury vehicles across Hyderabad. Choose an economical hatchback for daily errands, an executive sedan for business meetings, a 7-seater SUV for family road trips, or luxury buses for group travel."}
                 </p>
-                <p style={{ color: '#4b5563', fontSize: '15px', lineHeight: '1.7', marginBottom: '24px' }}>
-                  {landingPage?.aboutDescription2 || "Enjoy unlimited freedom with no driver interference. Choose flexible daily, weekly, or monthly subscription plans with hassle-free doorstep delivery across 20+ localities including Hitech City, Gachibowli, Banjara Hills, Jubilee Hills, and Shamshabad Airport."}
+                <p style={{ color: '#60656d', fontSize: '15.5px', lineHeight: '1.75', marginBottom: '24px' }}>
+                  {landingPage?.aboutDescription2 || "Book daily, weekly, or monthly rental plans with transparent terms, refundable security deposit, and doorstep delivery across 26+ Hyderabad hubs including HITEC City, Gachibowli, Banjara Hills, Jubilee Hills, and RGIA Shamshabad Airport."}
                 </p>
 
                 {/* 4 Feature Highlights Grid */}
                 <div className="row g-3" style={{ marginBottom: '28px' }}>
                   {(landingPage?.aboutFeatures && landingPage.aboutFeatures.length > 0 ? landingPage.aboutFeatures : [
                     { icon: 'fa-shield', title: 'Fully Insured Fleet', description: 'Sanitized & safety-inspected' },
-                    { icon: 'fa-tag', title: 'Transparent Pricing', description: 'Zero hidden fees or surprises' },
-                    { icon: 'fa-map-marker', title: 'Doorstep Delivery', description: 'Prompt delivery anywhere in Hyd' },
+                    { icon: 'fa-tag', title: 'Transparent Pricing', description: 'Clear rental terms & billing' },
+                    { icon: 'fa-map-marker', title: 'Doorstep Delivery', description: 'Prompt delivery across Hyd' },
                     { icon: 'fa-headphones', title: '24/7 Road Assistance', description: 'Dedicated customer care team' },
                   ]).map((feat, idx) => (
                     <div className="col-sm-6 mb-3" key={idx}>
@@ -219,20 +206,21 @@ export default async function Page() {
                             width: '40px',
                             height: '40px',
                             borderRadius: '10px',
-                            background: '#fff8e6',
-                            color: '#ffb907',
+                            background: '#f5f6f7',
+                            border: '1px solid #e3e5e8',
+                            color: '#191c20',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            fontSize: '18px',
+                            fontSize: '16px',
                             flexShrink: 0,
                           }}
                         >
                           <i className={`fa ${feat.icon || 'fa-check'}`} />
                         </div>
                         <div>
-                          <h3 style={{ fontSize: '15px', fontWeight: 700, color: '#111827', margin: '0 0 2px' }}>{feat.title}</h3>
-                          <p style={{ fontSize: '13px', color: '#6b7280', margin: 0 }}>{feat.description}</p>
+                          <h3 style={{ fontSize: '15px', fontWeight: 600, color: '#191c20', margin: '0 0 2px' }}>{feat.title}</h3>
+                          <p style={{ fontSize: '13px', color: '#60656d', margin: 0 }}>{feat.description}</p>
                         </div>
                       </div>
                     </div>
@@ -244,33 +232,23 @@ export default async function Page() {
                   <Link
                     href={landingPage?.aboutCtaLink || "/self-drive-car"}
                     className="gauto-btn"
-                    style={{
-                      background: '#ffb907',
-                      color: '#000',
-                      fontWeight: 700,
-                      padding: '12px 28px',
-                      borderRadius: '30px',
-                      textDecoration: 'none',
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '8px',
-                    }}
                   >
                     {landingPage?.aboutCtaText || "Explore Fleet"} <i className="fa fa-arrow-right" />
                   </Link>
                   <a
                     href={`tel:${(landingPage?.aboutPhone || '+916300041186').replace(/\s+/g, '')}`}
                     style={{
-                      color: '#111827',
-                      fontWeight: 700,
-                      fontSize: '15px',
+                      color: '#191c20',
+                      fontWeight: 600,
+                      fontSize: '14px',
                       textDecoration: 'none',
                       display: 'inline-flex',
                       alignItems: 'center',
                       gap: '8px',
-                      padding: '10px 18px',
-                      borderRadius: '30px',
-                      border: '1px solid #e5e7eb',
+                      minHeight: '48px',
+                      padding: '12px 20px',
+                      borderRadius: '10px',
+                      border: '1px solid #e3e5e8',
                     }}
                   >
                     <i className="fa fa-phone" style={{ color: '#ffb907' }} /> {landingPage?.aboutPhone || "+91 6300041186"}
@@ -286,10 +264,9 @@ export default async function Page() {
                 style={{
                   position: 'relative',
                   padding: '10px',
-                  borderRadius: '24px',
-                  background: 'linear-gradient(145deg, #f8f9fa, #ffffff)',
-                  boxShadow: '0 20px 45px rgba(0, 0, 0, 0.08)',
-                  border: '1px solid #f0f0f0',
+                  borderRadius: '16px',
+                  background: '#f5f6f7',
+                  border: '1px solid #e3e5e8',
                 }}
               >
                 <img
@@ -297,7 +274,7 @@ export default async function Page() {
                   alt="Self drive car rental in Hyderabad"
                   className="img-fluid"
                   style={{
-                    borderRadius: '18px',
+                    borderRadius: '12px',
                     width: '100%',
                     height: 'auto',
                     maxHeight: '440px',
@@ -309,34 +286,33 @@ export default async function Page() {
                   className={aboutStyles.statistics}
                   style={{
                     position: 'absolute',
-                    bottom: '24px',
-                    left: '24px',
-                    right: '24px',
-                    background: 'rgba(17, 24, 39, 0.88)',
-                    backdropFilter: 'blur(8px)',
+                    bottom: '20px',
+                    left: '20px',
+                    right: '20px',
+                    background: '#14181d',
                     color: '#ffffff',
                     padding: '14px 20px',
-                    borderRadius: '14px',
+                    borderRadius: '12px',
+                    border: '1px solid rgba(255, 255, 255, 0.1)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'space-between',
-                    boxShadow: '0 8px 24px rgba(0, 0, 0, 0.25)',
                   }}
                 >
                   <div>
-                    <div style={{ color: '#ffb907', fontWeight: 800, fontSize: '18px' }}>
+                    <div style={{ color: '#ffb907', fontWeight: 700, fontSize: '18px' }}>
                       {landingPage?.aboutStat1Number || '10,000+ Trips'}
                     </div>
-                    <div style={{ fontSize: '12px', color: '#d1d5db' }}>
-                      {landingPage?.aboutStat1Label || 'Happy Travelers in Hyderabad'}
+                    <div style={{ fontSize: '12px', color: '#cbd5e1' }}>
+                      {landingPage?.aboutStat1Label || 'Completed Across Hyderabad'}
                     </div>
                   </div>
                   <div style={{ textAlign: 'right' }}>
-                    <div style={{ color: '#ffb907', fontWeight: 800, fontSize: '16px' }}>
-                      {landingPage?.aboutStat2Number || '★ 4.9 / 5.0'}
+                    <div style={{ color: '#ffb907', fontWeight: 700, fontSize: '16px' }}>
+                      {landingPage?.aboutStat2Number || '4.9 / 5.0'}
                     </div>
-                    <div style={{ fontSize: '12px', color: '#d1d5db' }}>
-                      {landingPage?.aboutStat2Label || 'Verified Customer Rating'}
+                    <div style={{ fontSize: '12px', color: '#cbd5e1' }}>
+                      {landingPage?.aboutStat2Label || 'Customer Rating'}
                     </div>
                   </div>
                 </div>
@@ -347,37 +323,27 @@ export default async function Page() {
       </section>
 
       {/* ========== How To Book a Self-Drive Car Online ========== */}
-      <section className="section_70" style={{ background: '#fafafa' }}>
+      <section className="section_70" style={{ background: '#f5f6f7' }}>
         <div className="container">
           <div className="site-heading text-center">
-            <span
-              style={{
-                color: '#ffb907',
-                fontWeight: 700,
-                fontSize: '13px',
-                letterSpacing: '1px',
-                textTransform: 'uppercase',
-                display: 'inline-block',
-                marginBottom: '6px',
-              }}
-            >
-              {landingPage?.bookingBadge || "Easy 4-Step Process"}
+            <span className="editorial-eyebrow">
+              {landingPage?.bookingBadge || "4-Step Process"}
             </span>
-            <h2 style={{ fontSize: '32px', fontWeight: 800, color: '#111827' }}>
+            <h2>
               {landingPage?.bookingHeading || "How To Book a Self-Drive Car Online"}
             </h2>
           </div>
           <div className="row">
             {(landingPage?.bookingSteps && landingPage.bookingSteps.length > 0 ? landingPage.bookingSteps : [
-              { stepNumber: '1', title: 'Choose Your Car', description: 'Select from our wide range of hatchbacks, sedans, and SUVs.' },
+              { stepNumber: '1', title: 'Choose Your Car', description: 'Select from our range of hatchbacks, sedans, and SUVs.' },
               { stepNumber: '2', title: 'Enter Dates & Details', description: 'Choose your rental duration and preferred doorstep delivery location.' },
-              { stepNumber: '3', title: 'Quick Verification', description: 'Submit your Driving License and ID proof via instant WhatsApp.' },
-              { stepNumber: '4', title: 'Drive & Return', description: 'Enjoy your trip with unlimited freedom and return smoothly.' },
+              { stepNumber: '3', title: 'Quick Verification', description: 'Submit your Driving License and ID proof via WhatsApp for quick verification.' },
+              { stepNumber: '4', title: 'Drive & Return', description: 'Complete pickup inspection and return at your scheduled location.' },
             ]).map((step, idx) => (
               <div className="col-md-3" key={idx}>
                 <div className="step-box">
                   <div className="step-num">{step.stepNumber || idx + 1}</div>
-                  <h3 style={{ fontSize: '20px', fontWeight: 700, margin: '10px 0 6px' }}>{step.title}</h3>
+                  <h3 style={{ fontSize: '20px', fontWeight: 600, margin: '10px 0 6px' }}>{step.title}</h3>
                   <p>{step.description}</p>
                 </div>
               </div>
@@ -387,14 +353,14 @@ export default async function Page() {
       </section>
 
       {/* ========== THE DriveItCars ADVANTAGE (SINGLE-LINE STRIP) ========== */}
-      <section className="driveit-advantage-strip" style={{ background: '#0f172a', padding: '36px 0', borderTop: '3px solid #ffb907', borderBottom: '3px solid #ffb907' }}>
+      <section className="driveit-advantage-strip" style={{ background: '#14181d', padding: '44px 0' }}>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-3 text-lg-start text-center mb-lg-0 mb-3">
-              <span style={{ color: '#ffb907', fontSize: '11px', fontWeight: 800, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'block', marginBottom: '2px' }}>
+              <span style={{ color: '#ffb907', fontSize: '11px', fontWeight: 600, letterSpacing: '1.5px', textTransform: 'uppercase', display: 'block', marginBottom: '4px' }}>
                 {landingPage?.advantageSubtitle || "Why Drive With Us"}
               </span>
-              <h2 style={{ color: '#ffffff', fontSize: '22px', fontWeight: 800, margin: 0 }}>
+              <h2 style={{ color: '#ffffff', fontSize: '22px', fontWeight: 700, margin: 0 }}>
                 {landingPage?.advantageTitle || "The DriveItCars Advantage"}
               </h2>
             </div>
@@ -409,14 +375,14 @@ export default async function Page() {
                 {(landingPage?.advantageItems && landingPage.advantageItems.length > 0 ? landingPage.advantageItems : [
                   { icon: 'fa-key', title: '100% Privacy', subtitle: 'No driver interference' },
                   { icon: 'fa-shield', title: 'Security Deposit', subtitle: 'Quick verification' },
-                  { icon: 'fa-tag', title: 'Best Rates', subtitle: 'No hidden charges' },
+                  { icon: 'fa-tag', title: 'Best Rates', subtitle: 'Transparent tariffs' },
                   { icon: 'fa-map-marker', title: 'Doorstep Drop', subtitle: 'Across all Hyderabad' },
                 ]).map((adv, idx) => (
-                  <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '12px', background: 'rgba(255,255,255,0.06)', padding: '12px 14px', borderRadius: '10px', border: '1px solid rgba(255,255,255,0.1)' }}>
-                    <i className={`fa ${adv.icon || 'fa-check'}`} style={{ color: '#ffb907', fontSize: '20px', flexShrink: 0 }} />
+                  <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '12px', background: 'rgba(255,255,255,0.04)', padding: '12px 14px', borderRadius: '10px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                    <i className={`fa ${adv.icon || 'fa-check'}`} style={{ color: '#ffb907', fontSize: '18px', flexShrink: 0 }} />
                     <div>
-                      <h3 style={{ color: '#ffffff', fontSize: '13px', fontWeight: 700, margin: '0 0 2px' }}>{adv.title}</h3>
-                      <p style={{ color: '#94a3b8', fontSize: '11px', margin: 0 }}>{adv.subtitle}</p>
+                      <h3 style={{ color: '#ffffff', fontSize: '13px', fontWeight: 600, margin: '0 0 2px' }}>{adv.title}</h3>
+                      <p style={{ color: '#9ca3af', fontSize: '12px', margin: 0 }}>{adv.subtitle}</p>
                     </div>
                   </div>
                 ))}
@@ -427,28 +393,17 @@ export default async function Page() {
       </section>
 
       {/* ========== Why Choose Us ========== */}
-      <section className="section_70" style={{ background: '#fafafa' }}>
+      <section className="section_70" style={{ background: '#ffffff' }}>
         <div className="container">
           <div className="site-heading text-center" style={{ width: '100%', maxWidth: '720px', margin: '0 auto 40px' }}>
-            <span
-              style={{
-                color: '#ffb907',
-                fontSize: '13px',
-                fontWeight: 800,
-                letterSpacing: '1.5px',
-                textTransform: 'uppercase',
-                display: 'block',
-                marginBottom: '8px',
-                clear: 'both',
-              }}
-            >
+            <span className="editorial-eyebrow">
               {landingPage?.whyChooseSubtitle || "Why Travelers Trust Us"}
             </span>
             <h2
               style={{
                 fontSize: '32px',
-                fontWeight: 800,
-                color: '#111827',
+                fontWeight: 600,
+                color: '#191c20',
                 display: 'block',
                 width: '100%',
                 margin: 0,
@@ -460,12 +415,12 @@ export default async function Page() {
           </div>
           <div className="row">
             {(landingPage?.whyChooseCards && landingPage.whyChooseCards.length > 0 ? landingPage.whyChooseCards : [
-              { icon: 'fa-shield-alt', title: 'Trustworthy & Reliable', description: 'Fully insured, well-maintained cars with transparent pricing and no hidden charges.' },
-              { icon: 'fa-car', title: 'Wide Fleet Variety', description: 'From hatchbacks to luxury SUVs and buses, we have the perfect vehicle for every need.' },
-              { icon: 'fa-clock', title: 'Flexible Rental Plans', description: 'Hourly, daily, weekly, and customized rentals – pay only for what you use.' },
-              { icon: 'fa-rupee-sign', title: 'Competitive Rates', description: 'Affordable prices without compromising on quality, safety, or service.' },
-              { icon: 'fa-headset', title: '24/7 On-Road Support', description: 'Our team is always available to assist you with bookings, queries, and road assistance.' },
-              { icon: 'fa-handshake', title: 'Hassle-free Booking', description: 'Easy online booking, quick verification, and doorstep delivery options available.' },
+              { icon: 'fa-shield', title: 'Trustworthy & Reliable', description: 'Fully insured, well-maintained cars with transparent pricing and clear rental terms.' },
+              { icon: 'fa-car', title: 'Wide Fleet Variety', description: 'From hatchbacks to luxury SUVs and buses, find the right vehicle for every trip.' },
+              { icon: 'fa-clock-o', title: 'Flexible Rental Plans', description: 'Hourly, daily, weekly, and customized rentals tailored to your schedule.' },
+              { icon: 'fa-inr', title: 'Competitive Rates', description: 'Transparent tariffs without compromising on maintenance, safety, or service.' },
+              { icon: 'fa-headphones', title: '24/7 On-Road Support', description: 'Our team is always available to assist you with bookings, queries, and road assistance.' },
+              { icon: 'fa-handshake-o', title: 'Quick Verification', description: 'Straightforward online booking, fast KYC verification, and doorstep delivery across Hyderabad.' },
             ]).map((card, idx) => (
               <div className="col-md-4 mb-4" key={idx}>
                 <div className="icon-box">

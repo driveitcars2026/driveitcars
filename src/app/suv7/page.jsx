@@ -141,7 +141,7 @@ const SUV7_FAQS = [
   {
     question: 'Are 7-seater SUVs ideal for Tirupati, Srisailam, and Shirdi family pilgrimages?',
     answer:
-      'Yes! Toyota Innova Crysta, Innova Hycross, Mahindra XUV700, and Maruti Ertiga are Hyderabad’s most trusted family highway cruisers, featuring dedicated third-row AC vents, reclining seats, and active FASTag for seamless toll crossings.',
+      'Yes! Toyota Innova Crysta, Innova Hycross, Mahindra XUV700, and Maruti Ertiga are Hyderabad’s most trusted family highway cruisers, featuring dedicated third-row AC vents, reclining seats, and active FASTag for quick toll crossings.',
   },
   {
     question: 'Can I book a 7-seater SUV for Hyderabad Airport (RGIA) family pickup?',
@@ -206,43 +206,30 @@ export default function Suv7Page() {
           <div className="row">
             <div className="col-lg-12">
               <div className="about-page-left">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.15)',
-                    color: '#d49500',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '12px',
-                  }}
-                >
-                  ✦ 6 &amp; 7-SEATER FAMILY SUVs • CAPTAIN CHAIRS &amp; BENCH SEATING
+                <span className="editorial-eyebrow">
+                  6 &amp; 7-SEATER FAMILY SUVs • CAPTAIN CHAIRS &amp; BENCH SEATING
                 </span>
-                <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#0f172a', marginBottom: '14px' }}>
+                <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#191c20', marginBottom: '14px' }}>
                   Travel Together in First-Class Comfort with DriveItCars 7-Seater SUVs
                 </h2>
-                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '14px', textAlign: 'justify' }}>
-                  Planning an extended family pilgrimage to Tirupati or Srisailam, welcoming NRI relatives at <Link href="/hyderabad-airport-car-rental" style={{ color: '#d49500', fontWeight: 700 }}>RGIA Shamshabad Airport</Link>, or heading out on a corporate team retreat? <strong>DriveItCars</strong> offers Hyderabad’s most dependable 6-seater and 7-seater self-drive SUV and MPV fleet—led by the legendary <strong>Toyota Innova Crysta, Toyota Innova Hycross Hybrid Automatic, Toyota Fortuner, Mahindra XUV700, Kia Carnival, Kia Carens, Maruti Suzuki Ertiga, and Maruti XL6</strong>.
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '14px', textAlign: 'justify' }}>
+                  Planning an extended family pilgrimage to Tirupati or Srisailam, welcoming NRI relatives at <Link href="/hyderabad-airport-car-rental" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>RGIA Shamshabad Airport</Link>, or heading out on a corporate team retreat? <strong>DriveItCars</strong> offers Hyderabad’s most dependable 6-seater and 7-seater self-drive SUV and MPV fleet—led by the legendary <strong>Toyota Innova Crysta, Toyota Innova Hycross Hybrid Automatic, Toyota Fortuner, Mahindra XUV700, Kia Carnival, Kia Carens, Maruti Suzuki Ertiga, and Maruti XL6</strong>.
                 </p>
-                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '18px', textAlign: 'justify' }}>
-                  Every 7-seater vehicle undergoes a 40-point pre-trip mechanical and AC inspection at our Masab Tank hub, includes <strong>300 km/day</strong>, and is delivered sanitized to your doorstep in <Link href="/hitech-city" style={{ color: '#d49500', fontWeight: 700 }}>HITEC City</Link>, <Link href="/gachibowli" style={{ color: '#d49500', fontWeight: 700 }}>Gachibowli</Link>, <Link href="/banjara-hills" style={{ color: '#d49500', fontWeight: 700 }}>Banjara Hills</Link>, <Link href="/jubilee-hills" style={{ color: '#d49500', fontWeight: 700 }}>Jubilee Hills</Link>, <Link href="/kukatpally" style={{ color: '#d49500', fontWeight: 700 }}>Kukatpally</Link>, and <Link href="/secunderabad" style={{ color: '#d49500', fontWeight: 700 }}>Secunderabad</Link>.
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '18px', textAlign: 'justify' }}>
+                  Every 7-seater vehicle undergoes a 40-point pre-trip mechanical and AC inspection at our Masab Tank hub, includes <strong>300 km/day</strong>, and is delivered sanitized to your doorstep in <Link href="/hitech-city" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>HITEC City</Link>, <Link href="/gachibowli" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>Gachibowli</Link>, <Link href="/banjara-hills" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>Banjara Hills</Link>, <Link href="/jubilee-hills" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>Jubilee Hills</Link>, <Link href="/kukatpally" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>Kukatpally</Link>, and <Link href="/secunderabad" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>Secunderabad</Link>.
                 </p>
                 <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                  <Link href="/self-drive-suv-hyderabad" style={{ background: '#0f172a', color: '#ffb907', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
-                    🚙 All Self Drive SUVs Hub
+                  <Link href="/self-drive-suv-hyderabad" style={{ background: '#191c20', color: '#ffb907', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 700 }}>
+                    All Self Drive SUVs Hub
                   </Link>
-                  <Link href="/suv5" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🚙 5-Seater SUVs (Creta, Thar, Seltos)
+                  <Link href="/suv5" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    5-Seater SUVs (Creta, Thar, Seltos)
                   </Link>
-                  <Link href="/luxury-buses" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🚌 Need 30–50 Seater Luxury Buses?
+                  <Link href="/luxury-buses" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Need 30–50 Seater Luxury Buses?
                   </Link>
-                  <Link href="/hyderabad-airport-car-rental" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    ✈️ RGIA Airport SUV Pickup
+                  <Link href="/hyderabad-airport-car-rental" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    RGIA Airport SUV Pickup
                   </Link>
                 </div>
               </div>

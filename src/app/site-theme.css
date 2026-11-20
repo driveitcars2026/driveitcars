@@ -175,3 +175,152 @@
 @media (prefers-reduced-motion: reduce) {
   .driveit-site .site-content :is(.single-offers,.car-explore-card,.car-explore-card img) { transition: none !important; }
 }
+
+/* Editorial typography & structural tokens (anti-slop theme) */
+.driveit-site .site-content .editorial-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--site-muted);
+  margin-bottom: 14px;
+}
+.driveit-site .site-content .editorial-eyebrow::before {
+  content: '';
+  width: 20px;
+  height: 2px;
+  background: var(--site-gold);
+  display: inline-block;
+  flex-shrink: 0;
+}
+.driveit-site .site-content .editorial-lead {
+  max-width: 72ch;
+  font-size: 16.5px;
+  line-height: 1.8;
+  color: var(--site-muted);
+  text-align: left;
+  margin-bottom: 16px;
+}
+.driveit-site .site-content .editorial-link-strip {
+  background: var(--site-soft);
+  border: 1px solid var(--site-line);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-top: 24px;
+}
+.driveit-site .site-content .editorial-link-title {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--site-muted);
+  display: block;
+  margin-bottom: 12px;
+}
+.driveit-site .site-content .editorial-chip-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.driveit-site .site-content .editorial-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  background: var(--site-paper);
+  color: var(--site-ink);
+  border: 1px solid var(--site-line);
+  text-decoration: none;
+  transition: border-color .15s ease, background-color .15s ease;
+}
+.driveit-site .site-content .editorial-chip:hover {
+  border-color: var(--site-ink);
+  color: var(--site-ink);
+}
+.driveit-site .site-content .editorial-chip-dark {
+  background: var(--site-ink);
+  color: var(--site-paper);
+  border-color: var(--site-ink);
+}
+.driveit-site .site-content .editorial-chip-dark:hover {
+  color: var(--site-paper);
+  border-color: var(--site-ink);
+}
+.driveit-site .site-content .editorial-facts-box {
+  margin: 28px 0;
+  padding: 24px;
+  background: var(--site-soft);
+  border: 1px solid var(--site-line);
+  border-radius: 16px;
+}
+.driveit-site .site-content .editorial-fact-card {
+  background: var(--site-paper);
+  border: 1px solid var(--site-line);
+  border-radius: 12px;
+  padding: 16px 18px;
+  height: 100%;
+}
+.driveit-site .site-content .editorial-fact-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--site-muted);
+  margin-bottom: 6px;
+}
+.driveit-site .site-content .editorial-fact-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--site-ink);
+  margin: 0;
+  line-height: 1.5;
+}
+.driveit-site .site-content .editorial-hubs-band {
+  background: var(--site-dark);
+  border-radius: 16px;
+  padding: 32px;
+  margin-top: 16px;
+}
+.driveit-site .site-content .editorial-hub-link {
+  display: block;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 14px 16px;
+  color: #fff;
+  text-decoration: none;
+  transition: border-color .15s ease;
+}
+.driveit-site .site-content .editorial-hub-link:hover {
+  border-color: rgba(255, 185, 7, 0.6);
+}
+.driveit-site .site-content .breadcromb-box > span {
+  color: var(--site-muted) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.14em !important;
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+.driveit-site .site-content .site-heading > span {
+  color: var(--site-muted) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.14em !important;
+}
+.driveit-site .site-content :is(.about-page-left,.about-modern-content) > h1,
+.driveit-site .site-content :is(.about-page-left,.about-modern-content) > h2 {
+  color: var(--site-ink) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.03em !important;
+}
+.driveit-site .site-content .about-page-left p {
+  text-align: left !important;
+  color: var(--site-muted) !important;
+}

@@ -95,7 +95,7 @@ const CORPORATE_FLEET = [
     image: SERVICE_VEHICLE_IMAGES.eclass,
     rate8hr: 'Tariff on Request',
     rateMonthly: 'Custom Retainer',
-    features: ['Panoramic Sunroof', 'Burmester Sound System', 'Suited Protocol Chauffeur', 'Red-Carpet Corporate Presence'],
+    features: ['Panoramic Sunroof', 'Burmester Sound System', 'Suited Protocol Chauffeur', 'Executive Corporate Presence'],
     whatsappMsg: 'Hi DriveItCars, I want to enquire about Mercedes-Benz corporate rental in Hyderabad.',
   },
   {
@@ -170,7 +170,7 @@ export default function CorporateCarRentalHyderabadPage() {
                     marginBottom: 8,
                   }}
                 >
-                  ✦ B2B MOBILITY PARTNER FOR HYDERABAD ENTERPRISES
+                  B2B MOBILITY PARTNER FOR HYDERABAD ENTERPRISES
                 </span>
                 <p className="breadcromb-title">Corporate Car Rental Hyderabad</p>
                 <ul>
@@ -191,48 +191,35 @@ export default function CorporateCarRentalHyderabadPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="about-page-left">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.15)',
-                    color: '#d49500',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '12px',
-                  }}
-                >
-                  ✦ 100% GST INVOICES • SUITED CHAUFFEURS • MONTHLY RETAINERS
+                <span className="editorial-eyebrow">
+                  100% GST INVOICES • SUITED CHAUFFEURS • MONTHLY RETAINERS
                 </span>
-                <h1 style={{ color: '#0f172a', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
+                <h1 style={{ color: '#191c20', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
                   Corporate Car Rental Hyderabad — Executive Chauffeur &amp; Monthly Corporate Fleet
                 </h1>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '16px' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '16px' }}>
                   In Hyderabad’s fast-moving business ecosystem — spanning the tech corridors of <strong>HITEC City, Gachibowli Financial District, Mindspace, and Kokapet</strong> — reliable, punctual, and prestigious ground transportation is a business necessity. DriveItCars is Hyderabad’s premier corporate car rental provider, powering the mobility needs of global multinational corporations, leading tech giants, pharmaceutical leaders, consulting firms, and visiting delegations.
                 </p>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '22px' }}>
-                  Whether you require an on-demand <strong>executive chauffeur Hyderabad</strong> for visiting clients, seamless 24/7 airport transfers to Rajiv Gandhi International Airport (RGIA Shamshabad), or a cost-effective <strong>monthly corporate car rental Hyderabad</strong> retainer with dedicated vehicles, DriveItCars delivers spotless fleet standards, guaranteed replacement vehicles, and transparent corporate credit billing with full GST input tax credits.
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '22px' }}>
+                  Whether you require an on-demand <strong>executive chauffeur Hyderabad</strong> for visiting clients, 24/7 airport transfers to Rajiv Gandhi International Airport (RGIA Shamshabad), or a cost-effective <strong>monthly corporate car rental Hyderabad</strong> retainer with dedicated vehicles, DriveItCars delivers spotless fleet standards, guaranteed replacement vehicles, and transparent corporate credit billing with full GST input tax credits.
                 </p>
 
                 {/* Corporate Sub-Category Jump Bar */}
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginBottom: '10px' }}>
-                  <Link href="/monthly-corporate-car-rental-hyderabad" style={{ background: '#0f172a', color: '#ffb907', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
-                    📅 Monthly Corporate Car Rental
+                  <Link href="/monthly-corporate-car-rental-hyderabad" style={{ background: '#191c20', color: '#ffb907', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
+                    Monthly Corporate Car Rental
                   </Link>
-                  <Link href="/luxury-chauffeur-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🤵 Executive Chauffeur Hyderabad
+                  <Link href="/luxury-chauffeur-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Executive Chauffeur Hyderabad
                   </Link>
-                  <Link href="/vip-car-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    👑 VIP &amp; CEO Car Rental
+                  <Link href="/vip-car-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    VIP &amp; CEO Car Rental
                   </Link>
-                  <Link href="/hyderabad-airport-car-rental" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    ✈️ Airport Corporate Transfers
+                  <Link href="/hyderabad-airport-car-rental" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Airport Corporate Transfers
                   </Link>
-                  <Link href="/mercedes-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    ⭐ Mercedes Executive Rental
+                  <Link href="/mercedes-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Mercedes Executive Rental
                   </Link>
                 </div>
               </div>
@@ -242,17 +229,17 @@ export default function CorporateCarRentalHyderabadPage() {
       </section>
 
       {/* Fleet Showcase Grid */}
-      <section className="section_70" style={{ background: '#f8fafc', paddingTop: '40px' }}>
+      <section className="section_70" style={{ background: '#f5f6f7', paddingTop: '40px' }}>
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <span style={{ color: '#d49500', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
+              <span style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                 CORPORATE FLEET SOLUTIONS
               </span>
-              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#0f172a', marginTop: '6px' }}>
+              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#191c20', marginTop: '6px' }}>
                 Corporate Vehicles &amp; Business Tariffs in Hyderabad
               </h2>
-              <p style={{ color: '#64748b', maxWidth: '680px', margin: '8px auto 0', fontSize: '15px' }}>
+              <p style={{ color: '#60656d', maxWidth: '680px', margin: '8px auto 0', fontSize: '15px' }}>
                 Fully sanitized, GPS-tracked vehicles with suited chauffeurs, bottled water, and centralized corporate invoicing.
               </p>
             </div>
@@ -267,7 +254,7 @@ export default function CorporateCarRentalHyderabadPage() {
                     background: '#fff',
                     borderRadius: '16px',
                     overflow: 'hidden',
-                    boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
+                    border: '1px solid #e3e5e8',
                     border: '1px solid #e2e8f0',
                     height: '100%',
                     display: 'flex',
@@ -291,7 +278,7 @@ export default function CorporateCarRentalHyderabadPage() {
                         position: 'absolute',
                         top: 12,
                         left: 12,
-                        background: '#0f172a',
+                        background: '#191c20',
                         color: '#ffb907',
                         fontSize: '11px',
                         fontWeight: 700,
@@ -310,12 +297,12 @@ export default function CorporateCarRentalHyderabadPage() {
                   </div>
 
                   <div className="offer-text" style={{ padding: '22px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                    <h3 style={{ fontSize: '19px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>
+                    <h3 style={{ fontSize: '19px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>
                       {car.name}
                     </h3>
                     <div style={{ marginBottom: '14px' }}>
-                      <div style={{ fontSize: '15px', fontWeight: 800, color: '#92400e', background: '#fef3c7', padding: '5px 10px', borderRadius: '6px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
-                        <i className="fa fa-tag" style={{ color: '#d97706', fontSize: '13px' }} />
+                      <div style={{ fontSize: '15px', fontWeight: 800, color: '#191c20', background: '#f5f6f7', padding: '5px 10px', borderRadius: '6px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                        <i className="fa fa-tag" style={{ color: '#191c20', fontSize: '13px' }} />
                         Spot &amp; Monthly: {car.rate8hr}
                       </div>
                       <div style={{ fontSize: '12px', color: '#059669', fontWeight: 600, marginTop: '4px' }}>
@@ -325,7 +312,7 @@ export default function CorporateCarRentalHyderabadPage() {
 
                     <div style={{ marginBottom: '18px', display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                       {car.features.map((feat, idx) => (
-                        <span key={idx} style={{ background: '#f1f5f9', color: '#334155', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 500 }}>
+                        <span key={idx} style={{ background: '#f5f6f7', color: '#191c20', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 500 }}>
                           ✓ {feat}
                         </span>
                       ))}
@@ -336,7 +323,7 @@ export default function CorporateCarRentalHyderabadPage() {
                         href="tel:+916300041186"
                         className="offer-btn-1"
                         style={{
-                          background: '#0f172a',
+                          background: '#191c20',
                           color: '#fff',
                           textAlign: 'center',
                           padding: '10px 4px',
@@ -388,10 +375,10 @@ export default function CorporateCarRentalHyderabadPage() {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <span style={{ color: '#d49500', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase' }}>
+              <span style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline', fontSize: '13px', textTransform: 'uppercase' }}>
                 ENTERPRISE GRADE MOBILITY
               </span>
-              <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#0f172a' }}>
+              <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#191c20' }}>
                 Why Companies Partner with DriveItCars for Corporate Travel
               </h2>
             </div>
@@ -400,29 +387,29 @@ export default function CorporateCarRentalHyderabadPage() {
             <div className="col-lg-3 col-md-6 mb-4">
               <div style={{ background: '#fff', padding: '26px 20px', borderRadius: '12px', border: '1px solid #e2e8f0', height: '100%' }}>
                 <div style={{ fontSize: '28px', color: '#ffb907', marginBottom: '12px' }}><i className="fa fa-file-text-o" /></div>
-                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>100% GST Tax Invoices</h3>
-                <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.6', margin: 0 }}>Itemized corporate invoices with GST input tax credits and monthly credit billing.</p>
+                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>100% GST Tax Invoices</h3>
+                <p style={{ fontSize: '13px', color: '#60656d', lineHeight: '1.6', margin: 0 }}>Itemized corporate invoices with GST input tax credits and monthly credit billing.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-4">
               <div style={{ background: '#fff', padding: '26px 20px', borderRadius: '12px', border: '1px solid #e2e8f0', height: '100%' }}>
-                <div style={{ fontSize: '28px', color: '#ffb907', marginBottom: '12px' }}><i className="fa fa-user-tie" /></div>
-                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>Executive Chauffeurs</h3>
-                <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.6', margin: 0 }}>Suited, police-verified drivers fluent in English, Hindi, and Telugu with strict NDA ethics.</p>
+                <div style={{ fontSize: '28px', color: '#ffb907', marginBottom: '12px' }}><i className="fa fa-briefcase" /></div>
+                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>Executive Chauffeurs</h3>
+                <p style={{ fontSize: '13px', color: '#60656d', lineHeight: '1.6', margin: 0 }}>Suited, police-verified drivers fluent in English, Hindi, and Telugu with strict NDA ethics.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-4">
               <div style={{ background: '#fff', padding: '26px 20px', borderRadius: '12px', border: '1px solid #e2e8f0', height: '100%' }}>
                 <div style={{ fontSize: '28px', color: '#ffb907', marginBottom: '12px' }}><i className="fa fa-repeat" /></div>
-                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>Guaranteed Replacement</h3>
-                <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.6', margin: 0 }}>Zero downtime — instant replacement vehicle dispatched in case of scheduled servicing.</p>
+                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>Guaranteed Replacement</h3>
+                <p style={{ fontSize: '13px', color: '#60656d', lineHeight: '1.6', margin: 0 }}>Zero downtime — instant replacement vehicle dispatched in case of scheduled servicing.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-4">
               <div style={{ background: '#fff', padding: '26px 20px', borderRadius: '12px', border: '1px solid #e2e8f0', height: '100%' }}>
                 <div style={{ fontSize: '28px', color: '#ffb907', marginBottom: '12px' }}><i className="fa fa-plane" /></div>
-                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>RGIA Airport Flight Tracking</h3>
-                <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.6', margin: 0 }}>Automated real-time flight tracking with zero surge pricing and arrival gate placard reception.</p>
+                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>RGIA Airport Flight Tracking</h3>
+                <p style={{ fontSize: '13px', color: '#60656d', lineHeight: '1.6', margin: 0 }}>Automated real-time flight tracking with zero surge pricing and arrival gate placard reception.</p>
               </div>
             </div>
           </div>

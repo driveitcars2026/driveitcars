@@ -27,7 +27,7 @@ export const locationPageType = defineType({
       name: 'heroBadge',
       title: 'Breadcrumb / Hero Badge Text',
       type: 'string',
-      initialValue: '✦ 24/7 SELF DRIVE & LUXURY CAR RENTALS',
+      initialValue: '24/7 Self Drive & Luxury Car Rentals',
     }),
     defineField({
       name: 'h1Title',
@@ -57,7 +57,7 @@ export const locationPageType = defineType({
     }),
     defineField({
       name: 'locationImage',
-      title: 'Location Featured Image 📷 (Recommended: 800 x 450 px)',
+      title: 'Location Featured Image (Recommended: 800 x 450 px)',
       type: 'image',
       description: 'Optional landmark or vehicle image for this area.',
       options: { hotspot: true },

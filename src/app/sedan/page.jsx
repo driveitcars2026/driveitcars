@@ -174,46 +174,33 @@ export default function SedanPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="about-page-left">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.15)',
-                    color: '#d49500',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '12px',
-                  }}
-                >
-                  ✦ EXECUTIVE &amp; COMPACT SEDANS • MANUAL &amp; AUTOMATIC
+                <span className="editorial-eyebrow">
+                  EXECUTIVE &amp; COMPACT SEDANS • MANUAL &amp; AUTOMATIC
                 </span>
-                <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#0f172a', marginBottom: '14px' }}>
+                <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#191c20', marginBottom: '14px' }}>
                   Premium Comfort &amp; Highway Refinement with DriveItCars Sedans
                 </h2>
-                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '14px', textAlign: 'justify' }}>
-                  Experience executive cabin comfort, deep 500-liter luggage boots, and planted highway stability with <strong>DriveItCars sedan rentals in Hyderabad</strong>. Whether you are welcoming corporate delegates at <Link href="/hyderabad-airport-car-rental" style={{ color: '#d49500', fontWeight: 700 }}>Rajiv Gandhi International Airport (RGIA)</Link>, driving to boardroom meetings in <Link href="/gachibowli" style={{ color: '#d49500', fontWeight: 700 }}>Financial District</Link> and <Link href="/hitech-city" style={{ color: '#d49500', fontWeight: 700 }}>HITEC City</Link>, or cruising down NH-44 and NH-65 with family, our sedan lineup delivers unmatched sophistication.
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '14px', textAlign: 'justify' }}>
+                  Experience executive cabin comfort, deep 500-liter luggage boots, and planted highway stability with <strong>DriveItCars sedan rentals in Hyderabad</strong>. Whether you are welcoming corporate delegates at <Link href="/hyderabad-airport-car-rental" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>Rajiv Gandhi International Airport (RGIA)</Link>, driving to boardroom meetings in <Link href="/gachibowli" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>Financial District</Link> and <Link href="/hitech-city" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>HITEC City</Link>, or cruising down NH-44 and NH-65 with family, our sedan lineup delivers refined comfort.
                 </p>
-                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '18px', textAlign: 'justify' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '18px', textAlign: 'justify' }}>
                   Choose from fuel-efficient compact sedans like the <strong>Maruti Suzuki Dzire</strong> and <strong>Hyundai Aura</strong>, or step up to full-size executive sedans including the <strong>Hyundai Verna, Honda City, Maruti Suzuki Ciaz, Skoda Slavia Automatic, and 5-star Global NCAP rated Volkswagen Virtus GT</strong>.
                 </p>
                 <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                  <Link href="/hatchback" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🚗 Compare Hatchbacks
+                  <Link href="/hatchback" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Compare Hatchbacks
                   </Link>
-                  <Link href="/suv5" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🚙 5-Seater SUVs
+                  <Link href="/suv5" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    5-Seater SUVs
                   </Link>
-                  <Link href="/suv7" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🚐 7-Seater SUVs
+                  <Link href="/suv7" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    7-Seater SUVs
                   </Link>
-                  <Link href="/luxurycars" style={{ background: '#0f172a', color: '#ffb907', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
-                    ✨ Luxury BMW, Audi &amp; Mercedes
+                  <Link href="/luxurycars" style={{ background: '#191c20', color: '#ffb907', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 700 }}>
+                    Luxury BMW, Audi &amp; Mercedes
                   </Link>
-                  <Link href="/corporate-car-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🏢 Corporate Car Rental
+                  <Link href="/corporate-car-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Corporate Car Rental
                   </Link>
                 </div>
               </div>

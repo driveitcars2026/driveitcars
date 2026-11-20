@@ -155,11 +155,11 @@ export default function LuxuryBusesPage() {
             <div className="col-lg-6">
               <div className="about-page-left">
                 <h2>30 to 50-Seater Luxury AC Bus Hire in Hyderabad by DriveItCars</h2>
-                <p style={{ textAlign: 'justify' }}>
+                <p >
                   <strong>DriveItCars</strong> offers Hyderabad’s cleanest, most reliable fleet of 30, 35, 40, 45, and 50-seater luxury AC coaches for grand weddings, corporate retreats, convention shuttles, and family pilgrimages. Equipped with plush reclining pushback seats, pneumatic air suspension, panoramic tinted windows, dual-zone climate control, and high-definition audio-visual systems, our coaches turn group transit into a first-class lounge experience.
                 </p>
-                <p style={{ textAlign: 'justify' }}>
-                  Every luxury bus booking includes a verified, uniformed commercial driver and assistant, GPS tracking, and punctual doorstep reporting at your hotel, wedding convention hall, IT campus in <Link href="/hitech-city" style={{ color: '#d49500', fontWeight: 700 }}>HITEC City</Link> or <Link href="/gachibowli" style={{ color: '#d49500', fontWeight: 700 }}>Gachibowli</Link>, or <Link href="/hyderabad-airport-car-rental" style={{ color: '#d49500', fontWeight: 700 }}>RGIA Shamshabad Airport</Link>. Need interstate highway charters? Explore our <Link href="/outstation-bus" style={{ color: '#d49500', fontWeight: 700 }}>Outstation Bus Rental Hyderabad</Link> packages.
+                <p >
+                  Every luxury bus booking includes a verified, uniformed commercial driver and assistant, GPS tracking, and punctual doorstep reporting at your hotel, wedding convention hall, IT campus in <Link href="/hitech-city" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>HITEC City</Link> or <Link href="/gachibowli" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>Gachibowli</Link>, or <Link href="/hyderabad-airport-car-rental" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>RGIA Shamshabad Airport</Link>. Need interstate highway charters? Explore our <Link href="/outstation-bus" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>Outstation Bus Rental Hyderabad</Link> packages.
                 </p>
                 <div className="about-page-call">
                   <div className="page-call-icon">

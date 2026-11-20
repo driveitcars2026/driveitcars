@@ -52,7 +52,7 @@ const SELF_DRIVE_FAQS = [
    {
       question: 'What is the security deposit for renting self drive cars in Hyderabad?',
       answer:
-         'DriveItCars offers Security deposit options on select fleet vehicles for verified corporate and IT professionals. For other bookings, we hold a nominal refundable security deposit that is returned within 24 hours of vehicle drop-off.',
+         'DriveItCars requires a refundable security deposit for self-drive rentals as per rental terms. The deposit is returned within 24 to 48 hours of vehicle drop-off following standard inspection and FASTag reconciliation.',
    },
    {
       question: 'Are self drive SUVs available for outstation and highway road trips?',
@@ -124,70 +124,57 @@ export default function selfDriveCarPage() {
                <div className="row">
                   <div className="col-lg-12">
                      <div className="about-page-left">
-                        <span
-                           style={{
-                              background: 'rgba(255, 185, 7, 0.15)',
-                              color: '#d49500',
-                              fontWeight: 700,
-                              fontSize: '12px',
-                              letterSpacing: '1px',
-                              textTransform: 'uppercase',
-                              padding: '6px 14px',
-                              borderRadius: '20px',
-                              display: 'inline-block',
-                              marginBottom: '12px',
-                           }}
-                        >
-                           ✦ #1 RATED SELF DRIVE CAR RENTAL IN HYDERABAD
+                        <span className="editorial-eyebrow">
+                           Hyderabad Self-Drive Fleet
                         </span>
-                        <h1 style={{ color: '#ffb907', fontSize: '32px', fontWeight: 800, marginBottom: '20px' }}>
-                           Self Drive Cars in Hyderabad — Unlimited Freedom &amp; Security Deposit
+                        <h1>
+                           Self-Drive Cars in Hyderabad
                         </h1>
-                        <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '16px' }}>
-                           Looking for the most reliable <strong>self drive cars in Hyderabad</strong>? DriveItCars delivers total driving pleasure without the intrusion of drivers or public transit delays. Choose from our comprehensive, sanitized fleet of fuel-efficient hatchbacks (Swift, Baleno), executive sedans (Dzire, Verna), powerful 5 &amp; 7-seater <strong>self drive SUVs</strong> (Creta, Thar 4x4, Innova Crysta, Fortuner), and <strong>luxury self drive cars</strong> (BMW, Audi, Range Rover Evoque).
+                        <p className="editorial-lead">
+                           DriveItCars provides well-maintained, sanitized self-drive cars across Hyderabad without driver interference. Choose from fuel-efficient hatchbacks (Swift, Baleno), executive sedans (Dzire, Verna), 5 &amp; 7-seater SUVs (Creta, Thar 4x4, Innova Crysta, Fortuner), and luxury models (BMW, Audi, Range Rover Evoque).
                         </p>
-                        <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '20px' }}>
-                           Whether you need a car for an office commute in <strong>HITEC City</strong> or <strong>Gachibowli</strong>, a <strong>weekend self drive car</strong> for road trips to Srisailam or Ananthagiri Hills, or a cost-effective <strong>monthly self drive car</strong> subscription, DriveItCars guarantees instant digital verification, transparent fuel terms, FASTag equipped vehicles, and 24/7 on-road breakdown support.
+                        <p className="editorial-lead">
+                           Whether you need a car for daily office commutes in HITEC City or Gachibowli, a weekend trip to Srisailam or Ananthagiri Hills, or a monthly car subscription, DriveItCars offers digital KYC verification, clear fuel terms, FASTag-equipped vehicles, and 24/7 roadside assistance.
                         </p>
 
                         {/* Popular Search Category & Locality Clusters */}
-                        <div style={{ background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: '12px', padding: '18px', marginTop: '15px' }}>
-                           <strong style={{ fontSize: '13px', color: '#111827', textTransform: 'uppercase', letterSpacing: '0.8px', display: 'block', marginBottom: '10px' }}>
-                              ⚡ Explore Specialized Self Drive Categories &amp; Key Hubs:
-                           </strong>
-                           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                              <Link href="/self-drive-suv-hyderabad" style={{ background: '#fff', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                                 🚙 Self Drive SUV Hyderabad
+                        <div className="editorial-link-strip">
+                           <span className="editorial-link-title">
+                              Self-Drive Categories &amp; Delivery Hubs
+                           </span>
+                           <div className="editorial-chip-row">
+                              <Link href="/self-drive-suv-hyderabad" className="editorial-chip">
+                                 Self Drive SUV Hyderabad
                               </Link>
-                              <Link href="/luxurycars" style={{ background: '#fff', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                                 ✨ Luxury Self Drive Cars
+                              <Link href="/luxurycars" className="editorial-chip">
+                                 Luxury Self Drive Cars
                               </Link>
-                              <Link href="/weekend-self-drive-cars-hyderabad" style={{ background: '#fff', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                                 🌄 Weekend Self Drive Cars
+                              <Link href="/weekend-self-drive-cars-hyderabad" className="editorial-chip">
+                                 Weekend Self Drive Cars
                               </Link>
-                              <Link href="/weekly-self-drive-cars-hyderabad" style={{ background: '#fff', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                                 ⚡ Weekly Self Drive Cars
+                              <Link href="/weekly-self-drive-cars-hyderabad" className="editorial-chip">
+                                 Weekly Self Drive Cars
                               </Link>
-                              <Link href="/monthly-self-drive-cars-hyderabad" style={{ background: '#fff', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                                 📅 Monthly Self Drive Cars
+                              <Link href="/monthly-self-drive-cars-hyderabad" className="editorial-chip">
+                                 Monthly Self Drive Cars
                               </Link>
-                              <Link href="/corporate-car-rental-hyderabad" style={{ background: '#0f172a', color: '#ffb907', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
-                                 🏢 Corporate Car Rental
+                              <Link href="/corporate-car-rental-hyderabad" className="editorial-chip editorial-chip-dark">
+                                 Corporate Car Rental
                               </Link>
-                              <Link href="/hyderabad-airport-car-rental" style={{ background: '#fff', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                                 ✈️ Hyderabad Airport Car Rental
+                              <Link href="/hyderabad-airport-car-rental" className="editorial-chip">
+                                 Hyderabad Airport Car Rental
                               </Link>
-                              <Link href="/hitech-city" style={{ background: '#f1f5f9', color: '#334155', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #e2e8f0' }}>
-                                 📍 HITEC City
+                              <Link href="/hitech-city" className="editorial-chip">
+                                 HITEC City
                               </Link>
-                              <Link href="/gachibowli" style={{ background: '#f1f5f9', color: '#334155', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #e2e8f0' }}>
-                                 📍 Gachibowli
+                              <Link href="/gachibowli" className="editorial-chip">
+                                 Gachibowli
                               </Link>
-                              <Link href="/madhapur" style={{ background: '#f1f5f9', color: '#334155', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #e2e8f0' }}>
-                                 📍 Madhapur
+                              <Link href="/madhapur" className="editorial-chip">
+                                 Madhapur
                               </Link>
-                              <Link href="/kondapur" style={{ background: '#f1f5f9', color: '#334155', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #e2e8f0' }}>
-                                 📍 Kondapur
+                              <Link href="/kondapur" className="editorial-chip">
+                                 Kondapur
                               </Link>
                            </div>
                         </div>

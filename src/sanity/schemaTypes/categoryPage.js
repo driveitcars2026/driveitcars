@@ -26,7 +26,7 @@ export const categoryPageType = defineType({
       name: 'heroBadge',
       title: 'Breadcrumb Eyebrow Badge',
       type: 'string',
-      initialValue: '✦ PREMIUM HYDERABAD FLEET',
+      initialValue: 'Hyderabad Fleet',
     }),
     defineField({
       name: 'h1Title',
@@ -43,7 +43,7 @@ export const categoryPageType = defineType({
     }),
     defineField({
       name: 'bannerImage',
-      title: 'Hero / Banner Image 📷',
+      title: 'Hero / Banner Image',
       type: 'image',
       options: { hotspot: true },
     }),

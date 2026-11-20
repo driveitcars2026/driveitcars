@@ -64,7 +64,7 @@ export default function HeroSlider({ customBanners = null }) {
         overflow: 'hidden',
         width: '100%',
         maxWidth: '100vw',
-        background: '#0f172a',
+        background: '#191c20',
       }}
     >
       <div

@@ -108,61 +108,48 @@ export default function luxurycarsPage() {
             <div className="row">
                <div className="col-lg-12">
                   <div className="about-page-left">
-                     <span
-                        style={{
-                           background: 'rgba(255, 185, 7, 0.15)',
-                           color: '#d49500',
-                           fontWeight: 700,
-                           fontSize: '12px',
-                           letterSpacing: '1px',
-                           textTransform: 'uppercase',
-                           padding: '6px 14px',
-                           borderRadius: '20px',
-                           display: 'inline-block',
-                           marginBottom: '12px',
-                        }}
-                     >
-                        ✦ ELITE FLEET • BMW • MERCEDES • AUDI • RANGE ROVER
+                     <span className="editorial-eyebrow">
+                        ELITE FLEET • BMW • MERCEDES • AUDI • RANGE ROVER
                      </span>
-                     <h1 style={{ color: '#ffb907', fontSize: '32px', fontWeight: 800, marginBottom: '20px' }}>
+                     <h1 style={{ color: '#191c20', fontSize: '32px', fontWeight: 600, marginBottom: '20px' }}>
                         Luxury Self Drive Cars Hyderabad — Premium &amp; Exotic Car Rentals
                      </h1>
-                     <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '16px' }}>
+                     <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '16px' }}>
                         Step into a realm of supreme prestige with DriveItCars&apos;s <strong>luxury self drive cars Hyderabad</strong> collection. Designed for leaders, discerning executives, celebrities, and grand wedding celebrations, our fleet delivers uncompromising luxury and exhilarating horsepower. Drive showroom-conditioned <strong>BMW sedans, Mercedes-Benz, Audi, Range Rover Evoque, Jaguar XF, and Toyota Fortuner Legender</strong> on your own terms.
                      </p>
-                     <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '20px' }}>
+                     <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '20px' }}>
                         Whether hosting high-profile corporate delegates in <strong>HITEC City</strong>, making an unforgettable grand entrance at a royal <strong>Banjara Hills or Jubilee Hills</strong> wedding, or experiencing the thrill of open-throttle driving along Hyderabad Outer Ring Road, DriveItCars provides immaculate, fully insured <strong>premium self drive cars in Hyderabad</strong> with discreet white-glove doorstep delivery.
                      </p>
                      <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                        <Link href="/wedding-car-rental-hyderabad" style={{ background: '#0f172a', color: '#ffb907', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
-                           💐 Wedding Car Rental Hyderabad
+                        <Link href="/wedding-car-rental-hyderabad" style={{ background: '#191c20', color: '#ffb907', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 700 }}>
+                           Wedding Car Rental Hyderabad
                         </Link>
-                        <Link href="/rolls-royce-wedding-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                           👑 Rolls Royce Wedding
+                        <Link href="/rolls-royce-wedding-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                           Rolls Royce Wedding
                         </Link>
-                        <Link href="/vintage-wedding-car-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                           🎩 Vintage Wedding Car
+                        <Link href="/vintage-wedding-car-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                           Vintage Wedding Car
                         </Link>
-                        <Link href="/mercedes-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                           ⭐ Mercedes Rental
+                        <Link href="/mercedes-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                           Mercedes Rental
                         </Link>
-                        <Link href="/bmw-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                           🚘 BMW Rental
+                        <Link href="/bmw-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                           BMW Rental
                         </Link>
-                        <Link href="/audi-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                           🏎️ Audi Rental
+                        <Link href="/audi-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                           Audi Rental
                         </Link>
-                        <Link href="/range-rover-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                           🚙 Range Rover Rental
+                        <Link href="/range-rover-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                           Range Rover Rental
                         </Link>
-                        <Link href="/corporate-car-rental-hyderabad" style={{ background: '#0f172a', color: '#ffb907', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
-                           🏢 Corporate Car Rental
+                        <Link href="/corporate-car-rental-hyderabad" style={{ background: '#191c20', color: '#ffb907', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 700 }}>
+                           Corporate Car Rental
                         </Link>
-                        <Link href="/luxury-chauffeur-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                           🤵 Executive Chauffeur
+                        <Link href="/luxury-chauffeur-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                           Executive Chauffeur
                         </Link>
-                        <Link href="/vip-car-rental-hyderabad" style={{ background: '#ffb907', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
-                           👑 VIP &amp; CEO Car Rental
+                        <Link href="/vip-car-rental-hyderabad" style={{ background: '#ffb907', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 700 }}>
+                           VIP &amp; CEO Car Rental
                         </Link>
                      </div>
                   </div>
@@ -188,7 +175,7 @@ export default function luxurycarsPage() {
                             <ul>
                                 <li><i className="fa fa-car"></i>Model:2023</li>
                                 <li><i className="fa fa-users"></i>5 People</li>
-                                <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                             </ul>
                             <div className="offer-action">
                                <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -208,7 +195,7 @@ export default function luxurycarsPage() {
                             <ul>
                                 <li><i className="fa fa-car"></i>Model:2023</li>
                                 <li><i className="fa fa-users"></i>5 People</li>
-                                <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                             </ul>
                             <div className="offer-action">
                                <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -228,7 +215,7 @@ export default function luxurycarsPage() {
                             <ul>
                                 <li><i className="fa fa-car"></i>Model:2023</li>
                                 <li><i className="fa fa-users"></i>5 People</li>
-                                <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                             </ul>
                             <div className="offer-action">
                                <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -248,7 +235,7 @@ export default function luxurycarsPage() {
                             <ul>
                                 <li><i className="fa fa-car"></i>Model:2023</li>
                                 <li><i className="fa fa-users"></i>5 People</li>
-                                <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                             </ul>
                             <div className="offer-action">
                                <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -268,7 +255,7 @@ export default function luxurycarsPage() {
                             <ul>
                                 <li><i className="fa fa-car"></i>Model:2023</li>
                                 <li><i className="fa fa-users"></i>5 People</li>
-                                <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                             </ul>
                             <div className="offer-action">
                                <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -289,7 +276,7 @@ export default function luxurycarsPage() {
                             <ul>
                                 <li><i className="fa fa-car"></i>Model:2023</li>
                                 <li><i className="fa fa-users"></i>5 People</li>
-                                <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                             </ul>
                             <div className="offer-action">
                                <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -310,7 +297,7 @@ export default function luxurycarsPage() {
                             <ul>
                                 <li><i className="fa fa-car"></i>Model:2023</li>
                                 <li><i className="fa fa-users"></i>5 People</li>
-                                <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                             </ul>
                             <div className="offer-action">
                                <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -331,7 +318,7 @@ export default function luxurycarsPage() {
                             <ul>
                                 <li><i className="fa fa-car"></i>Model:2023</li>
                                 <li><i className="fa fa-users"></i>5 People</li>
-                                <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                             </ul>
                             <div className="offer-action">
                                <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -351,7 +338,7 @@ export default function luxurycarsPage() {
                             <ul>
                                 <li><i className="fa fa-car"></i>Model:2023</li>
                                 <li><i className="fa fa-users"></i>5 People</li>
-                                <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                             </ul>
                             <div className="offer-action">
                                <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -371,7 +358,7 @@ export default function luxurycarsPage() {
                             <ul>
                                 <li><i className="fa fa-car"></i>Year / trim: confirm at booking</li>
                                 <li><i className="fa fa-users"></i>5 People</li>
-                                <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                             </ul>
                             <div className="offer-action">
                                <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -392,7 +379,7 @@ export default function luxurycarsPage() {
                             <ul>
                                 <li><i className="fa fa-car"></i>Year / trim: confirm at booking</li>
                                 <li><i className="fa fa-users"></i>5 People</li>
-                                <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                             </ul>
                             <div className="offer-action">
                                <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -413,7 +400,7 @@ export default function luxurycarsPage() {
                             <ul>
                                 <li><i className="fa fa-car"></i>Year / trim: confirm at booking</li>
                                 <li><i className="fa fa-users"></i>5 People</li>
-                                <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                             </ul>
                             <div className="offer-action">
                                <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -434,7 +421,7 @@ export default function luxurycarsPage() {
                                 <ul>
                                     <li><i className="fa fa-car"></i>Year / trim: confirm at booking</li>
                                     <li><i className="fa fa-users"></i>5 People</li>
-                                    <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                    <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                                 </ul>
                                 <div className="offer-action">
                                    <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -455,7 +442,7 @@ export default function luxurycarsPage() {
                                 <ul>
                                     <li><i className="fa fa-car"></i>Year / trim: confirm at booking</li>
                                     <li><i className="fa fa-users"></i>2 People</li>
-                                    <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                    <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                                 </ul>
                                 <div className="offer-action">
                                    <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -476,7 +463,7 @@ export default function luxurycarsPage() {
                                 <ul>
                                     <li><i className="fa fa-car"></i>Model:2023</li>
                                     <li><i className="fa fa-users"></i>5 People</li>
-                                    <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                    <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                                 </ul>
                                 <div className="offer-action">
                                    <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -497,7 +484,7 @@ export default function luxurycarsPage() {
                                 <ul>
                                     <li><i className="fa fa-car"></i>Model:2023</li>
                                     <li><i className="fa fa-users"></i>5 People</li>
-                                    <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                    <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                                 </ul>
                                 <div className="offer-action">
                                    <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -518,7 +505,7 @@ export default function luxurycarsPage() {
                                 <ul>
                                     <li><i className="fa fa-car"></i>Model:2023</li>
                                     <li><i className="fa fa-users"></i>5 People</li>
-                                    <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                    <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                                 </ul>
                                 <div className="offer-action">
                                    <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -539,7 +526,7 @@ export default function luxurycarsPage() {
                                 <ul>
                                     <li><i className="fa fa-car"></i>Model:2023</li>
                                     <li><i className="fa fa-users"></i>5 People</li>
-                                    <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                    <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                                 </ul>
                                 <div className="offer-action">
                                    <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -560,7 +547,7 @@ export default function luxurycarsPage() {
                                 <ul>
                                     <li><i className="fa fa-car"></i>Model:2023</li>
                                     <li><i className="fa fa-users"></i>5 People</li>
-                                    <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                    <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                                 </ul>
                                 <div className="offer-action">
                                    <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -581,7 +568,7 @@ export default function luxurycarsPage() {
                                 <ul>
                                     <li><i className="fa fa-car"></i>Model:2023</li>
                                     <li><i className="fa fa-users"></i>5 People</li>
-                                    <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                    <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                                 </ul>
                                 <div className="offer-action">
                                    <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>
@@ -602,7 +589,7 @@ export default function luxurycarsPage() {
                                 <ul>
                                     <li><i className="fa fa-car"></i>Model:2023</li>
                                     <li><i className="fa fa-users"></i>5 People</li>
-                                    <li><i className="fas fa-gas-pump"></i>Petrol/Diesel</li>
+                                    <li><i className="fa fa-tint"></i>Petrol/Diesel</li>
                                 </ul>
                                 <div className="offer-action">
                                    <a href="tel:+916300041186" className="offer-btn-1"><i className="fa fa-phone"></i> Enquire Now</a>

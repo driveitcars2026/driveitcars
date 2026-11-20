@@ -89,7 +89,7 @@ const BRIDAL_FLEET = [
   {
     id: 'vintage-tourer-bride',
     name: 'Classic Vintage Open Tourer',
-    badge: 'Royal Nizami Bride Entry',
+    badge: 'Bridal Entry Chauffeur',
     image: '/assets/img/bentely.webp',
     rate: 'Tariff on Request',
     features: ['Regal Fairytale Stature', 'Slow Glide Pacing', 'Photogenic Masterpiece', 'White-Glove Chauffeur'],
@@ -147,7 +147,7 @@ export default function BridalEntryCarHyderabadPage() {
                     marginBottom: 8,
                   }}
                 >
-                  ✦ CINEMATIC, EMOTIONAL &amp; UNFORGETTABLE MOMENTS
+                  BRIDAL ENTRY CHAUFFEUR FLEET
                 </span>
                 <p className="breadcromb-title">Bridal Entry Car Hyderabad</p>
                 <ul>
@@ -170,48 +170,35 @@ export default function BridalEntryCarHyderabadPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="about-page-left">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.15)',
-                    color: '#d49500',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '12px',
-                  }}
-                >
-                  ✦ OPEN-TOP CONVERTIBLES • VINTAGE CLASSICS • PANORAMIC SUNROOF SUVS
+                <span className="editorial-eyebrow">
+                  OPEN-TOP CONVERTIBLES • VINTAGE CLASSICS • PANORAMIC SUNROOF SUVS
                 </span>
-                <h1 style={{ color: '#0f172a', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
+                <h1 style={{ color: '#191c20', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
                   Bridal Entry Car Hyderabad — Open-Top &amp; Luxury Cars for the Bride’s Grand Arrival
                 </h1>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '16px' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '16px' }}>
                   The bridal entry is the emotional highlight of every Indian wedding — the moment all eyes, cameras, and hearts turn to witness the bride&apos;s breathtaking arrival. With DriveItCars&apos;s dedicated <strong>bridal entry car Hyderabad</strong> collection, you can step away from ordinary entries and create a movie-like spectacle. Arrive gracefully in an <strong>open-top Mercedes convertible</strong> showered with rose petals, a fairytale <strong>vintage open-air tourer</strong>, or a regal <strong>Range Rover Evoque</strong> decorated with fresh designer blossoms.
                 </p>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '22px' }}>
-                  We coordinate with your event planner, wedding decorators, and cinematography crew for seamless timing, smoke effects, and slow rolling pacing down the wedding aisle.
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '22px' }}>
+                  We coordinate with your event planner, wedding decorators, and cinematography crew for coordinated timing, smoke effects, and slow rolling pacing down the wedding aisle.
                 </p>
 
                 {/* Wedding Navigation Strip */}
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginBottom: '10px' }}>
-                  <Link href="/wedding-car-rental-hyderabad" style={{ background: '#0f172a', color: '#ffb907', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
-                    💐 All Wedding Cars
+                  <Link href="/wedding-car-rental-hyderabad" style={{ background: '#191c20', color: '#ffb907', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
+                    All Wedding Cars
                   </Link>
-                  <Link href="/groom-entry-luxury-car-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🤵 Groom Entry Luxury Cars
+                  <Link href="/groom-entry-luxury-car-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Groom Entry Luxury Cars
                   </Link>
-                  <Link href="/vintage-wedding-car-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🎩 Vintage Wedding Cars
+                  <Link href="/vintage-wedding-car-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Vintage Wedding Cars
                   </Link>
-                  <Link href="/rolls-royce-wedding-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    👑 Rolls Royce Wedding
+                  <Link href="/rolls-royce-wedding-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Rolls Royce Wedding
                   </Link>
-                  <Link href="/mercedes-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    ⭐ Mercedes Wedding Cars
+                  <Link href="/mercedes-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Mercedes Wedding Cars
                   </Link>
                 </div>
               </div>
@@ -221,14 +208,14 @@ export default function BridalEntryCarHyderabadPage() {
       </section>
 
       {/* Fleet Showcase Grid */}
-      <section className="section_70" style={{ background: '#f8fafc', paddingTop: '40px' }}>
+      <section className="section_70" style={{ background: '#f5f6f7', paddingTop: '40px' }}>
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <span style={{ color: '#d49500', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
+              <span style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                 THE QUEEN&apos;S CHARIOT
               </span>
-              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#0f172a', marginTop: '6px' }}>
+              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#191c20', marginTop: '6px' }}>
                 Featured Bridal Entry Cars in Hyderabad
               </h2>
             </div>
@@ -243,7 +230,7 @@ export default function BridalEntryCarHyderabadPage() {
                     background: '#fff',
                     borderRadius: '16px',
                     overflow: 'hidden',
-                    boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
+                    border: '1px solid #e3e5e8',
                     border: '1px solid #e2e8f0',
                     height: '100%',
                     display: 'flex',
@@ -267,7 +254,7 @@ export default function BridalEntryCarHyderabadPage() {
                         position: 'absolute',
                         top: 12,
                         left: 12,
-                        background: '#0f172a',
+                        background: '#191c20',
                         color: '#ffb907',
                         fontSize: '11px',
                         fontWeight: 700,
@@ -286,19 +273,19 @@ export default function BridalEntryCarHyderabadPage() {
                   </div>
 
                   <div className="offer-text" style={{ padding: '22px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                    <h3 style={{ fontSize: '20px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>
+                    <h3 style={{ fontSize: '20px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>
                       {car.name}
                     </h3>
-                    <div style={{ marginBottom: '14px', background: '#f8fafc', padding: '8px 12px', borderRadius: '8px', display: 'inline-block' }}>
-                      <span style={{ fontSize: '15px', fontWeight: 800, color: '#0f172a' }}>
-                        <i className="fa fa-tag" style={{ color: '#d97706', marginRight: 6 }} />
+                    <div style={{ marginBottom: '14px', background: '#f5f6f7', padding: '8px 12px', borderRadius: '8px', display: 'inline-block' }}>
+                      <span style={{ fontSize: '15px', fontWeight: 800, color: '#191c20' }}>
+                        <i className="fa fa-tag" style={{ color: '#191c20', marginRight: 6 }} />
                         {car.rate}
                       </span>
                     </div>
 
                     <div style={{ marginBottom: '18px', display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                       {car.features.map((feat, idx) => (
-                        <span key={idx} style={{ background: '#f1f5f9', color: '#334155', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 500 }}>
+                        <span key={idx} style={{ background: '#f5f6f7', color: '#191c20', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 500 }}>
                           ✓ {feat}
                         </span>
                       ))}
@@ -309,7 +296,7 @@ export default function BridalEntryCarHyderabadPage() {
                         href="tel:+916300041186"
                         className="offer-btn-1"
                         style={{
-                          background: '#0f172a',
+                          background: '#191c20',
                           color: '#fff',
                           textAlign: 'center',
                           padding: '10px 4px',

@@ -25,8 +25,8 @@ export const landingPageType = defineType({
             {
               name: 'image',
               type: 'image',
-              title: 'Banner Image 📷 (Recommended: 1920 x 800 px)',
-              description: '📌 SIZING: 1920 x 800 px (or 16:9 widescreen, minimum 1280 x 600 px). File size under 1 MB.',
+              title: 'Banner Image (Recommended: 1920 x 800 px)',
+              description: 'SIZING: 1920 x 800 px (or 16:9 widescreen, minimum 1280 x 600 px). File size under 1 MB.',
               options: { hotspot: true },
               validation: (Rule) => Rule.required(),
             },
@@ -73,9 +73,9 @@ export const landingPageType = defineType({
     }),
     defineField({
       name: 'aboutImage',
-      title: 'About Section Visual Image 📷 (Recommended: 600 x 440 px)',
+      title: 'About Section Visual Image (Recommended: 600 x 440 px)',
       type: 'image',
-      description: '📌 SIZING: 600 x 440 pixels. High quality image showing your cars/fleet.',
+      description: 'SIZING: 600 x 440 pixels. High quality image showing your cars/fleet.',
       options: { hotspot: true },
     }),
     defineField({
@@ -197,7 +197,7 @@ export const landingPageType = defineType({
         {
           type: 'object',
           fields: [
-            { name: 'icon', title: 'Icon (e.g. fa-shield-alt, fa-car, fa-clock, fa-rupee-sign, fa-headset, fa-handshake)', type: 'string' },
+            { name: 'icon', title: 'Icon (e.g. fa-shield, fa-car, fa-clock-o, fa-inr, fa-headphones, fa-handshake-o)', type: 'string' },
             { name: 'title', title: 'Card Title', type: 'string' },
             { name: 'description', title: 'Card Description', type: 'text', rows: 2 },
           ],
@@ -233,7 +233,7 @@ export const landingPageType = defineType({
     }),
     defineField({
       name: 'partnerImage',
-      title: 'Partner Promo Car Image 📷',
+      title: 'Partner Promo Car Image',
       type: 'image',
       description: 'Image of the promo car (transparent PNG or landscape photo).',
       options: { hotspot: true },

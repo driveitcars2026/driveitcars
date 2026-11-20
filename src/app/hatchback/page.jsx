@@ -190,46 +190,33 @@ export default function HatchbackPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="about-page-left">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.15)',
-                    color: '#d49500',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '12px',
-                  }}
-                >
-                  ✦ MANUAL &amp; AUTOMATIC HATCHBACKS • 300 KM/DAY INCLUDED
+                <span className="editorial-eyebrow">
+                  MANUAL &amp; AUTOMATIC HATCHBACKS • 300 KM/DAY INCLUDED
                 </span>
-                <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#0f172a', marginBottom: '14px' }}>
+                <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#191c20', marginBottom: '14px' }}>
                   Fuel-Efficient &amp; Easy-to-Park Hatchback Rentals by DriveItCars
                 </h2>
-                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '14px', textAlign: 'justify' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '14px', textAlign: 'justify' }}>
                   Navigating Hyderabad’s IT corridors, shopping avenues, and busy residential lanes is effortless when you rent a compact hatchback from <strong>DriveItCars</strong>. Our self-drive hatchback fleet features India’s highest-mileage and highest-safety models—including the <strong>Maruti Suzuki Swift, Maruti Baleno, Maruti Fronx, Hyundai i20, Grand i10 Nios Asta, Tata Punch, Tata Altroz, and Volkswagen Polo</strong>—available in both manual and clutch-free automatic transmissions.
                 </p>
-                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '18px', textAlign: 'justify' }}>
-                  Every DriveItCars hatchback booking comes with <strong>300 km/day included</strong>, comprehensive insurance, FASTag readiness, 10-minute digital KYC verification, and 15 to 30-minute doorstep delivery across <Link href="/hitech-city" style={{ color: '#d49500', fontWeight: 700 }}>HITEC City</Link>, <Link href="/gachibowli" style={{ color: '#d49500', fontWeight: 700 }}>Gachibowli</Link>, <Link href="/madhapur" style={{ color: '#d49500', fontWeight: 700 }}>Madhapur</Link>, <Link href="/kukatpally" style={{ color: '#d49500', fontWeight: 700 }}>Kukatpally</Link>, <Link href="/banjara-hills" style={{ color: '#d49500', fontWeight: 700 }}>Banjara Hills</Link>, <Link href="/masab-tank" style={{ color: '#d49500', fontWeight: 700 }}>Masab Tank</Link>, and <Link href="/hyderabad-airport-car-rental" style={{ color: '#d49500', fontWeight: 700 }}>RGIA Shamshabad Airport</Link>.
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '18px', textAlign: 'justify' }}>
+                  Every DriveItCars hatchback booking comes with <strong>300 km/day included</strong>, comprehensive insurance, FASTag readiness, 10-minute digital KYC verification, and 15 to 30-minute doorstep delivery across <Link href="/hitech-city" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>HITEC City</Link>, <Link href="/gachibowli" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>Gachibowli</Link>, <Link href="/madhapur" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>Madhapur</Link>, <Link href="/kukatpally" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>Kukatpally</Link>, <Link href="/banjara-hills" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>Banjara Hills</Link>, <Link href="/masab-tank" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>Masab Tank</Link>, and <Link href="/hyderabad-airport-car-rental" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>RGIA Shamshabad Airport</Link>.
                 </p>
                 <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                  <Link href="/sedan" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🚘 Compare Sedans
+                  <Link href="/sedan" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Compare Sedans
                   </Link>
-                  <Link href="/suv5" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🚙 5-Seater SUVs
+                  <Link href="/suv5" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    5-Seater SUVs
                   </Link>
-                  <Link href="/suv7" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🚐 7-Seater SUVs
+                  <Link href="/suv7" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    7-Seater SUVs
                   </Link>
-                  <Link href="/weekly-self-drive-cars-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    ⚡ Weekly Plans (Save 25%)
+                  <Link href="/weekly-self-drive-cars-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Weekly Plans (Save 25%)
                   </Link>
-                  <Link href="/monthly-self-drive-cars-hyderabad" style={{ background: '#0f172a', color: '#ffb907', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
-                    📅 Monthly Subscriptions (Save 50%)
+                  <Link href="/monthly-self-drive-cars-hyderabad" style={{ background: '#191c20', color: '#ffb907', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 700 }}>
+                    Monthly Subscriptions (Save 50%)
                   </Link>
                 </div>
               </div>

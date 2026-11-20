@@ -13,8 +13,8 @@ export const TOP_DEMANDING_CARS = [
     id: 1,
     name: 'Maruti Swift Manual Transmission',
     category: 'hatchback',
-    badge: '#1 Top Demanding Hatchback',
-    badgeColor: '#10b981',
+    badge: 'Popular City Hatchback',
+    badgeColor: '#191c20',
     dailyPrice: '1,499',
     weeklyPrice: '8,999',
     weeklySavings: 'Save 25%',
@@ -24,14 +24,14 @@ export const TOP_DEMANDING_CARS = [
     transmission: 'Manual Transmission',
     fuel: 'Petrol',
     image: '/assets/img/cars/Swift.webp',
-    features: ['Security deposit', 'Free Doorstep Delivery', 'High Fuel Mileage (22+ km/l)'],
+    features: ['Refundable Security Deposit', 'Doorstep Delivery Available', 'High Fuel Mileage (22+ km/l)'],
   },
   {
     id: 2,
     name: 'Maruti Swift Automatic',
     category: 'hatchback',
-    badge: 'Effortless City Drive',
-    badgeColor: '#10b981',
+    badge: 'Automatic City Drive',
+    badgeColor: '#191c20',
     dailyPrice: '1,699',
     weeklyPrice: '9,999',
     weeklySavings: 'Save 25%',
@@ -48,7 +48,7 @@ export const TOP_DEMANDING_CARS = [
     name: 'Maruti Baleno Manual & Automatic',
     category: 'hatchback',
     badge: 'Premium Nexa Hatchback',
-    badgeColor: '#3b82f6',
+    badgeColor: '#191c20',
     dailyPrice: '1,799',
     weeklyPrice: '10,499',
     weeklySavings: 'Save 25%',
@@ -64,8 +64,8 @@ export const TOP_DEMANDING_CARS = [
     id: 4,
     name: 'Hyundai i20 Manual & Automatic',
     category: 'hatchback',
-    badge: 'Sporty & Feature-Packed',
-    badgeColor: '#ffb907',
+    badge: 'Feature-Packed Hatchback',
+    badgeColor: '#191c20',
     dailyPrice: '1,899',
     weeklyPrice: '10,999',
     weeklySavings: 'Save 25%',
@@ -84,7 +84,7 @@ export const TOP_DEMANDING_CARS = [
     name: 'Maruti Suzuki Fronx Manual & Automatic',
     category: 'minisuv',
     badge: 'Turbo Crossover Mini SUV',
-    badgeColor: '#ec4899',
+    badgeColor: '#191c20',
     dailyPrice: '2,199',
     weeklyPrice: '12,999',
     weeklySavings: 'Save 25%',
@@ -100,8 +100,8 @@ export const TOP_DEMANDING_CARS = [
     id: 6,
     name: 'Hyundai Venue Manual & Automatic',
     category: 'minisuv',
-    badge: 'Smart Compact Mini SUV',
-    badgeColor: '#8b5cf6',
+    badge: 'Compact Urban SUV',
+    badgeColor: '#191c20',
     dailyPrice: '2,299',
     weeklyPrice: '13,499',
     weeklySavings: 'Save 25%',
@@ -118,7 +118,7 @@ export const TOP_DEMANDING_CARS = [
     name: 'Tata Punch Manual & Automatic',
     category: 'minisuv',
     badge: '5-Star Global NCAP Safety',
-    badgeColor: '#10b981',
+    badgeColor: '#191c20',
     dailyPrice: '1,999',
     weeklyPrice: '11,999',
     weeklySavings: 'Save 25%',
@@ -137,7 +137,7 @@ export const TOP_DEMANDING_CARS = [
     name: 'Maruti Suzuki Brezza Manual & Automatic',
     category: 'suv5',
     badge: 'High Reliability Urban SUV',
-    badgeColor: '#f97316',
+    badgeColor: '#191c20',
     dailyPrice: '2,499',
     weeklyPrice: '14,499',
     weeklySavings: 'Save 25%',
@@ -147,14 +147,14 @@ export const TOP_DEMANDING_CARS = [
     transmission: 'Manual & Automatic',
     fuel: 'Smart Hybrid Petrol',
     image: '/assets/img/cars/5-Brezza.webp',
-    features: ['Electric Sunroof', '360 Degree Camera', 'Superb Fuel Mileage'],
+    features: ['Electric Sunroof', '360 Degree Camera', 'High Fuel Efficiency'],
   },
   {
     id: 9,
     name: 'Tata Nexon Manual & Automatic',
     category: 'suv5',
-    badge: '5-Star Safety Champion',
-    badgeColor: '#10b981',
+    badge: '5-Star Safety SUV',
+    badgeColor: '#191c20',
     dailyPrice: '2,499',
     weeklyPrice: '14,499',
     weeklySavings: 'Save 25%',
@@ -170,8 +170,8 @@ export const TOP_DEMANDING_CARS = [
     id: 10,
     name: 'Tata Harrier Manual & Automatic',
     category: 'suv5',
-    badge: 'Dominant Road Presence',
-    badgeColor: '#dc2626',
+    badge: 'Full-Size Diesel SUV',
+    badgeColor: '#191c20',
     dailyPrice: '3,499',
     weeklyPrice: '19,999',
     weeklySavings: 'Save 25%',
@@ -188,7 +188,7 @@ export const TOP_DEMANDING_CARS = [
     name: 'Kia Seltos Manual & Automatic',
     category: 'suv5',
     badge: 'Executive Highway SUV',
-    badgeColor: '#3b82f6',
+    badgeColor: '#191c20',
     dailyPrice: '2,899',
     weeklyPrice: '16,999',
     weeklySavings: 'Save 25%',
@@ -204,8 +204,8 @@ export const TOP_DEMANDING_CARS = [
     id: 12,
     name: 'Hyundai Creta Manual & Automatic',
     category: 'suv5',
-    badge: '#1 Most Demanded SUV',
-    badgeColor: '#ffb907',
+    badge: 'Most Booked SUV',
+    badgeColor: '#191c20',
     dailyPrice: '2,899',
     weeklyPrice: '16,999',
     weeklySavings: 'Save 25%',
@@ -221,8 +221,8 @@ export const TOP_DEMANDING_CARS = [
     id: 13,
     name: 'Mahindra Thar 4x4 Manual & Automatic',
     category: 'suv5',
-    badge: 'Legendary 4x4 Off-Roader',
-    badgeColor: '#ef4444',
+    badge: '4x4 Off-Road SUV',
+    badgeColor: '#191c20',
     dailyPrice: '3,499',
     weeklyPrice: '19,999',
     weeklySavings: 'Save 25%',
@@ -232,14 +232,14 @@ export const TOP_DEMANDING_CARS = [
     transmission: 'Manual 4x4 & Automatic',
     fuel: '2.2L mHawk Diesel',
     image: '/assets/img/cars/5-Thar.webp',
-    features: ['Shift-on-the-Fly 4WD', 'Convertible Hard Top', 'All-Terrain Muscular Stance'],
+    features: ['Shift-on-the-Fly 4WD', 'Convertible Hard Top', 'All-Terrain Ground Clearance'],
   },
   {
     id: 14,
     name: 'Mahindra Thar Roxx 5-Door Manual & Automatic',
     category: 'suv5',
-    badge: 'All-New 5-Door Thar Roxx',
-    badgeColor: '#d97706',
+    badge: '5-Door Thar Roxx',
+    badgeColor: '#191c20',
     dailyPrice: '3,999',
     weeklyPrice: '22,999',
     weeklySavings: 'Save 25%',
@@ -257,8 +257,8 @@ export const TOP_DEMANDING_CARS = [
     id: 15,
     name: 'Mahindra XUV 700 Manual & Automatic',
     category: 'suv7',
-    badge: 'Flagship Luxury 7-Seater',
-    badgeColor: '#8b5cf6',
+    badge: 'Flagship 7-Seater SUV',
+    badgeColor: '#191c20',
     dailyPrice: '3,799',
     weeklyPrice: '21,999',
     weeklySavings: 'Save 25%',
@@ -268,14 +268,14 @@ export const TOP_DEMANDING_CARS = [
     transmission: 'Manual & Automatic',
     fuel: 'Diesel / Petrol',
     image: '/assets/img/cars/7-XUV700.webp',
-    features: ['Panoramic Skyroof', 'Sony 3D Surround Sound', 'AdrenoX AI Cockpit'],
+    features: ['Panoramic Skyroof', 'Sony 3D Surround Sound', 'Connected Digital Cockpit'],
   },
   {
     id: 16,
     name: 'Kia Carens Manual & Automatic',
     category: 'suv7',
-    badge: 'Plush 7-Seater Family Cruiser',
-    badgeColor: '#3b82f6',
+    badge: '7-Seater Family Cruiser',
+    badgeColor: '#191c20',
     dailyPrice: '2,799',
     weeklyPrice: '16,499',
     weeklySavings: 'Save 25%',
@@ -291,8 +291,8 @@ export const TOP_DEMANDING_CARS = [
     id: 17,
     name: 'Maruti Suzuki Ertiga Manual & Automatic',
     category: 'suv7',
-    badge: '#1 Best Mileage 7-Seater',
-    badgeColor: '#10b981',
+    badge: 'Fuel-Efficient 7-Seater',
+    badgeColor: '#191c20',
     dailyPrice: '2,499',
     weeklyPrice: '14,499',
     weeklySavings: 'Save 25%',
@@ -308,8 +308,8 @@ export const TOP_DEMANDING_CARS = [
     id: 18,
     name: 'Toyota Innova Crysta Manual & Automatic',
     category: 'suv7',
-    badge: 'Undisputed Highway King',
-    badgeColor: '#ffb907',
+    badge: 'Highway & Family MPV',
+    badgeColor: '#191c20',
     dailyPrice: '3,899',
     weeklyPrice: '22,999',
     weeklySavings: 'Save 25%',
@@ -319,14 +319,14 @@ export const TOP_DEMANDING_CARS = [
     transmission: 'Manual & Automatic',
     fuel: '2.4L Diesel',
     image: '/assets/img/cars/7-Innova Crysta.webp',
-    features: ['Captain Seats 2nd Row', 'Rear Climate Control AC', 'Bulletproof Highway Reliability'],
+    features: ['Captain Seats 2nd Row', 'Rear Climate Control AC', 'Proven Highway Reliability'],
   },
   {
     id: 19,
     name: 'Toyota Innova Hycross Automatic',
     category: 'suv7',
-    badge: 'Hybrid Ultra-Luxury MPV',
-    badgeColor: '#059669',
+    badge: 'Hybrid 7-Seater MPV',
+    badgeColor: '#191c20',
     dailyPrice: '4,499',
     weeklyPrice: '26,499',
     weeklySavings: 'Save 25%',
@@ -342,8 +342,8 @@ export const TOP_DEMANDING_CARS = [
     id: 20,
     name: 'Toyota Fortuner 4x4 Manual & Automatic',
     category: 'suv7',
-    badge: 'Dominant VIP & Highway SUV',
-    badgeColor: '#8b5cf6',
+    badge: 'Full-Size 4x4 SUV',
+    badgeColor: '#191c20',
     dailyPrice: '5,999',
     weeklyPrice: '34,999',
     weeklySavings: 'Save 25%',
@@ -353,14 +353,14 @@ export const TOP_DEMANDING_CARS = [
     transmission: 'Manual 4x4 & Automatic',
     fuel: '2.8L Diesel',
     image: '/assets/img/cars/7-Fortuner.webp',
-    features: ['4x4 High/Low Range', 'Commanding Road Presence', 'JBL 11-Speaker Audio'],
+    features: ['4x4 High/Low Range', 'Elevated Touring Stance', 'JBL 11-Speaker Audio'],
   },
   {
     id: 21,
     name: 'Kia Carnival Automatic Limousine',
     category: 'suv7',
-    badge: 'VIP Ultra-Luxury Limousine',
-    badgeColor: '#d97706',
+    badge: 'Executive 7-Seater MPV',
+    badgeColor: '#191c20',
     dailyPrice: '5,499',
     weeklyPrice: '31,999',
     weeklySavings: 'Save 25%',
@@ -378,8 +378,8 @@ export const TOP_DEMANDING_CARS = [
     id: 22,
     name: 'Hyundai Verna Manual & Automatic',
     category: 'sedan',
-    badge: 'High-Speed Turbo Performance',
-    badgeColor: '#dc2626',
+    badge: 'Turbo Petrol Sedan',
+    badgeColor: '#191c20',
     dailyPrice: '2,499',
     weeklyPrice: '14,499',
     weeklySavings: 'Save 25%',
@@ -395,8 +395,8 @@ export const TOP_DEMANDING_CARS = [
     id: 23,
     name: 'Maruti Swift Dzire Manual & Automatic',
     category: 'sedan',
-    badge: '#1 Top Budget Executive Sedan',
-    badgeColor: '#10b981',
+    badge: 'Executive Compact Sedan',
+    badgeColor: '#191c20',
     dailyPrice: '1,999',
     weeklyPrice: '11,999',
     weeklySavings: 'Save 25%',
@@ -413,7 +413,7 @@ export const TOP_DEMANDING_CARS = [
     name: 'Maruti Suzuki Ciaz Manual & Automatic',
     category: 'sedan',
     badge: 'Executive Rear Legroom',
-    badgeColor: '#3b82f6',
+    badgeColor: '#191c20',
     dailyPrice: '2,299',
     weeklyPrice: '13,499',
     weeklySavings: 'Save 25%',
@@ -423,15 +423,15 @@ export const TOP_DEMANDING_CARS = [
     transmission: 'Manual & Automatic',
     fuel: 'Smart Hybrid Petrol',
     image: '/assets/img/cars/seden-Ciaz.webp',
-    features: ['Plush Leather Seats', 'Rear Sunshade', 'Super Smooth Highway Cruise'],
+    features: ['Plush Leather Seats', 'Rear Sunshade', 'Smooth Highway Cruise'],
   },
   {
     id: 25,
     name: 'Volkswagen Virtus Manual & Automatic',
     category: 'sedan',
-    badge: 'German High-Performance Sedan',
+    badge: 'German Touring Sedan',
     categorySecondary: 'sedan',
-    badgeColor: '#8b5cf6',
+    badgeColor: '#191c20',
     dailyPrice: '2,799',
     weeklyPrice: '16,499',
     weeklySavings: 'Save 25%',
@@ -447,9 +447,9 @@ export const TOP_DEMANDING_CARS = [
     id: 26,
     name: 'Skoda Slavia Automatic Only',
     category: 'sedan',
-    badge: 'European Luxury & Refinement',
+    badge: 'European Compact Sedan',
     categorySecondary: 'sedan',
-    badgeColor: '#059669',
+    badgeColor: '#191c20',
     dailyPrice: '2,799',
     weeklyPrice: '16,499',
     weeklySavings: 'Save 25%',
@@ -466,8 +466,8 @@ export const TOP_DEMANDING_CARS = [
     name: 'Mahindra Scorpio-N Automatic Only',
     category: 'suv7',
     categorySecondary: 'sedan',
-    badge: 'The Big Daddy of SUVs',
-    badgeColor: '#ef4444',
+    badge: '7-Seater Body-on-Frame SUV',
+    badgeColor: '#191c20',
     dailyPrice: '3,499',
     weeklyPrice: '20,499',
     weeklySavings: 'Save 25%',
@@ -477,15 +477,15 @@ export const TOP_DEMANDING_CARS = [
     transmission: 'Automatic Only (4x4 Ready)',
     fuel: '2.2L mHawk Diesel',
     image: VERIFIED_VEHICLE_IMAGES.scorpio,
-    features: ['Frequency Selective Damping', 'Sony 12-Speaker 3D Audio', 'Muscular Road Stance'],
+    features: ['Frequency Selective Damping', 'Sony 12-Speaker 3D Audio', 'Tall Touring Stance'],
   },
   {
     id: 28,
     name: 'Maruti Suzuki XL6 Manual & Automatic',
     category: 'suv7',
     categorySecondary: 'sedan',
-    badge: 'Premium 6-Seater Captain Chairs',
-    badgeColor: '#3b82f6',
+    badge: '6-Seater Captain Chairs',
+    badgeColor: '#191c20',
     dailyPrice: '2,699',
     weeklyPrice: '15,999',
     weeklySavings: 'Save 25%',
@@ -583,52 +583,42 @@ export default function CarOffersSection({ initialCars = [] }) {
       return {
         price: 'Tariff on Request',
         unit: 'Weekly Package',
-        effectiveText: 'Special 7-Day Package • Security Deposit',
+        effectiveText: '7-Day Package • Refundable Security Deposit',
         savingsTag: 'Weekly Deal',
-        savingsColor: '#2563eb',
+        savingsColor: '#ffb907',
       };
     }
     if (planType === 'monthly') {
       return {
         price: 'Tariff on Request',
         unit: 'Monthly Subscription',
-        effectiveText: 'Long Term Savings • Free Doorstep Service',
+        effectiveText: 'Monthly Plan • Doorstep Delivery Available',
         savingsTag: 'Monthly Deal',
-        savingsColor: '#10b981',
+        savingsColor: '#ffb907',
       };
     }
     return {
       price: 'Tariff on Request',
       unit: 'Daily Rental',
-      effectiveText: 'Unlimited Freedom • Security Deposit Options',
+      effectiveText: 'Refundable Security Deposit • 24/7 Support',
       savingsTag: null,
       savingsColor: null,
     };
   };
 
   return (
-    <section id="fleet-offers" className="car-offers-section section_70" style={{ background: '#f8fafc', padding: '80px 0' }}>
+    <section id="fleet-offers" className="car-offers-section section_70" style={{ background: '#f5f6f7', padding: '72px 0' }}>
       <div className="container">
         {/* Section Heading with Target Keywords */}
         <div className="site-heading text-center" style={{ width: '100%', maxWidth: '840px', margin: '0 auto 30px' }}>
-          <span
-            style={{
-              color: '#ffb907',
-              fontSize: '13px',
-              fontWeight: 800,
-              letterSpacing: '1.5px',
-              textTransform: 'uppercase',
-              marginBottom: '8px',
-              display: 'block',
-            }}
-          >
-            ✦ TOP DEMANDING FLEET • HYDERABAD
+          <span className="editorial-eyebrow">
+            Hyderabad Self-Drive Fleet
           </span>
           <h2
             style={{
               fontSize: '32px',
-              fontWeight: 800,
-              color: '#0f172a',
+              fontWeight: 600,
+              color: '#191c20',
               margin: '0 0 10px',
               display: 'block',
               width: '100%',
@@ -637,9 +627,9 @@ export default function CarOffersSection({ initialCars = [] }) {
           >
             Daily, Weekly &amp; Monthly Car Rentals in Hyderabad
           </h2>
-          <p style={{ color: '#64748b', fontSize: '15px', margin: 0, lineHeight: 1.6 }}>
-            Explore Hyderabad&apos;s most popular, top-demanding self drive cars with <strong>Manual &amp; Automatic</strong> transmissions.
-            Choose between <strong>Daily Deals</strong>, <strong>Weekly Rentals</strong>, or <strong>Monthly Subscriptions</strong> with Security Deposit and doorstep delivery. Enquire now for custom rates and instant delivery.
+          <p style={{ color: '#60656d', fontSize: '15.5px', margin: 0, lineHeight: 1.7 }}>
+            Browse Hyderabad&apos;s self-drive fleet with <strong>Manual &amp; Automatic</strong> transmissions.
+            Choose <strong>Daily</strong>, <strong>Weekly</strong>, or <strong>Monthly</strong> plans with a refundable security deposit and doorstep delivery.
           </p>
         </div>
 
@@ -712,17 +702,15 @@ export default function CarOffersSection({ initialCars = [] }) {
               type="button"
               onClick={() => setActiveTab(tab.id)}
               style={{
-                border: 'none',
-                background: activeTab === tab.id ? '#0f172a' : '#ffffff',
-                color: activeTab === tab.id ? '#ffb907' : '#475569',
-                fontWeight: 700,
+                background: activeTab === tab.id ? '#191c20' : '#ffffff',
+                color: activeTab === tab.id ? '#ffffff' : '#191c20',
+                fontWeight: 600,
                 fontSize: '13px',
-                padding: '8px 16px',
-                borderRadius: '20px',
-                boxShadow: activeTab === tab.id ? '0 4px 12px rgba(15,23,42,0.18)' : '0 2px 6px rgba(0,0,0,0.03)',
+                padding: '9px 16px',
+                borderRadius: '8px',
                 cursor: 'pointer',
-                transition: 'all 0.2s',
-                border: activeTab === tab.id ? '1px solid #0f172a' : '1px solid #e2e8f0',
+                transition: 'border-color 0.15s ease, background-color 0.15s ease',
+                border: activeTab === tab.id ? '1px solid #191c20' : '1px solid #e3e5e8',
               }}
             >
               {tab.label}
@@ -734,35 +722,36 @@ export default function CarOffersSection({ initialCars = [] }) {
         <div style={{ maxWidth: '480px', margin: '0 auto 35px', position: 'relative' }}>
           <input
             type="text"
-            placeholder="🔍 Search car name, Automatic, Thar, Creta, 7 Seater..."
+            placeholder="Search car model, Automatic, Thar, Creta, 7 Seater..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             style={{
               width: '100%',
-              padding: '10px 16px',
-              paddingLeft: '38px',
-              borderRadius: '25px',
-              border: '1px solid #cbd5e1',
+              padding: '10px 38px',
+              borderRadius: '10px',
+              border: '1px solid #e3e5e8',
               background: '#ffffff',
+              color: '#191c20',
               fontSize: '14px',
               outline: 'none',
-              boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
             }}
           />
           <i
             className="fa fa-search"
-            style={{ position: 'absolute', left: '16px', top: '14px', color: '#94a3b8', fontSize: '13px' }}
+            style={{ position: 'absolute', left: '15px', top: '14px', color: '#60656d', fontSize: '13px' }}
           />
           {searchQuery && (
             <button
               type="button"
+              aria-label="Clear search"
               onClick={() => setSearchQuery('')}
               style={{
                 position: 'absolute',
-                right: '12px',
+                right: '10px',
                 top: '9px',
-                border: 'none',
-                background: '#e2e8f0',
+                border: '1px solid #e3e5e8',
+                background: '#f5f6f7',
+                color: '#191c20',
                 borderRadius: '50%',
                 width: '24px',
                 height: '24px',
@@ -770,7 +759,7 @@ export default function CarOffersSection({ initialCars = [] }) {
                 cursor: 'pointer',
               }}
             >
-              ✕
+              &times;
             </button>
           )}
         </div>
@@ -778,7 +767,7 @@ export default function CarOffersSection({ initialCars = [] }) {
         {/* Cars Showcase Grid */}
         <div className="row g-4">
           {filteredCars.map((car) => {
-            const { price, unit, effectiveText, savingsTag, savingsColor } = getPriceData(car);
+            const { price, unit, effectiveText, savingsTag } = getPriceData(car);
             const planLabel = planType.toUpperCase();
             const whatsappMsg = `Hi DriveItCars, I am interested in booking the ${car.name} on ${planLabel} rental. Please share vehicle availability, best rate quotation, and doorstep delivery options.`;
 
@@ -790,9 +779,8 @@ export default function CarOffersSection({ initialCars = [] }) {
                     background: '#ffffff',
                     borderRadius: '16px',
                     overflow: 'hidden',
-                    boxShadow: '0 8px 24px rgba(15, 23, 42, 0.06)',
-                    border: '1px solid #e2e8f0',
-                    transition: 'all 0.3s ease',
+                    border: '1px solid #e3e5e8',
+                    transition: 'border-color 0.2s ease',
                     display: 'flex',
                     flexDirection: 'column',
                     height: '100%',
@@ -802,7 +790,7 @@ export default function CarOffersSection({ initialCars = [] }) {
                   <div
                     style={{
                       position: 'relative',
-                      background: 'radial-gradient(circle, #f8fafc 0%, #e2e8f0 100%)',
+                      background: '#f5f6f7',
                       height: '215px',
                       display: 'flex',
                       alignItems: 'center',
@@ -820,7 +808,6 @@ export default function CarOffersSection({ initialCars = [] }) {
                         width: 'auto',
                         objectFit: 'contain',
                         display: 'block',
-                        transition: 'transform 0.3s ease',
                       }}
                     />
 
@@ -830,17 +817,16 @@ export default function CarOffersSection({ initialCars = [] }) {
                         position: 'absolute',
                         top: '12px',
                         left: '12px',
-                        background: '#0f172a',
-                        color: '#ffb907',
+                        background: '#191c20',
+                        color: '#ffffff',
                         fontSize: '11px',
-                        fontWeight: 700,
+                        fontWeight: 600,
                         padding: '4px 10px',
-                        borderRadius: '20px',
-                        letterSpacing: '0.4px',
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
+                        borderRadius: '6px',
+                        letterSpacing: '0.3px',
                       }}
                     >
-                      ★ {car.badge}
+                      {car.badge}
                     </span>
 
                     {/* Top Right Savings Badge */}
@@ -850,13 +836,12 @@ export default function CarOffersSection({ initialCars = [] }) {
                           position: 'absolute',
                           top: '12px',
                           right: '12px',
-                          background: savingsColor,
-                          color: '#ffffff',
+                          background: '#ffb907',
+                          color: '#191c20',
                           fontSize: '11px',
-                          fontWeight: 800,
+                          fontWeight: 600,
                           padding: '4px 10px',
-                          borderRadius: '20px',
-                          boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
+                          borderRadius: '6px',
                         }}
                       >
                         {savingsTag}
@@ -867,70 +852,63 @@ export default function CarOffersSection({ initialCars = [] }) {
                   {/* Card Body */}
                   <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
                     <div style={{ marginBottom: '6px' }}>
-                      <h3 style={{ fontSize: '18px', fontWeight: 800, color: '#0f172a', margin: '0 0 4px', lineHeight: 1.3 }}>
+                      <h3 style={{ fontSize: '18px', fontWeight: 600, color: '#191c20', margin: '0 0 6px', lineHeight: 1.3 }}>
                         {car.name}
                       </h3>
                       <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
                         <span
                           style={{
-                            fontSize: '11px',
-                            background: '#eff6ff',
-                            color: '#1d4ed8',
-                            fontWeight: 700,
+                            fontSize: '11.5px',
+                            background: '#f5f6f7',
+                            color: '#191c20',
+                            border: '1px solid #e3e5e8',
+                            fontWeight: 500,
                             padding: '2px 8px',
-                            borderRadius: '4px',
+                            borderRadius: '6px',
                           }}
                         >
-                          ⚙️ {car.transmission}
+                          {car.transmission}
                         </span>
                       </div>
                     </div>
 
-                    {/* Pricing Row - Commented out numeric rates, displaying Tariff on Request & Enquire */}
-                    <div style={{ marginTop: '10px', marginBottom: '14px' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    {/* Tariff Note */}
+                    <div style={{ marginTop: '12px', marginBottom: '14px' }}>
+                      <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px' }}>
                         <span
                           style={{
-                            fontSize: '17px',
-                            fontWeight: 800,
-                            color: '#92400e',
-                            background: '#fef3c7',
-                            padding: '6px 12px',
-                            borderRadius: '8px',
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            gap: '6px',
-                            border: '1px solid #fde68a',
+                            fontSize: '16px',
+                            fontWeight: 600,
+                            color: '#191c20',
                           }}
                         >
-                          <i className="fa fa-tag" style={{ color: '#d97706', fontSize: '13px' }} />
                           {price}
                         </span>
-                        <span style={{ fontSize: '12px', color: '#64748b', fontWeight: 700 }}>({unit})</span>
+                        <span style={{ fontSize: '12px', color: '#60656d', fontWeight: 500 }}>({unit})</span>
                       </div>
-                      <div style={{ fontSize: '12px', color: '#059669', fontWeight: 700, marginTop: '6px', display: 'flex', alignItems: 'center', gap: '5px' }}>
-                        <i className="fa fa-check-circle" /> {effectiveText}
+                      <div style={{ fontSize: '12px', color: '#60656d', fontWeight: 500, marginTop: '4px' }}>
+                        {effectiveText}
                       </div>
                     </div>
 
                     {/* Specs Pill List */}
                     <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', marginBottom: '16px' }}>
-                      <span style={{ background: '#f1f5f9', color: '#334155', fontSize: '12px', fontWeight: 600, padding: '4px 8px', borderRadius: '6px' }}>
-                        <i className="fa fa-users" style={{ marginRight: 4, color: '#ffb907' }} /> {car.seats} Seats
+                      <span style={{ background: '#f5f6f7', border: '1px solid #e3e5e8', color: '#191c20', fontSize: '12px', fontWeight: 500, padding: '4px 8px', borderRadius: '6px' }}>
+                        <i className="fa fa-users" style={{ marginRight: 4, color: '#60656d' }} /> {car.seats} Seats
                       </span>
-                      <span style={{ background: '#f1f5f9', color: '#334155', fontSize: '12px', fontWeight: 600, padding: '4px 8px', borderRadius: '6px' }}>
-                        <i className="fa fa-tint" style={{ marginRight: 4, color: '#ffb907' }} /> {car.fuel}
+                      <span style={{ background: '#f5f6f7', border: '1px solid #e3e5e8', color: '#191c20', fontSize: '12px', fontWeight: 500, padding: '4px 8px', borderRadius: '6px' }}>
+                        <i className="fa fa-tint" style={{ marginRight: 4, color: '#60656d' }} /> {car.fuel}
                       </span>
-                      <span style={{ background: '#f1f5f9', color: '#334155', fontSize: '12px', fontWeight: 600, padding: '4px 8px', borderRadius: '6px' }}>
-                        <i className="fa fa-road" style={{ marginRight: 4, color: '#ffb907' }} /> 200 KMs/Day
+                      <span style={{ background: '#f5f6f7', border: '1px solid #e3e5e8', color: '#191c20', fontSize: '12px', fontWeight: 500, padding: '4px 8px', borderRadius: '6px' }}>
+                        <i className="fa fa-road" style={{ marginRight: 4, color: '#60656d' }} /> 200 KMs/Day
                       </span>
                     </div>
 
                     {/* Included Features */}
                     <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 20px', flexGrow: 1 }}>
                       {car.features.map((feat, i) => (
-                        <li key={i} style={{ fontSize: '12px', color: '#475569', marginBottom: '6px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                          <i className="fa fa-check-circle" style={{ color: '#10b981', fontSize: '13px' }} />
+                        <li key={i} style={{ fontSize: '12.5px', color: '#60656d', marginBottom: '6px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                          <i className="fa fa-check" style={{ color: '#191c20', fontSize: '11px' }} />
                           {feat}
                         </li>
                       ))}
@@ -942,10 +920,10 @@ export default function CarOffersSection({ initialCars = [] }) {
                         href="tel:+916300041186"
                         className="car-card-btn car-card-call"
                         style={{
-                          background: '#0f172a',
+                          background: '#191c20',
                           color: '#ffffff',
-                          fontWeight: 700,
-                          fontSize: '12px',
+                          fontWeight: 600,
+                          fontSize: '12.5px',
                           padding: '10px 6px',
                           borderRadius: '8px',
                           textAlign: 'center',
@@ -954,7 +932,6 @@ export default function CarOffersSection({ initialCars = [] }) {
                           alignItems: 'center',
                           justifyContent: 'center',
                           gap: '5px',
-                          transition: 'all 0.2s',
                           whiteSpace: 'nowrap',
                         }}
                       >
@@ -966,10 +943,11 @@ export default function CarOffersSection({ initialCars = [] }) {
                         rel="noopener noreferrer"
                         className="car-card-btn car-card-whatsapp"
                         style={{
-                          background: '#25D366',
-                          color: '#ffffff',
-                          fontWeight: 700,
-                          fontSize: '12px',
+                          background: '#ffffff',
+                          border: '1px solid #a8c7b3',
+                          color: '#17643b',
+                          fontWeight: 600,
+                          fontSize: '12.5px',
                           padding: '10px 6px',
                           borderRadius: '8px',
                           textAlign: 'center',
@@ -978,7 +956,6 @@ export default function CarOffersSection({ initialCars = [] }) {
                           alignItems: 'center',
                           justifyContent: 'center',
                           gap: '5px',
-                          transition: 'all 0.2s',
                           whiteSpace: 'nowrap',
                         }}
                       >
@@ -995,66 +972,66 @@ export default function CarOffersSection({ initialCars = [] }) {
         {/* SEO Keyword Pills Strip for All 28 Cars */}
         <div className="seo-keyword-strip-card">
           <div style={{ marginBottom: '12px' }}>
-            <span style={{ fontSize: '13px', fontWeight: 800, color: '#0f172a', textTransform: 'uppercase', letterSpacing: '0.8px' }}>
-              ✦ Top Demanding Self Drive Car Rentals in Hyderabad (Daily • Weekly • Monthly):
+            <span className="editorial-link-title" style={{ marginBottom: 0 }}>
+              Popular Self-Drive Models in Hyderabad (Daily • Weekly • Monthly)
             </span>
           </div>
           <div className="seo-keyword-list">
-            <Link href="/self-drive-car" style={{ color: '#0f172a', fontWeight: 600 }}>Swift Manual Rental</Link>
+            <Link href="/self-drive-car" style={{ color: '#191c20', fontWeight: 500 }}>Swift Manual Rental</Link>
             <span>•</span>
-            <Link href="/self-drive-car" style={{ color: '#0f172a', fontWeight: 600 }}>Swift Automatic Rental</Link>
+            <Link href="/self-drive-car" style={{ color: '#191c20', fontWeight: 500 }}>Swift Automatic Rental</Link>
             <span>•</span>
-            <Link href="/self-drive-car" style={{ color: '#0f172a', fontWeight: 600 }}>Baleno Self Drive</Link>
+            <Link href="/self-drive-car" style={{ color: '#191c20', fontWeight: 500 }}>Baleno Self Drive</Link>
             <span>•</span>
-            <Link href="/self-drive-car" style={{ color: '#0f172a', fontWeight: 600 }}>Hyundai i20 Rental</Link>
+            <Link href="/self-drive-car" style={{ color: '#191c20', fontWeight: 500 }}>Hyundai i20 Rental</Link>
             <span>•</span>
-            <Link href="/self-drive-suv-hyderabad" style={{ color: '#0f172a', fontWeight: 600 }}>Suzuki Fronx Mini SUV</Link>
+            <Link href="/self-drive-suv-hyderabad" style={{ color: '#191c20', fontWeight: 500 }}>Suzuki Fronx Mini SUV</Link>
             <span>•</span>
-            <Link href="/self-drive-suv-hyderabad" style={{ color: '#0f172a', fontWeight: 600 }}>Hyundai Venue Rental</Link>
+            <Link href="/self-drive-suv-hyderabad" style={{ color: '#191c20', fontWeight: 500 }}>Hyundai Venue Rental</Link>
             <span>•</span>
-            <Link href="/self-drive-suv-hyderabad" style={{ color: '#0f172a', fontWeight: 600 }}>Tata Punch Rental</Link>
+            <Link href="/self-drive-suv-hyderabad" style={{ color: '#191c20', fontWeight: 500 }}>Tata Punch Rental</Link>
             <span>•</span>
-            <Link href="/self-drive-suv-hyderabad" style={{ color: '#0f172a', fontWeight: 600 }}>Brezza Automatic &amp; Manual</Link>
+            <Link href="/self-drive-suv-hyderabad" style={{ color: '#191c20', fontWeight: 500 }}>Brezza Automatic &amp; Manual</Link>
             <span>•</span>
-            <Link href="/self-drive-suv-hyderabad" style={{ color: '#0f172a', fontWeight: 600 }}>Tata Nexon Rental</Link>
+            <Link href="/self-drive-suv-hyderabad" style={{ color: '#191c20', fontWeight: 500 }}>Tata Nexon Rental</Link>
             <span>•</span>
-            <Link href="/self-drive-suv-hyderabad" style={{ color: '#0f172a', fontWeight: 600 }}>Tata Harrier Self Drive</Link>
+            <Link href="/self-drive-suv-hyderabad" style={{ color: '#191c20', fontWeight: 500 }}>Tata Harrier Self Drive</Link>
             <span>•</span>
-            <Link href="/self-drive-suv-hyderabad" style={{ color: '#0f172a', fontWeight: 600 }}>Kia Seltos Rental</Link>
+            <Link href="/self-drive-suv-hyderabad" style={{ color: '#191c20', fontWeight: 500 }}>Kia Seltos Rental</Link>
             <span>•</span>
-            <Link href="/self-drive-suv-hyderabad" style={{ color: '#0f172a', fontWeight: 600 }}>Hyundai Creta Self Drive</Link>
+            <Link href="/self-drive-suv-hyderabad" style={{ color: '#191c20', fontWeight: 500 }}>Hyundai Creta Self Drive</Link>
             <span>•</span>
-            <Link href="/self-drive-suv-hyderabad" style={{ color: '#0f172a', fontWeight: 600 }}>Mahindra Thar 4x4 Rental</Link>
+            <Link href="/self-drive-suv-hyderabad" style={{ color: '#191c20', fontWeight: 500 }}>Mahindra Thar 4x4 Rental</Link>
             <span>•</span>
-            <Link href="/self-drive-suv-hyderabad" style={{ color: '#0f172a', fontWeight: 600 }}>Thar Roxx 5-Door Rental</Link>
+            <Link href="/self-drive-suv-hyderabad" style={{ color: '#191c20', fontWeight: 500 }}>Thar Roxx 5-Door Rental</Link>
             <span>•</span>
-            <Link href="/suv7" style={{ color: '#0f172a', fontWeight: 600 }}>Mahindra XUV 700 Rental</Link>
+            <Link href="/suv7" style={{ color: '#191c20', fontWeight: 500 }}>Mahindra XUV 700 Rental</Link>
             <span>•</span>
-            <Link href="/suv7" style={{ color: '#0f172a', fontWeight: 600 }}>Kia Carens 7-Seater</Link>
+            <Link href="/suv7" style={{ color: '#191c20', fontWeight: 500 }}>Kia Carens 7-Seater</Link>
             <span>•</span>
-            <Link href="/suv7" style={{ color: '#0f172a', fontWeight: 600 }}>Ertiga Self Drive Hyderabad</Link>
+            <Link href="/suv7" style={{ color: '#191c20', fontWeight: 500 }}>Ertiga Self Drive Hyderabad</Link>
             <span>•</span>
-            <Link href="/suv7" style={{ color: '#0f172a', fontWeight: 600 }}>Innova Crysta Rental</Link>
+            <Link href="/suv7" style={{ color: '#191c20', fontWeight: 500 }}>Innova Crysta Rental</Link>
             <span>•</span>
-            <Link href="/suv7" style={{ color: '#0f172a', fontWeight: 600 }}>Innova Hycross Automatic</Link>
+            <Link href="/suv7" style={{ color: '#191c20', fontWeight: 500 }}>Innova Hycross Automatic</Link>
             <span>•</span>
-            <Link href="/suv7" style={{ color: '#0f172a', fontWeight: 600 }}>Toyota Fortuner 4x4</Link>
+            <Link href="/suv7" style={{ color: '#191c20', fontWeight: 500 }}>Toyota Fortuner 4x4</Link>
             <span>•</span>
-            <Link href="/suv7" style={{ color: '#0f172a', fontWeight: 600 }}>Kia Carnival Limousine</Link>
+            <Link href="/suv7" style={{ color: '#191c20', fontWeight: 500 }}>Kia Carnival Limousine</Link>
             <span>•</span>
-            <Link href="/sedan" style={{ color: '#0f172a', fontWeight: 600 }}>Hyundai Verna Rental</Link>
+            <Link href="/sedan" style={{ color: '#191c20', fontWeight: 500 }}>Hyundai Verna Rental</Link>
             <span>•</span>
-            <Link href="/sedan" style={{ color: '#0f172a', fontWeight: 600 }}>Swift Dzire Rental</Link>
+            <Link href="/sedan" style={{ color: '#191c20', fontWeight: 500 }}>Swift Dzire Rental</Link>
             <span>•</span>
-            <Link href="/sedan" style={{ color: '#0f172a', fontWeight: 600 }}>Maruti Ciaz Self Drive</Link>
+            <Link href="/sedan" style={{ color: '#191c20', fontWeight: 500 }}>Maruti Ciaz Self Drive</Link>
             <span>•</span>
-            <Link href="/sedan" style={{ color: '#0f172a', fontWeight: 600 }}>Volkswagen Virtus Rental</Link>
+            <Link href="/sedan" style={{ color: '#191c20', fontWeight: 500 }}>Volkswagen Virtus Rental</Link>
             <span>•</span>
-            <Link href="/sedan" style={{ color: '#0f172a', fontWeight: 600 }}>Skoda Slavia Automatic</Link>
+            <Link href="/sedan" style={{ color: '#191c20', fontWeight: 500 }}>Skoda Slavia Automatic</Link>
             <span>•</span>
-            <Link href="/suv7" style={{ color: '#0f172a', fontWeight: 600 }}>Mahindra Scorpio Automatic</Link>
+            <Link href="/suv7" style={{ color: '#191c20', fontWeight: 500 }}>Mahindra Scorpio Automatic</Link>
             <span>•</span>
-            <Link href="/suv7" style={{ color: '#0f172a', fontWeight: 600 }}>Suzuki XL6 6-Seater</Link>
+            <Link href="/suv7" style={{ color: '#191c20', fontWeight: 500 }}>Suzuki XL6 6-Seater</Link>
           </div>
         </div>
       </div>

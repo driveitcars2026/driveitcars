@@ -64,7 +64,7 @@ const VIP_FAQS = [
   {
     question: 'Do you offer VIP tarmac and Aero Plaza airport pickup at RGIA Hyderabad?',
     answer:
-      'Yes, we provide 24/7 dedicated VIP airport pickup and drop at Rajiv Gandhi International Airport (RGIA Shamshabad) with terminal placard reception, luggage concierge, and seamless transit via the PVNR Expressway and Outer Ring Road.',
+      'Yes, we provide 24/7 dedicated VIP airport pickup and drop at Rajiv Gandhi International Airport (RGIA Shamshabad) with terminal placard reception, luggage concierge, and direct transit via the PVNR Expressway and Outer Ring Road.',
   },
 ];
 
@@ -160,7 +160,7 @@ export default function VipCarRentalHyderabadPage() {
                     marginBottom: 8,
                   }}
                 >
-                  ✦ PRESIDENTIAL • EXECUTIVE • DIGNITARY SERVICES
+                  PRESIDENTIAL • EXECUTIVE • DIGNITARY SERVICES
                 </span>
                 <p className="breadcromb-title">VIP Car Rental Hyderabad</p>
                 <ul>
@@ -183,48 +183,35 @@ export default function VipCarRentalHyderabadPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="about-page-left">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.15)',
-                    color: '#d49500',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '12px',
-                  }}
-                >
-                  ✦ CEO CAR RENTAL • EXECUTIVE CAR RENTAL • VIP CONVOY HIRE
+                <span className="editorial-eyebrow">
+                  CEO CAR RENTAL • EXECUTIVE CAR RENTAL • VIP CONVOY HIRE
                 </span>
-                <h1 style={{ color: '#0f172a', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
+                <h1 style={{ color: '#191c20', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
                   VIP Car Rental Hyderabad — Executive &amp; CEO Luxury Car Hire
                 </h1>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '16px' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '16px' }}>
                   DriveItCars is Hyderabad&apos;s trusted authority for high-stakes <strong>VIP car rental Hyderabad</strong>, <strong>executive car rental Hyderabad</strong>, and dedicated <strong>CEO car rental Hyderabad</strong>. When world-renowned business leaders, enterprise board members, venture capitalists, and foreign dignitaries visit Hyderabad&apos;s global tech capital in <strong>HITEC City, Gachibowli Financial District, Mindspace</strong>, and <strong>HICC Novotel</strong>, compromise is not an option.
                 </p>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '22px' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '22px' }}>
                   We provide discreet, synchronized ground logistics deploying flagship vehicles — including the <strong>Mercedes-Maybach, Mercedes-Benz S-Class, BMW 7 Series, Rolls Royce</strong>, and <strong>Toyota Fortuner Legender convoy escorts</strong>. Every assignment is backed by strict non-disclosure compliance, suited executive chauffeurs, corporate GST invoicing, and 24/7 dedicated operations dispatch.
                 </p>
 
                 {/* Brand Navigation Strip */}
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginBottom: '10px' }}>
-                  <Link href="/luxury-chauffeur-hyderabad" style={{ background: '#0f172a', color: '#ffb907', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
-                    🤵 Luxury Chauffeur Hyderabad
+                  <Link href="/luxury-chauffeur-hyderabad" style={{ background: '#191c20', color: '#ffb907', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
+                    Luxury Chauffeur Hyderabad
                   </Link>
-                  <Link href="/mercedes-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    ⭐ Mercedes Rental
+                  <Link href="/mercedes-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Mercedes Rental
                   </Link>
-                  <Link href="/bmw-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🚘 BMW Rental
+                  <Link href="/bmw-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    BMW Rental
                   </Link>
-                  <Link href="/audi-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🏎️ Audi Rental
+                  <Link href="/audi-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Audi Rental
                   </Link>
-                  <Link href="/range-rover-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🚙 Range Rover Rental
+                  <Link href="/range-rover-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Range Rover Rental
                   </Link>
                 </div>
               </div>
@@ -234,17 +221,17 @@ export default function VipCarRentalHyderabadPage() {
       </section>
 
       {/* VIP Fleet Grid */}
-      <section id="vip-fleet" className={[fleetStyles.fleet, 'section_70'].join(' ')} style={{ background: '#f8fafc', paddingTop: '40px' }}>
+      <section id="vip-fleet" className={[fleetStyles.fleet, 'section_70'].join(' ')} style={{ background: '#f5f6f7', paddingTop: '40px' }}>
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <span style={{ color: '#d49500', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
+              <span style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                 EXECUTIVE &amp; PRESIDENTIAL FLEET
               </span>
-              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#0f172a', marginTop: '6px' }}>
+              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#191c20', marginTop: '6px' }}>
                 VIP &amp; CEO Vehicles Available in Hyderabad
               </h2>
-              <p style={{ color: '#64748b', maxWidth: '680px', margin: '8px auto 0', fontSize: '15px' }}>
+              <p style={{ color: '#60656d', maxWidth: '680px', margin: '8px auto 0', fontSize: '15px' }}>
                 Showroom condition, suited chauffeurs, mineral water, high-speed connectivity, and discreet privacy protocol.
               </p>
             </div>
@@ -260,7 +247,7 @@ export default function VipCarRentalHyderabadPage() {
                     background: '#fff',
                     borderRadius: '16px',
                     overflow: 'hidden',
-                    boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
+                    border: '1px solid #e3e5e8',
                     border: '1px solid #e2e8f0',
                     height: '100%',
                     display: 'flex',
@@ -284,7 +271,7 @@ export default function VipCarRentalHyderabadPage() {
                         position: 'absolute',
                         top: 12,
                         left: 12,
-                        background: '#0f172a',
+                        background: '#191c20',
                         color: '#ffb907',
                         fontSize: '11px',
                         fontWeight: 700,
@@ -303,16 +290,16 @@ export default function VipCarRentalHyderabadPage() {
                   </div>
 
                   <div className="offer-text" style={{ padding: '22px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                    <h3 style={{ fontSize: '20px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>
+                    <h3 style={{ fontSize: '20px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>
                       {car.name}
                     </h3>
                     <div style={{ marginBottom: '14px' }}>
-                      <span style={{ fontSize: '15px', fontWeight: 800, color: '#92400e', background: '#fef3c7', padding: '5px 10px', borderRadius: '6px' }}>{car.rate}</span>
+                      <span style={{ fontSize: '15px', fontWeight: 800, color: '#191c20', background: '#f5f6f7', padding: '5px 10px', borderRadius: '6px' }}>{car.rate}</span>
                     </div>
 
                     <div style={{ marginBottom: '18px', display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                       {car.features.map((feat, idx) => (
-                        <span key={idx} style={{ background: '#f1f5f9', color: '#334155', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 500 }}>
+                        <span key={idx} style={{ background: '#f5f6f7', color: '#191c20', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 500 }}>
                           ✓ {feat}
                         </span>
                       ))}
@@ -323,7 +310,7 @@ export default function VipCarRentalHyderabadPage() {
                         href="tel:+916300041186"
                         className="offer-btn-1"
                         style={{
-                          background: '#0f172a',
+                          background: '#191c20',
                           color: '#fff',
                           textAlign: 'center',
                           padding: '10px 4px',
@@ -375,10 +362,10 @@ export default function VipCarRentalHyderabadPage() {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <span style={{ color: '#d49500', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase' }}>
+              <span style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline', fontSize: '13px', textTransform: 'uppercase' }}>
                 CORPORATE TRUST &amp; COMPLIANCE
               </span>
-              <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#0f172a' }}>
+              <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#191c20' }}>
                 Why Global Enterprises Choose DriveItCars for CEO &amp; VIP Travel
               </h2>
             </div>
@@ -387,29 +374,29 @@ export default function VipCarRentalHyderabadPage() {
             <div className="col-lg-3 col-md-6 mb-4">
               <div style={{ background: '#fff', padding: '26px 20px', borderRadius: '12px', border: '1px solid #e2e8f0', height: '100%' }}>
                 <div style={{ fontSize: '26px', color: '#ffb907', marginBottom: '10px' }}><i className="fa fa-file-text-o" /></div>
-                <h3 style={{ fontSize: '16px', fontWeight: 700, color: '#0f172a', marginBottom: '6px' }}>GST Corporate Billing</h3>
-                <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Full 100% tax-compliant invoices with corporate GST input credit and monthly vendor billing.</p>
+                <h3 style={{ fontSize: '16px', fontWeight: 700, color: '#191c20', marginBottom: '6px' }}>GST Corporate Billing</h3>
+                <p style={{ fontSize: '13px', color: '#60656d', margin: 0 }}>Full 100% tax-compliant invoices with corporate GST input credit and monthly vendor billing.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-4">
               <div style={{ background: '#fff', padding: '26px 20px', borderRadius: '12px', border: '1px solid #e2e8f0', height: '100%' }}>
                 <div style={{ fontSize: '26px', color: '#ffb907', marginBottom: '10px' }}><i className="fa fa-handshake-o" /></div>
-                <h3 style={{ fontSize: '16px', fontWeight: 700, color: '#0f172a', marginBottom: '6px' }}>Dedicated Account Manager</h3>
-                <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>A dedicated corporate concierge manages flight tracking, schedule changes, and fleet logistics.</p>
+                <h3 style={{ fontSize: '16px', fontWeight: 700, color: '#191c20', marginBottom: '6px' }}>Dedicated Account Manager</h3>
+                <p style={{ fontSize: '13px', color: '#60656d', margin: 0 }}>A dedicated corporate concierge manages flight tracking, schedule changes, and fleet logistics.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-4">
               <div style={{ background: '#fff', padding: '26px 20px', borderRadius: '12px', border: '1px solid #e2e8f0', height: '100%' }}>
                 <div style={{ fontSize: '26px', color: '#ffb907', marginBottom: '10px' }}><i className="fa fa-user-secret" /></div>
-                <h3 style={{ fontSize: '16px', fontWeight: 700, color: '#0f172a', marginBottom: '6px' }}>Confidentiality &amp; NDAs</h3>
-                <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Strict privacy protocols ensuring private calls, merger discussions, and travel itineraries stay confidential.</p>
+                <h3 style={{ fontSize: '16px', fontWeight: 700, color: '#191c20', marginBottom: '6px' }}>Confidentiality &amp; NDAs</h3>
+                <p style={{ fontSize: '13px', color: '#60656d', margin: 0 }}>Strict privacy protocols ensuring private calls, merger discussions, and travel itineraries stay confidential.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-4">
               <div style={{ background: '#fff', padding: '26px 20px', borderRadius: '12px', border: '1px solid #e2e8f0', height: '100%' }}>
                 <div style={{ fontSize: '26px', color: '#ffb907', marginBottom: '10px' }}><i className="fa fa-plane" /></div>
-                <h3 style={{ fontSize: '16px', fontWeight: 700, color: '#0f172a', marginBottom: '6px' }}>RGIA VIP Terminal Tarmac</h3>
-                <p style={{ fontSize: '13px', color: '#64748b', margin: 0 }}>Seamless airport arrivals with flight delay monitoring, meet-and-greet, and zero wait time.</p>
+                <h3 style={{ fontSize: '16px', fontWeight: 700, color: '#191c20', marginBottom: '6px' }}>RGIA VIP Terminal Tarmac</h3>
+                <p style={{ fontSize: '13px', color: '#60656d', margin: 0 }}>Punctual airport arrivals with flight delay monitoring, meet-and-greet, and zero wait time.</p>
               </div>
             </div>
           </div>

@@ -180,39 +180,26 @@ export default function WeekendSelfDriveHyderabadPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="about-page-left">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.15)',
-                    color: '#d49500',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '12px',
-                  }}
-                >
-                  ✦ FRIDAY TO MONDAY GETAWAY PACKAGES
+                <span className="editorial-eyebrow">
+                  FRIDAY TO MONDAY GETAWAY PACKAGES
                 </span>
-                <h1 style={{ color: '#ffb907', fontSize: '32px', fontWeight: 800, marginBottom: '20px' }}>
+                <h1 style={{ color: '#191c20', fontSize: '32px', fontWeight: 600, marginBottom: '20px' }}>
                   Weekend Self Drive Cars Hyderabad — Road Trips &amp; Weekend Getaways
                 </h1>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '16px' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '16px' }}>
                   Planning an escape from the city hustle this weekend? DriveItCars offers the most flexible and affordable <strong>weekend self drive cars Hyderabad</strong> packages. Whether you want to take a romantic retreat to Ananthagiri Hills, explore the ancient ruins of Warangal, or embark on a multi-day family pilgrimage to Srisailam, our sanitized hatchbacks, premium sedans, and rugged SUVs are fully prepped for the open highway.
                 </p>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '16px' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '16px' }}>
                   Enjoy Friday evening delivery directly to your apartment or IT office in HITEC City, Gachibowli, Madhapur, or Kondapur, and simply return the car on Monday morning. With zero driver intrusion, unlimited music playlists, and complete freedom to stop whenever you see a scenic sunset, your weekend road trip starts the second you hold the keys.
                 </p>
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '14px' }}>
                   <a href="tel:+916300041186" className="gauto-btn" style={{ padding: '8px 18px', fontSize: '13px' }}>
                     <i className="fa fa-phone" style={{ marginRight: 6 }} /> Reserve Weekend Car
                   </a>
-                  <Link href="/self-drive-suv-hyderabad" className="gauto-btn" style={{ padding: '8px 18px', fontSize: '13px', background: '#0f172a' }}>
+                  <Link href="/self-drive-suv-hyderabad" className="gauto-btn" style={{ padding: '8px 18px', fontSize: '13px', background: '#191c20' }}>
                     Explore Self Drive SUVs
                   </Link>
-                  <Link href="/monthly-self-drive-cars-hyderabad" className="gauto-btn" style={{ padding: '8px 18px', fontSize: '13px', background: '#2563eb' }}>
+                  <Link href="/monthly-self-drive-cars-hyderabad" className="gauto-btn" style={{ padding: '8px 18px', fontSize: '13px', background: '#191c20' }}>
                     Monthly Subscriptions
                   </Link>
                 </div>
@@ -223,7 +210,7 @@ export default function WeekendSelfDriveHyderabadPage() {
       </section>
 
       {/* ========== WEEKEND PACKAGES GRID ========== */}
-      <section className="gauto-offers-area section_70" style={{ background: '#f8fafc', paddingTop: '40px' }}>
+      <section className="gauto-offers-area section_70" style={{ background: '#f5f6f7', paddingTop: '40px' }}>
         <div className="container">
           <div className="site-heading text-center" style={{ marginBottom: '35px' }}>
             <span style={{ color: '#ffb907', fontWeight: 700, fontSize: '13px', letterSpacing: '1px', textTransform: 'uppercase' }}>
@@ -242,8 +229,8 @@ export default function WeekendSelfDriveHyderabadPage() {
 
               return (
                 <div className="col-lg-3 col-md-6 mb-4" key={idx}>
-                  <div className="single-offers" style={{ background: '#ffffff', borderRadius: '14px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.06)' }}>
-                    <div className="offer-image" style={{ width: '100%', height: '170px', background: '#f8fafc', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <div className="single-offers" style={{ background: '#ffffff', borderRadius: '14px', overflow: 'hidden', border: '1px solid #e3e5e8' }}>
+                    <div className="offer-image" style={{ width: '100%', height: '170px', background: '#f5f6f7', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                       <img
                         loading="lazy"
                         src={car.image}
@@ -252,15 +239,15 @@ export default function WeekendSelfDriveHyderabadPage() {
                       />
                     </div>
                     <div className="offer-text" style={{ padding: '16px' }}>
-                      <span style={{ display: 'inline-block', fontSize: '11px', background: '#fef3c7', color: '#b45309', padding: '2px 8px', borderRadius: '4px', fontWeight: 700, marginBottom: '6px' }}>
+                      <span style={{ display: 'inline-block', fontSize: '11px', background: '#f5f6f7', color: '#191c20', padding: '2px 8px', borderRadius: '4px', fontWeight: 700, marginBottom: '6px' }}>
                         {car.type}
                       </span>
                       <h3 style={{ fontSize: '16px', fontWeight: 800, color: '#111827', margin: '0 0 6px' }}>
                         {car.name}
                       </h3>
-                      <div style={{ background: '#f1f5f9', padding: '8px 10px', borderRadius: '8px', marginBottom: '10px' }}>
-                        <span style={{ fontSize: '11px', color: '#64748b', display: 'block' }}>Weekend Package:</span>
-                        <strong style={{ fontSize: '14px', color: '#0f172a' }}>{car.weekendDeal}</strong>
+                      <div style={{ background: '#f5f6f7', padding: '8px 10px', borderRadius: '8px', marginBottom: '10px' }}>
+                        <span style={{ fontSize: '11px', color: '#60656d', display: 'block' }}>Weekend Package:</span>
+                        <strong style={{ fontSize: '14px', color: '#191c20' }}>{car.weekendDeal}</strong>
                       </div>
                       <p style={{ fontSize: '12px', color: '#6b7280', marginBottom: '12px' }}>
                         {car.features}
@@ -308,19 +295,19 @@ export default function WeekendSelfDriveHyderabadPage() {
               <div className="col-lg-4 col-md-6 mb-4" key={idx}>
                 <div style={{ background: '#fff', border: '1px solid #e2e8f0', borderRadius: '12px', padding: '22px', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                   <div>
-                    <span style={{ display: 'inline-block', fontSize: '12px', background: '#eff6ff', color: '#1d4ed8', padding: '3px 10px', borderRadius: '16px', fontWeight: 600, marginBottom: '8px' }}>
-                      📍 {trip.dist}
+                    <span style={{ display: 'inline-block', fontSize: '12px', background: '#f5f6f7', color: '#191c20', padding: '4px 10px', borderRadius: '6px', fontWeight: 600, marginBottom: '8px' }}>
+                      {trip.dist}
                     </span>
-                    <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>
+                    <h3 style={{ fontSize: '18px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>
                       {trip.dest}
                     </h3>
-                    <p style={{ color: '#64748b', fontSize: '13px', lineHeight: '1.6', marginBottom: '12px' }}>
+                    <p style={{ color: '#60656d', fontSize: '13px', lineHeight: '1.6', marginBottom: '12px' }}>
                       {trip.desc}
                     </p>
                   </div>
                   <div style={{ borderTop: '1px solid #f1f5f9', paddingTop: '10px' }}>
-                    <small style={{ color: '#94a3b8', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Recommended Car:</small>
-                    <div style={{ color: '#d97706', fontWeight: 600, fontSize: '13px' }}>{trip.bestCar}</div>
+                    <small style={{ color: '#9ca3af', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Recommended Car:</small>
+                    <div style={{ color: '#191c20', fontWeight: 600, fontSize: '13px' }}>{trip.bestCar}</div>
                   </div>
                 </div>
               </div>

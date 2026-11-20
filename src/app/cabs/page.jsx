@@ -70,7 +70,7 @@ export default function CabsPage() {
 
       <section id="cab-fleet" className={[styles.fleet, 'section_70'].join(' ')}>
         <div className="container">
-          <div className="site-heading text-center"><p style={{ color: '#d97706', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '6px' }}>Chauffeur-driven cab options</p><h2>Choose a cab for your journey</h2><p>Every option below includes a driver. Confirm passenger space, luggage and the trip quote with our team.</p></div>
+          <div className="site-heading text-center"><span className="editorial-eyebrow">Chauffeur-driven cab options</span><h2>Choose a cab for your journey</h2><p>Every option below includes a driver. Confirm passenger space, luggage and the trip quote with our team.</p></div>
           <p className={styles.illustrationNote}>Representative vehicle illustrations with yellow commercial plates. Exact model, colour and seating configuration are confirmed when booking.</p>
           <div className="row g-4">
             {CABS_FLEET.map(cab => (

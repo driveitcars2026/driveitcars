@@ -145,27 +145,14 @@ export default function ReviewsPage() {
 
       <div className="container my-5">
         <div className="text-center mb-4">
-          <span
-            style={{
-              background: 'rgba(255, 185, 7, 0.15)',
-              color: '#d49500',
-              fontWeight: 700,
-              fontSize: '12px',
-              letterSpacing: '1px',
-              textTransform: 'uppercase',
-              padding: '6px 14px',
-              borderRadius: '20px',
-              display: 'inline-block',
-              marginBottom: '10px',
-            }}
-          >
-            ✦ 4.9 / 5.0 AVERAGE RATING • 1,240+ VERIFIED RENTERS
+          <span className="editorial-eyebrow">
+            4.9 / 5.0 Average Rating • 1,240+ Verified Renters
           </span>
-          <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#0f172a' }}>
+          <h2 style={{ fontSize: '30px', fontWeight: 600, color: '#191c20' }}>
             What Renters Say About DriveItCars Hyderabad
           </h2>
-          <p style={{ color: '#475569', maxWidth: '680px', margin: '8px auto 0', fontSize: '15px' }}>
-            From IT commuters in <Link href="/hitech-city" style={{ color: '#d49500', fontWeight: 700 }}>HITEC City</Link> and <Link href="/gachibowli" style={{ color: '#d49500', fontWeight: 700 }}>Gachibowli</Link> to NRI families landing at <Link href="/hyderabad-airport-car-rental" style={{ color: '#d49500', fontWeight: 700 }}>RGIA Airport</Link>, read real customer feedback on our fleet cleanliness, punctuality, and deposit transparency.
+          <p style={{ color: '#60656d', maxWidth: '680px', margin: '8px auto 0', fontSize: '15.5px', lineHeight: 1.7 }}>
+            From IT commuters in <Link href="/hitech-city" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>HITEC City</Link> and <Link href="/gachibowli" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>Gachibowli</Link> to families landing at <Link href="/hyderabad-airport-car-rental" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>RGIA Airport</Link>, read customer feedback on our fleet cleanliness, punctuality, and deposit transparency.
           </p>
         </div>
 

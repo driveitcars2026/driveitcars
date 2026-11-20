@@ -102,38 +102,18 @@ export default function ContactPage() {
       <SeoSchema schema={faqSchema} />
 
       {/* 1. HERO BREADCRUMB SECTION */}
-      <section
-        className="gauto-breadcromb-area section_70"
-        style={{
-          background:
-            'linear-gradient(rgba(11, 17, 32, 0.88), rgba(15, 23, 42, 0.95)), url(/seadns.webp) no-repeat center center / cover',
-          padding: '80px 0 65px',
-        }}
-      >
+      <section className="gauto-breadcromb-area section_70">
         <div className="container">
           <div className="row">
-            <div className="col-md-12 text-center">
+            <div className="col-md-12">
               <div className="breadcromb-box">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.18)',
-                    color: '#ffb907',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1.5px',
-                    textTransform: 'uppercase',
-                    padding: '6px 16px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '14px',
-                  }}
-                >
-                  ✦ 24/7 RESERVATIONS &amp; CUSTOMER CARE
+                <span className="editorial-eyebrow">
+                  24/7 Reservations &amp; Customer Care
                 </span>
-                <h1 style={{ fontSize: '38px', fontWeight: 800, color: '#ffffff', marginBottom: '12px' }}>
+                <h1 className="breadcromb-title">
                   Contact DriveItCars Hyderabad
                 </h1>
-                <p style={{ color: '#cbd5e1', fontSize: '15px', maxWidth: '640px', margin: '0 auto 18px', lineHeight: '1.6' }}>
+                <p>
                   Have questions about vehicle availability, wedding packages, or doorstep delivery? Our Masab Tank fleet team is ready to assist you.
                 </p>
                 <ul>

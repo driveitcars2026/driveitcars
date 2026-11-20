@@ -43,7 +43,7 @@ const GROOM_FAQS = [
   {
     question: 'Which luxury cars are most popular for groom entry in Hyderabad?',
     answer:
-      'The top cars for groom entries and baraat processions in Hyderabad are the presidential Rolls Royce Phantom (for royal Nizami grandeur), the thunderous Mercedes-AMG G-Wagon G63 (for high-energy celebrity presence), the commanding Range Rover Sport (for panoramic sunroof standing), and classic open-top convertibles.',
+      'The top cars for groom entries and baraat processions in Hyderabad are the presidential Rolls Royce Phantom (for executive wedding chauffeur service), the thunderous Mercedes-AMG G-Wagon G63 (for high-energy celebrity presence), the commanding Range Rover Sport (for panoramic sunroof standing), and classic open-top convertibles.',
   },
   {
     question: 'How do chauffeurs handle the slow pace of a traditional baraat procession?',
@@ -74,7 +74,7 @@ const GROOM_FLEET = [
     badge: '#1 Celebrity Groom Arrival',
     image: SERVICE_VEHICLE_IMAGES.gwagon,
     rate: 'Tariff on Request',
-    features: ['Thunderous V8 Biturbo Roar', 'Side-Exit Exhaust Soundtrack', 'Unmatched Street Dominance', 'VIP Escort Stature'],
+    features: ['Thunderous V8 Biturbo Roar', 'Side-Exit Exhaust Soundtrack', 'Strong Road Presence', 'VIP Escort Stature'],
     whatsappMsg: 'Hi DriveItCars, I want to book the Mercedes G-Wagon for groom entry in Hyderabad.',
   },
   {
@@ -147,7 +147,7 @@ export default function GroomEntryLuxuryCarHyderabadPage() {
                     marginBottom: 8,
                   }}
                 >
-                  ✦ MAJESTIC BARAAT ARRIVALS &amp; ROYAL STATURE
+                  GROOM ENTRY &amp; BARAAT FLEET
                 </span>
                 <p className="breadcromb-title">Groom Entry Luxury Car Hyderabad</p>
                 <ul>
@@ -170,48 +170,35 @@ export default function GroomEntryLuxuryCarHyderabadPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="about-page-left">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.15)',
-                    color: '#d49500',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '12px',
-                  }}
-                >
-                  ✦ MERCEDES G-WAGON • ROLLS ROYCE • RANGE ROVER SPORT • FORTUNER
+                <span className="editorial-eyebrow">
+                  MERCEDES G-WAGON • ROLLS ROYCE • RANGE ROVER SPORT • FORTUNER
                 </span>
-                <h1 style={{ color: '#0f172a', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
+                <h1 style={{ color: '#191c20', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
                   Groom Entry Luxury Car Hyderabad — Grand Baraat Car Hire &amp; Royal Processions
                 </h1>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '16px' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '16px' }}>
                   Lead your wedding procession with unstoppable authority and regal magnetism. With DriveItCars&apos;s dedicated <strong>groom entry luxury car Hyderabad</strong> fleet, the groom&apos;s baraat arrival becomes the crowning highlight of the evening. Whether you choose the thunderous V8 side-exhaust roar of a <strong>Mercedes-AMG G-Wagon</strong>, the timeless imperial poise of a <strong>Rolls Royce Phantom</strong>, or a high-stance <strong>Range Rover Sport</strong> with a panoramic sunroof, your entrance sets an unforgettable tone.
                 </p>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '22px' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '22px' }}>
                   Our suited chauffeurs are experienced with the crawl pace of Indian baraat music bands, dhol players, and celebratory firework displays, providing flawless performance at venues across <strong>Banjara Hills, Jubilee Hills, Gachibowli, Shamshabad, and Secunderabad</strong>.
                 </p>
 
                 {/* Wedding Navigation Strip */}
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginBottom: '10px' }}>
-                  <Link href="/wedding-car-rental-hyderabad" style={{ background: '#0f172a', color: '#ffb907', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
-                    💐 All Wedding Cars
+                  <Link href="/wedding-car-rental-hyderabad" style={{ background: '#191c20', color: '#ffb907', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
+                    All Wedding Cars
                   </Link>
-                  <Link href="/bridal-entry-car-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                  <Link href="/bridal-entry-car-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
                     👰 Bridal Entry Cars
                   </Link>
-                  <Link href="/rolls-royce-wedding-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    👑 Rolls Royce Wedding
+                  <Link href="/rolls-royce-wedding-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Rolls Royce Wedding
                   </Link>
-                  <Link href="/vintage-wedding-car-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🎩 Vintage Wedding Cars
+                  <Link href="/vintage-wedding-car-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Vintage Wedding Cars
                   </Link>
-                  <Link href="/mercedes-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    ⭐ Mercedes Wedding Cars
+                  <Link href="/mercedes-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Mercedes Wedding Cars
                   </Link>
                 </div>
               </div>
@@ -221,14 +208,14 @@ export default function GroomEntryLuxuryCarHyderabadPage() {
       </section>
 
       {/* Fleet Showcase Grid */}
-      <section className="section_70" style={{ background: '#f8fafc', paddingTop: '40px' }}>
+      <section className="section_70" style={{ background: '#f5f6f7', paddingTop: '40px' }}>
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <span style={{ color: '#d49500', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
+              <span style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                 COMMAND THE BARAAT
               </span>
-              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#0f172a', marginTop: '6px' }}>
+              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#191c20', marginTop: '6px' }}>
                 Top Groom Entry Vehicles in Hyderabad
               </h2>
             </div>
@@ -243,7 +230,7 @@ export default function GroomEntryLuxuryCarHyderabadPage() {
                     background: '#fff',
                     borderRadius: '16px',
                     overflow: 'hidden',
-                    boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
+                    border: '1px solid #e3e5e8',
                     border: '1px solid #e2e8f0',
                     height: '100%',
                     display: 'flex',
@@ -267,7 +254,7 @@ export default function GroomEntryLuxuryCarHyderabadPage() {
                         position: 'absolute',
                         top: 12,
                         left: 12,
-                        background: '#0f172a',
+                        background: '#191c20',
                         color: '#ffb907',
                         fontSize: '11px',
                         fontWeight: 700,
@@ -286,19 +273,19 @@ export default function GroomEntryLuxuryCarHyderabadPage() {
                   </div>
 
                   <div className="offer-text" style={{ padding: '22px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                    <h3 style={{ fontSize: '20px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>
+                    <h3 style={{ fontSize: '20px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>
                       {car.name}
                     </h3>
-                    <div style={{ marginBottom: '14px', background: '#f8fafc', padding: '8px 12px', borderRadius: '8px', display: 'inline-block' }}>
-                      <span style={{ fontSize: '15px', fontWeight: 800, color: '#0f172a' }}>
-                        <i className="fa fa-tag" style={{ color: '#d97706', marginRight: 6 }} />
+                    <div style={{ marginBottom: '14px', background: '#f5f6f7', padding: '8px 12px', borderRadius: '8px', display: 'inline-block' }}>
+                      <span style={{ fontSize: '15px', fontWeight: 800, color: '#191c20' }}>
+                        <i className="fa fa-tag" style={{ color: '#191c20', marginRight: 6 }} />
                         {car.rate}
                       </span>
                     </div>
 
                     <div style={{ marginBottom: '18px', display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                       {car.features.map((feat, idx) => (
-                        <span key={idx} style={{ background: '#f1f5f9', color: '#334155', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 500 }}>
+                        <span key={idx} style={{ background: '#f5f6f7', color: '#191c20', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 500 }}>
                           ✓ {feat}
                         </span>
                       ))}
@@ -309,7 +296,7 @@ export default function GroomEntryLuxuryCarHyderabadPage() {
                         href="tel:+916300041186"
                         className="offer-btn-1"
                         style={{
-                          background: '#0f172a',
+                          background: '#191c20',
                           color: '#fff',
                           textAlign: 'center',
                           padding: '10px 4px',

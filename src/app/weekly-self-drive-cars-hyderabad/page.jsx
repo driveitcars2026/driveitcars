@@ -42,7 +42,7 @@ const WEEKLY_FAQS = [
   {
     question: 'How do weekly self drive car rentals in Hyderabad work with DriveItCars?',
     answer:
-      'Our weekly car rental package provides you with a fully sanitized, GPS-equipped vehicle for 7 consecutive days (168 hours) at a flat discounted rate that saves up to 25% compared to booking 7 separate daily rentals. You enjoy unlimited freedom, flexible fuel terms, Security deposit options, and doorstep delivery across Hyderabad.',
+      'Our weekly car rental package provides you with a fully sanitized, GPS-equipped vehicle for 7 consecutive days (168 hours) at a flat discounted rate that saves up to 25% compared to booking 7 separate daily rentals. You enjoy flexible travel, flexible fuel terms, refundable security deposit, and doorstep delivery across Hyderabad.',
   },
   {
     question: 'Which top demanding cars are available for weekly rental in Hyderabad?',
@@ -52,7 +52,7 @@ const WEEKLY_FAQS = [
   {
     question: 'How much can I save by choosing a weekly car rental instead of daily rentals?',
     answer:
-      'You get substantial multi-day savings on our weekly packages compared to booking 7 individual daily rentals. All weekly packages include 2,100 km, Security deposit options, and doorstep handover.',
+      'You get substantial multi-day savings on our weekly packages compared to booking 7 individual daily rentals. All weekly packages include 2,100 km, refundable security deposit, and doorstep handover.',
   },
   {
     question: 'Can I extend my weekly rental to a monthly car rental subscription?',
@@ -172,7 +172,7 @@ export default function WeeklySelfDriveCarsPage() {
   const rentalSchema = buildCarRentalSchema({
     name: 'DriveItCars Weekly Self Drive Cars Hyderabad',
     description:
-      'Book 7-day weekly self drive car rentals in Hyderabad with DriveItCars. Special weekly packages with Security Deposit options, doorstep delivery across HITEC City, Gachibowli & Shamshabad Airport.',
+      'Book 7-day weekly self drive car rentals in Hyderabad with DriveItCars. Special weekly packages with refundable security deposit, doorstep delivery across HITEC City, Gachibowli & Shamshabad Airport.',
     url: 'https://www.driveitcars.in/weekly-self-drive-cars-hyderabad',
     areaServed: [
       'Hyderabad',
@@ -207,21 +207,8 @@ export default function WeeklySelfDriveCarsPage() {
           <div className="row">
             <div className="col-md-12">
               <div className="breadcromb-box">
-                <span
-                  style={{
-                    background: 'rgba(255,185,7,0.2)',
-                    color: '#ffb907',
-                    fontWeight: 700,
-                    fontSize: '11px',
-                    letterSpacing: '1.2px',
-                    textTransform: 'uppercase',
-                    padding: '4px 12px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: 8,
-                  }}
-                >
-                  ✦ 7-DAY PACKAGES • SAVE 25% • Security Deposit
+                <span className="editorial-eyebrow">
+                  7-DAY PACKAGES • SAVE 25% • Refundable Security Deposit
                 </span>
                 <p className="breadcromb-title">Weekly Self Drive Cars Hyderabad</p>
                 <ul>
@@ -244,48 +231,35 @@ export default function WeeklySelfDriveCarsPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="about-page-left">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.15)',
-                    color: '#d49500',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '12px',
-                  }}
-                >
-                  ✦ FLAT 25% DISCOUNT ON 7-DAY RENTALS
+                <span className="editorial-eyebrow">
+                  FLAT 25% DISCOUNT ON 7-DAY RENTALS
                 </span>
-                <h1 style={{ color: '#0f172a', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
+                <h1 style={{ color: '#191c20', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
                   Weekly Self Drive Cars in Hyderabad — Top Demanding Fleet with Manual &amp; Automatic Transmission
                 </h1>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '16px' }}>
-                  Planning a 7-day business trip to Hyderabad's IT corridors, visiting family for a week-long celebration, or testing a car before purchasing? DriveItCars’s dedicated <strong>weekly self drive cars Hyderabad</strong> packages give you the ideal sweet spot between daily spot rentals and long-term commitments. Enjoy a flat <strong>25% discount</strong> over individual daily tariffs with 2,100 km included, Security deposit options, and doorstep delivery across <strong>HITEC City, Gachibowli, Madhapur, Kondapur, Banjara Hills, Jubilee Hills</strong>, and <strong>RGIA Shamshabad Airport</strong>.
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '16px' }}>
+                  Planning a 7-day business trip to Hyderabad's IT corridors, visiting family for a week-long celebration, or testing a car before purchasing? DriveItCars’s dedicated <strong>weekly self drive cars Hyderabad</strong> packages give you the ideal sweet spot between daily spot rentals and long-term commitments. Enjoy a flat <strong>25% discount</strong> over individual daily tariffs with 2,100 km included, refundable security deposit, and doorstep delivery across <strong>HITEC City, Gachibowli, Madhapur, Kondapur, Banjara Hills, Jubilee Hills</strong>, and <strong>RGIA Shamshabad Airport</strong>.
                 </p>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '22px' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '22px' }}>
                   Choose from all 28 top demanding car models: fuel-efficient <strong>5-Seater Hatchbacks</strong> (Swift, Baleno, i20), modern <strong>Mini SUVs</strong> (Fronx, Venue, Punch), commanding <strong>5-Seater SUVs</strong> (Brezza, Nexon, Harrier, Seltos, Creta, Thar 4x4, Thar Roxx), family <strong>7-Seater SUVs &amp; MUVs</strong> (XUV 700, Carens, Ertiga, Innova Crysta, Hycross, Fortuner, Carnival), and elegant <strong>5-Seater Sedans</strong> (Verna, Dzire, Ciaz, Virtus, Slavia). Both <strong>Manual and Automatic</strong> transmissions are available with instant digital KYC.
                 </p>
 
                 {/* Sub-Category Jump Bar */}
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginBottom: '10px' }}>
-                  <Link href="/self-drive-car" style={{ background: '#0f172a', color: '#ffb907', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
-                    🚗 All Self Drive Cars
+                  <Link href="/self-drive-car" style={{ background: '#191c20', color: '#ffb907', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
+                    All Self Drive Cars
                   </Link>
-                  <Link href="/weekend-self-drive-cars-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🌄 Weekend Self Drive
+                  <Link href="/weekend-self-drive-cars-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Weekend Self Drive
                   </Link>
-                  <Link href="/monthly-self-drive-cars-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    📅 Monthly Car Subscription (Save 50%)
+                  <Link href="/monthly-self-drive-cars-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Monthly Car Subscription (Save 50%)
                   </Link>
-                  <Link href="/self-drive-suv-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🚙 Self Drive SUV Hyderabad
+                  <Link href="/self-drive-suv-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Self Drive SUV Hyderabad
                   </Link>
-                  <Link href="/hyderabad-airport-car-rental" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    ✈️ Airport Car Rental
+                  <Link href="/hyderabad-airport-car-rental" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Airport Car Rental
                   </Link>
                 </div>
               </div>
@@ -295,17 +269,17 @@ export default function WeeklySelfDriveCarsPage() {
       </section>
 
       {/* Featured Weekly Fleet Cards */}
-      <section className="section_70" style={{ background: '#f8fafc', paddingTop: '40px' }}>
+      <section className="section_70" style={{ background: '#f5f6f7', paddingTop: '40px' }}>
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <span style={{ color: '#d49500', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
+              <span style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                 7-DAY VALUE PACKAGES
               </span>
-              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#0f172a', marginTop: '6px' }}>
+              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#191c20', marginTop: '6px' }}>
                 Popular Weekly Self Drive Car Rental Tariffs in Hyderabad
               </h2>
-              <p style={{ color: '#64748b', maxWidth: '680px', margin: '8px auto 0', fontSize: '15px' }}>
+              <p style={{ color: '#60656d', maxWidth: '680px', margin: '8px auto 0', fontSize: '15px' }}>
                 All weekly packages include 2,100 km, 24/7 on-road breakdown support, FASTag, comprehensive insurance, and doorstep handover.
               </p>
             </div>
@@ -320,7 +294,7 @@ export default function WeeklySelfDriveCarsPage() {
                     background: '#fff',
                     borderRadius: '16px',
                     overflow: 'hidden',
-                    boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
+                    border: '1px solid #e3e5e8',
                     border: '1px solid #e2e8f0',
                     height: '100%',
                     display: 'flex',
@@ -344,7 +318,7 @@ export default function WeeklySelfDriveCarsPage() {
                         position: 'absolute',
                         top: 12,
                         left: 12,
-                        background: '#0f172a',
+                        background: '#191c20',
                         color: '#ffb907',
                         fontSize: '11px',
                         fontWeight: 700,
@@ -359,7 +333,7 @@ export default function WeeklySelfDriveCarsPage() {
                         position: 'absolute',
                         top: 12,
                         right: 12,
-                        background: '#2563eb',
+                        background: '#191c20',
                         color: '#fff',
                         fontSize: '11px',
                         fontWeight: 800,
@@ -378,12 +352,12 @@ export default function WeeklySelfDriveCarsPage() {
                   </div>
 
                   <div className="offer-text" style={{ padding: '22px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                    <h3 style={{ fontSize: '18px', fontWeight: 800, color: '#0f172a', marginBottom: '8px' }}>
+                    <h3 style={{ fontSize: '18px', fontWeight: 800, color: '#191c20', marginBottom: '8px' }}>
                       {car.name}
                     </h3>
                     <div style={{ marginBottom: '14px' }}>
-                      <div style={{ fontSize: '17px', fontWeight: 800, color: '#92400e', background: '#fef3c7', padding: '6px 12px', borderRadius: '8px', display: 'inline-flex', alignItems: 'center', gap: '6px', border: '1px solid #fde68a' }}>
-                        <i className="fa fa-tag" style={{ color: '#d97706', fontSize: '13px' }} />
+                      <div style={{ fontSize: '17px', fontWeight: 800, color: '#191c20', background: '#f5f6f7', padding: '6px 12px', borderRadius: '8px', display: 'inline-flex', alignItems: 'center', gap: '6px', border: '1px solid #fde68a' }}>
+                        <i className="fa fa-tag" style={{ color: '#191c20', fontSize: '13px' }} />
                         {car.weeklyRate}
                       </div>
                       <div style={{ fontSize: '12px', color: '#059669', fontWeight: 700, marginTop: '6px', display: 'flex', alignItems: 'center', gap: '5px' }}>
@@ -392,14 +366,14 @@ export default function WeeklySelfDriveCarsPage() {
                     </div>
 
                     <div style={{ marginBottom: '18px', display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
-                      <span style={{ background: '#f1f5f9', color: '#334155', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 600 }}>
+                      <span style={{ background: '#f5f6f7', color: '#191c20', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 600 }}>
                         ⚙️ {car.trans}
                       </span>
-                      <span style={{ background: '#f1f5f9', color: '#334155', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 600 }}>
-                        ⛽ {car.fuel}
+                      <span style={{ background: '#f5f6f7', color: '#191c20', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 600 }}>
+                        {car.fuel}
                       </span>
-                      <span style={{ background: '#f1f5f9', color: '#334155', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 600 }}>
-                        🛣️ {car.kmIncluded}
+                      <span style={{ background: '#f5f6f7', color: '#191c20', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 600 }}>
+                        {car.kmIncluded}
                       </span>
                     </div>
 
@@ -408,7 +382,7 @@ export default function WeeklySelfDriveCarsPage() {
                         href="tel:+916300041186"
                         className="offer-btn-1"
                         style={{
-                          background: '#0f172a',
+                          background: '#191c20',
                           color: '#fff',
                           textAlign: 'center',
                           padding: '10px 4px',

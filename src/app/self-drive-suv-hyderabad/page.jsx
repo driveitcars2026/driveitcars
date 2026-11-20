@@ -101,7 +101,7 @@ const SUV_FLEET = [
     trans: 'Automatic',
     kmPerDay: '300 Km/Day',
     price: 'Tariff on Request',
-    desc: 'Maximum VIP road presence, monstrous 4x4 torque, premium leather interiors, and unmatched prestige.',
+    desc: 'Maximum VIP road presence, monstrous 4x4 torque, premium leather interiors, and executive comfort.',
     ideal: 'VIP events, weddings, executive travel, high-profile outstation tours',
   },
   {
@@ -132,7 +132,7 @@ const SUV_FAQS = [
   {
     question: 'Why choose a self drive SUV in Hyderabad over a sedan or hatchback?',
     answer:
-      'A self drive SUV in Hyderabad offers 190mm–225mm ground clearance, superior highway stability, elevated road visibility, and ample boot space for luggage. Whether navigating monsoon waterlogging in Cyberabad or driving on rough ghat roads toward Srisailam, Araku, or Goa, SUVs offer unmatched safety and peace of mind.',
+      'A self drive SUV in Hyderabad offers 190mm–225mm ground clearance, superior highway stability, elevated road visibility, and ample boot space for luggage. Whether navigating monsoon waterlogging in Cyberabad or driving on rough ghat roads toward Srisailam, Araku, or Goa, SUVs offer reliable safety and peace of mind.',
   },
   {
     question: 'Which self drive SUVs in Hyderabad are best for 7 people?',
@@ -206,39 +206,26 @@ export default function SelfDriveSuvHyderabadPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="about-page-left">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.15)',
-                    color: '#d49500',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '12px',
-                  }}
-                >
-                  ✦ 5-SEATER &amp; 7-SEATER HIGH-CLEARANCE FLEET
+                <span className="editorial-eyebrow">
+                  5-SEATER &amp; 7-SEATER HIGH-CLEARANCE FLEET
                 </span>
-                <h1 style={{ color: '#ffb907', fontSize: '32px', fontWeight: 800, marginBottom: '20px' }}>
+                <h1 style={{ color: '#191c20', fontSize: '32px', fontWeight: 600, marginBottom: '20px' }}>
                   Self Drive SUV Hyderabad — 5 &amp; 7 Seater SUVs at Best Rates
                 </h1>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '16px' }}>
-                  Looking for the most reliable <strong>self drive SUV Hyderabad</strong> service? DriveItCars delivers an unmatched collection of rugged, powerful, and impeccably maintained 5-seater and 7-seater self drive SUVs right to your doorstep. Whether you want to conquer off-road trails in a <strong>Mahindra Thar 4x4</strong>, glide through Outer Ring Road in a panoramic-sunroof <strong>Hyundai Creta</strong>, or carry the entire family on a pilgrimage in a <strong>Toyota Innova Crysta</strong>, we have the ideal SUV waiting for you.
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '16px' }}>
+                  Looking for the most reliable <strong>self drive SUV Hyderabad</strong> service? DriveItCars delivers an diverse collection of rugged, powerful, and impeccably maintained 5-seater and 7-seater self drive SUVs right to your doorstep. Whether you want to conquer off-road trails in a <strong>Mahindra Thar 4x4</strong>, glide through Outer Ring Road in a panoramic-sunroof <strong>Hyundai Creta</strong>, or carry the entire family on a pilgrimage in a <strong>Toyota Innova Crysta</strong>, we have the ideal SUV waiting for you.
                 </p>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '16px' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '16px' }}>
                   Driving an SUV in Hyderabad gives you high seating position, commanding 360-degree road views, massive luggage space, and the ground clearance needed to cruise through Telangana highways without worrying about speed breakers or monsoon water hazards. All DriveItCars SUVs come with zero hidden charges, 100% transparent fuel terms, FASTag equipped, and 24/7 on-road mechanical assistance.
                 </p>
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '14px' }}>
                   <Link href="/suv5" className="gauto-btn" style={{ padding: '8px 18px', fontSize: '13px' }}>
                     View 5-Seater SUVs
                   </Link>
-                  <Link href="/suv7" className="gauto-btn" style={{ padding: '8px 18px', fontSize: '13px', background: '#0f172a' }}>
+                  <Link href="/suv7" className="gauto-btn" style={{ padding: '8px 18px', fontSize: '13px', background: '#191c20' }}>
                     View 7-Seater SUVs
                   </Link>
-                  <Link href="/weekend-self-drive-cars-hyderabad" className="gauto-btn" style={{ padding: '8px 18px', fontSize: '13px', background: '#2563eb' }}>
+                  <Link href="/weekend-self-drive-cars-hyderabad" className="gauto-btn" style={{ padding: '8px 18px', fontSize: '13px', background: '#191c20' }}>
                     Weekend Getaway Packages
                   </Link>
                 </div>
@@ -249,7 +236,7 @@ export default function SelfDriveSuvHyderabadPage() {
       </section>
 
       {/* ========== SUV FLEET GRID ========== */}
-      <section className="gauto-offers-area section_70" style={{ background: '#f8fafc', paddingTop: '40px' }}>
+      <section className="gauto-offers-area section_70" style={{ background: '#f5f6f7', paddingTop: '40px' }}>
         <div className="container">
           <div className="site-heading text-center" style={{ marginBottom: '35px' }}>
             <span style={{ color: '#ffb907', fontWeight: 700, fontSize: '13px', letterSpacing: '1px', textTransform: 'uppercase' }}>
@@ -268,8 +255,8 @@ export default function SelfDriveSuvHyderabadPage() {
 
               return (
                 <div className="col-lg-4 col-md-6 mb-4" key={idx}>
-                  <div className="single-offers" style={{ background: '#ffffff', borderRadius: '14px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.06)' }}>
-                    <div className="offer-image" style={{ width: '100%', height: '195px', background: '#f8fafc', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <div className="single-offers" style={{ background: '#ffffff', borderRadius: '14px', overflow: 'hidden', border: '1px solid #e3e5e8' }}>
+                    <div className="offer-image" style={{ width: '100%', height: '195px', background: '#f5f6f7', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                       <img
                         loading="lazy"
                         src={suv.image}
@@ -282,16 +269,16 @@ export default function SelfDriveSuvHyderabadPage() {
                         <h3 style={{ fontSize: '18px', fontWeight: 800, color: '#111827', margin: 0 }}>
                           {suv.name}
                         </h3>
-                        <span style={{ color: '#92400e', background: '#fef3c7', padding: '3px 8px', borderRadius: '6px', fontWeight: 700, fontSize: '12px' }}>{suv.price}</span>
+                        <span style={{ color: '#191c20', background: '#f5f6f7', padding: '3px 8px', borderRadius: '6px', fontWeight: 700, fontSize: '12px' }}>{suv.price}</span>
                       </div>
-                      <span style={{ display: 'inline-block', fontSize: '12px', background: '#e0f2fe', color: '#0369a1', padding: '2px 8px', borderRadius: '4px', fontWeight: 600, marginBottom: '10px' }}>
+                      <span style={{ display: 'inline-block', fontSize: '12px', background: '#f5f6f7', color: '#191c20', padding: '2px 8px', borderRadius: '4px', fontWeight: 600, marginBottom: '10px' }}>
                         {suv.type}
                       </span>
                       <p style={{ fontSize: '13px', color: '#6b7280', lineHeight: '1.5', marginBottom: '12px' }}>
                         {suv.desc}
                       </p>
                       <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 16px', display: 'flex', gap: '12px', flexWrap: 'wrap', color: '#6b7280', fontSize: '12px' }}>
-                        <li><i className="fa fa-gas-pump" style={{ color: '#ffb907', marginRight: 4 }} /> {suv.fuel}</li>
+                        <li><i className="fa fa-tint" style={{ color: '#ffb907', marginRight: 4 }} /> {suv.fuel}</li>
                         <li><i className="fa fa-cogs" style={{ color: '#ffb907', marginRight: 4 }} /> {suv.trans}</li>
                         <li><i className="fa fa-road" style={{ color: '#ffb907', marginRight: 4 }} /> {suv.kmPerDay}</li>
                       </ul>
@@ -332,7 +319,7 @@ export default function SelfDriveSuvHyderabadPage() {
             <div className="col-md-4 mb-4">
               <div style={{ background: '#fff', border: '1px solid #e5e7eb', borderRadius: '12px', padding: '24px', height: '100%' }}>
                 <div style={{ width: '48px', height: '48px', background: 'rgba(255, 185, 7, 0.15)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '16px' }}>
-                  <i className="fa fa-mountain" style={{ color: '#d49500', fontSize: '20px' }} />
+                  <i className="fa fa-compass" style={{ color: '#60656d', fontSize: '20px' }} />
                 </div>
                 <h3 style={{ fontSize: '18px', fontWeight: 700, marginBottom: '10px' }}>High Ground Clearance</h3>
                 <p style={{ color: '#6b7280', fontSize: '14px', lineHeight: '1.6' }}>
@@ -343,7 +330,7 @@ export default function SelfDriveSuvHyderabadPage() {
             <div className="col-md-4 mb-4">
               <div style={{ background: '#fff', border: '1px solid #e5e7eb', borderRadius: '12px', padding: '24px', height: '100%' }}>
                 <div style={{ width: '48px', height: '48px', background: 'rgba(255, 185, 7, 0.15)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '16px' }}>
-                  <i className="fa fa-users" style={{ color: '#d49500', fontSize: '20px' }} />
+                  <i className="fa fa-users" style={{ color: '#60656d', fontSize: '20px' }} />
                 </div>
                 <h3 style={{ fontSize: '18px', fontWeight: 700, marginBottom: '10px' }}>Whole Family in One Vehicle</h3>
                 <p style={{ color: '#6b7280', fontSize: '14px', lineHeight: '1.6' }}>
@@ -354,7 +341,7 @@ export default function SelfDriveSuvHyderabadPage() {
             <div className="col-md-4 mb-4">
               <div style={{ background: '#fff', border: '1px solid #e5e7eb', borderRadius: '12px', padding: '24px', height: '100%' }}>
                 <div style={{ width: '48px', height: '48px', background: 'rgba(255, 185, 7, 0.15)', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '16px' }}>
-                  <i className="fa fa-compass" style={{ color: '#d49500', fontSize: '20px' }} />
+                  <i className="fa fa-compass" style={{ color: '#60656d', fontSize: '20px' }} />
                 </div>
                 <h3 style={{ fontSize: '18px', fontWeight: 700, marginBottom: '10px' }}>Highway &amp; Ghat Safety</h3>
                 <p style={{ color: '#6b7280', fontSize: '14px', lineHeight: '1.6' }}>
@@ -367,14 +354,14 @@ export default function SelfDriveSuvHyderabadPage() {
       </section>
 
       {/* ========== LOCALITY HUBS CROSS LINKS ========== */}
-      <section style={{ background: '#0f172a', padding: '40px 0', color: '#fff' }}>
+      <section style={{ background: '#191c20', padding: '40px 0', color: '#fff' }}>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-8">
               <h3 style={{ color: '#ffb907', fontSize: '24px', fontWeight: 800, marginBottom: '10px' }}>
                 Doorstep Self Drive SUV Delivery Across Hyderabad IT Hubs
               </h3>
-              <p style={{ color: '#cbd5e1', fontSize: '14px', marginBottom: '14px' }}>
+              <p style={{ color: '#e3e5e8', fontSize: '14px', marginBottom: '14px' }}>
                 Get 15-minute delivery of your self drive SUV in HITEC City, Gachibowli, Madhapur, Kondapur, Jubilee Hills, and Banjara Hills.
               </p>
               <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>

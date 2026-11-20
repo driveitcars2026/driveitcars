@@ -71,7 +71,7 @@ const VINTAGE_MODELS = [
   {
     id: 'vintage-royal-tourer',
     name: 'Classic British Royal Tourer',
-    badge: 'Nizami Heritage Icon',
+    badge: 'Heritage Wedding Icon',
     image: '/assets/img/bentely.webp',
     rateBaraat: 'Tariff on Request',
     rateFullDay: 'Custom Quote',
@@ -85,7 +85,7 @@ const VINTAGE_MODELS = [
     image: SERVICE_VEHICLE_IMAGES.roadster,
     rateBaraat: 'Tariff on Request',
     rateFullDay: 'Custom Quote',
-    features: ['Retractable Convertible Roof', 'Pre-Wedding Shoot Ready', 'Colour Confirmed at Booking', 'Red-Carpet Chauffeur'],
+    features: ['Retractable Convertible Roof', 'Pre-Wedding Shoot Ready', 'Colour Confirmed at Booking', 'Uniformed Chauffeur'],
     whatsappMsg: 'Hi DriveItCars, I want to book the Mercedes-Benz Open-Top Roadster for our wedding in Hyderabad.',
   },
 ];
@@ -131,7 +131,7 @@ export default function VintageWeddingCarHyderabadPage() {
                     marginBottom: 8,
                   }}
                 >
-                  ✦ TIMELESS HERITAGE &amp; RETRO SOPHISTICATION
+                  TIMELESS HERITAGE &amp; RETRO SOPHISTICATION
                 </span>
                 <p className="breadcromb-title">Vintage Wedding Car Hyderabad</p>
                 <ul>
@@ -154,48 +154,35 @@ export default function VintageWeddingCarHyderabadPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="about-page-left">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.15)',
-                    color: '#d49500',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '12px',
-                  }}
-                >
-                  ✦ CLASSIC OPEN-TOP TOURERS • RETRO ROADSTERS • NIZAMI ROMANCE
+                <span className="editorial-eyebrow">
+                  CLASSIC OPEN-TOP TOURERS • RETRO ROADSTERS • HERITAGE WEDDING CAR COLLECTION
                 </span>
-                <h1 style={{ color: '#0f172a', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
+                <h1 style={{ color: '#191c20', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
                   Vintage Wedding Car Hyderabad — Classic &amp; Open-Top Wedding Car Hire
                 </h1>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '16px' }}>
-                  Step into an era of aristocratic romance and Nizami splendor with DriveItCars&apos;s exclusive <strong>vintage wedding car Hyderabad</strong> collection. Classic cars evoke a sense of timeless charm that modern vehicles simply cannot duplicate. With polished chrome grilles, wide flowing fenders, dual trumpet horns, and open-air convertible tops, our vintage cars provide the perfect canvas for rose-petal showers, emotional vidai departures, and show-stopping groom baraat arrivals.
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '16px' }}>
+                  Step into an era of aristocratic romance and heritage elegance with DriveItCars&apos;s exclusive <strong>vintage wedding car Hyderabad</strong> collection. Classic cars evoke a sense of timeless charm that modern vehicles simply cannot duplicate. With polished chrome grilles, wide flowing fenders, dual trumpet horns, and open-air convertible tops, our vintage cars provide the perfect canvas for rose-petal showers, emotional vidai departures, and show-stopping groom baraat arrivals.
                 </p>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '22px' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '22px' }}>
                   Our vintage vehicles are maintained by master mechanics and piloted by uniformed chauffeurs, delivering unforgettable arrivals across <strong>Taj Falaknuma, Banjara Hills, Jubilee Hills, and Golconda Resorts</strong>.
                 </p>
 
                 {/* Wedding Navigation Strip */}
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginBottom: '10px' }}>
-                  <Link href="/wedding-car-rental-hyderabad" style={{ background: '#0f172a', color: '#ffb907', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
-                    💐 All Wedding Cars
+                  <Link href="/wedding-car-rental-hyderabad" style={{ background: '#191c20', color: '#ffb907', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
+                    All Wedding Cars
                   </Link>
-                  <Link href="/bridal-entry-car-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                  <Link href="/bridal-entry-car-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
                     👰 Bridal Entry Cars
                   </Link>
-                  <Link href="/groom-entry-luxury-car-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🤵 Groom Entry Cars
+                  <Link href="/groom-entry-luxury-car-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Groom Entry Cars
                   </Link>
-                  <Link href="/rolls-royce-wedding-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    👑 Rolls Royce Wedding
+                  <Link href="/rolls-royce-wedding-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Rolls Royce Wedding
                   </Link>
-                  <Link href="/mercedes-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    ⭐ Mercedes Wedding Cars
+                  <Link href="/mercedes-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Mercedes Wedding Cars
                   </Link>
                 </div>
               </div>
@@ -205,14 +192,14 @@ export default function VintageWeddingCarHyderabadPage() {
       </section>
 
       {/* Fleet Showcase Grid */}
-      <section className="section_70" style={{ background: '#f8fafc', paddingTop: '40px' }}>
+      <section className="section_70" style={{ background: '#f5f6f7', paddingTop: '40px' }}>
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <span style={{ color: '#d49500', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
+              <span style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                 TIMELESS RETRO CLASSICS
               </span>
-              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#0f172a', marginTop: '6px' }}>
+              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#191c20', marginTop: '6px' }}>
                 Our Vintage Wedding Collection in Hyderabad
               </h2>
             </div>
@@ -227,7 +214,7 @@ export default function VintageWeddingCarHyderabadPage() {
                     background: '#fff',
                     borderRadius: '16px',
                     overflow: 'hidden',
-                    boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
+                    border: '1px solid #e3e5e8',
                     border: '1px solid #e2e8f0',
                     height: '100%',
                     display: 'flex',
@@ -251,7 +238,7 @@ export default function VintageWeddingCarHyderabadPage() {
                         position: 'absolute',
                         top: 12,
                         left: 12,
-                        background: '#0f172a',
+                        background: '#191c20',
                         color: '#ffb907',
                         fontSize: '11px',
                         fontWeight: 700,
@@ -270,17 +257,17 @@ export default function VintageWeddingCarHyderabadPage() {
                   </div>
 
                   <div className="offer-text" style={{ padding: '22px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                    <h3 style={{ fontSize: '20px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>
+                    <h3 style={{ fontSize: '20px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>
                       {car.name}
                     </h3>
                     <div style={{ marginBottom: '14px' }}>
                       <div style={{ fontSize: '16px', fontWeight: 800, color: '#ffb907' }}>{car.rateBaraat}</div>
-                      <div style={{ fontSize: '12px', color: '#64748b' }}>Full Day: {car.rateFullDay}</div>
+                      <div style={{ fontSize: '12px', color: '#60656d' }}>Full Day: {car.rateFullDay}</div>
                     </div>
 
                     <div style={{ marginBottom: '18px', display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                       {car.features.map((feat, idx) => (
-                        <span key={idx} style={{ background: '#f1f5f9', color: '#334155', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 500 }}>
+                        <span key={idx} style={{ background: '#f5f6f7', color: '#191c20', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 500 }}>
                           ✓ {feat}
                         </span>
                       ))}
@@ -291,7 +278,7 @@ export default function VintageWeddingCarHyderabadPage() {
                         href="tel:+916300041186"
                         className="offer-btn-1"
                         style={{
-                          background: '#0f172a',
+                          background: '#191c20',
                           color: '#fff',
                           textAlign: 'center',
                           padding: '10px 4px',

@@ -114,7 +114,7 @@ const MERCEDES_FLEET = [
     fuel: 'V8 Biturbo / 4MATIC',
     rateDay: 'Tariff on Request',
     weddingRate: 'Custom Quote',
-    features: ['Side-Exit Exhaust Roar', 'Legendary 4x4 Dominance', 'Unmatched Road Presence', 'VIP Entrance'],
+    features: ['Side-Exit Exhaust Roar', 'Legendary 4x4 Dominance', 'Commanding Road Presence', 'VIP Entrance'],
     whatsappMsg: 'Hi DriveItCars, I want to enquire about booking the Mercedes G-Wagon in Hyderabad.',
   },
   {
@@ -173,7 +173,7 @@ export default function MercedesRentalHyderabadPage() {
                     marginBottom: 8,
                   }}
                 >
-                  ✦ THE THREE-POINTED STAR EXPERIENCE
+                  THE THREE-POINTED STAR EXPERIENCE
                 </span>
                 <p className="breadcromb-title">Mercedes Rental Hyderabad</p>
                 <ul>
@@ -196,48 +196,35 @@ export default function MercedesRentalHyderabadPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="about-page-left">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.15)',
-                    color: '#d49500',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '12px',
-                  }}
-                >
-                  ✦ MERCEDES-BENZ S-CLASS • E-CLASS • MAYBACH • G-WAGON
+                <span className="editorial-eyebrow">
+                  MERCEDES-BENZ S-CLASS • E-CLASS • MAYBACH • G-WAGON
                 </span>
-                <h1 style={{ color: '#0f172a', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
+                <h1 style={{ color: '#191c20', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
                   Mercedes Rental Hyderabad — Luxury Self Drive &amp; Chauffeur Hire
                 </h1>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '16px' }}>
-                  Experience the pinnacle of German automotive prestige with DriveItCars&apos;s dedicated <strong>Mercedes rental Hyderabad</strong> service. Whether you require an imposing <strong>Mercedes-Benz S-Class</strong> for a state visit or CEO board meeting in HITEC City, an executive <strong>E-Class</strong> for airport transfers at Rajiv Gandhi International Airport (RGIA), or a thunderous <strong>Mercedes-AMG G-Wagon</strong> for a celebrity grand entry, DriveItCars delivers showroom-immaculate Mercedes vehicles across Hyderabad with unmatched professionalism.
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '16px' }}>
+                  Experience the pinnacle of German automotive prestige with DriveItCars&apos;s dedicated <strong>Mercedes rental Hyderabad</strong> service. Whether you require an imposing <strong>Mercedes-Benz S-Class</strong> for a state visit or CEO board meeting in HITEC City, an executive <strong>E-Class</strong> for airport transfers at Rajiv Gandhi International Airport (RGIA), or a thunderous <strong>Mercedes-AMG G-Wagon</strong> for a celebrity grand entry, DriveItCars delivers showroom-immaculate Mercedes vehicles across Hyderabad with consistent professionalism.
                 </p>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '22px' }}>
-                  Choose complete driving sovereignty with our <strong>Mercedes self drive rental in Hyderabad</strong>, or sit back in serene comfort with our suited, uniformed executive chauffeurs. With doorstep delivery to <strong>Banjara Hills, Jubilee Hills, Gachibowli, Madhapur, Kondapur</strong>, and 5-star hotels like Taj Falaknuma Palace and ITC Kohenur, we guarantee a red-carpet experience every single mile.
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '22px' }}>
+                  Choose complete driving sovereignty with our <strong>Mercedes self drive rental in Hyderabad</strong>, or sit back in serene comfort with our suited, uniformed executive chauffeurs. With doorstep delivery to <strong>Banjara Hills, Jubilee Hills, Gachibowli, Madhapur, Kondapur</strong>, and 5-star hotels like Taj Falaknuma Palace and ITC Kohenur, we guarantee a professional chauffeur service every single mile.
                 </p>
 
                 {/* Luxury Category Jump Pill Bar */}
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginBottom: '10px' }}>
-                  <Link href="/bmw-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🚘 BMW Rental Hyderabad
+                  <Link href="/bmw-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    BMW Rental Hyderabad
                   </Link>
-                  <Link href="/audi-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🏎️ Audi Rental Hyderabad
+                  <Link href="/audi-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Audi Rental Hyderabad
                   </Link>
-                  <Link href="/range-rover-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🚙 Range Rover Rental
+                  <Link href="/range-rover-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Range Rover Rental
                   </Link>
-                  <Link href="/luxury-chauffeur-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🤵 Luxury Chauffeur Hyderabad
+                  <Link href="/luxury-chauffeur-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Luxury Chauffeur Hyderabad
                   </Link>
-                  <Link href="/vip-car-rental-hyderabad" style={{ background: '#ffb907', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
-                    👑 VIP &amp; CEO Car Rental
+                  <Link href="/vip-car-rental-hyderabad" style={{ background: '#ffb907', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
+                    VIP &amp; CEO Car Rental
                   </Link>
                 </div>
               </div>
@@ -251,13 +238,13 @@ export default function MercedesRentalHyderabadPage() {
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <span style={{ color: '#d49500', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
+              <span style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                 SHOWROOM CONDITION • FULLY INSURED • ZERO SURGE
               </span>
-              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#0f172a', marginTop: '6px' }}>
+              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#191c20', marginTop: '6px' }}>
                 Our Mercedes-Benz Fleet in Hyderabad
               </h2>
-              <p style={{ color: '#64748b', maxWidth: '680px', margin: '8px auto 0', fontSize: '15px' }}>
+              <p style={{ color: '#60656d', maxWidth: '680px', margin: '8px auto 0', fontSize: '15px' }}>
                 Handpicked, impeccably maintained Mercedes models available for daily self-drive, executive corporate retainers, and wedding celebrations.
               </p>
             </div>
@@ -273,7 +260,7 @@ export default function MercedesRentalHyderabadPage() {
                     background: '#fff',
                     borderRadius: '16px',
                     overflow: 'hidden',
-                    boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
+                    border: '1px solid #e3e5e8',
                     border: '1px solid #e2e8f0',
                     height: '100%',
                     display: 'flex',
@@ -297,7 +284,7 @@ export default function MercedesRentalHyderabadPage() {
                         position: 'absolute',
                         top: 12,
                         left: 12,
-                        background: '#0f172a',
+                        background: '#191c20',
                         color: '#ffb907',
                         fontSize: '11px',
                         fontWeight: 700,
@@ -317,25 +304,25 @@ export default function MercedesRentalHyderabadPage() {
                   </div>
 
                   <div className="offer-text" style={{ padding: '22px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                    <h3 style={{ fontSize: '20px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>
+                    <h3 style={{ fontSize: '20px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>
                       {car.name}
                     </h3>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '14px', alignItems: 'center', background: '#f8fafc', padding: '10px 14px', borderRadius: '8px' }}>
-                      <span style={{ fontSize: '15px', fontWeight: 800, color: '#0f172a' }}>
-                        <i className="fa fa-tag" style={{ color: '#d97706', marginRight: '6px' }} />
+                    <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '14px', alignItems: 'center', background: '#f5f6f7', padding: '10px 14px', borderRadius: '8px' }}>
+                      <span style={{ fontSize: '15px', fontWeight: 800, color: '#191c20' }}>
+                        <i className="fa fa-tag" style={{ color: '#191c20', marginRight: '6px' }} />
                         {car.rateDay}
                       </span>
-                      <span style={{ fontSize: '12px', color: '#64748b', fontWeight: 600 }}>Wedding: {car.weddingRate}</span>
+                      <span style={{ fontSize: '12px', color: '#60656d', fontWeight: 600 }}>Wedding: {car.weddingRate}</span>
                     </div>
 
-                    <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 16px', fontSize: '13px', color: '#475569' }}>
+                    <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 16px', fontSize: '13px', color: '#60656d' }}>
                       <li style={{ marginBottom: 6 }}><i className="fa fa-users" style={{ color: '#ffb907', width: 20 }} /> {car.seats}</li>
                       <li style={{ marginBottom: 6 }}><i className="fa fa-cogs" style={{ color: '#ffb907', width: 20 }} /> {car.fuel}</li>
                     </ul>
 
                     <div style={{ marginBottom: '18px', display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                       {car.features.map((feat, idx) => (
-                        <span key={idx} style={{ background: '#f1f5f9', color: '#334155', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 500 }}>
+                        <span key={idx} style={{ background: '#f5f6f7', color: '#191c20', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 500 }}>
                           ✓ {feat}
                         </span>
                       ))}
@@ -346,7 +333,7 @@ export default function MercedesRentalHyderabadPage() {
                         href="tel:+916300041186"
                         className="offer-btn-1"
                         style={{
-                          background: '#0f172a',
+                          background: '#191c20',
                           color: '#fff',
                           textAlign: 'center',
                           padding: '10px 4px',
@@ -399,17 +386,17 @@ export default function MercedesRentalHyderabadPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="site-heading text-center mb-4">
-                <span style={{ color: '#d49500', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase' }}>
+                <span style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline', fontSize: '13px', textTransform: 'uppercase' }}>
                   TRANSPARENT TARIFFS • NO HIDDEN EXTRAS
                 </span>
-                <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#0f172a' }}>
+                <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#191c20' }}>
                   Mercedes Rental Hyderabad Packages &amp; Pricing
                 </h2>
               </div>
 
               <div className="table-responsive" style={{ background: '#fff', borderRadius: '14px', border: '1px solid #e2e8f0', boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
                 <table className="table" style={{ margin: 0, fontSize: '14px' }}>
-                  <thead style={{ background: '#0f172a', color: '#ffb907' }}>
+                  <thead style={{ background: '#191c20', color: '#ffb907' }}>
                     <tr>
                       <th style={{ padding: '14px 16px' }}>Mercedes Model</th>
                       <th style={{ padding: '14px 16px' }}>Self Drive (24 Hrs)</th>
@@ -426,7 +413,7 @@ export default function MercedesRentalHyderabadPage() {
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Custom Quote</td>
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Custom Quote</td>
                     </tr>
-                    <tr style={{ background: '#f8fafc' }}>
+                    <tr style={{ background: '#f5f6f7' }}>
                       <td style={{ padding: '14px 16px', fontWeight: 700 }}>Mercedes-Benz S-Class 500</td>
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Tariff on Request</td>
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Tariff on Request</td>
@@ -440,7 +427,7 @@ export default function MercedesRentalHyderabadPage() {
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Custom Quote</td>
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Custom Quote</td>
                     </tr>
-                    <tr style={{ background: '#f8fafc' }}>
+                    <tr style={{ background: '#f5f6f7' }}>
                       <td style={{ padding: '14px 16px', fontWeight: 700 }}>Mercedes G-Wagon (G63)</td>
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Tariff on Request</td>
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Tariff on Request</td>
@@ -457,7 +444,7 @@ export default function MercedesRentalHyderabadPage() {
                   </tbody>
                 </table>
               </div>
-              <p style={{ fontSize: '13px', color: '#64748b', marginTop: '10px', textAlign: 'center' }}>
+              <p style={{ fontSize: '13px', color: '#60656d', marginTop: '10px', textAlign: 'center' }}>
                 *All packages include comprehensive commercial insurance. Fuel packages and customized outstation rates available upon request.
               </p>
             </div>
@@ -466,14 +453,14 @@ export default function MercedesRentalHyderabadPage() {
       </section>
 
       {/* Why Choose DriveItCars for Mercedes Rental */}
-      <section className="section_70" style={{ background: '#f8fafc' }}>
+      <section className="section_70" style={{ background: '#f5f6f7' }}>
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <span style={{ color: '#d49500', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase' }}>
+              <span style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline', fontSize: '13px', textTransform: 'uppercase' }}>
                 WHY CHOOSE DriveItCars
               </span>
-              <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#0f172a' }}>
+              <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#191c20' }}>
                 Hyderabad’s #1 Mercedes Rental Destination
               </h2>
             </div>
@@ -482,29 +469,29 @@ export default function MercedesRentalHyderabadPage() {
             <div className="col-lg-3 col-md-6 mb-4">
               <div style={{ background: '#fff', padding: '26px 20px', borderRadius: '12px', border: '1px solid #e2e8f0', height: '100%' }}>
                 <div style={{ fontSize: '28px', color: '#ffb907', marginBottom: '12px' }}><i className="fa fa-shield" /></div>
-                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>100% Showroom Condition</h3>
-                <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.6', margin: 0 }}>Every Mercedes undergoes a 40-point safety and cleanliness audit before handover.</p>
+                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>100% Showroom Condition</h3>
+                <p style={{ fontSize: '13px', color: '#60656d', lineHeight: '1.6', margin: 0 }}>Every Mercedes undergoes a 40-point safety and cleanliness audit before handover.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-4">
               <div style={{ background: '#fff', padding: '26px 20px', borderRadius: '12px', border: '1px solid #e2e8f0', height: '100%' }}>
                 <div style={{ fontSize: '28px', color: '#ffb907', marginBottom: '12px' }}><i className="fa fa-plane" /></div>
-                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>Airport VIP Handover</h3>
-                <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.6', margin: 0 }}>Direct handover at RGIA Shamshabad Aero Plaza terminal with flight delay tracking.</p>
+                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>Airport VIP Handover</h3>
+                <p style={{ fontSize: '13px', color: '#60656d', lineHeight: '1.6', margin: 0 }}>Direct handover at RGIA Shamshabad Aero Plaza terminal with flight delay tracking.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-4">
               <div style={{ background: '#fff', padding: '26px 20px', borderRadius: '12px', border: '1px solid #e2e8f0', height: '100%' }}>
                 <div style={{ fontSize: '28px', color: '#ffb907', marginBottom: '12px' }}><i className="fa fa-clock-o" /></div>
-                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>24-48h Deposit Refund</h3>
-                <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.6', margin: 0 }}>Rapid digital security deposit reimbursement directly to your UPI or bank account.</p>
+                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>24-48h Deposit Refund</h3>
+                <p style={{ fontSize: '13px', color: '#60656d', lineHeight: '1.6', margin: 0 }}>Rapid digital security deposit reimbursement directly to your UPI or bank account.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-4">
               <div style={{ background: '#fff', padding: '26px 20px', borderRadius: '12px', border: '1px solid #e2e8f0', height: '100%' }}>
                 <div style={{ fontSize: '28px', color: '#ffb907', marginBottom: '12px' }}><i className="fa fa-map-marker" /></div>
-                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>Doorstep Delivery</h3>
-                <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.6', margin: 0 }}>Delivered to your doorstep in Banjara Hills, Jubilee Hills, HITEC City, Gachibowli, or Madhapur.</p>
+                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>Doorstep Delivery</h3>
+                <p style={{ fontSize: '13px', color: '#60656d', lineHeight: '1.6', margin: 0 }}>Delivered to your doorstep in Banjara Hills, Jubilee Hills, HITEC City, Gachibowli, or Madhapur.</p>
               </div>
             </div>
           </div>

@@ -144,7 +144,7 @@ export default function MonthlyCorporateCarRentalHyderabadPage() {
                     marginBottom: 8,
                   }}
                 >
-                  ✦ LONG-TERM B2B FLEET LEASING &amp; SUBSCRIPTIONS
+                  LONG-TERM B2B FLEET LEASING &amp; SUBSCRIPTIONS
                 </span>
                 <p className="breadcromb-title">Monthly Corporate Car Rental Hyderabad</p>
                 <ul>
@@ -167,45 +167,32 @@ export default function MonthlyCorporateCarRentalHyderabadPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="about-page-left">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.15)',
-                    color: '#d49500',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '12px',
-                  }}
-                >
-                  ✦ ZERO CAPEX • ZERO DEPRECIATION • 100% OPEX TAX DEDUCTIBLE
+                <span className="editorial-eyebrow">
+                  ZERO CAPEX • ZERO DEPRECIATION • 100% OPEX TAX DEDUCTIBLE
                 </span>
-                <h1 style={{ color: '#0f172a', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
+                <h1 style={{ color: '#191c20', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
                   Monthly Corporate Car Rental Hyderabad — Long-Term Fleet Lease &amp; Subscriptions
                 </h1>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '16px' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '16px' }}>
                   Eliminate the capital strain and administrative headaches of purchasing, maintaining, and managing company cars. DriveItCars&apos;s dedicated <strong>monthly corporate car rental Hyderabad</strong> program empowers enterprises in <strong>HITEC City, Gachibowli Financial District, Mindspace, and Kokapet</strong> with fully managed, long-term fleet subscriptions. Whether you need executive sedans for daily project managers or luxury Mercedes/BMW sedans for resident directors and expatriates, our monthly retainers deliver up to <strong>45% cost savings</strong> over daily spot rentals.
                 </p>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '22px' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '22px' }}>
                   Enjoy 100% operational tax deductions, monthly GST input tax credit invoices, routine vehicle servicing with doorstep replacement car guarantees, and dedicated corporate account support.
                 </p>
 
                 {/* Sub-Category Jump Bar */}
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginBottom: '10px' }}>
-                  <Link href="/corporate-car-rental-hyderabad" style={{ background: '#0f172a', color: '#ffb907', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
-                    🏢 Corporate Car Rental Hub
+                  <Link href="/corporate-car-rental-hyderabad" style={{ background: '#191c20', color: '#ffb907', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
+                    Corporate Car Rental Hub
                   </Link>
-                  <Link href="/luxury-chauffeur-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🤵 Executive Chauffeur Services
+                  <Link href="/luxury-chauffeur-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Executive Chauffeur Services
                   </Link>
-                  <Link href="/vip-car-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    👑 VIP &amp; CEO Car Rental
+                  <Link href="/vip-car-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    VIP &amp; CEO Car Rental
                   </Link>
-                  <Link href="/hyderabad-airport-car-rental" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    ✈️ Airport Corporate Transfers
+                  <Link href="/hyderabad-airport-car-rental" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Airport Corporate Transfers
                   </Link>
                 </div>
               </div>
@@ -215,14 +202,14 @@ export default function MonthlyCorporateCarRentalHyderabadPage() {
       </section>
 
       {/* Packages Grid */}
-      <section className="section_70" style={{ background: '#f8fafc', paddingTop: '40px' }}>
+      <section className="section_70" style={{ background: '#f5f6f7', paddingTop: '40px' }}>
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <span style={{ color: '#d49500', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
+              <span style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                 POPULAR MONTHLY RETAINER TIERS
               </span>
-              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#0f172a', marginTop: '6px' }}>
+              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#191c20', marginTop: '6px' }}>
                 Monthly Corporate Car Rental Packages in Hyderabad
               </h2>
             </div>
@@ -237,7 +224,7 @@ export default function MonthlyCorporateCarRentalHyderabadPage() {
                     background: '#fff',
                     borderRadius: '16px',
                     overflow: 'hidden',
-                    boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
+                    border: '1px solid #e3e5e8',
                     border: '1px solid #e2e8f0',
                     height: '100%',
                     display: 'flex',
@@ -261,7 +248,7 @@ export default function MonthlyCorporateCarRentalHyderabadPage() {
                         position: 'absolute',
                         top: 12,
                         left: 12,
-                        background: '#0f172a',
+                        background: '#191c20',
                         color: '#ffb907',
                         fontSize: '11px',
                         fontWeight: 700,
@@ -295,12 +282,12 @@ export default function MonthlyCorporateCarRentalHyderabadPage() {
                   </div>
 
                   <div className="offer-text" style={{ padding: '22px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                    <h3 style={{ fontSize: '19px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>
+                    <h3 style={{ fontSize: '19px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>
                       {pkg.name}
                     </h3>
                     <div style={{ marginBottom: '14px' }}>
-                      <div style={{ fontSize: '15px', fontWeight: 800, color: '#92400e', background: '#fef3c7', padding: '5px 10px', borderRadius: '6px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
-                        <i className="fa fa-tag" style={{ color: '#d97706', fontSize: '13px' }} />
+                      <div style={{ fontSize: '15px', fontWeight: 800, color: '#191c20', background: '#f5f6f7', padding: '5px 10px', borderRadius: '6px', display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                        <i className="fa fa-tag" style={{ color: '#191c20', fontSize: '13px' }} />
                         Monthly Lease: {pkg.rateSelfDrive}
                       </div>
                       <div style={{ fontSize: '12px', color: '#059669', fontWeight: 600, marginTop: '4px' }}>
@@ -310,7 +297,7 @@ export default function MonthlyCorporateCarRentalHyderabadPage() {
 
                     <div style={{ marginBottom: '18px', display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                       {pkg.features.map((feat, idx) => (
-                        <span key={idx} style={{ background: '#f1f5f9', color: '#334155', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 500 }}>
+                        <span key={idx} style={{ background: '#f5f6f7', color: '#191c20', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 500 }}>
                           ✓ {feat}
                         </span>
                       ))}
@@ -321,7 +308,7 @@ export default function MonthlyCorporateCarRentalHyderabadPage() {
                         href="tel:+916300041186"
                         className="offer-btn-1"
                         style={{
-                          background: '#0f172a',
+                          background: '#191c20',
                           color: '#fff',
                           textAlign: 'center',
                           padding: '10px 4px',
@@ -374,17 +361,17 @@ export default function MonthlyCorporateCarRentalHyderabadPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="site-heading text-center mb-4">
-                <span style={{ color: '#d49500', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase' }}>
+                <span style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline', fontSize: '13px', textTransform: 'uppercase' }}>
                   FINANCIAL ADVANTAGE
                 </span>
-                <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#0f172a' }}>
+                <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#191c20' }}>
                   Buying Company Cars vs DriveItCars Monthly Corporate Subscription
                 </h2>
               </div>
 
               <div className="table-responsive" style={{ background: '#fff', borderRadius: '14px', border: '1px solid #e2e8f0', boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
                 <table className="table" style={{ margin: 0, fontSize: '14px' }}>
-                  <thead style={{ background: '#0f172a', color: '#ffb907' }}>
+                  <thead style={{ background: '#191c20', color: '#ffb907' }}>
                     <tr>
                       <th style={{ padding: '14px 16px' }}>Parameter</th>
                       <th style={{ padding: '14px 16px' }}>Purchasing Company Fleet</th>
@@ -397,7 +384,7 @@ export default function MonthlyCorporateCarRentalHyderabadPage() {
                       <td style={{ padding: '14px 16px', color: '#ef4444' }}>Heavy down payment &amp; bank EMI liabilities</td>
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Zero down payment (Zero Capex)</td>
                     </tr>
-                    <tr style={{ background: '#f8fafc' }}>
+                    <tr style={{ background: '#f5f6f7' }}>
                       <td style={{ padding: '14px 16px', fontWeight: 700 }}>Depreciation &amp; Resale Risk</td>
                       <td style={{ padding: '14px 16px', color: '#ef4444' }}>20% annual book value depreciation loss</td>
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Zero depreciation risk for your company</td>
@@ -407,7 +394,7 @@ export default function MonthlyCorporateCarRentalHyderabadPage() {
                       <td style={{ padding: '14px 16px', color: '#ef4444' }}>Separate service bills, claims &amp; downtime</td>
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>100% covered by DriveItCars with free replacement</td>
                     </tr>
-                    <tr style={{ background: '#f8fafc' }}>
+                    <tr style={{ background: '#f5f6f7' }}>
                       <td style={{ padding: '14px 16px', fontWeight: 700 }}>Tax &amp; Accounting Treatment</td>
                       <td style={{ padding: '14px 16px' }}>Capital asset on balance sheet</td>
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>100% tax-deductible Opex + GST input tax credit</td>

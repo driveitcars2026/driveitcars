@@ -190,46 +190,33 @@ export default function Suv5Page() {
           <div className="row">
             <div className="col-lg-12">
               <div className="about-page-left">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.15)',
-                    color: '#d49500',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '12px',
-                  }}
-                >
-                  ✦ HIGH GROUND CLEARANCE • SUNROOF &amp; 4x4 SUV FLEET
+                <span className="editorial-eyebrow">
+                  HIGH GROUND CLEARANCE • SUNROOF &amp; 4x4 SUV FLEET
                 </span>
-                <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#0f172a', marginBottom: '14px' }}>
+                <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#191c20', marginBottom: '14px' }}>
                   Command Every Highway &amp; City Corridor in a 5-Seater SUV from DriveItCars
                 </h2>
-                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '14px', textAlign: 'justify' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '14px', textAlign: 'justify' }}>
                   Whether you want the commanding road presence of a panoramic-sunroof <strong>Hyundai Creta</strong> or <strong>Kia Seltos</strong>, the off-road capability of a <strong>Mahindra Thar 4x4 Hard-Top</strong>, or the 5-star crash safety of a <strong>Tata Harrier</strong> and <strong>Tata Nexon</strong>, <strong>DriveItCars</strong> maintains Hyderabad’s largest self-drive 5-seater SUV fleet.
                 </p>
-                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '18px', textAlign: 'justify' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '18px', textAlign: 'justify' }}>
                   With 200mm+ ground clearance, ventilated seats on top trims, Apple CarPlay / Android Auto, and 300 km/day included, our 5-seater SUVs are engineered for both daily Cyberabad commutes and long outstation highway drives to Srisailam, Hampi, Goa, and Araku Valley.
                 </p>
                 <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                  <Link href="/self-drive-suv-hyderabad" style={{ background: '#0f172a', color: '#ffb907', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
-                    🚙 All Self Drive SUVs Hub
+                  <Link href="/self-drive-suv-hyderabad" style={{ background: '#191c20', color: '#ffb907', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 700 }}>
+                    All Self Drive SUVs Hub
                   </Link>
-                  <Link href="/suv7" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🚐 7-Seater SUVs (Innova, Fortuner, XUV700)
+                  <Link href="/suv7" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    7-Seater SUVs (Innova, Fortuner, XUV700)
                   </Link>
-                  <Link href="/sedan" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🚘 Sedans
+                  <Link href="/sedan" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Sedans
                   </Link>
-                  <Link href="/hatchback" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🚗 Hatchbacks
+                  <Link href="/hatchback" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Hatchbacks
                   </Link>
-                  <Link href="/weekend-self-drive-cars-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '6px 14px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🌄 Weekend Road Trip Packages
+                  <Link href="/weekend-self-drive-cars-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 14px', borderRadius: '8px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Weekend Road Trip Packages
                   </Link>
                 </div>
               </div>

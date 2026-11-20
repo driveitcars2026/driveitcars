@@ -162,29 +162,16 @@ export default function MonthlySelfDriveHyderabadPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="about-page-left">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.15)',
-                    color: '#d49500',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '12px',
-                  }}
-                >
-                  ✦ LONG-TERM CAR SUBSCRIPTIONS — SAVE UP TO 45%
+                <span className="editorial-eyebrow">
+                  LONG-TERM CAR SUBSCRIPTIONS — SAVE UP TO 45%
                 </span>
-                <h1 style={{ color: '#ffb907', fontSize: '32px', fontWeight: 800, marginBottom: '20px' }}>
+                <h1 style={{ color: '#191c20', fontSize: '32px', fontWeight: 600, marginBottom: '20px' }}>
                   Monthly Self Drive Cars Hyderabad — Flexible Long-Term Car Subscriptions
                 </h1>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '16px' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '16px' }}>
                   Need a reliable car for a month or longer without the burdensome commitment of buying? DriveItCars offers the most practical and economical <strong>monthly self drive cars Hyderabad</strong> subscription service. Perfect for IT professionals on temporary client assignments in HITEC City and Gachibowli, NRI families visiting relatives, medical travelers, or smart urban commuters who prefer driving new cars without depreciation stress.
                 </p>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '16px' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '16px' }}>
                   With DriveItCars monthly self drive cars, you pay zero down payment, zero loan interest, and zero maintenance or insurance fees. All plans include 3,000 km monthly allowance, comprehensive insurance coverage, free scheduled doorstep maintenance, and an instant replacement car guarantee if your vehicle requires workshop servicing.
                 </p>
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '14px' }}>
@@ -200,7 +187,7 @@ export default function MonthlySelfDriveHyderabadPage() {
                   >
                     <i className="fa fa-whatsapp" style={{ marginRight: 6 }} /> WhatsApp Monthly Desk
                   </a>
-                  <Link href="/self-drive-suv-hyderabad" className="gauto-btn" style={{ padding: '8px 18px', fontSize: '13px', background: '#0f172a' }}>
+                  <Link href="/self-drive-suv-hyderabad" className="gauto-btn" style={{ padding: '8px 18px', fontSize: '13px', background: '#191c20' }}>
                     Explore Monthly SUVs
                   </Link>
                 </div>
@@ -211,7 +198,7 @@ export default function MonthlySelfDriveHyderabadPage() {
       </section>
 
       {/* ========== MONTHLY SUBSCRIPTION PLANS ========== */}
-      <section className="gauto-offers-area section_70" style={{ background: '#f8fafc', paddingTop: '40px' }}>
+      <section className="gauto-offers-area section_70" style={{ background: '#f5f6f7', paddingTop: '40px' }}>
         <div className="container">
           <div className="site-heading text-center" style={{ marginBottom: '35px' }}>
             <span style={{ color: '#ffb907', fontWeight: 700, fontSize: '13px', letterSpacing: '1px', textTransform: 'uppercase' }}>
@@ -230,8 +217,8 @@ export default function MonthlySelfDriveHyderabadPage() {
 
               return (
                 <div className="col-lg-3 col-md-6 mb-4" key={idx}>
-                  <div className="single-offers" style={{ background: '#ffffff', borderRadius: '14px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.06)' }}>
-                    <div className="offer-image" style={{ width: '100%', height: '170px', background: '#f8fafc', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <div className="single-offers" style={{ background: '#ffffff', borderRadius: '14px', overflow: 'hidden', border: '1px solid #e3e5e8' }}>
+                    <div className="offer-image" style={{ width: '100%', height: '170px', background: '#f5f6f7', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                       <img
                         loading="lazy"
                         src={plan.image}
@@ -241,7 +228,7 @@ export default function MonthlySelfDriveHyderabadPage() {
                     </div>
                     <div className="offer-text" style={{ padding: '16px' }}>
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px' }}>
-                        <span style={{ fontSize: '11px', background: '#e0f2fe', color: '#0369a1', padding: '2px 8px', borderRadius: '4px', fontWeight: 700 }}>
+                        <span style={{ fontSize: '11px', background: '#f5f6f7', color: '#191c20', padding: '2px 8px', borderRadius: '4px', fontWeight: 700 }}>
                           {plan.type}
                         </span>
                         <span style={{ fontSize: '11px', background: '#dcfce7', color: '#15803d', padding: '2px 8px', borderRadius: '4px', fontWeight: 700 }}>
@@ -251,18 +238,18 @@ export default function MonthlySelfDriveHyderabadPage() {
                       <h3 style={{ fontSize: '16px', fontWeight: 800, color: '#111827', margin: '0 0 10px' }}>
                         {plan.name}
                       </h3>
-                      <div style={{ background: '#fef3c7', border: '1px solid #fde68a', borderRadius: '8px', padding: '10px 12px', marginBottom: '12px' }}>
+                      <div style={{ background: '#f5f6f7', border: '1px solid #fde68a', borderRadius: '8px', padding: '10px 12px', marginBottom: '12px' }}>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                          <span style={{ fontSize: '13px', fontWeight: 700, color: '#92400e', display: 'flex', alignItems: 'center', gap: '5px' }}>
-                            <i className="fa fa-tag" style={{ color: '#d97706' }} /> Monthly Plan:
+                          <span style={{ fontSize: '13px', fontWeight: 700, color: '#191c20', display: 'flex', alignItems: 'center', gap: '5px' }}>
+                            <i className="fa fa-tag" style={{ color: '#191c20' }} /> Monthly Plan:
                           </span>
-                          <span style={{ fontSize: '14px', fontWeight: 800, color: '#92400e' }}>{plan.monthlyRate}</span>
+                          <span style={{ fontSize: '14px', fontWeight: 800, color: '#191c20' }}>{plan.monthlyRate}</span>
                         </div>
                         <div style={{ fontSize: '11px', color: '#059669', fontWeight: 700, marginTop: '4px' }}>
                           <i className="fa fa-check-circle" /> Contact for Best Custom Quote
                         </div>
                       </div>
-                      <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 14px', fontSize: '12px', color: '#64748b', lineHeight: '1.8' }}>
+                      <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 14px', fontSize: '12px', color: '#60656d', lineHeight: '1.8' }}>
                         <li><i className="fa fa-check" style={{ color: '#16a34a', marginRight: 6 }} /> {plan.kmPerMonth}</li>
                         <li><i className="fa fa-check" style={{ color: '#16a34a', marginRight: 6 }} /> Free Doorstep Servicing</li>
                         <li><i className="fa fa-check" style={{ color: '#16a34a', marginRight: 6 }} /> 0 Maintenance &amp; Road Tax</li>
@@ -303,9 +290,9 @@ export default function MonthlySelfDriveHyderabadPage() {
             </h2>
           </div>
 
-          <div className="table-responsive" style={{ background: '#fff', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.06)', overflow: 'hidden' }}>
+          <div className="table-responsive" style={{ background: '#fff', borderRadius: '12px', border: '1px solid #e3e5e8', overflow: 'hidden' }}>
             <table className="table" style={{ margin: 0, fontSize: '14px' }}>
-              <thead style={{ background: '#0f172a', color: '#fff' }}>
+              <thead style={{ background: '#191c20', color: '#fff' }}>
                 <tr>
                   <th style={{ padding: '16px' }}>Factor</th>
                   <th style={{ padding: '16px' }}>Buying a New Car</th>
@@ -318,7 +305,7 @@ export default function MonthlySelfDriveHyderabadPage() {
                   <td style={{ padding: '14px 16px', color: '#dc2626' }}>₹2,00,000 – ₹5,00,000 upfront</td>
                   <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 700 }}>₹0 (Zero Down Payment)</td>
                 </tr>
-                <tr style={{ background: '#f8fafc' }}>
+                <tr style={{ background: '#f5f6f7' }}>
                   <td style={{ padding: '14px 16px', fontWeight: 700 }}>Loan Commitment</td>
                   <td style={{ padding: '14px 16px', color: '#dc2626' }}>3 to 7 Years of Fixed Bank EMIs</td>
                   <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 700 }}>Flexible Month-to-Month (Cancel Anytime)</td>
@@ -328,7 +315,7 @@ export default function MonthlySelfDriveHyderabadPage() {
                   <td style={{ padding: '14px 16px', color: '#dc2626' }}>Paid by owner annually (₹30k–₹70k)</td>
                   <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 700 }}>100% Included in Subscription Fee</td>
                 </tr>
-                <tr style={{ background: '#f8fafc' }}>
+                <tr style={{ background: '#f5f6f7' }}>
                   <td style={{ padding: '14px 16px', fontWeight: 700 }}>Scheduled Maintenance</td>
                   <td style={{ padding: '14px 16px', color: '#dc2626' }}>Out-of-pocket expenses &amp; workshop trips</td>
                   <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 700 }}>Free Doorstep Maintenance Included</td>
@@ -338,9 +325,9 @@ export default function MonthlySelfDriveHyderabadPage() {
                   <td style={{ padding: '14px 16px', color: '#dc2626' }}>15%–20% lost every year</td>
                   <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 700 }}>Zero Depreciation Risk for You</td>
                 </tr>
-                <tr style={{ background: '#f8fafc' }}>
+                <tr style={{ background: '#f5f6f7' }}>
                   <td style={{ padding: '14px 16px', fontWeight: 700 }}>Vehicle Flexibility</td>
-                  <td style={{ padding: '14px 16px', color: '#64748b' }}>Stuck with the same car for years</td>
+                  <td style={{ padding: '14px 16px', color: '#60656d' }}>Stuck with the same car for years</td>
                   <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 700 }}>Upgrade or switch models anytime</td>
                 </tr>
               </tbody>

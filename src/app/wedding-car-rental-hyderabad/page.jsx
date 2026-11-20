@@ -44,7 +44,7 @@ const WEDDING_FAQS = [
   {
     question: 'How do I book a wedding car rental in Hyderabad with DriveItCars?',
     answer:
-      'Booking your luxury wedding car in Hyderabad is seamless: select your dream car (Rolls Royce, Mercedes-Maybach, Range Rover, BMW, or Vintage Roadster), share your wedding date, muhurtham timings, and venue address via WhatsApp (+91 6300041186) or direct phone, and DriveItCars will confirm your vehicle with optional fresh floral decoration and suited chauffeur.',
+      'Booking your luxury wedding car in Hyderabad is straightforward: select your dream car (Rolls Royce, Mercedes-Maybach, Range Rover, BMW, or Vintage Roadster), share your wedding date, muhurtham timings, and venue address via WhatsApp (+91 6300041186) or direct phone, and DriveItCars will confirm your vehicle with optional fresh floral decoration and suited chauffeur.',
   },
   {
     question: 'What luxury wedding cars are available in Hyderabad?',
@@ -77,11 +77,11 @@ const WEDDING_FLEET = [
   {
     id: 'rolls-royce-phantom',
     name: 'Rolls Royce Phantom / Ghost',
-    badge: 'Royal Nizami Grandeur',
+    badge: 'Executive Wedding Chauffeur',
     image: SERVICE_VEHICLE_IMAGES.rolls,
     rateBaraat: 'Tariff on Request',
     rateFullDay: 'Custom Quote',
-    features: ['Starlight Headliner', 'Coach Doors for Photos', 'Suited Executive Chauffeur', 'Red-Carpet Protocol'],
+    features: ['Starlight Headliner', 'Coach Doors for Photos', 'Suited Executive Chauffeur', 'Formal Event Protocol'],
     link: '/rolls-royce-wedding-hyderabad',
     whatsappMsg: 'Hi DriveItCars, I want to book the Rolls Royce for our wedding in Hyderabad.',
   },
@@ -125,7 +125,7 @@ const WEDDING_FLEET = [
     image: SERVICE_VEHICLE_IMAGES.vintage,
     rateBaraat: 'Tariff on Request',
     rateFullDay: 'Custom Quote',
-    features: ['Open-Top Nizami Aesthetic', 'Slow Baraat Crawl Gearing', 'Photogenic Masterpiece', 'White-Glove Driver'],
+    features: ['Classic Open-Top Styling', 'Slow Baraat Crawl Gearing', 'Photogenic Masterpiece', 'White-Glove Driver'],
     link: '/vintage-wedding-car-hyderabad',
     whatsappMsg: 'Hi DriveItCars, I want to book the Vintage Wedding Car in Hyderabad.',
   },
@@ -186,7 +186,7 @@ export default function WeddingCarRentalHyderabadPage() {
                     marginBottom: 8,
                   }}
                 >
-                  ✦ ROYAL NIZAMI CELEBRATIONS &amp; GRAND ENTRIES
+                  HYDERABAD WEDDING &amp; EVENT FLEET
                 </span>
                 <p className="breadcromb-title">Wedding Car Rental Hyderabad</p>
                 <ul>
@@ -209,51 +209,38 @@ export default function WeddingCarRentalHyderabadPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="about-page-left">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.15)',
-                    color: '#d49500',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    padding: '6px 14px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '12px',
-                  }}
-                >
-                  ✦ ROLLS ROYCE • MERCEDES-BENZ • RANGE ROVER • VINTAGE CLASSICS
+                <span className="editorial-eyebrow">
+                  ROLLS ROYCE • MERCEDES-BENZ • RANGE ROVER • VINTAGE CLASSICS
                 </span>
-                <h1 style={{ color: '#0f172a', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
+                <h1 style={{ color: '#191c20', fontSize: '32px', fontWeight: 800, marginBottom: '20px', lineHeight: '1.3' }}>
                   Wedding Car Rental Hyderabad — Luxury Wedding Cars &amp; Royal Chauffeurs
                 </h1>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '16px' }}>
-                  Your wedding day is a once-in-a-lifetime milestone deserving of breathtaking grandeur. At DriveItCars, we provide the finest <strong>wedding car rental Hyderabad</strong> fleet, curating red-carpet automotive experiences for royal Hyderabadi weddings, groom baraat processions, and cinematic bridal entries. From the peerless stature of a <strong>Rolls Royce wedding car</strong> to the opulent executive poise of a <strong>Mercedes-Benz S-Class</strong>, an adventurous <strong>Range Rover</strong>, and romantic <strong>vintage open-top tourers</strong>, our showroom-conditioned vehicles set the stage for timeless memories.
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '16px' }}>
+                  Your wedding day is a once-in-a-lifetime milestone deserving of breathtaking grandeur. At DriveItCars, we provide the finest <strong>wedding car rental Hyderabad</strong> fleet, offering tailored luxury vehicle services for royal Hyderabadi weddings, groom baraat processions, and cinematic bridal entries. From the peerless stature of a <strong>Rolls Royce wedding car</strong> to the opulent executive poise of a <strong>Mercedes-Benz S-Class</strong>, an adventurous <strong>Range Rover</strong>, and romantic <strong>vintage open-top tourers</strong>, our showroom-conditioned vehicles set the stage for timeless memories.
                 </p>
-                <p style={{ textAlign: 'justify', fontSize: '15px', lineHeight: '1.8', color: '#4b5563', marginBottom: '22px' }}>
+                <p style={{ fontSize: '15px', lineHeight: '1.8', color: '#60656d', marginBottom: '22px' }}>
                   Serving iconic wedding venues across <strong>Banjara Hills, Jubilee Hills, Gachibowli, Shamshabad, Taj Falaknuma Palace, ITC Kohenur, Novotel HICC, and JRC Conventions</strong>, our services feature suited executive chauffeurs, optional fresh floral decorations, and synchronized arrival timings.
                 </p>
 
                 {/* Wedding Sub-Category Jump Bar */}
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginBottom: '10px' }}>
-                  <Link href="/rolls-royce-wedding-hyderabad" style={{ background: '#0f172a', color: '#ffb907', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
-                    👑 Rolls Royce Wedding
+                  <Link href="/rolls-royce-wedding-hyderabad" style={{ background: '#191c20', color: '#ffb907', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 700 }}>
+                    Rolls Royce Wedding
                   </Link>
-                  <Link href="/vintage-wedding-car-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🎩 Vintage Wedding Car
+                  <Link href="/vintage-wedding-car-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Vintage Wedding Car
                   </Link>
-                  <Link href="/bridal-entry-car-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                  <Link href="/bridal-entry-car-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
                     👰 Bridal Entry Car
                   </Link>
-                  <Link href="/groom-entry-luxury-car-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🤵 Groom Entry Luxury Car
+                  <Link href="/groom-entry-luxury-car-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Groom Entry Luxury Car
                   </Link>
-                  <Link href="/mercedes-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    ⭐ Mercedes Wedding Car
+                  <Link href="/mercedes-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Mercedes Wedding Car
                   </Link>
-                  <Link href="/range-rover-rental-hyderabad" style={{ background: '#f8fafc', color: '#0f172a', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
-                    🚙 Range Rover Wedding
+                  <Link href="/range-rover-rental-hyderabad" style={{ background: '#f5f6f7', color: '#191c20', padding: '7px 15px', borderRadius: '20px', fontSize: '13px', fontWeight: 600, border: '1px solid #cbd5e1' }}>
+                    Range Rover Wedding
                   </Link>
                 </div>
               </div>
@@ -263,17 +250,17 @@ export default function WeddingCarRentalHyderabadPage() {
       </section>
 
       {/* Wedding Fleet Grid */}
-      <section id="wedding-fleet" className={[fleetStyles.fleet, 'section_70'].join(' ')} style={{ background: '#f8fafc', paddingTop: '40px' }}>
+      <section id="wedding-fleet" className={[fleetStyles.fleet, 'section_70'].join(' ')} style={{ background: '#f5f6f7', paddingTop: '40px' }}>
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <span style={{ color: '#d49500', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
+              <span style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                 SHOWROOM POLISHED • RED CARPET READY • SUITED CHAUFFEURS
               </span>
-              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#0f172a', marginTop: '6px' }}>
+              <h2 style={{ fontSize: '30px', fontWeight: 800, color: '#191c20', marginTop: '6px' }}>
                 Luxury Wedding Cars Available in Hyderabad
               </h2>
-              <p style={{ color: '#64748b', maxWidth: '680px', margin: '8px auto 0', fontSize: '15px' }}>
+              <p style={{ color: '#60656d', maxWidth: '680px', margin: '8px auto 0', fontSize: '15px' }}>
                 Explore our handpicked collection of exotic wedding sedans, convertibles, SUVs, and vintage motorcars.
               </p>
             </div>
@@ -289,7 +276,7 @@ export default function WeddingCarRentalHyderabadPage() {
                     background: '#fff',
                     borderRadius: '16px',
                     overflow: 'hidden',
-                    boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
+                    border: '1px solid #e3e5e8',
                     border: '1px solid #e2e8f0',
                     height: '100%',
                     display: 'flex',
@@ -313,7 +300,7 @@ export default function WeddingCarRentalHyderabadPage() {
                         position: 'absolute',
                         top: 12,
                         left: 12,
-                        background: '#0f172a',
+                        background: '#191c20',
                         color: '#ffb907',
                         fontSize: '11px',
                         fontWeight: 700,
@@ -332,24 +319,24 @@ export default function WeddingCarRentalHyderabadPage() {
                   </div>
 
                   <div className="offer-text" style={{ padding: '22px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                    <h3 style={{ fontSize: '20px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>
+                    <h3 style={{ fontSize: '20px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>
                       {car.name}
                     </h3>
                     <div style={{ marginBottom: '14px' }}>
                       <div style={{ fontSize: '16px', fontWeight: 800, color: '#ffb907' }}>{car.rateBaraat}</div>
-                      <div style={{ fontSize: '12px', color: '#64748b' }}>Full Day: {car.rateFullDay}</div>
+                      <div style={{ fontSize: '12px', color: '#60656d' }}>Full Day: {car.rateFullDay}</div>
                     </div>
 
                     <div style={{ marginBottom: '18px', display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                       {car.features.map((feat, idx) => (
-                        <span key={idx} style={{ background: '#f1f5f9', color: '#334155', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 500 }}>
+                        <span key={idx} style={{ background: '#f5f6f7', color: '#191c20', fontSize: '11px', padding: '3px 8px', borderRadius: '4px', fontWeight: 500 }}>
                           ✓ {feat}
                         </span>
                       ))}
                     </div>
 
                     <div style={{ marginBottom: '16px' }}>
-                      <Link href={car.link} style={{ color: '#0f172a', fontSize: '13px', fontWeight: 700, textDecoration: 'underline' }}>
+                      <Link href={car.link} style={{ color: '#191c20', fontSize: '13px', fontWeight: 700, textDecoration: 'underline' }}>
                         View Dedicated Details &amp; Gallery →
                       </Link>
                     </div>
@@ -359,7 +346,7 @@ export default function WeddingCarRentalHyderabadPage() {
                         href="tel:+916300041186"
                         className="offer-btn-1"
                         style={{
-                          background: '#0f172a',
+                          background: '#191c20',
                           color: '#fff',
                           textAlign: 'center',
                           padding: '10px 4px',
@@ -412,17 +399,17 @@ export default function WeddingCarRentalHyderabadPage() {
           <div className="row">
             <div className="col-lg-12">
               <div className="site-heading text-center mb-4">
-                <span style={{ color: '#d49500', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase' }}>
+                <span style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline', fontSize: '13px', textTransform: 'uppercase' }}>
                   CURATED HYDERABADI PACKAGES
                 </span>
-                <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#0f172a' }}>
+                <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#191c20' }}>
                   Wedding Car Rental Packages &amp; Tariffs
                 </h2>
               </div>
 
               <div className="table-responsive" style={{ background: '#fff', borderRadius: '14px', border: '1px solid #e2e8f0', boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
                 <table className="table" style={{ margin: 0, fontSize: '14px' }}>
-                  <thead style={{ background: '#0f172a', color: '#ffb907' }}>
+                  <thead style={{ background: '#191c20', color: '#ffb907' }}>
                     <tr>
                       <th style={{ padding: '14px 16px' }}>Vehicle Class</th>
                       <th style={{ padding: '14px 16px' }}>Baraat Package (4 Hrs / 40 Km)</th>
@@ -434,36 +421,36 @@ export default function WeddingCarRentalHyderabadPage() {
                   <tbody>
                     <tr>
                       <td style={{ padding: '14px 16px', fontWeight: 700 }}>Rolls Royce Phantom / Ghost</td>
-                      <td style={{ padding: '14px 16px', color: '#92400e', fontWeight: 700 }}>Tariff on Request</td>
-                      <td style={{ padding: '14px 16px', color: '#92400e', fontWeight: 700 }}>Custom Quote</td>
+                      <td style={{ padding: '14px 16px', color: '#191c20', fontWeight: 700 }}>Tariff on Request</td>
+                      <td style={{ padding: '14px 16px', color: '#191c20', fontWeight: 700 }}>Custom Quote</td>
                       <td style={{ padding: '14px 16px' }}>Optional Premium</td>
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Included (White Glove)</td>
                     </tr>
-                    <tr style={{ background: '#f8fafc' }}>
+                    <tr style={{ background: '#f5f6f7' }}>
                       <td style={{ padding: '14px 16px', fontWeight: 700 }}>Mercedes-Maybach / S-Class</td>
-                      <td style={{ padding: '14px 16px', color: '#92400e', fontWeight: 700 }}>Tariff on Request</td>
-                      <td style={{ padding: '14px 16px', color: '#92400e', fontWeight: 700 }}>Custom Quote</td>
+                      <td style={{ padding: '14px 16px', color: '#191c20', fontWeight: 700 }}>Tariff on Request</td>
+                      <td style={{ padding: '14px 16px', color: '#191c20', fontWeight: 700 }}>Custom Quote</td>
                       <td style={{ padding: '14px 16px' }}>Optional Premium</td>
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Included (Suited)</td>
                     </tr>
                     <tr>
                       <td style={{ padding: '14px 16px', fontWeight: 700 }}>Classic Vintage Open Tourer</td>
-                      <td style={{ padding: '14px 16px', color: '#92400e', fontWeight: 700 }}>Tariff on Request</td>
-                      <td style={{ padding: '14px 16px', color: '#92400e', fontWeight: 700 }}>Custom Quote</td>
+                      <td style={{ padding: '14px 16px', color: '#191c20', fontWeight: 700 }}>Tariff on Request</td>
+                      <td style={{ padding: '14px 16px', color: '#191c20', fontWeight: 700 }}>Custom Quote</td>
                       <td style={{ padding: '14px 16px' }}>Included Floral Trim</td>
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Included (Uniformed)</td>
                     </tr>
-                    <tr style={{ background: '#f8fafc' }}>
+                    <tr style={{ background: '#f5f6f7' }}>
                       <td style={{ padding: '14px 16px', fontWeight: 700 }}>Mercedes / Audi Convertible (2-Seater)</td>
-                      <td style={{ padding: '14px 16px', color: '#92400e', fontWeight: 700 }}>Tariff on Request</td>
-                      <td style={{ padding: '14px 16px', color: '#92400e', fontWeight: 700 }}>Custom Quote</td>
+                      <td style={{ padding: '14px 16px', color: '#191c20', fontWeight: 700 }}>Tariff on Request</td>
+                      <td style={{ padding: '14px 16px', color: '#191c20', fontWeight: 700 }}>Custom Quote</td>
                       <td style={{ padding: '14px 16px' }}>Optional Silk/Fresh</td>
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Included / Self Drive</td>
                     </tr>
                     <tr>
                       <td style={{ padding: '14px 16px', fontWeight: 700 }}>Range Rover Sport / Evoque</td>
-                      <td style={{ padding: '14px 16px', color: '#92400e', fontWeight: 700 }}>Tariff on Request</td>
-                      <td style={{ padding: '14px 16px', color: '#92400e', fontWeight: 700 }}>Custom Quote</td>
+                      <td style={{ padding: '14px 16px', color: '#191c20', fontWeight: 700 }}>Tariff on Request</td>
+                      <td style={{ padding: '14px 16px', color: '#191c20', fontWeight: 700 }}>Custom Quote</td>
                       <td style={{ padding: '14px 16px' }}>Optional Premium</td>
                       <td style={{ padding: '14px 16px', color: '#16a34a', fontWeight: 600 }}>Included (Suited)</td>
                     </tr>
@@ -476,14 +463,14 @@ export default function WeddingCarRentalHyderabadPage() {
       </section>
 
       {/* Why Choose DriveItCars for Weddings */}
-      <section className="section_70" style={{ background: '#f8fafc' }}>
+      <section className="section_70" style={{ background: '#f5f6f7' }}>
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <span style={{ color: '#d49500', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase' }}>
+              <span style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline', fontSize: '13px', textTransform: 'uppercase' }}>
                 WEDDING PERFECTION GUARANTEE
               </span>
-              <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#0f172a' }}>
+              <h2 style={{ fontSize: '28px', fontWeight: 800, color: '#191c20' }}>
                 Why Hyderabad Families Trust DriveItCars for Their Big Day
               </h2>
             </div>
@@ -492,29 +479,29 @@ export default function WeddingCarRentalHyderabadPage() {
             <div className="col-lg-3 col-md-6 mb-4">
               <div style={{ background: '#fff', padding: '26px 20px', borderRadius: '12px', border: '1px solid #e2e8f0', height: '100%' }}>
                 <div style={{ fontSize: '28px', color: '#ffb907', marginBottom: '12px' }}><i className="fa fa-heart" /></div>
-                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>Spotless Vehicle Sanitization</h3>
-                <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.6', margin: 0 }}>Every car is meticulously detailed, interior scented, and vacuumed before arrival.</p>
+                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>Spotless Vehicle Sanitization</h3>
+                <p style={{ fontSize: '13px', color: '#60656d', lineHeight: '1.6', margin: 0 }}>Every car is meticulously detailed, interior scented, and vacuumed before arrival.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-4">
               <div style={{ background: '#fff', padding: '26px 20px', borderRadius: '12px', border: '1px solid #e2e8f0', height: '100%' }}>
                 <div style={{ fontSize: '28px', color: '#ffb907', marginBottom: '12px' }}><i className="fa fa-clock-o" /></div>
-                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>100% On-Time Muhurtham</h3>
-                <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.6', margin: 0 }}>Chauffeurs arrive at your home or hotel 30 minutes ahead of scheduled baraat timings.</p>
+                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>100% On-Time Muhurtham</h3>
+                <p style={{ fontSize: '13px', color: '#60656d', lineHeight: '1.6', margin: 0 }}>Chauffeurs arrive at your home or hotel 30 minutes ahead of scheduled baraat timings.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-4">
               <div style={{ background: '#fff', padding: '26px 20px', borderRadius: '12px', border: '1px solid #e2e8f0', height: '100%' }}>
                 <div style={{ fontSize: '28px', color: '#ffb907', marginBottom: '12px' }}><i className="fa fa-camera" /></div>
-                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>Photographer Friendly</h3>
-                <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.6', margin: 0 }}>Chauffeurs coordinate with your wedding photo and drone team for majestic cinematic angles.</p>
+                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>Photographer Friendly</h3>
+                <p style={{ fontSize: '13px', color: '#60656d', lineHeight: '1.6', margin: 0 }}>Chauffeurs coordinate with your wedding photo and drone team for majestic cinematic angles.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 mb-4">
               <div style={{ background: '#fff', padding: '26px 20px', borderRadius: '12px', border: '1px solid #e2e8f0', height: '100%' }}>
                 <div style={{ fontSize: '28px', color: '#ffb907', marginBottom: '12px' }}><i className="fa fa-shield" /></div>
-                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#0f172a', marginBottom: '8px' }}>Guaranteed Model Security</h3>
-                <p style={{ fontSize: '13px', color: '#64748b', lineHeight: '1.6', margin: 0 }}>The exact model, color, and trim you reserve is delivered with zero last-minute substitution.</p>
+                <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#191c20', marginBottom: '8px' }}>Guaranteed Model Security</h3>
+                <p style={{ fontSize: '13px', color: '#60656d', lineHeight: '1.6', margin: 0 }}>The exact model, color, and trim you reserve is delivered with zero last-minute substitution.</p>
               </div>
             </div>
           </div>

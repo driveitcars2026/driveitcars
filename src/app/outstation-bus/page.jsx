@@ -158,11 +158,11 @@ export default function OutstationBusPage() {
             <div className="col-lg-6">
               <div className="about-page-left">
                 <h2>Interstate &amp; Outstation AC Coach Charters from Hyderabad by DriveItCars</h2>
-                <p style={{ textAlign: 'justify' }}>
+                <p >
                   Embark on unforgettable group journeys across South and West India with <strong>DriveItCars outstation bus rentals in Hyderabad</strong>. Whether you are organizing a family pilgrimage to <strong>Tirupati Balaji, Srisailam Mallikarjuna Swamy, Yadadri, or Shirdi</strong>, a destination wedding convoy, or a corporate resort retreat to <strong>Goa, Hampi, Coorg, or Araku Valley</strong>, our 30 to 50-seater luxury AC coaches deliver smooth, fatigue-free highway travel.
                 </p>
-                <p style={{ textAlign: 'justify' }}>
-                  Every coach features air suspension, deep reclining seats with footrests, individual AC vents and mobile charging ports, spacious under-floor luggage compartments, All-India Tourist Permits, and seasoned highway drivers. Looking for smaller 7-seater family vehicles instead? Check our <Link href="/suv7" style={{ color: '#d49500', fontWeight: 700 }}>7-Seater Innova &amp; SUV Rentals</Link> or <Link href="/cabs" style={{ color: '#d49500', fontWeight: 700 }}>Outstation Chauffeur Cabs</Link>.
+                <p >
+                  Every coach features air suspension, deep reclining seats with footrests, individual AC vents and mobile charging ports, spacious under-floor luggage compartments, All-India Tourist Permits, and seasoned highway drivers. Looking for smaller 7-seater family vehicles instead? Check our <Link href="/suv7" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>7-Seater Innova &amp; SUV Rentals</Link> or <Link href="/cabs" style={{ color: '#191c20', fontWeight: 600, textDecoration: 'underline' }}>Outstation Chauffeur Cabs</Link>.
                 </p>
                 <div className="about-page-call">
                   <div className="page-call-icon">

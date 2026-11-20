@@ -39,41 +39,22 @@ export default function PrivacyPage() {
   return (
     <>
       {/* ========== HERO BREADCRUMB BANNER ========== */}
-      <section
-        className="gauto-breadcromb-area section_70"
-        style={{
-          background: 'linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.95)), url(/seadns.webp) no-repeat center center / cover',
-          padding: '80px 0 60px',
-        }}
-      >
+      <section className="gauto-breadcromb-area section_70">
         <div className="container">
           <div className="row">
-            <div className="col-md-12 text-center">
+            <div className="col-md-12">
               <div className="breadcromb-box">
-                <span
-                  style={{
-                    background: 'rgba(255, 185, 7, 0.18)',
-                    color: '#ffb907',
-                    fontWeight: 700,
-                    fontSize: '12px',
-                    letterSpacing: '1.5px',
-                    textTransform: 'uppercase',
-                    padding: '6px 16px',
-                    borderRadius: '20px',
-                    display: 'inline-block',
-                    marginBottom: '14px',
-                  }}
-                >
+                <span className="editorial-eyebrow">
                   Legal &amp; Compliance
                 </span>
-                <h1 style={{ fontSize: '38px', fontWeight: 800, color: '#ffffff', marginBottom: '12px' }}>
+                <h1 className="breadcromb-title">
                   Privacy Policy
                 </h1>
-                <p style={{ color: '#cbd5e1', fontSize: '15px', maxWidth: '640px', margin: '0 auto 16px' }}>
+                <p>
                   Your privacy and data security are fundamental to our services. Learn how we handle your personal details, KYC records, and trip information.
                 </p>
-                <div style={{ color: '#94a3b8', fontSize: '13px', marginBottom: '14px' }}>
-                  Last Updated: <strong style={{ color: '#ffb907' }}>{lastUpdated}</strong>
+                <div style={{ color: '#60656d', fontSize: '13px', marginBottom: '14px' }}>
+                  Last Updated: <strong style={{ color: '#191c20' }}>{lastUpdated}</strong>
                 </div>
                 <ul>
                   <li><i className="fa fa-home"></i></li>
@@ -88,7 +69,7 @@ export default function PrivacyPage() {
       </section>
 
       {/* ========== MAIN CONTENT AREA ========== */}
-      <section style={{ background: '#f8fafc', padding: '60px 0 90px' }}>
+      <section style={{ background: '#f5f6f7', padding: '60px 0 90px' }}>
         <div className="container">
           <div className="row">
             {/* Left Column: Sticky Table of Contents */}
@@ -104,7 +85,7 @@ export default function PrivacyPage() {
                   boxShadow: '0 4px 20px rgba(0,0,0,0.04)',
                 }}
               >
-                <h2 style={{ fontSize: '16px', fontWeight: 800, color: '#0f172a', marginBottom: '16px', borderBottom: '2px solid #ffb907', paddingBottom: '8px', display: 'inline-block' }}>
+                <h2 style={{ fontSize: '16px', fontWeight: 800, color: '#191c20', marginBottom: '16px', borderBottom: '2px solid #ffb907', paddingBottom: '8px', display: 'inline-block' }}>
                   Table of Contents
                 </h2>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
@@ -114,7 +95,7 @@ export default function PrivacyPage() {
                         href={`#${sec.id}`}
                         className="legal-toc-link"
                         style={{
-                          color: '#475569',
+                          color: '#60656d',
                           fontSize: '14px',
                           fontWeight: 500,
                           textDecoration: 'none',
@@ -130,19 +111,19 @@ export default function PrivacyPage() {
                   ))}
                 </ul>
 
-                <hr style={{ margin: '22px 0', borderColor: '#f1f5f9' }} />
+                <hr style={{ margin: '22px 0', borderColor: '#f5f6f7' }} />
 
-                <div style={{ background: '#f8fafc', padding: '16px', borderRadius: '10px' }}>
-                  <div style={{ fontWeight: 700, fontSize: '13px', color: '#0f172a', marginBottom: '6px' }}>
+                <div style={{ background: '#f5f6f7', padding: '16px', borderRadius: '10px' }}>
+                  <div style={{ fontWeight: 700, fontSize: '13px', color: '#191c20', marginBottom: '6px' }}>
                     Need Privacy Assistance?
                   </div>
-                  <p style={{ fontSize: '12px', color: '#64748b', margin: '0 0 10px' }}>
+                  <p style={{ fontSize: '12px', color: '#60656d', margin: '0 0 10px' }}>
                     Reach our dedicated Data Protection Officer for any records review or deletion requests.
                   </p>
                   <a
                     href="mailto:driveitcars@gmail.com"
                     style={{
-                      color: '#0f172a',
+                      color: '#191c20',
                       fontWeight: 700,
                       fontSize: '12px',
                       textDecoration: 'none',
@@ -174,13 +155,13 @@ export default function PrivacyPage() {
                 <span style={{ color: '#ffb907', fontWeight: 800, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                   Section 01
                 </span>
-                <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#0f172a', marginTop: '6px', marginBottom: '18px' }}>
+                <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#191c20', marginTop: '6px', marginBottom: '18px' }}>
                   1. Introduction &amp; Overview
                 </h2>
-                <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.8', marginBottom: '14px' }}>
+                <p style={{ color: '#60656d', fontSize: '15px', lineHeight: '1.8', marginBottom: '14px' }}>
                   Welcome to <strong>DriveItCars</strong> (&quot;DriveItCars&quot;, &quot;we&quot;, &quot;our&quot;, or &quot;us&quot;). We operate Hyderabad’s leading self-drive and luxury car rental platform located at Masab Tank, Hyderabad, Telangana.
                 </p>
-                <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.8', margin: 0 }}>
+                <p style={{ color: '#60656d', fontSize: '15px', lineHeight: '1.8', margin: 0 }}>
                   We are deeply committed to respecting your privacy and safeguarding any personal data or KYC documents you share with us. This Privacy Policy details how we collect, verify, store, utilize, and protect your information when booking vehicles through our website (<a href="https://driveitcars.in" style={{ color: '#ffb907', fontWeight: 600 }}>driveitcars.in</a>) or interacting with our customer support personnel.
                 </p>
               </div>
@@ -200,50 +181,50 @@ export default function PrivacyPage() {
                 <span style={{ color: '#ffb907', fontWeight: 800, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                   Section 02
                 </span>
-                <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#0f172a', marginTop: '6px', marginBottom: '18px' }}>
+                <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#191c20', marginTop: '6px', marginBottom: '18px' }}>
                   2. Information We Collect
                 </h2>
-                <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.8', marginBottom: '18px' }}>
+                <p style={{ color: '#60656d', fontSize: '15px', lineHeight: '1.8', marginBottom: '18px' }}>
                   In order to facilitate vehicle hiring under Indian Motor Vehicles Act guidelines and insurance underwriting standards, we collect the following categories of information:
                 </p>
 
                 <div className="row g-3">
                   <div className="col-sm-6 mb-3">
-                    <div style={{ background: '#f8fafc', padding: '18px', borderRadius: '12px', height: '100%' }}>
-                      <div style={{ fontWeight: 700, color: '#0f172a', fontSize: '15px', marginBottom: '8px' }}>
+                    <div style={{ background: '#f5f6f7', padding: '18px', borderRadius: '12px', height: '100%' }}>
+                      <div style={{ fontWeight: 700, color: '#191c20', fontSize: '15px', marginBottom: '8px' }}>
                         <i className="fa fa-id-card" style={{ color: '#ffb907', marginRight: '8px' }} /> Identification (KYC)
                       </div>
-                      <p style={{ color: '#64748b', fontSize: '13px', lineHeight: '1.6', margin: 0 }}>
+                      <p style={{ color: '#60656d', fontSize: '13px', lineHeight: '1.6', margin: 0 }}>
                         Government-issued identity cards including original Driving License, Aadhar Card, PAN Card, and Passport (for NRI/non-local customers).
                       </p>
                     </div>
                   </div>
                   <div className="col-sm-6 mb-3">
-                    <div style={{ background: '#f8fafc', padding: '18px', borderRadius: '12px', height: '100%' }}>
-                      <div style={{ fontWeight: 700, color: '#0f172a', fontSize: '15px', marginBottom: '8px' }}>
+                    <div style={{ background: '#f5f6f7', padding: '18px', borderRadius: '12px', height: '100%' }}>
+                      <div style={{ fontWeight: 700, color: '#191c20', fontSize: '15px', marginBottom: '8px' }}>
                         <i className="fa fa-map-marker" style={{ color: '#ffb907', marginRight: '8px' }} /> Address Verification
                       </div>
-                      <p style={{ color: '#64748b', fontSize: '13px', lineHeight: '1.6', margin: 0 }}>
+                      <p style={{ color: '#60656d', fontSize: '13px', lineHeight: '1.6', margin: 0 }}>
                         Local address proof (utility bills, rental agreements) or inbound travel credentials (flight tickets, railway tickets, hotel bookings) for outstation travelers.
                       </p>
                     </div>
                   </div>
                   <div className="col-sm-6 mb-3">
-                    <div style={{ background: '#f8fafc', padding: '18px', borderRadius: '12px', height: '100%' }}>
-                      <div style={{ fontWeight: 700, color: '#0f172a', fontSize: '15px', marginBottom: '8px' }}>
+                    <div style={{ background: '#f5f6f7', padding: '18px', borderRadius: '12px', height: '100%' }}>
+                      <div style={{ fontWeight: 700, color: '#191c20', fontSize: '15px', marginBottom: '8px' }}>
                         <i className="fa fa-credit-card" style={{ color: '#ffb907', marginRight: '8px' }} /> Transaction Details
                       </div>
-                      <p style={{ color: '#64748b', fontSize: '13px', lineHeight: '1.6', margin: 0 }}>
+                      <p style={{ color: '#60656d', fontSize: '13px', lineHeight: '1.6', margin: 0 }}>
                         Advance booking payments, security deposit receipts, UPI transaction references, and bank account information for prompt deposit refunds.
                       </p>
                     </div>
                   </div>
                   <div className="col-sm-6 mb-3">
-                    <div style={{ background: '#f8fafc', padding: '18px', borderRadius: '12px', height: '100%' }}>
-                      <div style={{ fontWeight: 700, color: '#0f172a', fontSize: '15px', marginBottom: '8px' }}>
+                    <div style={{ background: '#f5f6f7', padding: '18px', borderRadius: '12px', height: '100%' }}>
+                      <div style={{ fontWeight: 700, color: '#191c20', fontSize: '15px', marginBottom: '8px' }}>
                         <i className="fa fa-mobile" style={{ color: '#ffb907', marginRight: '8px' }} /> Device &amp; Contact Info
                       </div>
-                      <p style={{ color: '#64748b', fontSize: '13px', lineHeight: '1.6', margin: 0 }}>
+                      <p style={{ color: '#60656d', fontSize: '13px', lineHeight: '1.6', margin: 0 }}>
                         Primary mobile number, WhatsApp contact, email address, IP address, and browser diagnostic telemetry for spam prevention.
                       </p>
                     </div>
@@ -266,7 +247,7 @@ export default function PrivacyPage() {
                 <span style={{ color: '#ffb907', fontWeight: 800, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                   Section 03
                 </span>
-                <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#0f172a', marginTop: '6px', marginBottom: '18px' }}>
+                <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#191c20', marginTop: '6px', marginBottom: '18px' }}>
                   3. How We Use Your Information
                 </h2>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
@@ -310,10 +291,10 @@ export default function PrivacyPage() {
                         <i className={`fa ${item.icon}`} />
                       </div>
                       <div>
-                        <div style={{ fontWeight: 700, color: '#0f172a', fontSize: '15px', marginBottom: '4px' }}>
+                        <div style={{ fontWeight: 700, color: '#191c20', fontSize: '15px', marginBottom: '4px' }}>
                           {item.title}
                         </div>
-                        <div style={{ color: '#64748b', fontSize: '14px', lineHeight: '1.6' }}>
+                        <div style={{ color: '#60656d', fontSize: '14px', lineHeight: '1.6' }}>
                           {item.desc}
                         </div>
                       </div>
@@ -337,27 +318,27 @@ export default function PrivacyPage() {
                 <span style={{ color: '#ffb907', fontWeight: 800, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                   Section 04
                 </span>
-                <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#0f172a', marginTop: '6px', marginBottom: '18px' }}>
+                <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#191c20', marginTop: '6px', marginBottom: '18px' }}>
                   4. Data Sharing &amp; Third Parties
                 </h2>
                 <div
                   style={{
-                    background: '#f1f5f9',
+                    background: '#f5f6f7',
                     borderLeft: '4px solid #ffb907',
                     padding: '16px',
                     borderRadius: '8px',
                     marginBottom: '18px',
-                    color: '#334155',
+                    color: '#191c20',
                     fontSize: '14px',
                     fontWeight: 600,
                   }}
                 >
                   We do not sell, rent, or trade your personal data to marketing telemarketers or third-party advertisers under any circumstance.
                 </div>
-                <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.8', marginBottom: '14px' }}>
+                <p style={{ color: '#60656d', fontSize: '15px', lineHeight: '1.8', marginBottom: '14px' }}>
                   Information is shared strictly on a need-to-know basis with authorized entities under the following conditions:
                 </p>
-                <ul style={{ color: '#475569', fontSize: '14px', lineHeight: '1.8', paddingLeft: '20px', margin: 0 }}>
+                <ul style={{ color: '#60656d', fontSize: '14px', lineHeight: '1.8', paddingLeft: '20px', margin: 0 }}>
                   <li><strong>Vehicle Host / Owner:</strong> Basic verification details (name, driving eligibility) to fulfill the peer-to-peer lease.</li>
                   <li><strong>Insurance Underwriters:</strong> In the event of an unfortunate accident or total loss, KYC documents and accident telemetry are shared with licensed Indian motor insurance companies.</li>
                   <li><strong>Law Enforcement Agencies:</strong> In the event of severe traffic violations, hit-and-run incidents, or criminal investigation, records are disclosed in compliance with lawful police summons.</li>
@@ -379,10 +360,10 @@ export default function PrivacyPage() {
                 <span style={{ color: '#ffb907', fontWeight: 800, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                   Section 05
                 </span>
-                <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#0f172a', marginTop: '6px', marginBottom: '18px' }}>
+                <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#191c20', marginTop: '6px', marginBottom: '18px' }}>
                   5. Security &amp; Document Protection
                 </h2>
-                <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.8', marginBottom: '16px' }}>
+                <p style={{ color: '#60656d', fontSize: '15px', lineHeight: '1.8', marginBottom: '16px' }}>
                   DriveItCars employs enterprise-grade administrative and digital security protocols to protect sensitive documents:
                 </p>
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px' }}>
@@ -390,7 +371,7 @@ export default function PrivacyPage() {
                     <div style={{ color: '#10b981', fontWeight: 800, fontSize: '14px', marginBottom: '4px' }}>
                       ✓ Digital Watermarking
                     </div>
-                    <div style={{ fontSize: '13px', color: '#64748b' }}>
+                    <div style={{ fontSize: '13px', color: '#60656d' }}>
                       All identification documents (Aadhar, License) are digitally marked &quot;For DriveItCars Car Rental Verification Only&quot; to prevent misuse.
                     </div>
                   </div>
@@ -398,7 +379,7 @@ export default function PrivacyPage() {
                     <div style={{ color: '#10b981', fontWeight: 800, fontSize: '14px', marginBottom: '4px' }}>
                       ✓ Encrypted Cloud Vaults
                     </div>
-                    <div style={{ fontSize: '13px', color: '#64748b' }}>
+                    <div style={{ fontSize: '13px', color: '#60656d' }}>
                       Stored under 256-bit AES encryption with strict role-based access restricted solely to authorized compliance officers.
                     </div>
                   </div>
@@ -420,18 +401,18 @@ export default function PrivacyPage() {
                 <span style={{ color: '#ffb907', fontWeight: 800, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                   Section 06
                 </span>
-                <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#0f172a', marginTop: '6px', marginBottom: '18px' }}>
+                <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#191c20', marginTop: '6px', marginBottom: '18px' }}>
                   6. Vehicle GPS &amp; Telematics Data
                 </h2>
-                <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.8', marginBottom: '14px' }}>
+                <p style={{ color: '#60656d', fontSize: '15px', lineHeight: '1.8', marginBottom: '14px' }}>
                   For passenger safety, asset protection, and roadside emergency response, all fleet vehicles are equipped with telematics devices that monitor:
                 </p>
-                <ul style={{ color: '#475569', fontSize: '14px', lineHeight: '1.8', paddingLeft: '20px', margin: '0 0 16px' }}>
+                <ul style={{ color: '#60656d', fontSize: '14px', lineHeight: '1.8', paddingLeft: '20px', margin: '0 0 16px' }}>
                   <li>Real-time vehicle GPS coordinates and route history.</li>
                   <li>Vehicle speed telemetry (monitoring the statutory 80 km/h RTA safety limit).</li>
                   <li>Engine diagnostics, battery health, and collision impact sensors.</li>
                 </ul>
-                <p style={{ color: '#64748b', fontSize: '13px', fontStyle: 'italic', margin: 0 }}>
+                <p style={{ color: '#60656d', fontSize: '13px', fontStyle: 'italic', margin: 0 }}>
                   Telematics data is strictly used for emergency breakdown assistance, speed compliance, and recovery of stolen assets. We do not inspect personal driving behavior for non-contractual purposes.
                 </p>
               </div>
@@ -451,13 +432,13 @@ export default function PrivacyPage() {
                 <span style={{ color: '#ffb907', fontWeight: 800, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                   Section 07
                 </span>
-                <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#0f172a', marginTop: '6px', marginBottom: '18px' }}>
+                <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#191c20', marginTop: '6px', marginBottom: '18px' }}>
                   7. Data Retention &amp; User Rights
                 </h2>
-                <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.8', marginBottom: '14px' }}>
+                <p style={{ color: '#60656d', fontSize: '15px', lineHeight: '1.8', marginBottom: '14px' }}>
                   We retain booking transaction records and KYC documents for the duration mandated by motor transport taxation and accounting laws in India (generally 3 years).
                 </p>
-                <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.8', margin: 0 }}>
+                <p style={{ color: '#60656d', fontSize: '15px', lineHeight: '1.8', margin: 0 }}>
                   You have the right to request a copy of your stored records, rectify outdated contact numbers, or request deletion of voluntary promotional subscriptions by writing to our privacy team.
                 </p>
               </div>
@@ -477,10 +458,10 @@ export default function PrivacyPage() {
                 <span style={{ color: '#ffb907', fontWeight: 800, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                   Section 08
                 </span>
-                <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#0f172a', marginTop: '6px', marginBottom: '18px' }}>
+                <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#191c20', marginTop: '6px', marginBottom: '18px' }}>
                   8. Cookies &amp; Web Analytics
                 </h2>
-                <p style={{ color: '#475569', fontSize: '15px', lineHeight: '1.8', margin: 0 }}>
+                <p style={{ color: '#60656d', fontSize: '15px', lineHeight: '1.8', margin: 0 }}>
                   Our website uses lightweight session cookies to maintain your vehicle filter choices and anonymous Google Analytics to understand website traffic. You can adjust your browser settings to decline cookies at any time without restricting your ability to explore our fleet.
                 </p>
               </div>
@@ -502,26 +483,26 @@ export default function PrivacyPage() {
                 <h2 style={{ fontSize: '24px', fontWeight: 800, color: '#ffffff', marginTop: '6px', marginBottom: '14px' }}>
                   9. Contact &amp; Grievance Officer
                 </h2>
-                <p style={{ color: '#cbd5e1', fontSize: '14px', lineHeight: '1.7', marginBottom: '22px' }}>
+                <p style={{ color: '#e3e5e8', fontSize: '14px', lineHeight: '1.7', marginBottom: '22px' }}>
                   For any questions regarding this Privacy Policy, document security, or to report a privacy concern, please contact our Grievance Officer:
                 </p>
                 <div className="row g-3">
                   <div className="col-sm-6 mb-2">
-                    <div style={{ fontSize: '12px', color: '#94a3b8' }}>Designated Entity:</div>
+                    <div style={{ fontSize: '12px', color: '#9ca3af' }}>Designated Entity:</div>
                     <div style={{ fontWeight: 700, fontSize: '15px', color: '#ffb907' }}>DriveItCars HYDERABAD</div>
                   </div>
                   <div className="col-sm-6 mb-2">
-                    <div style={{ fontSize: '12px', color: '#94a3b8' }}>Office Address:</div>
+                    <div style={{ fontSize: '12px', color: '#9ca3af' }}>Office Address:</div>
                     <div style={{ fontWeight: 600, fontSize: '14px' }}>Masab Tank, Hyderabad, Telangana 500028</div>
                   </div>
                   <div className="col-sm-6 mb-2">
-                    <div style={{ fontSize: '12px', color: '#94a3b8' }}>Email Support:</div>
+                    <div style={{ fontSize: '12px', color: '#9ca3af' }}>Email Support:</div>
                     <a href="mailto:driveitcars@gmail.com" style={{ color: '#fff', fontWeight: 600, fontSize: '14px', textDecoration: 'none' }}>
                       driveitcars@gmail.com
                     </a>
                   </div>
                   <div className="col-sm-6 mb-2">
-                    <div style={{ fontSize: '12px', color: '#94a3b8' }}>Helpline Phone:</div>
+                    <div style={{ fontSize: '12px', color: '#9ca3af' }}>Helpline Phone:</div>
                     <a href="tel:+916300041186" style={{ color: '#ffb907', fontWeight: 700, fontSize: '14px', textDecoration: 'none' }}>
                       +91 6300041186
                     </a>
